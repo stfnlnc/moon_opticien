@@ -1,6 +1,6 @@
 @import 'components/shadow';
+@import 'components/pointer';
 @import 'components/image';
-@import 'components/menu';
 @import 'components/icon';
 @import 'components/input';
 @import 'components/card';
@@ -13,11 +13,7 @@
 @import 'base/heading';
 @import 'base/font';
 @import 'base/color';
-@import 'base/preloader';
 
-@import 'pages/template-parts/forms';
-@import 'pages/template-parts/sidebar';
-@import 'pages/template-parts/footer';
 @import 'pages/template-parts/header';
 
 @import 'layout/position';

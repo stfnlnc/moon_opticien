@@ -1,7 +1,8 @@
 card {
     border: 1px solid var(--stroke-light);
     border-radius: var(--border-radius);
-    padding: 20px;
+    padding: 1.675rem;
+    width: fit-content;
 }
 
 @media screen and (max-width: 1080px) {

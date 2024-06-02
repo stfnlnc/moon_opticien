@@ -1,12 +1,13 @@
-@php
-   $roles = [
-       'admin' => 'Administrateur',
-       'editor' => 'Éditeur',
-       'user' => 'Utilisateur'
-   ]
-@endphp
-
 <section class="flex col gap--2">
+    @if (session('status') === 'profile-updated')
+        <p
+            x-data="{ show: true }"
+            x-show="show"
+            x-transition
+            x-init="setTimeout(() => show = false, 2000)"
+            class="alert alert--success"
+        >{{ __('Enregistré.') }}</p>
+    @endif
     <header>
             <h4>
                 {{ __('Vos informations') }}
@@ -25,25 +26,30 @@
         @csrf
         @method('patch')
         <p class="tag tag--info">
-            {{ $roles[$user->roles] }}
+            {{ $user->role->title }}
         </p>
+
+        <!-- Name -->
         <div>
             <x-input-label for="name" :value="__('Nom')" />
             <x-text-input id="name" name="name" type="text" :value="old('name', $user->name)" required autofocus autocomplete="name" />
             <x-input-error :messages="$errors->get('name')" />
         </div>
 
+        <!-- Phone -->
         <div>
             <x-input-label for="phone" :value="__('Téléphone')" />
-            <x-text-input id="phone" name="phone" type="text" :value="old('phone', $user->phone)" required autofocus autocomplete="phone" />
+            <x-text-input id="phone" name="phone" type="text" :value="old('phone', $user->phone)" autofocus autocomplete="phone" />
             <x-input-error :messages="$errors->get('phone')" />
         </div>
 
+        <!-- Email -->
         <div>
             <x-input-label for="email" :value="__('Email')" />
             <x-text-input id="email" name="email" type="email" :value="old('email', $user->email)" required autocomplete="username" />
             <x-input-error :messages="$errors->get('email')" />
 
+            <!-- Email verify -->
             @if (!$user->hasVerifiedEmail())
                 <div class="flex col gap--1  mt--2">
                     <p class="text--s tag tag--warning">
@@ -61,30 +67,9 @@
                 </div>
             @endif
         </div>
-        @if($user->roles === 'admin')
-        <div class="flex col gap--1">
-            <x-input-label for="roles" :value="__('Permissions')" />
-            <x-select-input id="roles" name="roles" >
-                @foreach($roles as $key => $role)
-                    <option value="{{ $key }}" {{ $key === $user->roles ? 'selected' : '' }}>{{ $role }}</option>
-                @endforeach
-            </x-select-input>
-            <x-input-error :messages="$errors->get('roles')" />
-        </div>
-        @endif
 
         <div class="flex col gap--2 mt--2">
             <x-primary-button>{{ __('Modifier') }}</x-primary-button>
-
-            @if (session('status') === 'profile-updated')
-                <p
-                    x-data="{ show: true }"
-                    x-show="show"
-                    x-transition
-                    x-init="setTimeout(() => show = false, 2000)"
-                    class="alert alert--success"
-                >{{ __('Enregistré.') }}</p>
-            @endif
         </div>
     </form>
 </section>

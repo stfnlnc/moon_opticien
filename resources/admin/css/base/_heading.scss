@@ -5,7 +5,7 @@
     --h4: 2rem;
     --h5: 1.5rem;
     --h6: 1rem;
-    --font-heading: "Overused Grotesk", sans-serif;
+    --font-heading: var(--secondary-font), sans-serif;
     --weight-heading: 700;
     --letter-spacing-heading: 0;
 }

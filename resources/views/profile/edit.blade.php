@@ -1,21 +1,22 @@
 <x-app-layout>
     @section('title', 'Mon profil')
     <x-slot name="header">
-        @yield('title') - {{ Auth::user()->name }}
+        @yield('title')
+        <p class="tag tag--primary-dark mt--1">{{ Auth::user()->email }}</p>
     </x-slot>
 
-    <div class="flex col gap--4 w--70 w-100-mobile">
-        <div class="flex row col-mobile gap--4 w--100">
-            <div class="border border--stroke-light border--rounded p--4 w--50 w-100-mobile">
+    <div class="container pt--8 pb--8 flex col gap--4">
+        <div class="flex row col-mobile gap--4 w--fit-content">
+            <card>
                     @include('profile.partials.update-profile-information-form')
-            </div>
+            </card>
 
-            <div class="border border--stroke-light border--rounded p--4 w--50 w-100-mobile">
+            <card>
                     @include('profile.partials.update-password-form')
-            </div>
+            </card>
         </div>
-        <div class="border border--stroke-light border--rounded p--4 w--fit-content w--100">
+        <card>
             @include('profile.partials.delete-user-form')
-        </div>
+        </card>
     </div>
 </x-app-layout>

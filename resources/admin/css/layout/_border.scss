@@ -7,31 +7,54 @@ $pos: ("t": top, "b": bottom, "l": left, "r": right);
             border-#{$p}: 1px solid;
         }
     }
-    &--dark {
+    &--primary-dark {
         border-color: var(--primary-dark);
     }
-    &--light {
+    &--primary-light {
         border-color: var(--primary-light);
     }
-    &--grey {
-        border-color: var(--primary-grey);
+    &--secondary-dark {
+        border-color: var(--secondary-dark);
+    }
+    &--secondary-light {
+        border-color: var(--secondary-light);
+    }
+    &--secondary-color-1 {
+        border-color: var(--secondary-color-1);
+    }
+    &--secondary-color-2 {
+        border-color: var(--secondary-color-2);
+    }
+    &--secondary-color-3 {
+        border-color: var(--secondary-color-3);
+    }
+    &--secondary-color-4 {
+        border-color: var(--secondary-color-4);
+    }
+    &--stroke-light {
+        border-color: var(--stroke-light);
     }
     &--stroke-dark {
         border-color: var(--stroke-dark);
     }
-    &--stroke-light {
-        border-color: var(--stroke-light);
-
+    &--info {
+        border-color: var(--info);
+    }
+    &--success {
+        border-color: var(--success);
+    }
+    &--danger {
+        border-color: var(--danger);
+    }
+    &--warning {
+        border-color: var(--warning);
     }
 }
 
 .border--rounded {
-    border-radius: 0.5rem;
+    border-radius: var(--border-radius);
 }
 
-.border--dashed {
-    border-style: none none dashed none;
-}
 
 @media screen and (max-width: 1080px) {
 

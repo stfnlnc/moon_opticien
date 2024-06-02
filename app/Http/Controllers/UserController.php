@@ -2,55 +2,71 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\UserRequest;
+use App\Models\Role;
+use App\Models\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Facades\Redirect;
+use Illuminate\Validation\Rules;
 
 class UserController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     */
+
     public function index()
     {
-        return view('users.index');
+        $users = User::orderBy('role_id', 'asc')->get();
+        $roles = Role::orderBy('name', 'asc')->get();
+        return view('users.index', [
+            'users' => $users,
+            'roles' => $roles
+        ]);
     }
 
-    /**
-     * Show the form for creating a new resource.
-     */
     public function create()
     {
-        return view('users.create');
+        $roles = Role::orderBy('name', 'asc')->get();
+        return view('users.create', [
+            'roles' => $roles,
+        ]);
     }
 
-    /**
-     * Store a newly created resource in storage.
-     */
     public function store(Request $request)
     {
-        //
+        $request->validate([
+            'name' => ['required', 'string', 'max:255'],
+            'email' => ['required', 'string', 'lowercase', 'email', 'max:255', 'unique:'.User::class],
+            'password' => ['required', 'confirmed', Rules\Password::defaults()],
+        ]);
+
+        $user = User::create([
+            'name' => $request->name,
+            'email' => $request->email,
+            'password' => Hash::make($request->password),
+        ]);
+        return Redirect::route('users.index');
     }
 
-    /**
-     * Show the form for editing the specified resource.
-     */
-    public function edit(string $id)
+    public function edit(User $user)
     {
-        return view('users.edit');
+        $roles = Role::orderBy('name', 'asc')->get();
+        return view('users.edit', [
+            'user' => $user,
+            'roles' => $roles,
+        ]);
     }
 
-    /**
-     * Update the specified resource in storage.
-     */
-    public function update(Request $request, string $id)
+    public function update(UserRequest $request, User $user)
     {
-        //
+        $user->update($request->validated());
+        $user->role()->associate($request->validated('role'))->save();
+        return to_route('users.edit', $user)->with('success', 'L\'utilisateur a été modifié');
     }
 
-    /**
-     * Remove the specified resource from storage.
-     */
-    public function destroy(string $id)
+    public function destroy(User $user)
     {
-        //
+        $user->delete();
+        return to_route('users.index')->with('success', 'L\'utilisateur a été supprimé');
     }
+
 }

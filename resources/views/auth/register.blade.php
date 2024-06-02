@@ -12,7 +12,7 @@
         <!-- Phone -->
         <div>
             <x-input-label for="phone" :value="__('Téléphone')" />
-            <x-text-input id="phone" type="text" name="phone" :value="old('phone')" required autofocus autocomplete="phone" />
+            <x-text-input id="phone" type="text" name="phone" :value="old('phone')" autofocus autocomplete="phone" />
             <x-input-error :messages="$errors->get('phone')" />
         </div>
 

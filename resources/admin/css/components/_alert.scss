@@ -3,18 +3,20 @@
     background-color: var(--primary-light);
     text-align: center;
     border-radius: 0.375rem;
-    border: 1px solid var(--primary-dark);
+    border: none;
+    box-shadow: rgba(60, 64, 67, 0.3) 0 1px 2px 0, rgba(60, 64, 67, 0.15) 0 1px 3px 1px;;
 
     font-size: 0.875rem;
-    font-family: "Inter", sans-serif;
+    font-family: var(--primary-font), sans-serif;
     font-style: normal;
     font-weight: 400;
     line-height: 150%;
-    letter-spacing: -0.03563rem;
+    letter-spacing: 0;
 
     padding: 0.31rem 0.63rem;
 
     width: fit-content;
+    height: fit-content;
     user-select: none;
     &--primary-dark {
         color: var(--primary-light);

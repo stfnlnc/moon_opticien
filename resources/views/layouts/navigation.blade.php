@@ -1,18 +1,24 @@
+@php
+$route = request()->route()->getName()
+@endphp
+
 @section('menu')
-    <x-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
+    <x-nav-link :href="route('dashboard')" :active="str_contains($route, 'dashboard')">
         {{ __('Tableau de bord') }}
     </x-nav-link>
-    <x-nav-link :href="route('profile.edit')" :active="request()->routeIs('profile.edit')">
+    <x-nav-link :href="route('profile.edit')" :active="str_contains($route, 'profile.')">
         {{ __('Mon profil') }}
+    </x-nav-link>
+    <x-nav-link :href="route('users.index')" :active="str_contains($route, 'users.')">
+        {{ __('Les utilisateurs') }}
     </x-nav-link>
 @endsection
 
-<nav x-data="{ open: false }" class=" border--bottom border--stroke-light">
+<nav x-data="{ open: false }" class="flex row justify--center border--bottom border--stroke-light">
     <!-- Primary Navigation Menu -->
     <div class="container pt--4 pb--4">
         <div class="flex row align--center justify--space-between w--100">
             <div class="flex row align--center gap--8">
-                <!-- Logo -->
                 <div>
                     <a class="hide-mobile" href="{{ route('dashboard') }}">
                         <svg class="icon--dark" xmlns="http://www.w3.org/2000/svg" width="50" height="50"
@@ -37,7 +43,7 @@
             </div>
             <form class="hide-mobile" method="POST" action="{{ route('logout') }}">
                 @csrf
-                <x-primary-button class="btn--danger" :href="route('logout')"
+                <x-primary-button class="btn--small btn--danger" :href="route('logout')"
                                   onclick="event.preventDefault();
                                                 this.closest('form').submit();">
                     {{ __('Se déconnecter') }}

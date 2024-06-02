@@ -9,21 +9,36 @@
 
         @vite(['resources/admin/css/app.css', 'resources/admin/js/app.js'])
     </head>
-    <body class="font-sans antialiased">
-        <div class="container__full-width flex col container__full-width">
+    <body class="">
+        <div class="container__full-width flex col">
             @include('layouts.navigation')
 
-            <!-- Page Heading -->
-            @if (isset($header))
-                <header class="container pt--4 pb--4">
-                    <h5>
-                        {{ $header }}
-                    </h5>
-                </header>
-            @endif
-
-            <!-- Page Content -->
-            <main class="container pt--10 pb--10">
+            <main>
+                @if (isset($header))
+                    <header class="container pt--4 pb--4">
+                        <h5>
+                            {{ $header }}
+                        </h5>
+                    </header>
+                    @if(session('success'))
+                        <p
+                            x-data="{ show: true }"
+                            x-show="show"
+                            x-transition
+                            x-init="setTimeout(() => show = false, 2000)"
+                            class="alert alert--success"
+                        >{{ session('success') }}</p>
+                    @endif
+                    @if($errors->any())
+                        <div class="alert alert--danger">
+                            <div class="flex col gap--2">
+                                @foreach($errors->all() as $error)
+                                    <p>{{ $error }}</p>
+                                @endforeach
+                            </div>
+                        </div>
+                    @endif
+                @endif
                 {{ $slot }}
             </main>
         </div>

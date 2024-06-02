@@ -1,4 +1,4 @@
-<section class="flex col gap--4">
+<section class="flex col gap--4 w--fit-content">
     <header class="flex col gap--1">
         <h4>
             {{ __('Supprimer mon compte') }}
@@ -46,7 +46,7 @@
                     {{ __('Annuler') }}
                 </x-secondary-button>
 
-                <x-danger-button class="ms-3">
+                <x-danger-button>
                     {{ __('Supprimer mon compte') }}
                 </x-danger-button>
             </div>
