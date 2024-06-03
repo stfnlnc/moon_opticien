@@ -8,15 +8,15 @@
     <div class="container pt--8 pb--8 flex col gap--4">
         <div class="flex row col-mobile gap--4 w--fit-content">
             <card>
-                    @include('profile.partials.update-profile-information-form')
+                    @include('admin.profile.partials.update-profile-information-form')
             </card>
 
             <card>
-                    @include('profile.partials.update-password-form')
+                    @include('admin.profile.partials.update-password-form')
             </card>
         </div>
         <card>
-            @include('profile.partials.delete-user-form')
+            @include('admin.profile.partials.delete-user-form')
         </card>
     </div>
 </x-app-layout>

@@ -1,5 +1,5 @@
 <section class="flex col gap--2">
-    @if (session('status') === 'profile-updated')
+    @if (session('status') === 'password-updated')
         <p
             x-data="{ show: true }"
             x-show="show"
@@ -13,7 +13,7 @@
             {{ __('Changer le mot de passe') }}
         </h4>
 
-        <p class="c--secondary-light text--s">
+        <p class="c--stroke-dark text--s">
             {{ __('Modification du mot de passe') }}
         </p>
     </header>

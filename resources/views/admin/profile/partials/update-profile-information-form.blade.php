@@ -13,7 +13,7 @@
                 {{ __('Vos informations') }}
             </h4>
 
-            <p class="c--secondary-light text--s">
+            <p class="c--stroke-dark text--s">
                 {{ __("Modifier les informations de votre profil") }}
             </p>
     </header>
@@ -28,12 +28,19 @@
         <p class="tag tag--info">
             {{ $user->role->title }}
         </p>
-
+        <div class="grid grid--2 grid--1-mobile grid-gap--4">
         <!-- Name -->
         <div>
             <x-input-label for="name" :value="__('Nom')" />
             <x-text-input id="name" name="name" type="text" :value="old('name', $user->name)" required autofocus autocomplete="name" />
             <x-input-error :messages="$errors->get('name')" />
+        </div>
+
+        <!-- FirstName -->
+        <div>
+            <x-input-label for="firstname" :value="__('Prénom')" />
+            <x-text-input id="firstname" name="firstname" type="text" :value="old('firstname', $user->firstname)" required autofocus autocomplete="firstname" />
+            <x-input-error :messages="$errors->get('firstname')" />
         </div>
 
         <!-- Phone -->
@@ -67,7 +74,7 @@
                 </div>
             @endif
         </div>
-
+        </div>
         <div class="flex col gap--2 mt--2">
             <x-primary-button>{{ __('Modifier') }}</x-primary-button>
         </div>

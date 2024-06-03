@@ -5,28 +5,50 @@ namespace App\Http\Controllers;
 use App\Http\Requests\UserRequest;
 use App\Models\Role;
 use App\Models\User;
+use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Redirect;
+use Illuminate\Support\Facades\Validator;
+use Illuminate\Validation\Rule;
 use Illuminate\Validation\Rules;
 
 class UserController extends Controller
 {
 
-    public function index()
+    public function index(Request $request)
     {
-        $users = User::orderBy('role_id', 'asc')->get();
+        $search = $request->query('search');
+        $filter = $request->get('role');
         $roles = Role::orderBy('name', 'asc')->get();
-        return view('users.index', [
+
+        if($filter) {
+            $users = User::whereHas('role', function (Builder $query) use ($filter) {
+                $query->where('id', '=', $filter);
+            })
+                ->orderBy('role_id', 'asc')
+                ->paginate(10);
+        } else {
+            $users = User::where('users.name', 'like', '%' . $search . '%')
+                ->orWhere('users.email', 'like', '%' . $search . '%')
+                ->orWhere('users.firstname', 'like', '%' . $search . '%')
+                ->orWhere('users.phone', 'like', '%' . $search . '%')
+                ->orderBy('role_id', 'asc')
+                ->paginate(10);
+        }
+
+        return view('admin.users.index', [
             'users' => $users,
-            'roles' => $roles
+            'roles' => $roles,
+            'search' => $search,
+            'filter' => $filter,
         ]);
     }
 
     public function create()
     {
         $roles = Role::orderBy('name', 'asc')->get();
-        return view('users.create', [
+        return view('admin.users.create', [
             'roles' => $roles,
         ]);
     }
@@ -36,9 +58,8 @@ class UserController extends Controller
         $request->validate([
             'name' => ['required', 'string', 'max:255'],
             'email' => ['required', 'string', 'lowercase', 'email', 'max:255', 'unique:'.User::class],
-            'password' => ['required', 'confirmed', Rules\Password::defaults()],
+            'password' => ['required', 'confirmed', Rules\Password::defaults()]
         ]);
-
         $user = User::create([
             'name' => $request->name,
             'email' => $request->email,
@@ -50,7 +71,7 @@ class UserController extends Controller
     public function edit(User $user)
     {
         $roles = Role::orderBy('name', 'asc')->get();
-        return view('users.edit', [
+        return view('admin.users.edit', [
             'user' => $user,
             'roles' => $roles,
         ]);
@@ -58,6 +79,7 @@ class UserController extends Controller
 
     public function update(UserRequest $request, User $user)
     {
+        Validator::make($request->all(), ['email' => Rule::unique(User::class)->ignore($user)], ['unique' => 'L\'email existe déjà'])->validate();
         $user->update($request->validated());
         $user->role()->associate($request->validated('role'))->save();
         return to_route('users.edit', $user)->with('success', 'L\'utilisateur a été modifié');

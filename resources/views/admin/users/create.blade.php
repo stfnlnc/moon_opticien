@@ -8,13 +8,21 @@
         <card>
             <form method="POST" action="{{ route('users.store') }}">
                 @csrf
-                <div class="grid grid--2 grid-gap--4">
+                <div class="grid grid--2 grid--1-mobile grid-gap--4">
                     <!-- Name -->
                     <div>
                         <x-input-label for="name" :value="__('Nom')"/>
                         <x-text-input id="name" type="text" name="name" :value="old('name')" required autofocus
                                       autocomplete="name"/>
                         <x-input-error :messages="$errors->get('name')"/>
+                    </div>
+
+                    <!-- FirstName -->
+                    <div>
+                        <x-input-label for="firstname" :value="__('Prénom')"/>
+                        <x-text-input id="firstname" type="text" name="firstname" :value="old('firstname')" required autofocus
+                                      autocomplete="firstname"/>
+                        <x-input-error :messages="$errors->get('firstname')"/>
                     </div>
 
                     <!-- Phone -->
@@ -32,8 +40,6 @@
                                       autocomplete="username"/>
                         <x-input-error :messages="$errors->get('email')"/>
                     </div>
-
-                    <div></div>
 
                     <!-- Password -->
                     <div>
@@ -57,15 +63,6 @@
 
                         <x-input-error :messages="$errors->get('password_confirmation')" class="mt-2"/>
                     </div>
-
-                    <!-- Only admin can select permissions -->
-                    @if(Auth::user()->role->name === 'admin')
-                    <x-select-input id="role" name="role" >
-                        @foreach($roles as $role)
-                            <option value="{{ $role->id }}">{{ $role->title }}</option>
-                        @endforeach
-                    </x-select-input>
-                    @endif
                 </div>
 
                 <div class="flex col gap--4">

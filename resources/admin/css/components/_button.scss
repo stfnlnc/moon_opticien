@@ -76,7 +76,14 @@
             cursor: default;
         }
     }
+    &--unset {
+        padding: 0;
+        background-color: unset;
+        border: none;
+        cursor: pointer;
+    }
 }
+
 
 @media screen and (max-width: 1080px) {
 

@@ -4,7 +4,7 @@
             {{ __('Supprimer mon compte') }}
         </h4>
 
-        <p class="c--secondary-light text--s">
+        <p class="c--stroke-dark text--s">
             {{ __('Attention, une fois supprimé, vous ne pourrez pas récupérer les informations de votre compte') }}
         </p>
     </header>
@@ -23,7 +23,7 @@
                 {{ __('Êtes-vous sûr.e de vouloir supprimer votre compte ?') }}
             </h4>
 
-            <p class="c--secondary-light text--s">
+            <p class="c--stroke-dark text--s">
                 {{ __('Une fois supprimé, vous ne pourrez pas récupérer les informations de ce compte.') }}
             </p>
 

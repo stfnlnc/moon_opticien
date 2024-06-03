@@ -25,9 +25,10 @@ class UserRequest extends FormRequest
     {
         return [
             'name' => ['required', 'string', 'max:255'],
+            'firstname' => ['required', 'string', 'max:255'],
             'phone' => ['nullable', 'string', 'max:20'],
             'role' => ['exists:roles,id', 'required'],
-            'email' => ['required', 'string', 'lowercase', 'email', 'max:255', Rule::unique(User::class)->ignore($this->user()->id)],
+            'email' => ['required', 'string', 'lowercase', 'email', 'max:255'],
         ];
     }
 
@@ -42,6 +43,7 @@ class UserRequest extends FormRequest
             'email.email' => 'L\'email n\'est pas valide',
             'email.required' => 'L\'email est requis',
             'name.required' => 'Le nom est requis',
+            'firstname.required' => 'Le nom est requis',
         ];
     }
 }

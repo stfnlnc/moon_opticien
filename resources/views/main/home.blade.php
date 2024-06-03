@@ -10,7 +10,7 @@
     @vite(['resources/admin/css/app.css', 'resources/admin/js/app.js'])
 </head>
     <body class="">
-
+    <x-logout></x-logout>
 @if(session('success'))
     <p
         x-data="{ show: true }"

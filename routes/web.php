@@ -10,8 +10,7 @@ Route::get('/', function () {
 })->name('home');
 
 
-// Admin routes : add middleware(['role:admin'])
-Route::middleware('auth')->prefix('dashboard')->group(function () {
+Route::middleware(['role:admin'])->prefix('dashboard')->group(function () {
     Route::resource('users', UserController::class)->except([
         'show'
     ]);
@@ -19,7 +18,7 @@ Route::middleware('auth')->prefix('dashboard')->group(function () {
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
     Route::get('/', function () {
-        return view('dashboard');
+        return view('admin.dashboard');
     })->name('dashboard');
 });
 

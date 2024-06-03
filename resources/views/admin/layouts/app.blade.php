@@ -4,14 +4,13 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="csrf-token" content="{{ csrf_token() }}">
-
+        <meta name="robots" content="noindex">
         <title>@yield('title') - {{ config('app.name') }}</title>
-
         @vite(['resources/admin/css/app.css', 'resources/admin/js/app.js'])
     </head>
     <body class="">
         <div class="container__full-width flex col">
-            @include('layouts.navigation')
+            @include('admin.layouts.navigation')
 
             <main>
                 @if (isset($header))

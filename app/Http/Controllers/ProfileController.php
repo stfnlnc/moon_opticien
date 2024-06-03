@@ -17,7 +17,7 @@ class ProfileController extends Controller
     {
         $roles = Role::orderBy('name')->get();
 
-        return view('profile.edit', [
+        return view('admin.profile.edit', [
             'user' => $request->user(),
             'roles' => $roles,
         ]);
