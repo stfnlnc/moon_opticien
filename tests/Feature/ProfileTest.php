@@ -14,11 +14,12 @@ class ProfileTest extends TestCase
     {
         $user = User::factory()->create();
 
-        $response = $this
-            ->actingAs($user)
-            ->get('/profile');
+        $response = $this->post('/login', [
+            'email' => $user->email,
+            'password' => 'password'
+        ])->assertRedirect('/profile');
 
-        $response->assertOk();
+        $response->assertStatus(302);
     }
 
     public function test_profile_information_can_be_updated(): void
@@ -27,8 +28,9 @@ class ProfileTest extends TestCase
 
         $response = $this
             ->actingAs($user)
-            ->patch('/profile', [
+            ->patch('/profile/edit', [
                 'name' => 'Test User',
+                'firstname' => 'Test User',
                 'email' => 'test@example.com',
             ]);
 
@@ -49,8 +51,9 @@ class ProfileTest extends TestCase
 
         $response = $this
             ->actingAs($user)
-            ->patch('/profile', [
+            ->patch('/profile/edit', [
                 'name' => 'Test User',
+                'firstname' => 'Test User',
                 'email' => $user->email,
             ]);
 
@@ -67,7 +70,7 @@ class ProfileTest extends TestCase
 
         $response = $this
             ->actingAs($user)
-            ->delete('/profile', [
+            ->delete('/profile/edit', [
                 'password' => 'password',
             ]);
 
@@ -85,14 +88,14 @@ class ProfileTest extends TestCase
 
         $response = $this
             ->actingAs($user)
-            ->from('/profile')
-            ->delete('/profile', [
+            ->from('/profile/edit')
+            ->delete('/profile/edit', [
                 'password' => 'wrong-password',
             ]);
 
         $response
             ->assertSessionHasErrorsIn('userDeletion', 'password')
-            ->assertRedirect('/profile');
+            ->assertRedirect('/profile/edit');
 
         $this->assertNotNull($user->fresh());
     }

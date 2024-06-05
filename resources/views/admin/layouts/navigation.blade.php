@@ -9,9 +9,19 @@
             <x-nav-link :href="route('dashboard')" :active="str_contains($route, 'dashboard')">
                 {{ __('Tableau de bord') }}
             </x-nav-link>
-            <x-nav-link :href="route('users.index')" :active="str_contains($route, 'users.')">
-                {{ __('Utilisateurs') }}
-            </x-nav-link>
+            <div class="nav--dropdown">
+                <x-nav-link :href="route('users.index')" :active="str_contains($route, 'users.')">
+                    {{ __('Utilisateurs') }}
+                </x-nav-link>
+                <div class="nav--dropdown-item">
+                    <x-nav-link :href="route('users.index')">
+                        {{ __('Gestion des utilisateurs') }}
+                    </x-nav-link>
+                    <x-nav-link :href="route('users.create')">
+                        {{ __('Ajouter un utilisateur') }}
+                    </x-nav-link>
+                </div>
+            </div>
         </div>
     </div>
 @endsection
@@ -40,7 +50,7 @@
                 </div>
             </div>
             <div class="flex row align--center gap--4" hx-boost="true">
-                <x-profile href="{{ route('profile.edit') }}"></x-profile>
+                <x-profile href="{{ route('profile') }}"></x-profile>
                 <x-parameters href=""></x-parameters>
                 <x-logout></x-logout>
             </div>

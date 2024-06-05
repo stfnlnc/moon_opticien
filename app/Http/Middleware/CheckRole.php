@@ -27,7 +27,7 @@ class CheckRole
             }
         } catch (\Exception $e) {
             // En cas d'erreur, retournez une réponse 403 générique
-            return to_route('home')->with('danger', 'Accès non autorisé');
+            return to_route('home')->with('danger', 'Erreur : Accès non autorisé');
         }
 
         return $next($request);

@@ -9,6 +9,13 @@
             <x-input-error :messages="$errors->get('name')" />
         </div>
 
+        <!-- FirstName -->
+        <div>
+            <x-input-label for="firstname" :value="__('Prénom')" />
+            <x-text-input id="firstname" type="text" name="firstname" :value="old('firstname')" required autofocus autocomplete="firstname" />
+            <x-input-error :messages="$errors->get('firstname')" />
+        </div>
+
         <!-- Phone -->
         <div>
             <x-input-label for="phone" :value="__('Téléphone')" />
@@ -22,8 +29,6 @@
             <x-text-input id="email" type="email" name="email" :value="old('email')" required autocomplete="username" />
             <x-input-error :messages="$errors->get('email')" />
         </div>
-
-        <div></div>
 
         <!-- Password -->
         <div>
