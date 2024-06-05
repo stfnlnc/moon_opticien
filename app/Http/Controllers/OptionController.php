@@ -2,8 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\OptionRequest;
 use App\Models\Option;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class OptionController extends Controller
 {
@@ -12,10 +14,10 @@ class OptionController extends Controller
      */
     public function index()
     {
-        $options = Option::all();
+        $option = Option::first();
 
         return view('admin.options.index', [
-            'options' => $options,
+            'option' => $option,
         ]);
     }
 
@@ -24,31 +26,25 @@ class OptionController extends Controller
      */
     public function create()
     {
-        //
+        $oldOption = Option::first();
+        return view('admin.options.create', [
+            'oldOption' => $oldOption,
+        ]);
     }
 
     /**
      * Store a newly created resource in storage.
      */
-    public function store(Request $request)
+    public function store(OptionRequest $request)
     {
-        //
-    }
-
-    /**
-     * Show the form for editing the specified resource.
-     */
-    public function edit(string $id)
-    {
-        //
-    }
-
-    /**
-     * Update the specified resource in storage.
-     */
-    public function update(Request $request, string $id)
-    {
-        //
+        $oldOption = Option::first();
+        if($oldOption) {
+            $oldOption->delete();
+        }
+        $option = Option::create($request->validated());
+        return redirect()->route('options.index', [
+            'oldOption' => $oldOption,
+        ]);
     }
 
     /**

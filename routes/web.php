@@ -16,7 +16,7 @@ Route::middleware(['role:admin'])->prefix('dashboard')->group(function () {
         'show'
     ]);
     Route::resource('options', OptionController::class)->except([
-        'show'
+        'show', 'edit', 'update'
     ]);
     Route::get('/', function () {
         return view('admin.dashboard');
