@@ -1,7 +1,14 @@
 @extends('base')
 
 @section('content')
-    <x-logout></x-logout>
+    <div class="flex row gap--2 p--5">
+        @if(Auth::guest())
+            <a href="{{ route('login') }}" class="btn btn--small">Login</a>
+        @else
+            <x-logout></x-logout>
+        @endif
+    </div>
+
     @if(session('success'))
         <p
             x-data="{ show: true }"
@@ -18,6 +25,7 @@
             x-transition
             x-init="setTimeout(() => show = false, 2000)"
             class="alert alert--danger"
-        >{{ session('danger') }}</p>
+        >{{ session('danger') }}
+        </p>
     @endif
 @endsection

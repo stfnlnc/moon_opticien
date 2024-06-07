@@ -14,7 +14,7 @@
 
     <section class="container flex col gap--12-mobile">
 
-        <card class="flex col gap--4">
+        <card class="flex col gap--4 w--50 w-100-mobile">
             @if($option !== null)
             <div class="flex row align--center justify--space-between">
                 <h4>{{ $option->site_name ?: '' }}</h4>
@@ -26,7 +26,8 @@
                 <span class="underline">Url :</span> <a target="_blank" href="{{ $option->site_url ?: '' }}">{{ $option->site_url ?: '' }}</a>
             </p>
             <p class="flex col gap--2 text--s">
-                <span class="underline">Description :</span> " {{ $option->site_description ?: '' }} "
+                <span class="underline">Description :</span>
+                " {{ $option->site_description ?: '' }} "
             </p>
             <div class="flex col gap--2 text--s">
                 <span class="underline">Mots-clés :</span>

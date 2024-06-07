@@ -1,0 +1,90 @@
+.btn {
+    color: var(--primary-light);
+    background-color: var(--primary-dark);
+    border-radius: var(--border-radius);
+    border: 1px solid var(--primary-dark);
+
+    font-family: var(--primary-font), sans-serif;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    letter-spacing: 0;
+
+    padding: 0.31rem 1.2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 0.1875rem;
+
+    width: fit-content;
+    height: fit-content;
+    transition: background-color var(--duration), color var(--duration), border var(--duration);
+    &:hover {
+        cursor: pointer;
+        background-color: var(--primary-light);
+        color: var(--primary-dark);
+        border: 1px solid var(--primary-dark);
+    }
+    &--light {
+        color: var(--primary-light);
+        background-color: transparent;
+        border: 1px solid var(--primary-light);
+        &:hover {
+            cursor: pointer;
+            background-color: var(--primary-light);
+            color: var(--primary-dark);
+        }
+    }
+    &--dark {
+        color: var(--primary-dark);
+        background-color: var(--primary-light);
+        border: 1px solid var(--primary-dark);
+        &:hover {
+            cursor: pointer;
+            background-color: var(--primary-dark);
+            color: var(--primary-light);
+        }
+    }
+    &--danger {
+        color: var(--primary-dark);
+        background-color: var(--primary-light);
+        border: 1px solid var(--primary-dark);
+        &:hover {
+            cursor: pointer;
+            background-color: var(--danger);
+            color: var(--primary-dark);
+        }
+    }
+    &--small {
+        font-size: 0.875rem;
+        padding: 0.2rem 1.2rem;
+    }
+    &--large {
+        font-size: 1.25rem;
+        padding: 0.3rem 1.6rem;
+    }
+    &--disabled {
+        color: var(--stroke-dark);
+        background-color: var(--stroke-light);
+        border: 1px solid var(--stroke-dark);
+        &:hover {
+            color: var(--stroke-dark);
+            background-color: var(--stroke-light);
+            border: 1px solid var(--stroke-dark);
+            cursor: default;
+        }
+    }
+    &--unset {
+        padding: 0;
+        background-color: unset;
+        border: none;
+        cursor: pointer;
+    }
+}
+
+
+@media screen and (max-width: 1080px) {
+
+}

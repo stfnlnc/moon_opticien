@@ -3,6 +3,7 @@
 @endphp
 
 @section('menu')
+    @if(Auth::user()->role->name === 'admin')
     <div class="flex row col-mobile align--center gap--8">
         <!-- Navigation Links -->
         <div class="flex row align--center col-mobile align-mobile--start gap--4" hx-boost="true" hx-trigger="delay:1000ms">
@@ -37,6 +38,7 @@
             </div>
         </div>
     </div>
+    @endif
 @endsection
 
 <nav x-data="{ open: false }" class="flex row justify--center border--bottom border--stroke-light">
@@ -64,7 +66,9 @@
             </div>
             <div class="flex row align--center gap--4" hx-boost="true">
                 <x-profile href="{{ route('profile') }}"></x-profile>
+                @if(Auth::user()->role->name === 'admin')
                 <x-parameters href="{{ route('options.index') }}"></x-parameters>
+                @endif
                 <x-logout></x-logout>
             </div>
         </div>

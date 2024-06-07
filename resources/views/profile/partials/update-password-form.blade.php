@@ -1,13 +1,4 @@
 <section class="flex col gap--2">
-    @if (session('status') === 'password-updated')
-        <p
-            x-data="{ show: true }"
-            x-show="show"
-            x-transition
-            x-init="setTimeout(() => show = false, 2000)"
-            class="alert alert--success"
-        >{{ __('Enregistré.') }}</p>
-    @endif
     <header>
         <h4>
             {{ __('Changer le mot de passe') }}

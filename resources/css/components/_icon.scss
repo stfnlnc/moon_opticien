@@ -1,0 +1,48 @@
+.icon {
+    width: 1.5rem;
+    height: 1.5rem;
+    &--small {
+        width: 1.2rem;
+        height: 1.2rem;
+    }
+    &--primary-dark {
+        fill: var(--primary-dark);
+    }
+    &--primary-light {
+        fill: var(--primary-light);
+    }
+    &--secondary-dark {
+        fill: var(--secondary-dark);
+    }
+    &--secondary-light {
+        fill: var(--secondary-light);
+    }
+    &--secondary-color-1 {
+        fill: var(--secondary-color-1);
+    }
+    &--secondary-color-2 {
+        fill: var(--secondary-color-2);
+    }
+    &--secondary-color-3 {
+        fill: var(--secondary-color-3);
+    }
+    &--secondary-color-4 {
+        fill: var(--secondary-color-4);
+    }
+    &--stroke-light {
+        fill: var(--stroke-light);
+    }
+    &--stroke-dark {
+        fill: var(--stroke-dark);
+    }
+    &--info {
+        fill: var(--info);
+    }
+    &--success {
+        fill: var(--success);
+    }
+    &--danger {
+        fill: var(--danger);
+    }
+}
+

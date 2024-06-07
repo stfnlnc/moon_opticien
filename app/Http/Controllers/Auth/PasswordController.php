@@ -18,12 +18,16 @@ class PasswordController extends Controller
         $validated = $request->validateWithBag('updatePassword', [
             'current_password' => ['required', 'current_password'],
             'password' => ['required', Password::defaults(), 'confirmed'],
+        ], [
+            'required' => 'Ce champ est requis',
+            'confirmed' => 'Ce champ n\'est pas valide',
+            'current_password' => 'Ce champ n\'est pas valide',
         ]);
 
         $request->user()->update([
             'password' => Hash::make($validated['password']),
         ]);
 
-        return back()->with('status', 'password-updated');
+        return back()->with('success', 'Le mot de passe a été modifié');
     }
 }

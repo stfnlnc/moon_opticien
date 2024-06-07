@@ -1,4 +1,4 @@
-<a href="{{ route('dashboard') }}">
+<a href="{{ route('home') }}">
     @if($option && $option->site_logo)
         <div class="site__logo">
             <img class="border--rounded" src="{{ $option->logoUrl() }}" alt="">

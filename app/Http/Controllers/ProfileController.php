@@ -36,7 +36,7 @@ class ProfileController extends Controller
 
         $request->user()->save();
 
-        return Redirect::route('profile')->with('status', 'profile-updated');
+        return back()->with('success', 'Le profil a été modifié');
     }
 
     public function destroy(Request $request): RedirectResponse

@@ -6,7 +6,7 @@
 
     <section class="container flex col gap--12-mobile">
 
-        <card>
+        <card class="flex col gap--4">
             <h4>Options</h4>
             <form class="flex col gap--4" method="POST" action="{{ route('options.store') }}" enctype="multipart/form-data">
                 @csrf

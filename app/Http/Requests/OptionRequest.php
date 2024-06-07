@@ -31,4 +31,13 @@ class OptionRequest extends FormRequest
             'site_copyright' => ['nullable', 'string', 'max:255']
         ];
     }
+
+    public function messages(): array
+    {
+        return [
+            'required' => 'Ce champ est requis.',
+            'max' => 'Ce champ ne doit pas dépasser 255 caractères.',
+            'image' => 'Le format d\'image n\'est pas compatible'
+        ];
+    }
 }

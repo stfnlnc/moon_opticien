@@ -17,7 +17,7 @@ class UsersTableSeeder extends Seeder
             'name' => 'Lancelot',
             'firstname' => 'Stéfan',
             'email' => 'stefan@studiokhi.com',
-            'password' => Hash::make('Fo$$iL1954!'),
+            'password' => Hash::make('admin2024!!'),
         ]);
     }
 }
