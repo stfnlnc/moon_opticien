@@ -1,6 +1,10 @@
 import Alpine from 'alpinejs';
 import 'htmx.org';
 import * as htmx from "htmx.org";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
 
 document.addEventListener('DOMContentLoaded', function () {
     document.body.addEventListener('htmx:configRequest', (event) => {

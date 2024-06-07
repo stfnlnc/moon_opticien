@@ -83,8 +83,8 @@ input[type=file] {
 }
 
 input[type=file]::file-selector-button {
-  color: var(--primary-light);
-  background-color: var(--primary-dark);
+  color: var(--primary-dark);
+  background-color: var(--primary-light);
   border-radius: 3.125rem;
   border: 1px solid var(--primary-dark);
   font-family: "Overused Grotesk", sans-serif;
@@ -2690,6 +2690,18 @@ main {
 
 section {
   width: 100%;
+}
+
+.site__logo {
+  width: fit-content;
+  height: 30px;
+}
+.site__logo > img {
+  height: 100%;
+}
+.site__favicon {
+  width: 30px;
+  height: 30px;
 }
 
 a {

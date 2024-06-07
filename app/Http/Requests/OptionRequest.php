@@ -26,9 +26,9 @@ class OptionRequest extends FormRequest
             'site_name' => ['required', 'string', 'max:255'],
             'site_description' => ['required', 'string', 'max:255'],
             'site_keywords' => ['string', 'max:255'],
-            'site_logo' => ['string', 'max:255'],
-            'site_favicon' => ['string', 'max:255'],
-            'site_copyright' => ['string', 'max:255']
+            'site_favicon' => ['nullable', 'image', 'max:1024'],
+            'site_logo' => ['nullable', 'image', 'max:1024'],
+            'site_copyright' => ['nullable', 'string', 'max:255']
         ];
     }
 }

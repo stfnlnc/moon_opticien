@@ -5,7 +5,9 @@ namespace App\Http\Controllers;
 use App\Http\Requests\OptionRequest;
 use App\Models\Option;
 use Illuminate\Http\Request;
+use Illuminate\Http\UploadedFile;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Storage;
 
 class OptionController extends Controller
 {
@@ -26,9 +28,9 @@ class OptionController extends Controller
      */
     public function create()
     {
-        $oldOption = Option::first();
+        $option = Option::first();
         return view('admin.options.create', [
-            'oldOption' => $oldOption,
+            'option' => $option,
         ]);
     }
 
@@ -37,14 +39,33 @@ class OptionController extends Controller
      */
     public function store(OptionRequest $request)
     {
-        $oldOption = Option::first();
-        if($oldOption) {
-            $oldOption->delete();
+        // Get Option if exists
+        $option = Option::first() ?? new Option();
+        $data = $request->validated();
+
+        $data['site_favicon'] = $this->storeImage($option, $request, $option->site_favicon, 'site_favicon');
+        $data['site_logo'] = $this->storeImage($option, $request, $option->site_logo, 'site_logo');
+
+        if(empty($option->toArray())) {
+            $option->create($data);
+        } else {
+            $option->update($data);
         }
-        $option = Option::create($request->validated());
-        return redirect()->route('options.index', [
-            'oldOption' => $oldOption,
-        ]);
+        return redirect()->route('options.index');
+    }
+
+    public function storeImage(Option|null $option, OptionRequest $request, $image, $name)
+    {
+        /** @var UploadedFile|null $file */
+        $file = $request->validated($name);
+        if($file !== null && !$file->getError()) {
+            // Delete favicon if exists
+            if($option && $image) {
+                Storage::disk('public')->delete($image);
+            }
+            return $file->store($name, 'public');
+        }
+        return $image;
     }
 
     /**
