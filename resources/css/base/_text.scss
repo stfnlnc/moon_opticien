@@ -1,29 +1,37 @@
 p {
     font-family: var(--primary-font), sans-serif;
-    font-weight: 400;
+    font-weight: 500;
     margin: 0;
 }
 
 .text {
-    line-height: 140%;
-    letter-spacing: 0;
 
-    &--s {
+    &--xs {
         font-size: 0.875rem;
         line-height: 150%;
         letter-spacing: 0;
+        font-weight: 500;
+    }
+
+    &--s {
+        font-size: 1.125rem;
+        line-height: 130%;
+        letter-spacing: 0;
+        font-weight: 500;
     }
 
     &--m {
-        font-size: 1.125rem;
-        line-height: 150%;
+        font-size: 1.25rem;
+        line-height: 110%;
         letter-spacing: 0;
+        font-weight: 500;
     }
 
     &--l {
-        font-size: 1.5rem;
-        line-height: 150%;
+        font-size: 2rem;
+        line-height: 80%;
         letter-spacing: 0;
+        font-weight: 500;
     }
 }
 

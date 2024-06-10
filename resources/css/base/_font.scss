@@ -1,12 +1,15 @@
 @font-face {
-    font-family: "Overused Grotesk";
-    src: url("fonts/overusedgrotesk-vf.ttf") format("truetype");
+    font-family: "Darker Grotesk";
+    src: url("fonts/darker-grotesk.ttf") format("truetype");
     font-weight: 300 900;
 }
 
 @font-face {
     font-family: "Inter";
     src: url("fonts/inter-vf.ttf") format("truetype");
+}
+.darker-grotesk {
+    font-family: "Darker Grotesk", sans-serif;
 }
 
 .inter {
