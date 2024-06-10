@@ -24,7 +24,7 @@
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 <body>
-    <div>
+    <div class="container__full-width h--100 flex col align--center justify--space-between bg--secondary-dark">
         @yield('content')
     </div>
 </body>

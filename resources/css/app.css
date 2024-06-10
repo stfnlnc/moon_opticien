@@ -808,7 +808,7 @@ h6, .h6 {
   :root {
     --h1: 3.4375rem;
     --h2: 2.8125rem;
-    --h3: 2.3125rem;
+    --h3: 2rem;
     --h4: 2rem;
     --h5: 1.5rem;
     --h6: 1rem;
@@ -938,34 +938,15 @@ h6, .h6 {
   color: var(--danger);
 }
 
-.mobile-menu, .mobile-close {
-  cursor: pointer;
-  transition: opacity 0.7s ease;
-}
-.mobile-menu .line-1, .mobile-menu .line-3, .mobile-menu .line-2, .mobile-close .line-1, .mobile-close .line-3, .mobile-close .line-2 {
-  border-top: 2px solid var(--primary-dark);
-  display: block;
-  width: 25px;
-}
-.mobile-menu .line-2, .mobile-close .line-2 {
-  margin: 6px 0;
-}
-.mobile-close .line-1, .mobile-close .line-2, .mobile-close .line-3 {
-  border-color: var(--primary-light);
-}
-.mobile-close .line-2 {
-  margin: 6px 0;
-}
-.mobile-dropdown {
-  position: fixed;
-  top: 0;
-  left: -330px;
-  width: 330px;
-  height: 100vh;
-  background-color: var(--primary-dark);
-  transition: left 0.7s ease;
+.logo__head {
+  width: 22.29013rem;
 }
 
+@media screen and (max-width: 1080px) {
+  .logo__head {
+    width: 15rem;
+  }
+}
 .relative {
   position: relative;
 }

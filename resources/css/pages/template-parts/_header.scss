@@ -1,43 +1,9 @@
-.mobile {
-    &-menu, &-close {
-        cursor: pointer;
-        .line-1 {
-            border-top: 2px solid var(--primary-dark);
-            display: block;
-            width: 25px;
-        }
+.logo__head {
+    width: 22.29013rem;
+}
 
-        .line-2 {
-            @extend .line-1;
-            margin: 6px 0;
-        }
-
-        .line-3 {
-            @extend .line-1;
-        }
-        transition: opacity 0.7s ease;
-    }
-    &-close {
-        .line-1 {
-            border-color: var(--primary-light);
-        }
-
-        .line-2 {
-            @extend .line-1;
-            margin: 6px 0;
-        }
-
-        .line-3 {
-            @extend .line-1;
-        }
-    }
-    &-dropdown {
-        position: fixed;
-        top: 0;
-        left: -330px;
-        width: 330px;
-        height: 100vh;
-        background-color: var(--primary-dark);
-        transition: left 0.7s ease;
+@media screen and (max-width: 1080px) {
+    .logo__head {
+        width: 15rem;
     }
 }
