@@ -22,22 +22,20 @@
                     <img class="site__favicon border--rounded" src="{{ $option->faviconUrl() }}" alt="">
                 @endif
             </div>
-            <p class="flex col gap--2 text--s">
-                <span class="underline">Url :</span> <a target="_blank" href="{{ $option->site_url ?: '' }}">{{ $option->site_url ?: '' }}</a>
+            <p class="tag tag--secondary-color-1 text--s">
+                <a target="_blank" href="{{ $option->site_url ?: '' }}">{{ $option->site_url ?: '' }}</a>
             </p>
-            <p class="flex col gap--2 text--s">
-                <span class="underline">Description :</span>
+            <p class="tag tag--secondary-color-1 text--s">
                 " {{ $option->site_description ?: '' }} "
             </p>
-            <div class="flex col gap--2 text--s">
-                <span class="underline">Mots-clés :</span>
+            <div class="tag tag--secondary-color-1 text--s">
                 @php
                     $keywords = $option->site_keywords ?: '';
                     $keywords = explode(' ', $keywords)
                 @endphp
                 <div class="flex row gap--1">
                     @foreach($keywords as $keyword)
-                        <p class="tag tag--info">{{ $keyword }}</p>
+                        <p class="tag tag--primary-light">{{ $keyword }}</p>
                     @endforeach
                 </div>
             </div>
