@@ -152,7 +152,7 @@ textarea {
     background-color: var(--primary-light);
 }
 
-*:focus, .form-input:focus, .form-textarea:focus, .form-check input:focus + label::before, .form-toggle input:focus + label::before {
+input:focus, .form-input:focus, .form-textarea:focus, .form-check input:focus + label::before, .form-toggle input:focus + label::before {
     box-shadow: 0 0 0.1rem 0.1rem var(--secondary-color-2);
     outline: none;
 }
