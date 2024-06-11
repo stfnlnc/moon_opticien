@@ -1,7 +1,7 @@
 <a href="{{ route('home') }}">
     @if($option && $option->site_logo)
         <div class="site__logo">
-            <img class="border--rounded" src="{{ $option->logoUrl() }}" alt="">
+            <img class="border--rounded" src="{{ $option->faviconUrl() }}" alt="">
         </div>
     @else
         <svg class="icon icon--dark" xmlns="http://www.w3.org/2000/svg" width="30" height="30"
