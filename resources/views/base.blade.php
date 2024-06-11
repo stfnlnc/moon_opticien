@@ -20,7 +20,7 @@
     <meta property="og:image:width" content="" />
     <meta property="og:image:height" content="" />
     <meta property="og:site_name" content="{{ config('app.name') }}" />
-    <title>@yield('title') - {{ config('app.name') }}</title>
+    <title>@yield('title') {{ config('app.name') }}</title>
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 <body>
