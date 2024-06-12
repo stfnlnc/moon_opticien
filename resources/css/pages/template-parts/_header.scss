@@ -2,8 +2,30 @@
     width: 22.29013rem;
 }
 
+.nav {
+    &__logo {
+        width: 8.75rem;
+        height: 2.52706rem;
+    }
+}
+
+#nav {
+    transition: background-color 0.8s ease;
+}
+
+nav {
+    transition: top 0.8s ease;
+}
+
 @media screen and (max-width: 1080px) {
     .logo__head {
         width: 15rem;
+    }
+
+    .nav {
+        &__logo {
+            width: 6.49225rem;
+            height: 1.875rem;
+        }
     }
 }

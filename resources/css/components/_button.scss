@@ -7,7 +7,7 @@
     font-family: var(--primary-font), sans-serif;
     font-size: 1rem;
     font-style: normal;
-    font-weight: 700;
+    font-weight: 500;
     line-height: 150%;
     letter-spacing: 0;
     text-transform: uppercase;
@@ -81,6 +81,7 @@
         }
     }
     &--navbar-light {
+        font-size: 1.125rem;
         color: var(--secondary-color-3);
         background-color: transparent;
         border: none;
@@ -112,6 +113,7 @@
         }
     }
     &--navbar-dark {
+        font-size: 1.125rem;
         color: var(--secondary-light);
         background-color: transparent;
         border: none;

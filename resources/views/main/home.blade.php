@@ -1,48 +1,313 @@
 @extends('base')
 
 @section('content')
-
-    <div class="container flex col align--center pt--16">
-        <img class="logo__head" src="{{ asset('/images/logo/moon-logo-primary-gold.svg') }}" alt="">
+<section class="relative w--100 h--100">
+    <img class="img w--100 h--100 absolute t--0 l--0" src="{{ asset('/images/layers/header.png') }}" alt="">
+    <div class="absolute pos-hor-center b--0 container flex col align--start justify--end gap--10">
+        <h1 class="c--primary-light">
+            MOON, <br>
+            votre opticien lunetier indépendant <br>
+            aux portes de Pau
+        </h1>
+        <a href="" class="btn btn--main-dark">Je prends rendez-vous</a>
     </div>
-    <div class="container__full-width">
-        <h3 class="c--secondary-color-2 text-center pb--16">
-            Notre site arrive très prochainement. <br>
-            En attendant, retrouvez-nous en magasin.
-        </h3>
-        <div class="bg--secondary-color-2 flex row justify--center pt--6 pb--6">
-            <div class="container flex row col-mobile gap--4-mobile align--start justify--space-between">
-                <div class="flex col gap--2 align--start justify--start">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="16" viewBox="0 0 14 16" fill="none">
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M6.97638 9.00011C7.50699 9.00011 8.01587 8.7894 8.39115 8.4143C8.76644 8.0392 8.97741 7.53042 8.97767 6.99982C8.97767 6.46905 8.76682 5.96001 8.39151 5.5847C8.01619 5.20938 7.50716 4.99854 6.97638 4.99854C6.44561 4.99854 5.93657 5.20938 5.56126 5.5847C5.18595 5.96001 4.9751 6.46905 4.9751 6.99982C4.97536 7.53042 5.18633 8.0392 5.56161 8.4143C5.9369 8.7894 6.44578 9.00011 6.97638 9.00011Z" stroke="#1E3A3D" stroke-linecap="square"/>
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M12.9804 6.99986C12.9804 12.0001 7.97716 15 6.97652 15C5.97587 15 0.972656 12.0001 0.972656 6.99986C0.973452 5.40815 1.60638 3.88192 2.73227 2.75678C3.85815 1.63165 5.38481 0.999735 6.97652 1C10.2916 1 12.9804 3.68673 12.9804 6.99986Z" stroke="#1E3A3D" stroke-linecap="square"/>
-                    </svg>
-                    <a target="_blank" href="https://maps.app.goo.gl/ZyfbcUGjv2jdakru7" class="text--m">
-                        3 Pl. Gambetta <br>
-                        64320 Bizanos
-                    </a>
+</section>
+<section class="container__full-width c--primary-light bg--secondary-dark flex col align--center">
+        <div class="container grid grid--4 grid--2-mobile grid-gap--5 text-center pt--10 pb--10">
+            <div class="flex col align--center gap--2">
+                <x-icon.dot-medium class="icon__dot-medium icon--primary-light"></x-icon.dot-medium>
+                <p class="text--m">Des prix justes pour tous.tes</p>
+            </div>
+            <div class="flex col align--center gap--2">
+                <x-icon.dot-medium class="icon__dot-medium icon--primary-light"></x-icon.dot-medium>
+                <p class="text--m">Service France garanti</p>
+            </div>
+            <div class="flex col align--center gap--2">
+                <x-icon.dot-medium class="icon__dot-medium icon--primary-light"></x-icon.dot-medium>
+                <p class="text--m">Opticiens diplômés & passionnés</p>
+            </div>
+            <div class="flex col align--center gap--2">
+                <x-icon.dot-medium class="icon__dot-medium icon--primary-light"></x-icon.dot-medium>
+                <p class="text--m">Au plus proche de vous</p>
+            </div>
+        </div>
+</section>
+<section class="container__full-width c--secondary-dark bg--secondary-color-4 flex col align--center">
+    <div class="container">
+        <div class="border--top border--secondary-color-3 c--secondary-color-3 pt--4 pb--4 flex row align--center justify--start gap--2 hide-mobile">
+            <x-icon.dot-small class="icon__dot-small icon--secondary-color-3"></x-icon.dot-small>
+            <p class="text--s">Nos services</p>
+        </div>
+        <div class="grid grid--2 grid-gap--14 grid--1-mobile grid-gap--8-mobile pt--10 pb--20">
+            <h1>Des opticiens passionnés à votre service</h1>
+            <p class="text--m">
+                Highlight the Unique Selling Proposition (USP) with a short summary of the main feature and how it benefits customers. The idea here is to keep it short and direct. If the visitor wishes to learn more they will hit the button.
+            </p>
+        </div>
+        <div class="flex row align--start justify--end gap--2">
+            <div class="flex col align--start justify--start gap--3">
+                <img class="img img__service" src="{{ asset('/images/layers/service-shop.png') }}" alt="">
+                <p class="text--l">Services en Magasin</p>
+                <p class="text--m">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <a href="" class="btn btn--secondary-light">Découvrir</a>
+            </div>
+            <div class="flex col align--start justify--start gap--3">
+                <img class="img img__service" src="{{ asset('/images/layers/service-shop.png') }}" alt="">
+                <p class="text--l">Services à Domicile</p>
+                <p class="text--m">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <a href="" class="btn btn--secondary-light">Découvrir</a>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="container__full-width c--secondary-dark bg--primary-light flex col align--center">
+    <div class="container">
+        <div class="hide-mobile border--top border--secondary-color-3 c--secondary-color-3 pt--4 pb--4 flex row align--center justify--start gap--2">
+            <x-icon.dot-small class="icon__dot-small icon--secondary-color-3"></x-icon.dot-small>
+            <p class="text--s">À propos</p>
+        </div>
+        <div class="grid grid--2 grid-gap--14 grid--1-mobile grid-gap--8-mobile pt--10 pb--20">
+            <h1>Un opticien indépendant, c’est un opticien au plus proche de vous.</h1>
+            <div class="flex col align--start gap--10">
+                <p class="text--m">
+                    Highlight the Unique Selling Proposition (USP) with a short summary of the main feature and how it benefits customers. The idea here is to keep it short and direct. If the visitor wishes to learn more they will hit the button.
+                </p>
+                <a href="" class="btn btn--main-light">Qui sommes-nous ?</a>
+            </div>
+        </div>
+        <div class="flex row align--start gap--4">
+                <img class="img w-100-mobile" src="{{ asset('/images/layers/about-1.png') }}" alt="">
+                <img class="img hide-mobile" src="{{ asset('/images/layers/about-2.png') }}" alt="">
+                <img class="img hide-mobile" src="{{ asset('/images/layers/about-3.png') }}" alt="">
+        </div>
+    </div>
+</section>
+<section class="container__full-width c--secondary-dark bg--secondary-color-4 flex col align--center">
+    <div class="container">
+        <div class="hide-mobile border--top border--secondary-color-3 c--secondary-color-3 pt--4 pb--4 flex row align--center justify--start gap--2">
+            <x-icon.dot-small class="icon__dot-small icon--secondary-color-3"></x-icon.dot-small>
+            <p class="text--s">En magasin</p>
+        </div>
+        <div class="grid grid--2 grid-gap--14 grid--1-mobile grid-gap--8-mobile pt--10 pb--20">
+            <h1>Des conseils personnalisés dans notre magasin, à Bizanos.</h1>
+            <div class="flex col align--start gap--10">
+                <p class="text--m">
+                    Highlight the Unique Selling Proposition (USP) with a short summary of the main feature and how it benefits customers. The idea here is to keep it short and direct. If the visitor wishes to learn more they will hit the button.
+                </p>
+                <a href="" class="btn btn--main-light">je découvre les services en magasin</a>
+            </div>
+        </div>
+        <div class="flex row align--end justify--start gap--16">
+            <img class="img img__shop hide-mobile" src="{{ asset('/images/layers/shop.png') }}" alt="">
+            <div class="grid grid--2 grid-gap--10 grid-gap--6-mobile">
+                <div class="flex col gap--3">
+                    <img class="icon--large" src="{{ asset('/images/icon/large/icon-discuss.svg') }}" alt="">
+                    <div class="flex col gap--1">
+                        <p class="text--l">Être conseillé</p>
+                        <p class="text--s">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        </p>
+                    </div>
                 </div>
-                <div class="flex col gap--2 align--start justify--start">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="11" viewBox="0 0 15 11" fill="none">
-                        <path d="M12.793 0C13.3731 0 13.9295 0.22287 14.3398 0.619582C14.75 1.01629 14.9805 1.55435 14.9805 2.11538V8.88462C14.9805 9.44565 14.75 9.98371 14.3398 10.3804C13.9295 10.7771 13.3731 11 12.793 11H3.16797C2.58781 11 2.03141 10.7771 1.62117 10.3804C1.21094 9.98371 0.980469 9.44565 0.980469 8.88462V2.11538C0.980469 1.55435 1.21094 1.01629 1.62117 0.619582C2.03141 0.22287 2.58781 0 3.16797 0H12.793ZM14.1055 3.35162L8.20272 6.71085C8.14691 6.74253 8.08454 6.76185 8.02008 6.76741C7.95562 6.77297 7.89069 6.76463 7.82997 6.743L7.75822 6.71085L1.85547 3.35331V8.88462C1.85547 9.22124 1.99375 9.54407 2.23989 9.7821C2.48603 10.0201 2.81987 10.1538 3.16797 10.1538H12.793C13.1411 10.1538 13.4749 10.0201 13.721 9.7821C13.9672 9.54407 14.1055 9.22124 14.1055 8.88462V3.35162ZM12.793 0.846154H3.16797C2.81987 0.846154 2.48603 0.979876 2.23989 1.2179C1.99375 1.45593 1.85547 1.77876 1.85547 2.11538V2.37092L7.98047 5.85538L14.1055 2.36923V2.11538C14.1055 1.77876 13.9672 1.45593 13.721 1.2179C13.4749 0.979876 13.1411 0.846154 12.793 0.846154Z" fill="#1E3A3D"/>
-                    </svg>
-                    <p class="text--m">
-                        <a href="tel:0559531722">05 59 53 17 22</a> <br>
-                        <a href="mailto:contact@moonopticienlunetier.com">contact@moonopticienlunetier.com</a>
-                    </p>
+                <div class="flex col gap--3">
+                    <img class="icon--large" src="{{ asset('/images/icon/large/icon-rule.svg') }}" alt="">
+                    <div class="flex col gap--1">
+                        <p class="text--l">Ajuster</p>
+                        <p class="text--s">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        </p>
+                    </div>
                 </div>
-                <div class="flex col gap--2 align--start justify--start">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15" fill="none">
-                        <path d="M8.94444 9.66667L7.5 7.5V3.88889M1 7.5C1 8.35359 1.16813 9.19883 1.49478 9.98744C1.82144 10.7761 2.30022 11.4926 2.90381 12.0962C3.50739 12.6998 4.22394 13.1786 5.01256 13.5052C5.80117 13.8319 6.64641 14 7.5 14C8.35359 14 9.19883 13.8319 9.98744 13.5052C10.7761 13.1786 11.4926 12.6998 12.0962 12.0962C12.6998 11.4926 13.1786 10.7761 13.5052 9.98744C13.8319 9.19883 14 8.35359 14 7.5C14 6.64641 13.8319 5.80117 13.5052 5.01256C13.1786 4.22394 12.6998 3.50739 12.0962 2.90381C11.4926 2.30023 10.7761 1.82144 9.98744 1.49478C9.19883 1.16813 8.35359 1 7.5 1C6.64641 1 5.80117 1.16813 5.01256 1.49478C4.22394 1.82144 3.50739 2.30023 2.90381 2.90381C2.30022 3.50739 1.82144 4.22394 1.49478 5.01256C1.16813 5.80117 1 6.64641 1 7.5Z" stroke="#1E3A3D" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                    <p class="text--m">
-                        lundi : 14:00 - 19:00 <br>
-                        du mardi au vendredi : 09:30 - 12:30, 14:00 - 19:00 <br>
-                        samedi : 09:30 - 18:00
-                    </p>
+                <div class="flex col gap--3">
+                    <img class="icon--large" src="{{ asset('/images/icon/large/icon-recycle.svg') }}" alt="">
+                    <div class="flex col gap--1">
+                        <p class="text--l">Recycler</p>
+                        <p class="text--s">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        </p>
+                    </div>
+                </div>
+                <div class="flex col gap--3">
+                    <img class="icon--large" src="{{ asset('/images/icon/large/icon-favorite.svg') }}" alt="">
+                    <div class="flex col gap--1">
+                        <p class="text--l">Personnaliser</p>
+                        <p class="text--s">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-
+</section>
+<section class="container__full-width c--secondary-dark bg--secondary-color-2 flex col align--center">
+    <div class="container grid grid--2 grid-gap--10 text-center pt--10 pb--10 w--70 w-100-mobile">
+        <div class="flex col align--center gap--2">
+            <x-icon.dot-medium class="icon__dot-medium icon--secondary-dark"></x-icon.dot-medium>
+            <p class="text--l">Tiers payant</p>
+            <p class="text--s">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+        </div>
+        <div class="flex col align--center gap--2">
+            <x-icon.dot-medium class="icon__dot-medium icon--secondary-dark"></x-icon.dot-medium>
+            <p class="text--l">100% santé</p>
+            <p class="text--s">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+        </div>
+    </div>
+</section>
+<section class="container__full-width c--primary-light bg--secondary-dark flex col align--center">
+    <div class="container">
+        <div class="hide-mobile border--top border--secondary-color-2 c--secondary-color-2 pt--4 pb--4 flex row align--center justify--start gap--2">
+            <x-icon.dot-small class="icon__dot-small icon--secondary-color-2"></x-icon.dot-small>
+            <p class="text--s">À domicile</p>
+        </div>
+        <div class="grid grid--2 grid-gap--14 grid--1-mobile grid-gap--8-mobile pt--10 pb--20">
+            <h1>Un opticien à domicile, pour vous ou vos proches.</h1>
+            <div class="flex col align--start gap--10">
+                <p class="text--m">
+                    Highlight the Unique Selling Proposition (USP) with a short summary of the main feature and how it benefits customers. The idea here is to keep it short and direct. If the visitor wishes to learn more they will hit the button.
+                </p>
+                <a href="" class="btn btn--main-dark">je découvre les services à domicile</a>
+            </div>
+        </div>
+        <div class="grid grid--3 grid-gap--10 grid--1-mobile c--secondary-dark mt--10">
+            <card class="relative">
+                <img class="absolute t--0 l--0 img__icon" src="{{ asset('/images/icon/large/icon-phone.svg') }}" alt="">
+                <div class="flex row gap--4">
+                    <p class="h2 c--secondary-color-2">1.</p>
+                    <p class="text--l">Nous prenons rendez-vous ensemble</p>
+                </div>
+                <p class="text--m">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla.
+                </p>
+            </card>
+            <card class="relative">
+                <img class="absolute t--0 l--0 img__icon" src="{{ asset('/images/icon/large/icon-car.svg') }}" alt="">
+                <div class="flex row gap--4">
+                    <p class="h2 c--secondary-color-2">2.</p>
+                    <p class="text--l">Nous nous déplaçons chez vous</p>
+                </div>
+                <p class="text--m">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla.
+                </p>
+            </card>
+            <card class="relative">
+                <img class="absolute t--0 l--0 img__icon" src="{{ asset('/images/icon/large/icon-exam.svg') }}" alt="">
+                <div class="flex row gap--4">
+                    <p class="h2 c--secondary-color-2">3.</p>
+                    <p class="text--l">Nous faisons le point sur votre vue</p>
+                </div>
+                <p class="text--m">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla.
+                </p>
+            </card>
+            <card class="relative">
+                <img class="absolute t--0 l--0 img__icon" src="{{ asset('/images/icon/large/icon-glasses.svg') }}" alt="">
+                <div class="flex row gap--4">
+                    <p class="h2 c--secondary-color-2">4.</p>
+                    <p class="text--l">Vous choisissez vos lunettes</p>
+                </div>
+                <p class="text--m">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla.
+                </p>
+            </card>
+            <card class="relative">
+                <img class="absolute t--0 l--0 img__icon" src="{{ asset('/images/icon/large/icon-delivery.svg') }}" alt="">
+                <div class="flex row gap--4">
+                    <p class="h2 c--secondary-color-2">5.</p>
+                    <p class="text--l">Nous faisons fabriquer vos lunettes</p>
+                </div>
+                <p class="text--m">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla.
+                </p>
+            </card>
+            <card class="relative">
+                <img class="absolute t--0 l--0 img__icon" src="{{ asset('/images/icon/large/icon-repair.svg') }}" alt="">
+                <div class="flex row gap--4">
+                    <p class="h2 c--secondary-color-2">6.</p>
+                    <p class="text--l">Vous êtes livrés ! Et on reste en contact</p>
+                </div>
+                <p class="text--m">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla.
+                </p>
+            </card>
+        </div>
+    </div>
+</section>
+<section class="container__full-width c--secondary-dark bg--secondary-color-4 flex col align--center">
+    <div class="container">
+        <div class="hide-mobile border--top border--secondary-color-3 c--secondary-color-3 pt--4 pb--4 flex row align--center justify--start gap--2">
+            <x-icon.dot-small class="icon__dot-small icon--secondary-color-3"></x-icon.dot-small>
+            <p class="text--s">Nos lunettes</p>
+        </div>
+        <div class="grid grid--2 grid-gap--14 grid--1-mobile grid-gap--8-mobile pt--10 pb--20">
+            <h1>Découvrez notre sélection de plus grandes marques</h1>
+            <div class="flex col align--start gap--10">
+                <p class="text--m">
+                    Highlight the Unique Selling Proposition (USP) with a short summary of the main feature and how it benefits customers. The idea here is to keep it short and direct. If the visitor wishes to learn more they will hit the button.
+                </p>
+                <a href="" class="btn btn--main-light">Toutes les lunettes</a>
+            </div>
+        </div>
+        <div class="flex row justify--end w--100">
+            <div class="grid grid--4 grid-gap--2 grid--2-mobile w--100">
+                <div class="flex col align--start justify--start gap--3 block__glasses">
+                    <img class="img img__glasses" src="{{ asset('/images/layers/glasses-1.png') }}" alt="">
+                    <p class="text--l">Vue</p>
+                    <p class="text--m">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <a href="" class="btn btn--secondary-light">Découvrir</a>
+                </div>
+                <div class="flex col align--start justify--start gap--3 block__glasses">
+                    <img class="img img__glasses" src="{{ asset('/images/layers/glasses-2.png') }}" alt="">
+                    <p class="text--l">Solaires</p>
+                    <p class="text--m">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <a href="" class="btn btn--secondary-light">Découvrir</a>
+                </div>
+                <div class="flex col align--start justify--start gap--3 block__glasses">
+                    <img class="img img__glasses" src="{{ asset('/images/layers/glasses-3.png') }}" alt="">
+                    <p class="text--l">Sport</p>
+                    <p class="text--m">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <a href="" class="btn btn--secondary-light">Découvrir</a>
+                </div>
+                <div class="flex col align--start justify--start gap--3 block__glasses">
+                    <img class="img img__glasses" src="{{ asset('/images/layers/glasses-4.png') }}" alt="">
+                    <p class="text--l">Enfants</p>
+                    <p class="text--m">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <a href="" class="btn btn--secondary-light">Découvrir</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section style="background-image: linear-gradient(rgba(94,117,103,0.9), rgba(94,117,103,0.9)), url('{{ asset('/images/layers/lenses.png') }}'); background-size: cover; background-position: center;" class="relative container__full-width c--primary-light bg--secondary-color-3 flex col align--center">
+    <div class="container">
+        <div class="hide-mobile border--top border--secondary-color-2 c--secondary-color-2 pt--4 pb--4 flex row align--center justify--start gap--2">
+            <x-icon.dot-small class="icon__dot-small icon--secondary-color-2"></x-icon.dot-small>
+            <p class="text--s">Nos lentilles</p>
+        </div>
+        <div class="grid grid--2 grid-gap--14 grid--1-mobile grid-gap--8-mobile pt--10 pb--20">
+            <h1>Découvrez notre sélection de plus grandes marques</h1>
+            <div class="flex col align--start gap--10">
+                <p class="text--m">
+                    Highlight the Unique Selling Proposition (USP) with a short summary of the main feature and how it benefits customers. The idea here is to keep it short and direct. If the visitor wishes to learn more they will hit the button.
+                </p>
+                <div class="flex col gap--2">
+                    <a href="" class="btn btn--main-dark">Je commande mes lentilles</a>
+                    <a href="" class="btn btn--secondary-dark">En savoir plus</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="container__full-width c--secondary-dark bg--primary-light flex col align--center">
+    <div class="container">
+        <div class="hide-mobile flex row align--center justify--space-between border--top border--secondary-color-3 ">
+            <div class="c--secondary-color-3 pt--4 pb--4 flex row align--center justify--start gap--2">
+                <x-icon.dot-small class="icon__dot-small icon--secondary-color-3"></x-icon.dot-small>
+                <p class="text--s">Ce que disent nos clients</p>
+            </div>
+            <a href="" class="btn btn--main-light">Voir tous les avis</a>
+        </div>
+        <a href="" class="btn btn--main-light display-mobile">Voir tous les avis</a>
+    </div>
+</section>
 @endsection

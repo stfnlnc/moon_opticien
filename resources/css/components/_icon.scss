@@ -1,9 +1,27 @@
 .icon {
-    width: 1.5rem;
-    height: 1.5rem;
-    &--small {
-        width: 1.2rem;
+    &--ver {
+        width: auto;
         height: 1.2rem;
+    }
+    &--hor {
+        width: 1.2rem;
+        height: auto;
+    }
+    &--small {
+        width: 0.875rem;
+        height: 0.875rem;
+    }
+    &--large {
+        width: 3.4375rem;
+        height: 4.5rem;
+    }
+    &__dot-medium {
+        width: 0.75rem;
+        height: 0.75rem;
+    }
+    &__dot-small {
+        width: 0.5rem;
+        height: 0.5rem;
     }
     &--primary-dark {
         fill: var(--primary-dark);
@@ -43,6 +61,45 @@
     }
     &--danger {
         fill: var(--danger);
+    }
+    &-stroke--primary-dark {
+        stroke: var(--primary-dark);
+    }
+    &-stroke--primary-light {
+        stroke: var(--primary-light);
+    }
+    &-stroke--secondary-dark {
+        stroke: var(--secondary-dark);
+    }
+    &-stroke--secondary-light {
+        stroke: var(--secondary-light);
+    }
+    &-stroke--secondary-color-1 {
+        stroke: var(--secondary-color-1);
+    }
+    &-stroke--secondary-color-2 {
+        stroke: var(--secondary-color-2);
+    }
+    &-stroke--secondary-color-3 {
+        stroke: var(--secondary-color-3);
+    }
+    &-stroke--secondary-color-4 {
+        stroke: var(--secondary-color-4);
+    }
+    &-stroke--stroke-light {
+        stroke: var(--stroke-light);
+    }
+    &-stroke--stroke-dark {
+        stroke: var(--stroke-dark);
+    }
+    &-stroke--info {
+        stroke: var(--info);
+    }
+    &-stroke--success {
+        stroke: var(--success);
+    }
+    &-stroke--danger {
+        stroke: var(--danger);
     }
 }
 

@@ -34,6 +34,16 @@ $scale: 5;
     top: 100%
 }
 
+.pos-ver-center {
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+.pos-hor-center {
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
 .pos-center {
     top: 50%;
     left: 50%;

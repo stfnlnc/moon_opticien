@@ -13,26 +13,25 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 htmx.onLoad(function (target) {
-    const menuOpen = document.querySelector('.mobile-menu')
-    const menuClose = document.querySelector('.mobile-close')
-    const menu = document.querySelector('.mobile-dropdown')
-    const menuItem = document.querySelectorAll('.mobile-dropdown > div > div > a')
-    if(menuOpen && menuClose && menu && menuItem){
+    const navMenu = document.getElementById('nav');
+    const navPop = document.getElementById('nav-pop');
+    const nav = document.querySelector('nav');
 
-        menuOpen.addEventListener('click', () => {
-            menu.style.left = '0'
-        })
-
-        menuClose.addEventListener('click', () => {
-            menu.style.left = '-330px'
-        })
-
-        menuItem.forEach((item) => {
-            item.addEventListener('click', () => {
-                menu.style.left = '-330px'
-            })
-        })
+    function hideNavAtScroll() {
+        if(window.scrollY > 100) {
+            nav.style.top = '-' + navPop.offsetHeight + 'px'
+            navMenu.style.backgroundColor = 'var(--secondary-dark)'
+        } else {
+            navMenu.style.backgroundColor = 'unset'
+            nav.style.top = '0'
+        }
     }
+
+    hideNavAtScroll()
+
+    document.addEventListener('scroll', () => {
+        hideNavAtScroll()
+    })
 });
 
 window.Alpine = Alpine;

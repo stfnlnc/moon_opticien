@@ -20,12 +20,15 @@
     <meta property="og:image:width" content="" />
     <meta property="og:image:height" content="" />
     <meta property="og:site_name" content="{{ config('app.name') }}" />
-    <title>@yield('title') {{ config('app.name') }}</title>
+    <title>@hasSection('title')@yield('title') - @endif {{ config('app.name') }}</title>
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
+
 <body>
-    <div class="container__full-width h--100 flex col align--center justify--space-between bg--secondary-dark">
+    @include('main.layouts.navigation')
+    <main>
         @yield('content')
-    </div>
+    </main>
+    @include('main.layouts.footer')
 </body>
 </html>

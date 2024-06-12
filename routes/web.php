@@ -1,14 +1,16 @@
 <?php
 
+use App\Http\Controllers\MainController;
 use App\Http\Controllers\OptionController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 
-//
-Route::get('/', function () {
-    return view('main.home');
-})->name('home');
+
+Route::prefix('/')->group(function () {
+    Route::get('/', [MainController::class, 'home'])->name('home');
+});
+
 
 
 Route::middleware(['role:admin'])->prefix('dashboard')->group(function () {
