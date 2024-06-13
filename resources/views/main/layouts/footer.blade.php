@@ -1,4 +1,4 @@
-<footer class="container__full-width c--primary-light bg--secondary-dark">
+<footer class="container__full-width c--primary-light bg--secondary-dark flex col align--center">
     <div class="container flex col align--start justify--start gap--6 gap--8-mobile">
         <a href="" class="btn btn--main-dark">Je prends rendez-vous</a>
         <div class="flex row col-mobile gap--12">

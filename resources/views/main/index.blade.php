@@ -39,19 +39,19 @@
             <p class="text--s">Nos services</p>
         </div>
         <div class="grid grid--2 grid-gap--14 grid--1-mobile grid-gap--8-mobile pt--10 pb--20">
-            <h1>Des opticiens passionnés à votre service</h1>
+            <h2>Des opticiens passionnés à votre service</h2>
             <p class="text--m">
                 Highlight the Unique Selling Proposition (USP) with a short summary of the main feature and how it benefits customers. The idea here is to keep it short and direct. If the visitor wishes to learn more they will hit the button.
             </p>
         </div>
         <div class="flex row align--start justify--end gap--2">
-            <div class="flex col align--start justify--start gap--3">
+            <div class="flex col align--start justify--start gap--3 box">
                 <img class="img img__service" src="{{ asset('/images/layers/service-shop.png') }}" alt="">
                 <p class="text--l">Services en Magasin</p>
                 <p class="text--m">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                 <a href="" class="btn btn--secondary-light">Découvrir</a>
             </div>
-            <div class="flex col align--start justify--start gap--3">
+            <div class="flex col align--start justify--start gap--3 box2">
                 <img class="img img__service" src="{{ asset('/images/layers/service-shop.png') }}" alt="">
                 <p class="text--l">Services à Domicile</p>
                 <p class="text--m">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
@@ -67,7 +67,7 @@
             <p class="text--s">À propos</p>
         </div>
         <div class="grid grid--2 grid-gap--14 grid--1-mobile grid-gap--8-mobile pt--10 pb--20">
-            <h1>Un opticien indépendant, c’est un opticien au plus proche de vous.</h1>
+            <h2>Un opticien indépendant, c’est un opticien au plus proche de vous.</h2>
             <div class="flex col align--start gap--10">
                 <p class="text--m">
                     Highlight the Unique Selling Proposition (USP) with a short summary of the main feature and how it benefits customers. The idea here is to keep it short and direct. If the visitor wishes to learn more they will hit the button.
@@ -89,7 +89,7 @@
             <p class="text--s">En magasin</p>
         </div>
         <div class="grid grid--2 grid-gap--14 grid--1-mobile grid-gap--8-mobile pt--10 pb--20">
-            <h1>Des conseils personnalisés dans notre magasin, à Bizanos.</h1>
+            <h2>Des conseils personnalisés dans notre magasin, à Bizanos.</h2>
             <div class="flex col align--start gap--10">
                 <p class="text--m">
                     Highlight the Unique Selling Proposition (USP) with a short summary of the main feature and how it benefits customers. The idea here is to keep it short and direct. If the visitor wishes to learn more they will hit the button.
@@ -161,7 +161,7 @@
             <p class="text--s">À domicile</p>
         </div>
         <div class="grid grid--2 grid-gap--14 grid--1-mobile grid-gap--8-mobile pt--10 pb--20">
-            <h1>Un opticien à domicile, pour vous ou vos proches.</h1>
+            <h2>Un opticien à domicile, pour vous ou vos proches.</h2>
             <div class="flex col align--start gap--10">
                 <p class="text--m">
                     Highlight the Unique Selling Proposition (USP) with a short summary of the main feature and how it benefits customers. The idea here is to keep it short and direct. If the visitor wishes to learn more they will hit the button.
@@ -240,7 +240,7 @@
             <p class="text--s">Nos lunettes</p>
         </div>
         <div class="grid grid--2 grid-gap--14 grid--1-mobile grid-gap--8-mobile pt--10 pb--20">
-            <h1>Découvrez notre sélection de plus grandes marques</h1>
+            <h2>Découvrez notre sélection de plus grandes marques</h2>
             <div class="flex col align--start gap--10">
                 <p class="text--m">
                     Highlight the Unique Selling Proposition (USP) with a short summary of the main feature and how it benefits customers. The idea here is to keep it short and direct. If the visitor wishes to learn more they will hit the button.
@@ -249,7 +249,7 @@
             </div>
         </div>
         <div class="flex row justify--end w--100">
-            <div class="grid grid--4 grid-gap--2 grid--2-mobile w--100">
+            <div class="grid grid--4 grid-gap--2 grid--2-mobile">
                 <div class="flex col align--start justify--start gap--3 block__glasses">
                     <img class="img img__glasses" src="{{ asset('/images/layers/glasses-1.png') }}" alt="">
                     <p class="text--l">Vue</p>
@@ -285,7 +285,7 @@
             <p class="text--s">Nos lentilles</p>
         </div>
         <div class="grid grid--2 grid-gap--14 grid--1-mobile grid-gap--8-mobile pt--10 pb--20">
-            <h1>Découvrez notre sélection de plus grandes marques</h1>
+            <h2>Découvrez notre sélection de plus grandes marques</h2>
             <div class="flex col align--start gap--10">
                 <p class="text--m">
                     Highlight the Unique Selling Proposition (USP) with a short summary of the main feature and how it benefits customers. The idea here is to keep it short and direct. If the visitor wishes to learn more they will hit the button.

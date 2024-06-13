@@ -13,27 +13,55 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 htmx.onLoad(function (target) {
+
     const navMenu = document.getElementById('nav');
     const navPop = document.getElementById('nav-pop');
     const nav = document.querySelector('nav');
+    const mode = navMenu.dataset.mode
 
-    function hideNavAtScroll() {
+    function hideNavAtScroll(mode) {
         if(window.scrollY > 100) {
             nav.style.top = '-' + navPop.offsetHeight + 'px'
-            navMenu.style.backgroundColor = 'var(--secondary-dark)'
+            navMenu.style.backgroundColor = 'var(--secondary-' + mode + ')'
         } else {
             navMenu.style.backgroundColor = 'unset'
             nav.style.top = '0'
         }
     }
 
-    hideNavAtScroll()
+    hideNavAtScroll(mode)
 
     document.addEventListener('scroll', () => {
-        hideNavAtScroll()
+        hideNavAtScroll(mode)
     })
 });
 
 window.Alpine = Alpine;
 
 Alpine.start();
+
+/*gsap.to('.box', {
+    yPercent: -5,
+    duration: 2,
+    scrollTrigger: {
+        trigger: '.box',
+        toggleActions: 'restart reverse play reverse',
+        start: 'top 40%',
+        end: 'bottom 30%',
+        markers: false,
+        scrub: 1
+    }
+});
+
+gsap.to('.box2', {
+    yPercent: -20,
+    duration: 2,
+    scrollTrigger: {
+        trigger: '.box2',
+        toggleActions: 'restart reverse play reverse',
+        start: 'top 40%',
+        end: 'bottom 30%',
+        markers: false,
+        scrub: 1
+    }
+});*/

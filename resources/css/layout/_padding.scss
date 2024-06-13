@@ -2,7 +2,7 @@ $pos: ("t": top, "b": bottom, "l": left, "r": right);
 $scale: 5;
 
 .p {
-    @for $i from 0 through 20 {
+    @for $i from 0 through 40 {
         $s: 0;
         @if $i == 0 { $s: 0 } @else {$s: #{$i * $scale}px}
         &--#{$i} {
@@ -14,7 +14,7 @@ $scale: 5;
 .p {
     @each $key, $p in $pos {
         &#{$key} {
-            @for $i from 0 through 20 {
+            @for $i from 0 through 40 {
                 $s: 0;
                 @if $i == 0 { $s: 0 } @else {$s: #{$i * $scale}px}
                 &--#{$i} {

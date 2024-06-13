@@ -25,7 +25,7 @@
 </head>
 
 <body>
-    @include('main.layouts.navigation')
+    @include('main.layouts.navigation', ['mode' => $mode ?? null])
     <main>
         @yield('content')
     </main>

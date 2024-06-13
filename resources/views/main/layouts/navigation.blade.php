@@ -1,5 +1,6 @@
 @php
     $route = request()->route()->getName();
+    $mode ??= 'dark';
 @endphp
 <nav class="fixed t--0 l--0 w--100">
     <div id="nav-pop" class="container__full-width flex col align--center bg--secondary-dark c--primary-light hide-mobile">
@@ -24,18 +25,18 @@
             </div>
         </div>
     </div>
-    <div id="nav" class="container__full-width flex col align--center">
+    <div id="nav" data-mode="{{ $mode }}" class="container__full-width flex col align--center">
         <div class="container pt--4 pb--4 flex row align--center justify--space-between">
-            <img class="nav__logo" src="{{ asset('/images/logo/logo-full-dark.svg') }}" alt="">
+            <img class="nav__logo" src="{{ asset('/images/logo/logo-full-' . $mode . '.svg') }}" alt="">
             <div class="flex row align--center justify--center gap--4 hide-mobile">
-                <a href="" class="btn--navbar-dark @if(str_contains($route, 'home')) btn--navbar-dark--active @endif">Home</a>
-                <a href="" class="btn--navbar-dark @if(str_contains($route, 'shop_service')) btn--navbar-dark--active @endif">En Magasin</a>
-                <a href="" class="btn--navbar-dark @if(str_contains($route, 'home_service')) btn--navbar-dark--active @endif">À Domicile</a>
-                <a href="" class="btn--navbar-dark @if(str_contains($route, 'glasses')) btn--navbar-dark--active @endif">Nos Lunettes</a>
-                <a href="" class="btn--navbar-dark @if(str_contains($route, 'lenses')) btn--navbar-dark--active @endif">Nos Lentilles</a>
-                <a href="" class="btn--navbar-dark @if(str_contains($route, 'about')) btn--navbar-dark--active @endif">À Propos</a>
+                <a hx-boost="true" href="{{ route('index') }}" class="btn--navbar-{{ $mode }} @if(str_contains($route, 'index')) btn--navbar-{{ $mode }}--active @endif">Home</a>
+                <a hx-boost="true" href="{{ route('shop_service') }}" class="btn--navbar-{{ $mode }} @if(str_contains($route, 'shop_service')) btn--navbar-{{ $mode }}--active @endif">En Magasin</a>
+                <a hx-boost="true" href="{{ route('home_service') }}" class="btn--navbar-{{ $mode }} @if(str_contains($route, 'home_service')) btn--navbar-{{ $mode }}--active @endif">À Domicile</a>
+                <a hx-boost="true" href="" class="btn--navbar-{{ $mode }} @if(str_contains($route, 'glasses')) btn--navbar-{{ $mode }}--active @endif">Nos Lunettes</a>
+                <a hx-boost="true" href="" class="btn--navbar-{{ $mode }} @if(str_contains($route, 'lenses')) btn--navbar-{{ $mode }}--active @endif">Nos Lentilles</a>
+                <a hx-boost="true" href="" class="btn--navbar-{{ $mode }} @if(str_contains($route, 'about')) btn--navbar-{{ $mode }}--active @endif">À Propos</a>
             </div>
-            <a href="" class="btn btn--main-dark hide-mobile">Contact</a>
+            <a href="" class="btn btn--main-{{ $mode }} hide-mobile">Contact</a>
         </div>
     </div>
 </nav>

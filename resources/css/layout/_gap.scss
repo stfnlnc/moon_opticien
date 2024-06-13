@@ -1,5 +1,5 @@
 .gap {
-    @for $i from 0 through 20 {
+    @for $i from 0 through 40 {
         $s: 0;
         @if $i == 0 { $s: 0 } @else {$s: #{$i * 5}px}
         &--#{$i} {
@@ -9,7 +9,7 @@
 }
 
 .grid-gap {
-    @for $i from 0 through 20 {
+    @for $i from 0 through 40 {
         $s: 0;
         @if $i == 0 { $s: 0 } @else {$s: #{$i * 5}px}
         &--#{$i} {
@@ -20,7 +20,7 @@
 
 @media screen and (max-width: 1080px) {
     .gap {
-        @for $i from 0 through 20 {
+        @for $i from 0 through 40 {
             $s: 0;
             @if $i == 0 { $s: 0 } @else {$s: #{$i * 5}px}
             &--#{$i}-mobile {
