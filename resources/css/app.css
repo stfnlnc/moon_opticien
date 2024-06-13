@@ -449,6 +449,7 @@ card {
   justify-content: center;
   align-items: center;
   gap: 0.1875rem;
+  cursor: pointer;
   width: fit-content;
   height: fit-content;
   transition: background-color var(--duration), color var(--duration), border var(--duration);
@@ -1043,6 +1044,41 @@ nav {
   aspect-ratio: 1/1;
 }
 
+.img__about {
+  width: 20rem;
+  height: 33.875rem;
+}
+
+.block__about {
+  width: 20rem;
+}
+
+@media screen and (max-width: 1080px) {
+  .img {
+    object-position: center;
+    object-fit: cover;
+  }
+  .img__service {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 9/18;
+  }
+  .img__shop {
+    width: 26.5rem;
+    height: 36.8125rem;
+  }
+  .img__icon {
+    transform: translate(-20%, -40%);
+  }
+  .img__glasses {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 9/18;
+  }
+  .block__glasses {
+    width: 100%;
+  }
+}
 .img {
   object-position: center;
   object-fit: cover;

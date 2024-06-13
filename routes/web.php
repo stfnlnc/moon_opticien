@@ -11,6 +11,10 @@ Route::prefix('/')->group(function () {
     Route::get('/', [MainController::class, 'index'])->name('index');
     Route::get('/en-magasin', [MainController::class, 'shop_service'])->name('shop_service');
     Route::get('/a-domicile', [MainController::class, 'home_service'])->name('home_service');
+    Route::get('/nos-lunettes', [MainController::class, 'glasses'])->name('glasses');
+    Route::get('/nos-lentilles', [MainController::class, 'lenses'])->name('lenses');
+    Route::get('/a-propos', [MainController::class, 'about'])->name('about');
+    Route::get('/nous-contacter', [MainController::class, 'contact'])->name('contact');
 });
 
 

@@ -19,6 +19,8 @@
     align-items: center;
     gap: 0.1875rem;
 
+    cursor: pointer;
+
     width: fit-content;
     height: fit-content;
     transition: background-color var(--duration), color var(--duration), border var(--duration);

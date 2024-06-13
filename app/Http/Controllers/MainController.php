@@ -27,22 +27,29 @@ class MainController extends Controller
 
     public function glasses()
     {
-        return view('main.home', [
+        return view('main.glasses', [
             'mode' => 'dark'
         ]);
     }
 
     public function lenses()
     {
-        return view('main.home', [
-            'mode' => 'dark'
+        return view('main.lenses', [
+            'mode' => 'light'
         ]);
     }
 
     public function about()
     {
-        return view('main.home', [
-            'mode' => 'dark'
+        return view('main.about', [
+            'mode' => 'light'
+        ]);
+    }
+
+    public function contact()
+    {
+        return view('main.contact', [
+            'mode' => 'light'
         ]);
     }
 }

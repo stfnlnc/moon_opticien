@@ -1,0 +1,220 @@
+@extends('base')
+
+@section('content')
+
+    <section class="container__full-width c--primary-light bg--secondary-dark flex col align--center">
+        <span class="container"></span>
+        <div class="container flex col align--start gap--5">
+            <h1 class="uppercase">Découvrez toutes <br> nos lunettes</h1>
+            <p class="text--m w--50 align--self-end">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur
+                adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet,
+                consectetur adipiscing elit.
+            </p>
+        </div>
+    </section>
+    <section
+        class="container__full-width c--secondary-dark bg--primary-light flex row align--center justify--center gap--20 border--bottom border--secondary-dark">
+        <div class="container pt--0 pb--0 pr--0 flex row gap--30">
+            <div class="flex col align--start justify--center gap--8 container pl--0">
+                <h2>Nos lunettes de vue</h2>
+                <p class="text--m">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur
+                    adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit
+                    amet, consectetur adipiscing elit.Highlight the Unique Selling Proposition (USP) with a short
+                    summary of the main feature and how it benefits customers. The idea here is to keep it short and
+                    direct. If the visitor wishes to learn more they will hit the button.
+                    <br><br>
+                    Highlight the Unique Selling Proposition (USP) with a short summary of the main feature and how it
+                    benefits customers. The idea here is to keep it short and direct. If the visitor wishes to learn
+                    more they will hit the button.
+                </p>
+            </div>
+            <div class="img__hero w--60">
+                <img class="img" src="{{ asset('/images/layers/exam-store.png') }}" alt="">
+            </div>
+        </div>
+    </section>
+    <section
+        class="container__full-width c--secondary-dark bg--primary-light flex row align--center justify--center gap--20 border--bottom border--secondary-dark">
+        <div class="container pt--0 pb--0 pl--0 flex row gap--30 justify--end">
+            <div class="img__hero w--60">
+                <img class="img" src="{{ asset('/images/layers/engrave-store.png') }}" alt="">
+            </div>
+            <div class="flex col align--start justify--center gap--8 container pl--0 pr--0">
+                <h2>Nos lunettes de soleil</h2>
+                <p class="text--m">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur
+                    adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit
+                    amet, consectetur adipiscing elit.Highlight the Unique Selling Proposition (USP) with a short
+                    summary of the main feature and how it benefits customers. The idea here is to keep it short and
+                    direct. If the visitor wishes to learn more they will hit the button.
+                    <br><br>
+                    Highlight the Unique Selling Proposition (USP) with a short summary of the main feature and how it
+                    benefits customers. The idea here is to keep it short and direct. If the visitor wishes to learn
+                    more they will hit the button.
+                </p>
+            </div>
+        </div>
+    </section>
+    <section
+        class="container__full-width c--secondary-dark bg--primary-light flex row align--center justify--center gap--20 border--bottom border--secondary-dark">
+        <div class="container pt--0 pb--0 pr--0 flex row gap--30">
+            <div class="flex col align--start justify--center gap--8 container pl--0">
+                <h2>Sport</h2>
+                <p class="text--m">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur
+                    adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit
+                    amet, consectetur adipiscing elit.Highlight the Unique Selling Proposition (USP) with a short
+                    summary of the main feature and how it benefits customers. The idea here is to keep it short and
+                    direct. If the visitor wishes to learn more they will hit the button.
+                    <br><br>
+                    Highlight the Unique Selling Proposition (USP) with a short summary of the main feature and how it
+                    benefits customers. The idea here is to keep it short and direct. If the visitor wishes to learn
+                    more they will hit the button.
+                </p>
+            </div>
+            <div class="img__hero w--60">
+                <img class="img" src="{{ asset('/images/layers/exam-store.png') }}" alt="">
+            </div>
+        </div>
+    </section>
+    <section class="container__full-width c--secondary-dark bg--primary-light flex row align--center justify--center">
+        <div class="pt--10 pb--10 flex col align--center gap--8">
+            <h3>Nos marques adultes</h3>
+            <div>
+
+            </div>
+        </div>
+    </section>
+    <section class="container__full-width c--primary-light bg--secondary-dark flex col align--center">
+        <div class="container flex col gap--10">
+            <h2>Nos engagements</h2>
+            <div class="flex col w--100">
+                <div class="flex row gap--25 pt--4 pb--4 border--bottom border--primary-light">
+                    <div class="flex row gap--3 align--center w--30">
+                        <x-icon.dot-small class="icon__dot-small icon--primary-light"></x-icon.dot-small>
+                        <p class="text--l">Des prix justes</p>
+                    </div>
+                    <p class="text--m">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla.
+                    </p>
+                </div>
+                <div class="flex row gap--25 pt--4 pb--4 border--bottom border--primary-light">
+                    <div class="flex row gap--3 align--center w--30">
+                        <x-icon.dot-small class="icon__dot-small icon--primary-light"></x-icon.dot-small>
+                        <p class="text--l">Service France Garanti</p>
+                    </div>
+                    <p class="text--m">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla.
+                    </p>
+                </div>
+                <div class="flex row gap--25 pt--4 pb--4 border--bottom border--primary-light">
+                    <div class="flex row gap--3 align--center w--30">
+                        <x-icon.dot-small class="icon__dot-small icon--primary-light"></x-icon.dot-small>
+                        <p class="text--l">Tiers payant & 100% santé</p>
+                    </div>
+                    <p class="text--m">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla.
+                    </p>
+                </div>
+                <div class="flex row gap--25 pt--4 pb--4 border--bottom border--primary-light">
+                    <div class="flex row gap--3 align--center w--30">
+                        <x-icon.dot-small class="icon__dot-small icon--primary-light"></x-icon.dot-small>
+                        <p class="text--l">Facilités de paiement</p>
+                    </div>
+                    <p class="text--m">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="container__full-width c--secondary-dark bg--secondary-color-2 flex col align--center">
+        <div class="container grid grid--3 grid-gap--10 text-center pt--10 pb--10 w--70 w-100-mobile">
+            <div class="flex col align--center gap--2">
+                <x-icon.dot-medium class="icon__dot-medium icon--secondary-dark"></x-icon.dot-medium>
+                <p class="text--l">Gravure des branches</p>
+                <p class="text--s">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+            </div>
+            <div class="flex col align--center gap--2">
+                <x-icon.dot-medium class="icon__dot-medium icon--secondary-dark"></x-icon.dot-medium>
+                <p class="text--l">Verrier français</p>
+                <p class="text--s">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+            </div>
+            <div class="flex col align--center gap--2">
+                <x-icon.dot-medium class="icon__dot-medium icon--secondary-dark"></x-icon.dot-medium>
+                <p class="text--l">2è paire offerte</p>
+                <p class="text--s">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+            </div>
+        </div>
+    </section>
+    <section
+        class="container__full-width c--secondary-dark bg--primary-light flex row align--center justify--center gap--20 border--top border--bottom border--secondary-dark">
+        <div class="container pt--0 pb--0 pl--0 flex row gap--30 justify--end">
+            <div class="img__hero w--60">
+                <img class="img" src="{{ asset('/images/layers/engrave-store.png') }}" alt="">
+            </div>
+            <div class="flex col align--start justify--center gap--8 container pl--0 pr--0">
+                <h2>Enfants</h2>
+                <p class="text--m">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur
+                    adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit
+                    amet, consectetur adipiscing elit.Highlight the Unique Selling Proposition (USP) with a short
+                    summary of the main feature and how it benefits customers. The idea here is to keep it short and
+                    direct. If the visitor wishes to learn more they will hit the button.
+                    <br><br>
+                    Highlight the Unique Selling Proposition (USP) with a short summary of the main feature and how it
+                    benefits customers. The idea here is to keep it short and direct. If the visitor wishes to learn
+                    more they will hit the button.
+                </p>
+            </div>
+        </div>
+    </section>
+    <section class="container__full-width c--secondary-dark bg--primary-light flex row align--center justify--center">
+        <div class="pt--10 pb--10 flex col align--center gap--8">
+            <h3>Nos marques enfants</h3>
+            <div>
+
+            </div>
+        </div>
+    </section>
+    <section
+        class="container__full-width c--secondary-dark bg--secondary-color-2 flex row align--center justify--center">
+        <div class="container flex col gap--3 align--center">
+            <h3>Besoin de refaire contrôler votre vue ?</h3>
+            <p class="text--s">passer l’examen de vue directement en magasin</p>
+            <a href="" class="btn btn--main-light mt--2">Je prends rendez-vous gratuitement</a>
+        </div>
+    </section>
+    <section
+        class="container__full-width c--secondary-dark bg--primary-light flex row align--center justify--center gap--20 border--top border--bottom border--secondary-dark">
+        <div class="container pt--0 pb--0 pl--0 flex row gap--30 justify--end">
+            <div class="img__hero w--60">
+                <img class="img" src="{{ asset('/images/layers/engrave-store.png') }}" alt="">
+            </div>
+            <div class="flex col align--start justify--center gap--8 container pl--0 pr--0">
+                <h2>Accessoires</h2>
+                <p class="text--m">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur
+                    adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit
+                    amet, consectetur adipiscing elit.Highlight the Unique Selling Proposition (USP) with a short
+                    summary of the main feature and how it benefits customers. The idea here is to keep it short and
+                    direct. If the visitor wishes to learn more they will hit the button.
+                    <br><br>
+                    Highlight the Unique Selling Proposition (USP) with a short summary of the main feature and how it
+                    benefits customers. The idea here is to keep it short and direct. If the visitor wishes to learn
+                    more they will hit the button.
+                </p>
+            </div>
+        </div>
+    </section>
+    <section
+        class="container__full-width c--secondary-dark bg--secondary-color-2 flex row align--center justify--center">
+        <div class="container flex col gap--10 align--center">
+            <h2 class="w--60 text-center">Venez nous voir en magasin, nos opticiens sont là pour vous conseiller.</h2>
+            <a href="" class="btn btn--main-light mt--2">Je prends contact</a>
+        </div>
+    </section>
+
+@endsection

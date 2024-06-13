@@ -1,0 +1,42 @@
+.img {
+    &__about {
+        width: 20rem;
+        height: 33.875rem;
+    }
+}
+
+.block {
+    &__about {
+        width: 20rem;
+    }
+}
+
+@media screen and (max-width: 1080px) {
+    .img {
+        object-position: center;
+        object-fit: cover;
+        &__service {
+            width: 100%;
+            height: auto;
+            aspect-ratio: 9/18;
+        }
+        &__shop {
+            width: 26.5rem;
+            height: 36.8125rem;
+        }
+        &__icon {
+            transform: translate(-20%, -40%);
+        }
+        &__glasses {
+            width: 100%;
+            height: auto;
+            aspect-ratio: 9/18;
+        }
+    }
+
+    .block {
+        &__glasses {
+            width: 100%;
+        }
+    }
+}

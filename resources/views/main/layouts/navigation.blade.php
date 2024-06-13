@@ -32,11 +32,11 @@
                 <a hx-boost="true" href="{{ route('index') }}" class="btn--navbar-{{ $mode }} @if(str_contains($route, 'index')) btn--navbar-{{ $mode }}--active @endif">Home</a>
                 <a hx-boost="true" href="{{ route('shop_service') }}" class="btn--navbar-{{ $mode }} @if(str_contains($route, 'shop_service')) btn--navbar-{{ $mode }}--active @endif">En Magasin</a>
                 <a hx-boost="true" href="{{ route('home_service') }}" class="btn--navbar-{{ $mode }} @if(str_contains($route, 'home_service')) btn--navbar-{{ $mode }}--active @endif">À Domicile</a>
-                <a hx-boost="true" href="" class="btn--navbar-{{ $mode }} @if(str_contains($route, 'glasses')) btn--navbar-{{ $mode }}--active @endif">Nos Lunettes</a>
-                <a hx-boost="true" href="" class="btn--navbar-{{ $mode }} @if(str_contains($route, 'lenses')) btn--navbar-{{ $mode }}--active @endif">Nos Lentilles</a>
-                <a hx-boost="true" href="" class="btn--navbar-{{ $mode }} @if(str_contains($route, 'about')) btn--navbar-{{ $mode }}--active @endif">À Propos</a>
+                <a hx-boost="true" href="{{ route('glasses') }}" class="btn--navbar-{{ $mode }} @if(str_contains($route, 'glasses')) btn--navbar-{{ $mode }}--active @endif">Nos Lunettes</a>
+                <a hx-boost="true" href="{{ route('lenses') }}" class="btn--navbar-{{ $mode }} @if(str_contains($route, 'lenses')) btn--navbar-{{ $mode }}--active @endif">Nos Lentilles</a>
+                <a hx-boost="true" href="{{ route('about') }}" class="btn--navbar-{{ $mode }} @if(str_contains($route, 'about')) btn--navbar-{{ $mode }}--active @endif">À Propos</a>
             </div>
-            <a href="" class="btn btn--main-{{ $mode }} hide-mobile">Contact</a>
+            <a href="{{ route('contact') }}" class="btn btn--main-{{ $mode }} hide-mobile">Contact</a>
         </div>
     </div>
 </nav>
