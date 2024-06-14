@@ -1,5 +1,5 @@
 :root {
-    --main-padding-h: 4rem;
+    --main-padding-h: 20rem;
     --main-padding-v: 6.25rem;
     --max-width: unset;
     --duration: .3s;
@@ -66,12 +66,30 @@ a {
     display: none;
 }
 
+@media screen and (max-width: 1920px) {
+    :root {
+        --main-padding-h: 16rem;
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    :root {
+        --main-padding-h: 8rem;
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    :root {
+        --main-padding-h: 6rem;
+    }
+}
+
 @media screen and (max-width: 1080px) {
     .hide-mobile {
         display: none;
     }
     .display-mobile {
-        display: flex;
+        display: unset;
     }
 
     :root {

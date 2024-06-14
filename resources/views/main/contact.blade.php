@@ -4,7 +4,7 @@
 
     <section class="container__full-width c--secondary-dark bg--secondary-color-2 flex col align--center">
         <span class="container"></span>
-        <div class="container flex col align--start gap--5">
+        <div class="container flex col align--start gap--5 pb--30">
             <h1 class="uppercase">Un conseil personnalisé, <br> un examen de vue <br> et un café</h1>
             <p class="text--m w--50 align--self-end">
                 Nous vous offrons un conseil personnalisé, l’examen de vue et le café. Prenez rendez-vous avec nous, en magasin ou à domicile, en remplissant le formulaire de contact.
@@ -37,19 +37,23 @@
                 <div class="flex col gap--2">
                     <label for="email" class="form-label">Je souhaite*</label>
                     <div class="flex row align--center gap--2">
-                        <div class="filter">
+                        <div id="message" class="filter">
                             Envoyer un message
                         </div>
-                        <div class="filter">
+                        <div id="shop" class="filter">
                             Prendre rdv en magasin
                         </div>
-                        <div class="filter">
+                        <div id="home" class="filter">
                             Prendre rdv à domicile
                         </div>
-                        <div class="filter">
+                        <div id="lens" class="filter">
                             Commander mes lentilles
                         </div>
                     </div>
+                </div>
+                <div id="message-content" class="flex col gap--4 align--center form-content">
+                    <textarea class="form-input" name="message" id="message" rows="5" placeholder="Laissez-nous votre message"></textarea>
+                    <button class="btn btn--main-light">Envoyer le formulaire</button>
                 </div>
             </form>
         </div>

@@ -4,9 +4,9 @@
 
     <section class="container__full-width c--primary-dark bg--secondary-color-4 flex col align--center">
         <span class="container"></span>
-        <div class="container flex col align--start gap--5">
+        <div class="container flex col align--start gap--5 pb--30">
             <h1 class="uppercase">Une équipe <br> à taille humaine</h1>
-            <p class="text--m w--50 align--self-end">
+            <p class="text--m w--50 w-100-mobile align--self-end">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur
                 adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet,
                 consectetur adipiscing elit.
@@ -28,7 +28,7 @@
                 </div>
             </div>
             <div class="flex row justify--end w--100">
-                <div class="grid grid--3 grid-gap--2">
+                <div class="grid grid--3 grid--1-mobile  grid-gap--8-mobile grid-gap--2">
                     <div class="flex col align--start justify--start gap--3 block__about">
                         <img class="img img__about" src="{{ asset('/images/layers/glasses-2.png') }}" alt="">
                         <p class="text--l">Laure</p>
@@ -52,8 +52,8 @@
         <div class="container flex col gap--10">
             <h2>Nos engagements</h2>
             <div class="flex col w--100">
-                <div class="flex row gap--25 pt--4 pb--4 border--bottom border--primary-light">
-                    <div class="flex row gap--3 align--center w--30">
+                <div class="flex row col-mobile grid-gap--4-mobile gap--25 pt--4 pb--4 border--bottom border--primary-light">
+                    <div class="flex row gap--3 align--center w--30 w-100-mobile">
                         <x-icon.dot-small class="icon__dot-small icon--primary-light"></x-icon.dot-small>
                         <p class="text--l">Des prix justes</p>
                     </div>
@@ -61,8 +61,8 @@
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla.
                     </p>
                 </div>
-                <div class="flex row gap--25 pt--4 pb--4 border--bottom border--primary-light">
-                    <div class="flex row gap--3 align--center w--30">
+                <div class="flex row col-mobile grid-gap--4-mobile gap--25 pt--4 pb--4 border--bottom border--primary-light">
+                    <div class="flex row gap--3 align--center w--30 w-100-mobile">
                         <x-icon.dot-small class="icon__dot-small icon--primary-light"></x-icon.dot-small>
                         <p class="text--l">Service France Garanti</p>
                     </div>
@@ -70,8 +70,8 @@
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla.
                     </p>
                 </div>
-                <div class="flex row gap--25 pt--4 pb--4 border--bottom border--primary-light">
-                    <div class="flex row gap--3 align--center w--30">
+                <div class="flex row col-mobile grid-gap--4-mobile gap--25 pt--4 pb--4 border--bottom border--primary-light">
+                    <div class="flex row gap--3 align--center w--30 w-100-mobile">
                         <x-icon.dot-small class="icon__dot-small icon--primary-light"></x-icon.dot-small>
                         <p class="text--l">Tiers payant & 100% santé</p>
                     </div>
@@ -79,8 +79,8 @@
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla.
                     </p>
                 </div>
-                <div class="flex row gap--25 pt--4 pb--4 border--bottom border--primary-light">
-                    <div class="flex row gap--3 align--center w--30">
+                <div class="flex row col-mobile grid-gap--4-mobile gap--25 pt--4 pb--4 border--bottom border--primary-light">
+                    <div class="flex row gap--3 align--center w--30 w-100-mobile">
                         <x-icon.dot-small class="icon__dot-small icon--primary-light"></x-icon.dot-small>
                         <p class="text--l">Facilités de paiement</p>
                     </div>
@@ -92,7 +92,7 @@
         </div>
     </section>
     <section class="container__full-width c--secondary-dark bg--secondary-color-2 flex col align--center">
-        <div class="container grid grid--3 grid-gap--10 text-center pt--10 pb--10 w--70 w-100-mobile">
+        <div class="container grid grid--3 grid--1-mobile grid-gap--10 text-center pt--10 pb--10 w--70 w-100-mobile">
             <div class="flex col align--center gap--2">
                 <x-icon.dot-medium class="icon__dot-medium icon--secondary-dark"></x-icon.dot-medium>
                 <p class="text--l">Gravure des branches</p>

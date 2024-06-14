@@ -4,9 +4,9 @@
 
     <section class="container__full-width c--primary-light bg--secondary-color-3 flex col align--center">
         <span class="container"></span>
-        <div class="container flex col align--start gap--5">
+        <div class="container flex col align--start gap--5 pb--30">
             <h1 class="uppercase">Nos services <br> à domicile</h1>
-            <p class="text--m w--50 align--self-end">
+            <p class="text--m w--50 w-100-mobile align--self-end">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur
                 adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet,
                 consectetur adipiscing elit.
@@ -15,8 +15,8 @@
     </section>
     <section
         class="container__full-width c--secondary-dark bg--primary-light flex row align--center justify--center gap--20">
-        <div class="container pt--0 pb--0 pr--0 flex row gap--30">
-            <div class="flex col align--start justify--center gap--8 container pl--0">
+        <div class="container pt--0 pb--0 pr--0 pl--0 flex row col-rev-mobile">
+            <div class="flex col align--start justify--center gap--8 container">
                 <h2>Le déplacement à domicile, pour qui ? </h2>
                 <p class="text--m">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur
@@ -30,25 +30,25 @@
                     more they will hit the button.
                 </p>
             </div>
-            <div class="img__hero w--60">
+            <div class="img__hero w--60 w-100-mobile">
                 <img class="img" src="{{ asset('/images/layers/exam-store.png') }}" alt="">
             </div>
         </div>
     </section>
     <section class="container__full-width c--secondary-dark bg--secondary-color-4 flex col align--center justify--center">
         <div class="container flex col align--start gap--10">
-            <div class="grid grid--3 w--100 text--l">
-                <div class="flex col gap--3">
+            <div class="grid grid--3 grid--1-mobile grid-gap--10 w--100 text--l">
+                <div class="flex col gap--3 align-mobile--center text-center-mobile">
                     <img class="icon--large" src="{{ asset('/images/icon/large/icon-home.svg') }}" alt="">
                     <p class="text--l">À domicile</p>
                     <p class="text--m">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
                 </div>
-                <div class="flex col gap--3">
+                <div class="flex col gap--3 align-mobile--center text-center-mobile">
                     <img class="icon--large" src="{{ asset('/images/icon/large/icon-person.svg') }}" alt="">
                     <p class="text--l">En EHPAD</p>
                     <p class="text--m">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
                 </div>
-                <div class="flex col gap--3">
+                <div class="flex col gap--3 align-mobile--center text-center-mobile">
                     <img class="icon--large" src="{{ asset('/images/icon/large/icon-heart.svg') }}" alt="">
                     <p class="text--l">À la demande</p>
                     <p class="text--m">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
@@ -136,7 +136,7 @@
         </div>
     </section>
     <section class="container__full-width c--secondary-dark bg--secondary-color-2 flex col align--center">
-        <div class="container grid grid--3 grid-gap--10 text-center pt--10 pb--10 w--70 w-100-mobile">
+        <div class="container grid grid--3 grid--1-mobile grid-gap--10 text-center pt--10 pb--10 w--70 w-100-mobile">
             <div class="flex col align--center gap--2">
                 <x-icon.dot-medium class="icon__dot-medium icon--secondary-dark"></x-icon.dot-medium>
                 <p class="text--l">Gravure des branches</p>
@@ -158,8 +158,8 @@
         <div class="container flex col gap--10">
             <h2>Nos engagements</h2>
             <div class="flex col w--100">
-                <div class="flex row gap--25 pt--4 pb--4 border--bottom border--secondary-dark">
-                    <div class="flex row gap--3 align--center w--30">
+                <div class="flex row col-mobile grid-gap--4-mobile gap--25 pt--4 pb--4 border--bottom border--secondary-dark">
+                    <div class="flex row gap--3 align--center w--30 w-100-mobile">
                         <x-icon.dot-small class="icon__dot-small icon--secondary-dark"></x-icon.dot-small>
                         <p class="text--l">Des prix justes</p>
                     </div>
@@ -167,8 +167,8 @@
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla.
                     </p>
                 </div>
-                <div class="flex row gap--25 pt--4 pb--4 border--bottom border--secondary-dark">
-                    <div class="flex row gap--3 align--center w--30">
+                <div class="flex row col-mobile grid-gap--4-mobile gap--25 pt--4 pb--4 border--bottom border--secondary-dark">
+                    <div class="flex row gap--3 align--center w--30 w-100-mobile">
                         <x-icon.dot-small class="icon__dot-small icon--secondary-dark"></x-icon.dot-small>
                         <p class="text--l">Service France Garanti</p>
                     </div>
@@ -176,8 +176,8 @@
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla.
                     </p>
                 </div>
-                <div class="flex row gap--25 pt--4 pb--4 border--bottom border--secondary-dark">
-                    <div class="flex row gap--3 align--center w--30">
+                <div class="flex row col-mobile grid-gap--4-mobile gap--25 pt--4 pb--4 border--bottom border--secondary-dark">
+                    <div class="flex row gap--3 align--center w--30 w-100-mobile">
                         <x-icon.dot-small class="icon__dot-small icon--secondary-dark"></x-icon.dot-small>
                         <p class="text--l">Tiers payant & 100% santé</p>
                     </div>
@@ -185,8 +185,8 @@
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla.
                     </p>
                 </div>
-                <div class="flex row gap--25 pt--4 pb--4 border--bottom border--secondary-dark">
-                    <div class="flex row gap--3 align--center w--30">
+                <div class="flex row col-mobile grid-gap--4-mobile gap--25 pt--4 pb--4 border--bottom border--secondary-dark">
+                    <div class="flex row gap--3 align--center w--30 w-100-mobile">
                         <x-icon.dot-small class="icon__dot-small icon--secondary-dark"></x-icon.dot-small>
                         <p class="text--l">Facilités de paiement</p>
                     </div>
@@ -200,7 +200,7 @@
     <section
         class="container__full-width c--secondary-dark bg--secondary-color-2 flex row align--center justify--center">
         <div class="container flex col gap--10 align--center">
-            <h2 class="w--60 text-center">Prenez rendez-vous dès maintenant pour vous ou pour votre proche</h2>
+            <h2 class="w--60 text-center w-100-mobile">Prenez rendez-vous dès maintenant pour vous ou pour votre proche</h2>
             <a href="" class="btn btn--main-light mt--2">Je prends rendez-vous</a>
         </div>
     </section>

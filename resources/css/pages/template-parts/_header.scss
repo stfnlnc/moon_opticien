@@ -17,6 +17,71 @@ nav {
     transition: top 0.8s ease;
 }
 
+.mobile {
+    &-menu {
+        cursor: pointer;
+        &-dark {
+            .line-1 {
+                border-top: 2px solid var(--primary-light);
+                display: block;
+                width: 25px;
+            }
+            .line-2 {
+                @extend .line-1;
+                margin: 6px 0;
+            }
+
+            .line-3 {
+                @extend .line-1;
+            }
+        }
+        &-light {
+            .line-1 {
+                border-top: 2px solid var(--secondary-dark);
+                display: block;
+                width: 25px;
+            }
+            .line-2 {
+                @extend .line-1;
+                margin: 6px 0;
+            }
+
+            .line-3 {
+                @extend .line-1;
+            }
+        }
+        &-close {
+            .line-1 {
+                border-top: 2px solid var(--primary-light);
+                display: block;
+                width: 25px;
+                transform: rotate(45deg) translate(1px, -1px);
+            }
+            .line-2 {
+                border-top: 2px solid var(--primary-light);
+                display: block;
+                width: 25px;
+                transform: rotate(-45deg) translate(2px, -1px);
+            }
+
+            .line-3 {
+
+            }
+        }
+        transition: opacity 0.7s ease;
+    }
+    &-dropdown {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 100%;
+        max-width: 450px;
+        height: 100vh;
+        background-color: var(--secondary-dark);
+        transition: right 0.7s ease;
+    }
+}
+
 @media screen and (max-width: 1080px) {
     .logo__head {
         width: 15rem;

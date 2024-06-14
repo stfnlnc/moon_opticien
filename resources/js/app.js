@@ -34,6 +34,57 @@ htmx.onLoad(function (target) {
     document.addEventListener('scroll', () => {
         hideNavAtScroll(mode)
     })
+
+    // Mobile menu dropdown
+    const menu = document.querySelector('.mobile-menu')
+    const close = document.querySelector('.mobile-menu-close')
+    const dropdown = document.querySelector('.mobile-dropdown')
+    const body = document.querySelector('body')
+    body.style.overflow = 'auto'
+
+    window.addEventListener('resize', () => {
+        dropdown.style.right = '-100%'
+        body.style.overflow = 'auto'
+    })
+
+    menu.addEventListener('click', () => {
+        dropdown.style.right = '0'
+        body.style.overflow = 'hidden'
+    })
+
+    close.addEventListener('click', () => {
+        dropdown.style.right = '-100%'
+        body.style.overflow = 'auto'
+    })
+
+
+    // Show form content with filters
+    /*const message = document.getElementById('message')
+    const messageContent = document.getElementById('message-content')
+    const shop = document.getElementById('shop')
+    const shopContent = document.getElementById('shop-content')
+    const home = document.getElementById('home')
+    const homeContent = document.getElementById('home-content')
+    const lens = document.getElementById('lens')
+    const lensContent = document.getElementById('lens-content')
+    const filters = document.querySelectorAll('.filter')
+
+    message.addEventListener('click', () => {
+        filters.forEach((filter) => {
+            filter.classList.remove('filter--active')
+        })
+        message.classList.toggle('filter--active')
+        messageContent.classList.toggle('form-content')
+    })
+
+    shop.addEventListener('click', () => {
+        filters.forEach((filter) => {
+            filter.classList.remove('filter--active')
+        })
+        shop.classList.toggle('filter--active')
+        shopContent.classList.toggle('form-content')
+    })*/
+
 });
 
 window.Alpine = Alpine;

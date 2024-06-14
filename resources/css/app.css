@@ -17,6 +17,11 @@
   cursor: grabbing;
 }
 
+.img {
+  object-position: center;
+  object-fit: cover;
+}
+
 .icon--ver {
   width: auto;
   height: 1.2rem;
@@ -118,6 +123,10 @@
 }
 .icon-stroke--danger {
   stroke: var(--danger);
+}
+
+.form-content {
+  display: none !important;
 }
 
 .form-input, .form-textarea, .form-select {
@@ -872,7 +881,7 @@ h6, .h6 {
 
 @media screen and (max-width: 1080px) {
   :root {
-    --h1: 3.4375rem;
+    --h1: 3.125rem;
     --h2: 2.1875rem;
     --h3: 2rem;
     --h4: 2rem;
@@ -1026,6 +1035,49 @@ nav {
   transition: top 0.8s ease;
 }
 
+.mobile-menu {
+  cursor: pointer;
+  transition: opacity 0.7s ease;
+}
+.mobile-menu-dark .line-1, .mobile-menu-dark .line-3, .mobile-menu-dark .line-2 {
+  border-top: 2px solid var(--primary-light);
+  display: block;
+  width: 25px;
+}
+.mobile-menu-dark .line-2 {
+  margin: 6px 0;
+}
+.mobile-menu-light .line-1, .mobile-menu-light .line-3, .mobile-menu-light .line-2 {
+  border-top: 2px solid var(--secondary-dark);
+  display: block;
+  width: 25px;
+}
+.mobile-menu-light .line-2 {
+  margin: 6px 0;
+}
+.mobile-menu-close .line-1, .mobile-menu-close .mobile-menu-dark .line-2, .mobile-menu-dark .mobile-menu-close .line-2, .mobile-menu-close .mobile-menu-dark .line-3, .mobile-menu-dark .mobile-menu-close .line-3, .mobile-menu-close .mobile-menu-light .line-2, .mobile-menu-light .mobile-menu-close .line-2, .mobile-menu-close .mobile-menu-light .line-3, .mobile-menu-light .mobile-menu-close .line-3 {
+  border-top: 2px solid var(--primary-light);
+  display: block;
+  width: 25px;
+  transform: rotate(45deg) translate(1px, -1px);
+}
+.mobile-menu-close .line-2 {
+  border-top: 2px solid var(--primary-light);
+  display: block;
+  width: 25px;
+  transform: rotate(-45deg) translate(2px, -1px);
+}
+.mobile-dropdown {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 100%;
+  max-width: 450px;
+  height: 100vh;
+  background-color: var(--secondary-dark);
+  transition: right 0.7s ease;
+}
+
 @media screen and (max-width: 1080px) {
   .logo__head {
     width: 15rem;
@@ -1044,6 +1096,17 @@ nav {
   aspect-ratio: 1/1;
 }
 
+@media screen and (max-width: 1080px) {
+  .img__hero {
+    min-width: 100%;
+    min-height: 100%;
+  }
+  .img__hero > img {
+    min-height: 100%;
+    width: 100%;
+    aspect-ratio: 4/3;
+  }
+}
 .img__about {
   width: 20rem;
   height: 33.875rem;
@@ -1054,34 +1117,14 @@ nav {
 }
 
 @media screen and (max-width: 1080px) {
-  .img {
-    object-position: center;
-    object-fit: cover;
-  }
-  .img__service {
+  .img__about {
     width: 100%;
-    height: auto;
-    aspect-ratio: 9/18;
+    height: unset;
+    aspect-ratio: 1/1;
   }
-  .img__shop {
-    width: 26.5rem;
-    height: 36.8125rem;
-  }
-  .img__icon {
-    transform: translate(-20%, -40%);
-  }
-  .img__glasses {
-    width: 100%;
-    height: auto;
-    aspect-ratio: 9/18;
-  }
-  .block__glasses {
+  .block__about {
     width: 100%;
   }
-}
-.img {
-  object-position: center;
-  object-fit: cover;
 }
 .img__service {
   width: 30rem;
@@ -1104,10 +1147,6 @@ nav {
 }
 
 @media screen and (max-width: 1080px) {
-  .img {
-    object-position: center;
-    object-fit: cover;
-  }
   .img__service {
     width: 100%;
     height: auto;
@@ -1440,6 +1479,23 @@ nav {
   display: none;
 }
 
+@media screen and (max-width: 1080px) {
+  .border {
+    border: 1px solid;
+  }
+  .border--top-mobile {
+    border-top: 1px solid;
+  }
+  .border--bottom-mobile {
+    border-bottom: 1px solid;
+  }
+  .border--left-mobile {
+    border-left: 1px solid;
+  }
+  .border--right-mobile {
+    border-right: 1px solid;
+  }
+}
 .border {
   border: 1px solid var(--primary-dark);
 }
@@ -3404,7 +3460,7 @@ nav {
   }
 }
 :root {
-  --main-padding-h: 4rem;
+  --main-padding-h: 20rem;
   --main-padding-v: 6.25rem;
   --max-width: unset;
   --duration: .3s;
@@ -3469,12 +3525,27 @@ a {
   display: none;
 }
 
+@media screen and (max-width: 1920px) {
+  :root {
+    --main-padding-h: 16rem;
+  }
+}
+@media screen and (max-width: 1440px) {
+  :root {
+    --main-padding-h: 8rem;
+  }
+}
+@media screen and (max-width: 1440px) {
+  :root {
+    --main-padding-h: 6rem;
+  }
+}
 @media screen and (max-width: 1080px) {
   .hide-mobile {
     display: none;
   }
   .display-mobile {
-    display: flex;
+    display: unset;
   }
   :root {
     --main-padding-h: 1.25rem;
