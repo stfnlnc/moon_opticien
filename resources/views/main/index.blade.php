@@ -15,7 +15,7 @@
             votre opticien lunetier indépendant <br>
             aux portes de Pau
         </h1>
-        <a href="" class="btn btn--main-dark">Je prends rendez-vous</a>
+        <a hx-boost="true" href="{{ route('contact') }}" class="btn btn--main-dark">Je prends rendez-vous</a>
     </div>
 </section>
 <section class="container__full-width c--primary-light bg--secondary-dark flex col align--center">
@@ -55,13 +55,13 @@
                 <img loading="lazy" class="img img__service" src="{{ asset('/images/layers/728ebaf8666162f73edf66e0bd3146d5.webp') }}" alt="">
                 <p class="text--l">Services en Magasin</p>
                 <p class="text--m">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                <a href="" class="btn btn--secondary-light">Découvrir</a>
+                <a hx-boost="true" href="{{ route('shop_service') }}" class="btn btn--secondary-light">Découvrir</a>
             </div>
             <div class="flex col align--start justify--start gap--3 w-100-mobile">
                 <img loading="lazy" class="img img__service" src="{{ asset('/images/layers/a7e72401fb434c9febabc88ff04202ae.webp') }}" alt="">
                 <p class="text--l">Services à Domicile</p>
                 <p class="text--m">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                <a href="" class="btn btn--secondary-light">Découvrir</a>
+                <a hx-boost="true" href="{{ route('home_service') }}" class="btn btn--secondary-light">Découvrir</a>
             </div>
         </div>
     </div>
@@ -78,7 +78,7 @@
                 <p class="text--m">
                     Highlight the Unique Selling Proposition (USP) with a short summary of the main feature and how it benefits customers. The idea here is to keep it short and direct. If the visitor wishes to learn more they will hit the button.
                 </p>
-                <a href="" class="btn btn--main-light">Qui sommes-nous ?</a>
+                <a hx-boost="true" href="{{ route('about') }}" class="btn btn--main-light">Qui sommes-nous ?</a>
             </div>
         </div>
         <div class="flex row align--start gap--4 w--100">
@@ -100,7 +100,7 @@
                 <p class="text--m">
                     Highlight the Unique Selling Proposition (USP) with a short summary of the main feature and how it benefits customers. The idea here is to keep it short and direct. If the visitor wishes to learn more they will hit the button.
                 </p>
-                <a href="" class="btn btn--main-light">je découvre les services en magasin</a>
+                <a hx-boost="true" href="{{ route('shop_service') }}" class="btn btn--main-light">je découvre les services en magasin</a>
             </div>
         </div>
         <div class="flex row align--end justify--start gap--16">
@@ -172,7 +172,7 @@
                 <p class="text--m">
                     Highlight the Unique Selling Proposition (USP) with a short summary of the main feature and how it benefits customers. The idea here is to keep it short and direct. If the visitor wishes to learn more they will hit the button.
                 </p>
-                <a href="" class="btn btn--main-dark">je découvre les services à domicile</a>
+                <a hx-boost="true" href="{{ route('home_service') }}" class="btn btn--main-dark">je découvre les services à domicile</a>
             </div>
         </div>
         <div class="grid grid--3 grid-gap--10 grid--1-mobile c--secondary-dark mt--10">
@@ -251,7 +251,7 @@
                 <p class="text--m">
                     Highlight the Unique Selling Proposition (USP) with a short summary of the main feature and how it benefits customers. The idea here is to keep it short and direct. If the visitor wishes to learn more they will hit the button.
                 </p>
-                <a href="" class="btn btn--main-light">Toutes les lunettes</a>
+                <a hx-boost="true" href="{{ route('glasses') }}" class="btn btn--main-light">Toutes les lunettes</a>
             </div>
         </div>
         <div class="flex row justify--end w--100">
@@ -260,25 +260,25 @@
                     <img loading="lazy" class="img img__glasses" src="{{ asset('/images/layers/ac59211ea58ee6b9259ed733452a040d.webp') }}" alt="">
                     <p class="text--l">Vue</p>
                     <p class="text--m">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    <a href="" class="btn btn--secondary-light">Découvrir</a>
+                    <a hx-boost="true" href="{{ route('glasses') }}#eyeglasses" class="btn btn--secondary-light">Découvrir</a>
                 </div>
                 <div class="flex col align--start justify--start gap--3 block__glasses">
                     <img class="img img__glasses" src="{{ asset('/images/layers/0fef3d1f982b33e7b22c1571eecc4453.webp') }}" alt="">
                     <p class="text--l">Solaires</p>
                     <p class="text--m">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    <a href="" class="btn btn--secondary-light">Découvrir</a>
+                    <a hx-boost="true" href="{{ route('glasses') }}#sunglasses" class="btn btn--secondary-light">Découvrir</a>
                 </div>
                 <div class="flex col align--start justify--start gap--3 block__glasses">
                     <img loading="lazy" class="img img__glasses" src="{{ asset('/images/layers/fb49e3f66990789c63e31a0c6cc6af7d.webp') }}" alt="">
                     <p class="text--l">Sport</p>
                     <p class="text--m">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    <a href="" class="btn btn--secondary-light">Découvrir</a>
+                    <a hx-boost="true" href="{{ route('glasses') }}#sportglasses" class="btn btn--secondary-light">Découvrir</a>
                 </div>
                 <div class="flex col align--start justify--start gap--3 block__glasses">
                     <img loading="lazy" class="img img__glasses" src="{{ asset('/images/layers/5492d5c3f99aca5a8d72c79736f9317c.webp') }}" alt="">
                     <p class="text--l">Enfants</p>
                     <p class="text--m">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    <a href="" class="btn btn--secondary-light">Découvrir</a>
+                    <a hx-boost="true" href="{{ route('glasses') }}#childglasses" class="btn btn--secondary-light">Découvrir</a>
                 </div>
             </div>
         </div>
@@ -297,8 +297,8 @@
                     Highlight the Unique Selling Proposition (USP) with a short summary of the main feature and how it benefits customers. The idea here is to keep it short and direct. If the visitor wishes to learn more they will hit the button.
                 </p>
                 <div class="flex col gap--2">
-                    <a href="" class="btn btn--main-dark">Je commande mes lentilles</a>
-                    <a href="" class="btn btn--secondary-dark">En savoir plus</a>
+                    <a hx-boost="true" href="{{ route('contact') }}#orderlenses" class="btn btn--main-dark">Je commande mes lentilles</a>
+                    <a hx-boost="true" href="{{ route('lenses') }}" class="btn btn--secondary-dark">En savoir plus</a>
                 </div>
             </div>
         </div>
@@ -311,9 +311,9 @@
                 <x-icon.dot-small class="icon__dot-small icon--secondary-color-3"></x-icon.dot-small>
                 <p class="text--s">Ce que disent nos clients</p>
             </div>
-            <a href="" class="btn btn--main-light">Voir tous les avis</a>
+            <a hx-boost="true" href="" class="btn btn--main-light">Voir tous les avis</a>
         </div>
-        <a href="" class="btn btn--main-light display-mobile">Voir tous les avis</a>
+        <a hx-boost="true" href="" class="btn btn--main-light display-mobile">Voir tous les avis</a>
     </div>
 </section>
 @endsection

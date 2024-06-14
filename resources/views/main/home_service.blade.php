@@ -76,7 +76,7 @@
                     <p class="text--m">
                         Highlight the Unique Selling Proposition (USP) with a short summary of the main feature and how it benefits customers. The idea here is to keep it short and direct. If the visitor wishes to learn more they will hit the button.
                     </p>
-                    <a href="" class="btn btn--main-dark">je découvre les services à domicile</a>
+                    <a hx-boost="true" href="{{ route('contact') }}#home" class="btn btn--main-dark">je découvre les services à domicile</a>
                 </div>
             </div>
             <div class="grid grid--3 grid-gap--10 grid--1-mobile c--secondary-dark mt--10">
@@ -209,7 +209,7 @@
         class="container__full-width c--secondary-dark bg--secondary-color-2 flex row align--center justify--center">
         <div class="container flex col gap--10 align--center">
             <h2 class="w--60 text-center w-100-mobile">Prenez rendez-vous dès maintenant pour vous ou pour votre proche</h2>
-            <a href="" class="btn btn--main-light mt--2">Je prends rendez-vous</a>
+            <a hx-boost="true" href="{{ route('contact') }}" class="btn btn--main-light mt--2">Je prends rendez-vous</a>
         </div>
     </section>
 @endsection

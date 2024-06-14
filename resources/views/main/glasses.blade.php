@@ -21,7 +21,7 @@
             </p>
         </div>
     </section>
-    <section
+    <section id="eyeglasses"
         class="container__full-width c--secondary-dark bg--primary-light flex row align--center justify--center gap--20 border--bottom border--secondary-dark">
         <div class="container pt--0 pb--0 pr--0 pl--0 flex row col-rev-mobile">
             <div class="flex col align--start justify--center gap--8 container">
@@ -43,7 +43,7 @@
             </div>
         </div>
     </section>
-    <section
+    <section id="sunglasses"
         class="container__full-width c--secondary-dark bg--primary-light flex row align--center justify--center gap--20 border--bottom border--secondary-dark">
         <div class="container pt--0 pb--0 pl--0 pr--0 flex row col-mobile justify--end">
             <div class="img__hero w--60 w-100-mobile">
@@ -65,11 +65,11 @@
             </div>
         </div>
     </section>
-    <section
+    <section id="sportglasses"
         class="container__full-width c--secondary-dark bg--primary-light flex row align--center justify--center gap--20 border--bottom border--secondary-dark">
         <div class="container pt--0 pb--0 pr--0 pl--0 flex row col-rev-mobile">
             <div class="flex col align--start justify--center gap--8 container">
-                <h2>Sport</h2>
+                <h2>Sport & Sécurité</h2>
                 <p class="text--m">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur
                     adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit
@@ -192,7 +192,7 @@
             </div>
         </div>
     </section>
-    <section
+    <section id="childglasses"
         class="container__full-width c--secondary-dark bg--primary-light flex row align--center justify--center gap--20 border--bottom border--secondary-dark">
         <div class="container pt--0 pb--0 pl--0 pr--0 flex row col-mobile justify--end">
             <div class="img__hero w--60 w-100-mobile">
@@ -264,7 +264,7 @@
         <div class="container flex col gap--3 text-center align--center">
             <h3>Besoin de refaire contrôler votre vue ?</h3>
             <p class="text--s">passer l’examen de vue directement en magasin</p>
-            <a href="" class="btn btn--main-light mt--2">Je prends rendez-vous gratuitement</a>
+            <a hx-boost="true" href="{{ route('contact') }}#booking" class="btn btn--main-light mt--2">Je prends rendez-vous gratuitement</a>
         </div>
     </section>
     <section
@@ -293,7 +293,7 @@
         class="container__full-width c--secondary-dark bg--secondary-color-2 flex row align--center justify--center">
         <div class="container flex col gap--10 align--center">
             <h2 class="w--60 w-100-mobile text-center">Venez nous voir en magasin, nos opticiens sont là pour vous conseiller.</h2>
-            <a href="" class="btn btn--main-light mt--2">Je prends contact</a>
+            <a hx-boost="true" href="{{ route('contact') }}" class="btn btn--main-light mt--2">Je prends contact</a>
         </div>
     </section>
 

@@ -37,7 +37,7 @@
                     benefits customers. The idea here is to keep it short and direct. If the visitor wishes to learn
                     more they will hit the button.
                 </p>
-                <a href="" class="btn btn--main-light">Je prends rendez-vous</a>
+                <a hx-boost="true" href="{{ route('contact') }}#booking" class="btn btn--main-light">Je prends rendez-vous</a>
             </div>
             <div class="img__hero w--60 w-100-mobile">
                 <img loading="lazy" class="img" src="{{ asset('/images/layers/a815b7f0bd7fe915483f07067f5d0129.webp') }}" alt="">
@@ -77,7 +77,7 @@
         <div class="container flex col gap--3 align--center text-center">
             <h3>Besoin d'aide pour vos lentilles de contact ?</h3>
             <p class="text--s">Accompagnement à la pose de lentilles, à la correction de la vue et à l’adaptation.</p>
-            <a href="" class="btn btn--main-light mt--2">En savoir plus</a>
+            <a hx-boost="true" href="{{ route('contact') }}#service" class="btn btn--main-light mt--2">En savoir plus</a>
         </div>
     </section>
     <section
@@ -128,7 +128,7 @@
         class="container__full-width c--secondary-dark bg--secondary-color-2 flex row align--center justify--center">
         <div class="container flex col gap--10 align--center">
             <h2 class="w--60 w-100-mobile text-center">Venez nous voir en magasin, nos opticiens sont là pour vous conseiller.</h2>
-            <a href="" class="btn btn--main-light mt--2">Je prends rendez-vous</a>
+            <a hx-boost="true" href="{{ route('contact') }}" class="btn btn--main-light mt--2">Je prends rendez-vous</a>
         </div>
     </section>
 @endsection

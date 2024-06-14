@@ -21,7 +21,8 @@
     </section>
     <section class="container__full-width c--secondary-dark bg--primary-light flex col align--center">
         <div class="container">
-            <form action="" class="flex col gap--4">
+            <form method="post" action="" class="flex col gap--4">
+                @csrf
                 <div class="grid grid--2 grid--1-mobile grid-gap--2">
                     <div class="flex col">
                         <label for="firstname" class="form-label">Prénom*</label>
@@ -65,7 +66,7 @@
                 </div>
                 <div id="shop-content" class="content flex col gap--4 align--center form-content">
                     <div class="flex col align--self-start gap--2">
-                        <p class="form-label">Vous souhaitez prendre rendez-vous pour ?</p>
+                        <p class="form-label">Vous souhaitez prendre rendez-vous pour ?*</p>
                         <div class="form-check">
                             <input type="checkbox" name="exam" id="exam">
                             <label class="form-label" for="exam">Faire vérifier ma vue</label>
@@ -96,7 +97,11 @@
                                     <path d="M 25 2 C 12.309295 2 2 12.309295 2 25 C 2 37.690705 12.309295 48 25 48 C 37.690705 48 48 37.690705 48 25 C 48 12.309295 37.690705 2 25 2 z M 25 4 C 36.609824 4 46 13.390176 46 25 C 46 36.609824 36.609824 46 25 46 C 13.390176 46 4 36.609824 4 25 C 4 13.390176 13.390176 4 25 4 z M 25 11 A 3 3 0 0 0 22 14 A 3 3 0 0 0 25 17 A 3 3 0 0 0 28 14 A 3 3 0 0 0 25 11 z M 21 21 L 21 23 L 22 23 L 23 23 L 23 36 L 22 36 L 21 36 L 21 38 L 22 38 L 23 38 L 27 38 L 28 38 L 29 38 L 29 36 L 28 36 L 27 36 L 27 21 L 26 21 L 22 21 L 21 21 z"></path>
                                 </svg>
                                 <div class="help-text">
-                                    <p class="text--s">1 an pour les moins de 16 ans, 3 ans pour les 16 à 42 ans, 5 ans pour les plus de 42 ans</p>
+                                    <p class="text--s">
+                                        - 1 an pour les moins de 16 ans <br>
+                                        - 3 ans pour les 16 à 42 ans <br>
+                                        - 5 ans pour les plus de 42 ans
+                                    </p>
                                 </div>
                             </div>
 
@@ -125,13 +130,17 @@
                         <div class="flex col">
                             <label for="right-sphere" class="form-label">Sphère*</label>
                             <select class="form-input" name="right-sphere" id="right-sphere">
-
+                                @for($i = 20; $i >= -20; $i -= 0.25)
+                                    <option @if(strval($i) === '0') selected @endif value="{{ $i }}">{{ $i > 0 ? '+' . $i : $i }}</option>
+                                @endfor
                             </select>
                         </div>
                         <div class="flex col">
                             <label for="left-sphere" class="form-label">Sphère*</label>
-                            <select class="form-input" name="left-sphere" id="left-sphere">
-
+                            <select autocomplete="off" class="form-input" name="left-sphere" id="left-sphere">
+                                @for($i = 20; $i >= -20; $i -= 0.25)
+                                    <option @if(strval($i) === '0') selected @endif value="{{ $i }}">{{ $i > 0 ? '+' . $i : $i }}</option>
+                                @endfor
                             </select>
                         </div>
                     </div>
