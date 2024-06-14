@@ -1128,7 +1128,7 @@ nav {
 }
 .img__service {
   width: 30rem;
-  height: 33rem;
+  height: 40rem;
 }
 .img__shop {
   width: 26.5rem;
@@ -1150,7 +1150,7 @@ nav {
   .img__service {
     width: 100%;
     height: auto;
-    aspect-ratio: 9/18;
+    aspect-ratio: 9/16;
   }
   .img__shop {
     width: 26.5rem;

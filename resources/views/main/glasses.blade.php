@@ -1,5 +1,13 @@
 @extends('base')
 
+@section('title', 'Nos lunettes')
+
+@section('meta')
+    <meta property="og:description" content="" />
+    <meta name="description" content="">
+    <meta property="og:url" content="" />
+@endsection
+
 @section('content')
 
     <section class="container__full-width c--primary-light bg--secondary-dark flex col align--center">
@@ -31,7 +39,7 @@
                 </p>
             </div>
             <div class="img__hero w--60 w-100-mobile">
-                <img class="img" src="{{ asset('/images/layers/exam-store.png') }}" alt="">
+                <img loading="lazy" class="img" src="{{ asset('/images/layers/968ddc13459111bd78a5dc6a36d64e52.webp') }}" alt="">
             </div>
         </div>
     </section>
@@ -39,7 +47,7 @@
         class="container__full-width c--secondary-dark bg--primary-light flex row align--center justify--center gap--20 border--bottom border--secondary-dark">
         <div class="container pt--0 pb--0 pl--0 pr--0 flex row col-mobile justify--end">
             <div class="img__hero w--60 w-100-mobile">
-                <img class="img" src="{{ asset('/images/layers/engrave-store.png') }}" alt="">
+                <img loading="lazy" class="img" src="{{ asset('/images/layers/35cc4e12541ea3cb3bbe1aaac6b31993.webp') }}" alt="">
             </div>
             <div class="flex col align--start justify--center gap--8 container">
                 <h2>Nos lunettes de soleil</h2>
@@ -75,7 +83,7 @@
                 </p>
             </div>
             <div class="img__hero w--60 w-100-mobile">
-                <img class="img" src="{{ asset('/images/layers/exam-store.png') }}" alt="">
+                <img loading="lazy" class="img" src="{{ asset('/images/layers/5c035aad11e5c237f6dfafd1636c2b4f.webp') }}" alt="">
             </div>
         </div>
     </section>
@@ -161,7 +169,7 @@
         class="container__full-width c--secondary-dark bg--primary-light flex row align--center justify--center gap--20 border--bottom border--secondary-dark">
         <div class="container pt--0 pb--0 pl--0 pr--0 flex row col-mobile justify--end">
             <div class="img__hero w--60 w-100-mobile">
-                <img class="img" src="{{ asset('/images/layers/engrave-store.png') }}" alt="">
+                <img loading="lazy" class="img" src="{{ asset('/images/layers/e2e1072acc6b5a86d3aeb59767ec0861.webp') }}" alt="">
             </div>
             <div class="flex col align--start justify--center gap--8 container">
                 <h2>Enfants</h2>
@@ -199,7 +207,7 @@
         class="container__full-width c--secondary-dark bg--primary-light flex row align--center justify--center gap--20">
         <div class="container pt--0 pb--0 pl--0 pr--0 flex row col-mobile justify--end">
             <div class="img__hero w--60 w-100-mobile">
-                <img class="img" src="{{ asset('/images/layers/engrave-store.png') }}" alt="">
+                <img loading="lazy" class="img" src="{{ asset('/images/layers/5cfa910ae28ccf873283e27b12f812cc.webp') }}" alt="">
             </div>
             <div class="flex col align--start justify--center gap--8 container">
                 <h2>Accessoires</h2>

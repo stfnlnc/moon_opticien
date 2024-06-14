@@ -1,20 +1,28 @@
 @extends('base')
 
+@section('title', 'Nous contacter')
+
+@section('meta')
+    <meta property="og:description" content="" />
+    <meta name="description" content="">
+    <meta property="og:url" content="" />
+@endsection
+
 @section('content')
 
     <section class="container__full-width c--secondary-dark bg--secondary-color-2 flex col align--center">
         <span class="container"></span>
         <div class="container flex col align--start gap--5 pb--30">
-            <h1 class="uppercase">Un conseil personnalisé, <br> un examen de vue <br> et un café</h1>
-            <p class="text--m w--50 align--self-end">
+            <h1 class="uppercase w--70 w-100-mobile">Un conseil personnalisé, un examen de vue  et un café</h1>
+            <p class="text--m w--50 w-100-mobile align--self-end">
                 Nous vous offrons un conseil personnalisé, l’examen de vue et le café. Prenez rendez-vous avec nous, en magasin ou à domicile, en remplissant le formulaire de contact.
             </p>
         </div>
     </section>
     <section class="container__full-width c--secondary-dark bg--primary-light flex col align--center">
         <div class="container">
-            <form action="" class="flex col gap--4 pl--20 pr--20">
-                <div class="grid grid--2 grid-gap--2">
+            <form action="" class="flex col gap--4">
+                <div class="grid grid--2 grid--1-mobile grid-gap--2">
                     <div class="flex col">
                         <label for="firstname" class="form-label">Prénom*</label>
                         <input id="firstname" name="firstname" type="text" class="form-input" placeholder="John">
@@ -24,7 +32,7 @@
                         <input id="lastname" name="lastname" type="text" class="form-input" placeholder="Smith">
                     </div>
                 </div>
-                <div class="grid grid--2 grid-gap--2">
+                <div class="grid grid--2 grid--1-mobile grid-gap--2">
                     <div class="flex col">
                         <label for="email" class="form-label">Email*</label>
                         <input id="email" name="email" type="text" class="form-input" placeholder="john.smith@mail.com">
@@ -36,7 +44,7 @@
                 </div>
                 <div class="flex col gap--2">
                     <label for="email" class="form-label">Je souhaite*</label>
-                    <div class="flex row align--center gap--2">
+                    <div class="flex row col-mobile align--start gap--2">
                         <div id="message" class="filter">
                             Envoyer un message
                         </div>
@@ -60,7 +68,7 @@
     </section>
     <section class="container__full-width c--secondary-dark bg--secondary-color-2 flex col align--center">
         <div class="container">
-            <div class="pl--20 pr--20 grid grid--3">
+            <div class="grid grid--3 grid--1-mobile grid-gap--8">
                 <div class="flex col gap--2 align--start justify--start">
                     <svg xmlns="http://www.w3.org/2000/svg" width="14" height="16" viewBox="0 0 14 16" fill="none">
                         <path fill-rule="evenodd" clip-rule="evenodd" d="M6.97638 9.00011C7.50699 9.00011 8.01587 8.7894 8.39115 8.4143C8.76644 8.0392 8.97741 7.53042 8.97767 6.99982C8.97767 6.46905 8.76682 5.96001 8.39151 5.5847C8.01619 5.20938 7.50716 4.99854 6.97638 4.99854C6.44561 4.99854 5.93657 5.20938 5.56126 5.5847C5.18595 5.96001 4.9751 6.46905 4.9751 6.99982C4.97536 7.53042 5.18633 8.0392 5.56161 8.4143C5.9369 8.7894 6.44578 9.00011 6.97638 9.00011Z" stroke="#1E3A3D" stroke-linecap="square"/>

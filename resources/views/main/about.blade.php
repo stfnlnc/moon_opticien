@@ -1,5 +1,13 @@
 @extends('base')
 
+@section('title', 'À propos')
+
+@section('meta')
+    <meta property="og:description" content="" />
+    <meta name="description" content="">
+    <meta property="og:url" content="" />
+@endsection
+
 @section('content')
 
     <section class="container__full-width c--primary-dark bg--secondary-color-4 flex col align--center">
@@ -30,17 +38,17 @@
             <div class="flex row justify--end w--100">
                 <div class="grid grid--3 grid--1-mobile  grid-gap--8-mobile grid-gap--2">
                     <div class="flex col align--start justify--start gap--3 block__about">
-                        <img class="img img__about" src="{{ asset('/images/layers/glasses-2.png') }}" alt="">
+                        <img loading="lazy" class="img img__about" src="{{ asset('/images/layers/c9dc6aa53b4e6659a4484a3cbc012d58.webp') }}" alt="">
                         <p class="text--l">Laure</p>
                         <p class="text--m">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                     </div>
                     <div class="flex col align--start justify--start gap--3 block__about">
-                        <img class="img img__about" src="{{ asset('/images/layers/glasses-3.png') }}" alt="">
+                        <img loading="lazy" class="img img__about" src="{{ asset('/images/layers/c9dc6aa53b4e6659a4484a3cbc012d58.webp') }}" alt="">
                         <p class="text--l">Quentin</p>
                         <p class="text--m">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                     </div>
                     <div class="flex col align--start justify--start gap--3 block__about">
-                        <img class="img img__about" src="{{ asset('/images/layers/glasses-4.png') }}" alt="">
+                        <img loading="lazy" class="img img__about" src="{{ asset('/images/layers/c9dc6aa53b4e6659a4484a3cbc012d58.webp') }}" alt="">
                         <p class="text--l">Paul</p>
                         <p class="text--m">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                     </div>

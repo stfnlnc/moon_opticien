@@ -1,5 +1,13 @@
 @extends('base')
 
+@section('title', 'Nos lentilles')
+
+@section('meta')
+    <meta property="og:description" content="" />
+    <meta name="description" content="">
+    <meta property="og:url" content="" />
+@endsection
+
 @section('content')
 
     <section class="container__full-width c--primary-dark bg--secondary-color-1 flex col align--center">
@@ -31,7 +39,7 @@
                 </p>
             </div>
             <div class="img__hero w--60 w-100-mobile">
-                <img class="img" src="{{ asset('/images/layers/exam-store.png') }}" alt="">
+                <img loading="lazy" class="img" src="{{ asset('/images/layers/b68c4d79b0cc54636969cdf1621e00ae.webp') }}" alt="">
             </div>
         </div>
     </section>

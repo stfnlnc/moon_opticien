@@ -30,8 +30,5 @@ class AppServiceProvider extends ServiceProvider
         if(env('REDIRECT_HTTPS')) {
             $url->formatScheme('https');
         }
-
-        $option = Option::first();
-        View::share('option', $option);
     }
 }

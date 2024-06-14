@@ -23,19 +23,6 @@
                     </x-nav-link>
                 </div>
             </div>
-            <div class="nav--dropdown">
-                <x-nav-link :href="route('options.index')" :active="str_contains($route, 'options.')">
-                    {{ __('Options') }}
-                </x-nav-link>
-                <div class="nav--dropdown-item">
-                    <x-nav-link :href="route('options.index')">
-                        {{ __('Gestion des options') }}
-                    </x-nav-link>
-                    <x-nav-link :href="route('options.create')">
-                        {{ __('Modifier les options') }}
-                    </x-nav-link>
-                </div>
-            </div>
         </div>
     </div>
     @endif
@@ -67,7 +54,7 @@
             <div class="flex row align--center gap--4" hx-boost="true">
                 <x-profile href="{{ route('profile') }}"></x-profile>
                 @if(Auth::user()->role->name === 'admin')
-                <x-parameters href="{{ route('options.index') }}"></x-parameters>
+                <x-parameters href=""></x-parameters>
                 @endif
                 <x-logout></x-logout>
             </div>

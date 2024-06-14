@@ -28,11 +28,13 @@
     </div>
     <div id="nav" data-mode="{{ $mode }}" class="container__full-width flex col align--center">
         <div class="container pt--4 pb--4 flex row align--center justify--space-between">
-            <img class="nav__logo" src="{{ asset('/images/logo/logo-full-' . $mode . '.svg') }}" alt="">
+            <a href="{{ route('index') }}">
+                <img class="nav__logo" src="{{ asset('/images/logo/logo-full-' . $mode . '.svg') }}" alt="">
+            </a>
             <div class="hide-mobile">
                 @include('main.layouts.template-parts.menu')
             </div>
-            <a href="{{ route('contact') }}" class="btn btn--main-{{ $mode }} hide-mobile">Contact</a>
+            <a hx-boost="true" href="{{ route('contact') }}" class="btn btn--main-{{ $mode }} hide-mobile">Contact</a>
             <span class="mobile-menu mobile-menu-{{ $mode }} display-mobile">
                     <span class="line-1"></span>
                     <span class="line-2"></span>
@@ -51,7 +53,7 @@
                     @include('main.layouts.template-parts.menu', ['mode' => 'dark'])
                 </div>
                 <div class="container pt--0 pb--0">
-                    <a href="{{ route('contact') }}" class="btn btn--main-dark">Contact</a>
+                    <a hx-boost="true" href="{{ route('contact') }}" class="btn btn--main-dark">Contact</a>
                 </div>
                 <div class="container mt--10 c--primary-light text--xs">
                     <div class="flex col">

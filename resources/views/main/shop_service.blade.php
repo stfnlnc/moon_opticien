@@ -1,5 +1,13 @@
 @extends('base')
 
+@section('title', 'En magasin')
+
+@section('meta')
+    <meta property="og:description" content="" />
+    <meta name="description" content="">
+    <meta property="og:url" content="" />
+@endsection
+
 @section('content')
 
     <section class="container__full-width c--secondary-dark bg--secondary-color-2 flex col align--center">
@@ -32,7 +40,7 @@
                 <a href="" class="btn btn--main-light">Je prends rendez-vous</a>
             </div>
             <div class="img__hero w--60 w-100-mobile">
-                <img class="img" src="{{ asset('/images/layers/exam-store.png') }}" alt="">
+                <img loading="lazy" class="img" src="{{ asset('/images/layers/a815b7f0bd7fe915483f07067f5d0129.webp') }}" alt="">
             </div>
         </div>
     </section>
@@ -76,7 +84,7 @@
         class="container__full-width c--secondary-dark bg--primary-light flex row align--center justify--center gap--20 border--bottom border--secondary-dark">
         <div class="container pt--0 pb--0 pl--0 pr--0 flex row col-mobile justify--end">
             <div class="img__hero w--60 w-100-mobile">
-                <img class="img" src="{{ asset('/images/layers/engrave-store.png') }}" alt="">
+                <img loading="lazy" class="img" src="{{ asset('/images/layers/e574f92d8ea82d005cac8e03303eaa48.webp') }}" alt="">
             </div>
             <div class="flex col align--start justify--center gap--8 container">
                 <h2>Faites contrôler votre vue gratuitement</h2>
@@ -112,7 +120,7 @@
                 </p>
             </div>
             <div class="img__hero w--60 w-100-mobile">
-                <img class="img" src="{{ asset('/images/layers/recycle-store.png') }}" alt="">
+                <img loading="lazy" class="img" src="{{ asset('/images/layers/18d61ca33bcf9b335c8e80601f3f30d2.webp') }}" alt="">
             </div>
         </div>
     </section>

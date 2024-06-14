@@ -1,8 +1,14 @@
 @extends('base')
 
+@section('meta')
+    <meta property="og:description" content="" />
+    <meta name="description" content="">
+    <meta property="og:url" content="" />
+@endsection
+
 @section('content')
 <section class="relative w--100 h--100">
-    <img class="img w--100 h--100 absolute t--0 l--0" src="{{ asset('/images/layers/header.png') }}" alt="">
+    <img loading="lazy" class="img w--100 h--100 absolute t--0 l--0" src="{{ asset('/images/layers/2e68def2b88b.webp') }}" alt="">
     <div class="absolute pos-hor-center b--0 container flex col align--start justify--end gap--10">
         <h1 class="c--primary-light">
             MOON, <br>
@@ -44,15 +50,15 @@
                 Highlight the Unique Selling Proposition (USP) with a short summary of the main feature and how it benefits customers. The idea here is to keep it short and direct. If the visitor wishes to learn more they will hit the button.
             </p>
         </div>
-        <div class="flex row align--start justify--end gap--2">
-            <div class="flex col align--start justify--start gap--3 box">
-                <img class="img img__service" src="{{ asset('/images/layers/service-shop.png') }}" alt="">
+        <div class="flex row align--start justify--end gap--2 w-100-mobile">
+            <div class="flex col align--start justify--start gap--3 w-100-mobile">
+                <img loading="lazy" class="img img__service" src="{{ asset('/images/layers/728ebaf8666162f73edf66e0bd3146d5.webp') }}" alt="">
                 <p class="text--l">Services en Magasin</p>
                 <p class="text--m">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                 <a href="" class="btn btn--secondary-light">Découvrir</a>
             </div>
-            <div class="flex col align--start justify--start gap--3 box2">
-                <img class="img img__service" src="{{ asset('/images/layers/service-shop.png') }}" alt="">
+            <div class="flex col align--start justify--start gap--3 w-100-mobile">
+                <img loading="lazy" class="img img__service" src="{{ asset('/images/layers/a7e72401fb434c9febabc88ff04202ae.webp') }}" alt="">
                 <p class="text--l">Services à Domicile</p>
                 <p class="text--m">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                 <a href="" class="btn btn--secondary-light">Découvrir</a>
@@ -75,10 +81,10 @@
                 <a href="" class="btn btn--main-light">Qui sommes-nous ?</a>
             </div>
         </div>
-        <div class="flex row align--start gap--4">
-                <img class="img w-100-mobile" src="{{ asset('/images/layers/about-1.png') }}" alt="">
-                <img class="img hide-mobile" src="{{ asset('/images/layers/about-2.png') }}" alt="">
-                <img class="img hide-mobile" src="{{ asset('/images/layers/about-3.png') }}" alt="">
+        <div class="flex row align--start gap--4 w--100">
+                <img loading="lazy" class="img w-100-mobile w--80" src="{{ asset('/images/layers/d6f527b6d5f28d685792184f72ccd2ae.webp') }}" alt="">
+                <img loading="lazy" class="img hide-mobile w--100" src="{{ asset('/images/layers/1624725b99dc68b3e6c2bc9dd5722146.webp') }}" alt="">
+                <img loading="lazy" class="img hide-mobile w--100" src="{{ asset('/images/layers/5c3d15465775ba42a138b0208f4474f2.webp') }}" alt="">
         </div>
     </div>
 </section>
@@ -98,10 +104,10 @@
             </div>
         </div>
         <div class="flex row align--end justify--start gap--16">
-            <img class="img img__shop hide-mobile" src="{{ asset('/images/layers/shop.png') }}" alt="">
+            <img loading="lazy" class="img img__shop hide-mobile" src="{{ asset('/images/layers/6a98c021ca22c8980f02f19c289b96de.webp') }}" alt="">
             <div class="grid grid--2 grid-gap--10 grid-gap--6-mobile">
                 <div class="flex col gap--3">
-                    <img class="icon--large" src="{{ asset('/images/icon/large/icon-discuss.svg') }}" alt="">
+                    <img loading="lazy" class="icon--large" src="{{ asset('/images/icon/large/icon-discuss.svg') }}" alt="">
                     <div class="flex col gap--1">
                         <p class="text--l">Être conseillé</p>
                         <p class="text--s">
@@ -110,7 +116,7 @@
                     </div>
                 </div>
                 <div class="flex col gap--3">
-                    <img class="icon--large" src="{{ asset('/images/icon/large/icon-rule.svg') }}" alt="">
+                    <img loading="lazy" class="icon--large" src="{{ asset('/images/icon/large/icon-rule.svg') }}" alt="">
                     <div class="flex col gap--1">
                         <p class="text--l">Ajuster</p>
                         <p class="text--s">
@@ -119,7 +125,7 @@
                     </div>
                 </div>
                 <div class="flex col gap--3">
-                    <img class="icon--large" src="{{ asset('/images/icon/large/icon-recycle.svg') }}" alt="">
+                    <img loading="lazy" class="icon--large" src="{{ asset('/images/icon/large/icon-recycle.svg') }}" alt="">
                     <div class="flex col gap--1">
                         <p class="text--l">Recycler</p>
                         <p class="text--s">
@@ -128,7 +134,7 @@
                     </div>
                 </div>
                 <div class="flex col gap--3">
-                    <img class="icon--large" src="{{ asset('/images/icon/large/icon-favorite.svg') }}" alt="">
+                    <img loading="lazy" class="icon--large" src="{{ asset('/images/icon/large/icon-favorite.svg') }}" alt="">
                     <div class="flex col gap--1">
                         <p class="text--l">Personnaliser</p>
                         <p class="text--s">
@@ -171,7 +177,7 @@
         </div>
         <div class="grid grid--3 grid-gap--10 grid--1-mobile c--secondary-dark mt--10">
             <card class="relative">
-                <img class="absolute t--0 l--0 img__icon" src="{{ asset('/images/icon/large/icon-phone.svg') }}" alt="">
+                <img loading="lazy" class="absolute t--0 l--0 img__icon" src="{{ asset('/images/icon/large/icon-phone.svg') }}" alt="">
                 <div class="flex row gap--4">
                     <p class="h2 c--secondary-color-2">1.</p>
                     <p class="text--l">Nous prenons rendez-vous ensemble</p>
@@ -181,7 +187,7 @@
                 </p>
             </card>
             <card class="relative">
-                <img class="absolute t--0 l--0 img__icon" src="{{ asset('/images/icon/large/icon-car.svg') }}" alt="">
+                <img loading="lazy" class="absolute t--0 l--0 img__icon" src="{{ asset('/images/icon/large/icon-car.svg') }}" alt="">
                 <div class="flex row gap--4">
                     <p class="h2 c--secondary-color-2">2.</p>
                     <p class="text--l">Nous nous déplaçons chez vous</p>
@@ -191,7 +197,7 @@
                 </p>
             </card>
             <card class="relative">
-                <img class="absolute t--0 l--0 img__icon" src="{{ asset('/images/icon/large/icon-exam.svg') }}" alt="">
+                <img loading="lazy" class="absolute t--0 l--0 img__icon" src="{{ asset('/images/icon/large/icon-exam.svg') }}" alt="">
                 <div class="flex row gap--4">
                     <p class="h2 c--secondary-color-2">3.</p>
                     <p class="text--l">Nous faisons le point sur votre vue</p>
@@ -201,7 +207,7 @@
                 </p>
             </card>
             <card class="relative">
-                <img class="absolute t--0 l--0 img__icon" src="{{ asset('/images/icon/large/icon-glasses.svg') }}" alt="">
+                <img loading="lazy" class="absolute t--0 l--0 img__icon" src="{{ asset('/images/icon/large/icon-glasses.svg') }}" alt="">
                 <div class="flex row gap--4">
                     <p class="h2 c--secondary-color-2">4.</p>
                     <p class="text--l">Vous choisissez vos lunettes</p>
@@ -211,7 +217,7 @@
                 </p>
             </card>
             <card class="relative">
-                <img class="absolute t--0 l--0 img__icon" src="{{ asset('/images/icon/large/icon-delivery.svg') }}" alt="">
+                <img loading="lazy" class="absolute t--0 l--0 img__icon" src="{{ asset('/images/icon/large/icon-delivery.svg') }}" alt="">
                 <div class="flex row gap--4">
                     <p class="h2 c--secondary-color-2">5.</p>
                     <p class="text--l">Nous faisons fabriquer vos lunettes</p>
@@ -221,7 +227,7 @@
                 </p>
             </card>
             <card class="relative">
-                <img class="absolute t--0 l--0 img__icon" src="{{ asset('/images/icon/large/icon-repair.svg') }}" alt="">
+                <img loading="lazy" class="absolute t--0 l--0 img__icon" src="{{ asset('/images/icon/large/icon-repair.svg') }}" alt="">
                 <div class="flex row gap--4">
                     <p class="h2 c--secondary-color-2">6.</p>
                     <p class="text--l">Vous êtes livrés ! Et on reste en contact</p>
@@ -251,25 +257,25 @@
         <div class="flex row justify--end w--100">
             <div class="grid grid--4 grid-gap--2 grid--2-mobile">
                 <div class="flex col align--start justify--start gap--3 block__glasses">
-                    <img class="img img__glasses" src="{{ asset('/images/layers/glasses-1.png') }}" alt="">
+                    <img loading="lazy" class="img img__glasses" src="{{ asset('/images/layers/ac59211ea58ee6b9259ed733452a040d.webp') }}" alt="">
                     <p class="text--l">Vue</p>
                     <p class="text--m">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                     <a href="" class="btn btn--secondary-light">Découvrir</a>
                 </div>
                 <div class="flex col align--start justify--start gap--3 block__glasses">
-                    <img class="img img__glasses" src="{{ asset('/images/layers/glasses-2.png') }}" alt="">
+                    <img class="img img__glasses" src="{{ asset('/images/layers/0fef3d1f982b33e7b22c1571eecc4453.webp') }}" alt="">
                     <p class="text--l">Solaires</p>
                     <p class="text--m">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                     <a href="" class="btn btn--secondary-light">Découvrir</a>
                 </div>
                 <div class="flex col align--start justify--start gap--3 block__glasses">
-                    <img class="img img__glasses" src="{{ asset('/images/layers/glasses-3.png') }}" alt="">
+                    <img loading="lazy" class="img img__glasses" src="{{ asset('/images/layers/fb49e3f66990789c63e31a0c6cc6af7d.webp') }}" alt="">
                     <p class="text--l">Sport</p>
                     <p class="text--m">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                     <a href="" class="btn btn--secondary-light">Découvrir</a>
                 </div>
                 <div class="flex col align--start justify--start gap--3 block__glasses">
-                    <img class="img img__glasses" src="{{ asset('/images/layers/glasses-4.png') }}" alt="">
+                    <img loading="lazy" class="img img__glasses" src="{{ asset('/images/layers/5492d5c3f99aca5a8d72c79736f9317c.webp') }}" alt="">
                     <p class="text--l">Enfants</p>
                     <p class="text--m">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                     <a href="" class="btn btn--secondary-light">Découvrir</a>
@@ -278,14 +284,14 @@
         </div>
     </div>
 </section>
-<section style="background-image: linear-gradient(rgba(94,117,103,0.9), rgba(94,117,103,0.9)), url('{{ asset('/images/layers/lenses.png') }}'); background-size: cover; background-position: center;" class="relative container__full-width c--primary-light bg--secondary-color-3 flex col align--center">
+<section style="background-image: linear-gradient(rgba(94,117,103,0.9), rgba(94,117,103,0.9)), url('{{ asset('/images/layers/a7e72401fb434c9febabc88ff04202aeL.webp') }}'); background-size: cover; background-position: 100% 30%;" class="relative container__full-width c--primary-light bg--secondary-color-3 flex col align--center">
     <div class="container">
         <div class="hide-mobile border--top border--secondary-color-2 c--secondary-color-2 pt--4 pb--4 flex row align--center justify--start gap--2">
             <x-icon.dot-small class="icon__dot-small icon--secondary-color-2"></x-icon.dot-small>
             <p class="text--s">Nos lentilles</p>
         </div>
         <div class="grid grid--2 grid-gap--14 grid--1-mobile grid-gap--8-mobile pt--10 pb--20">
-            <h2>Découvrez notre sélection de plus grandes marques</h2>
+            <h2>Commander et récupérer vos lentilles en magasin</h2>
             <div class="flex col align--start gap--10">
                 <p class="text--m">
                     Highlight the Unique Selling Proposition (USP) with a short summary of the main feature and how it benefits customers. The idea here is to keep it short and direct. If the visitor wishes to learn more they will hit the button.

@@ -1,5 +1,13 @@
 @extends('base')
 
+@section('title', 'À domicile')
+
+@section('meta')
+    <meta property="og:description" content="" />
+    <meta name="description" content="">
+    <meta property="og:url" content="" />
+@endsection
+
 @section('content')
 
     <section class="container__full-width c--primary-light bg--secondary-color-3 flex col align--center">
@@ -31,7 +39,7 @@
                 </p>
             </div>
             <div class="img__hero w--60 w-100-mobile">
-                <img class="img" src="{{ asset('/images/layers/exam-store.png') }}" alt="">
+                <img loading="lazy" class="img" src="{{ asset('/images/layers/be8d0bb7d96fcf948680d017abe96fd7.webp') }}" alt="">
             </div>
         </div>
     </section>
@@ -39,17 +47,17 @@
         <div class="container flex col align--start gap--10">
             <div class="grid grid--3 grid--1-mobile grid-gap--10 w--100 text--l">
                 <div class="flex col gap--3 align-mobile--center text-center-mobile">
-                    <img class="icon--large" src="{{ asset('/images/icon/large/icon-home.svg') }}" alt="">
+                    <img loading="lazy" class="icon--large" src="{{ asset('/images/icon/large/icon-home.svg') }}" alt="">
                     <p class="text--l">À domicile</p>
                     <p class="text--m">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
                 </div>
                 <div class="flex col gap--3 align-mobile--center text-center-mobile">
-                    <img class="icon--large" src="{{ asset('/images/icon/large/icon-person.svg') }}" alt="">
+                    <img loading="lazy" class="icon--large" src="{{ asset('/images/icon/large/icon-person.svg') }}" alt="">
                     <p class="text--l">En EHPAD</p>
                     <p class="text--m">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
                 </div>
                 <div class="flex col gap--3 align-mobile--center text-center-mobile">
-                    <img class="icon--large" src="{{ asset('/images/icon/large/icon-heart.svg') }}" alt="">
+                    <img loading="lazy" class="icon--large" src="{{ asset('/images/icon/large/icon-heart.svg') }}" alt="">
                     <p class="text--l">À la demande</p>
                     <p class="text--m">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
                 </div>
@@ -73,7 +81,7 @@
             </div>
             <div class="grid grid--3 grid-gap--10 grid--1-mobile c--secondary-dark mt--10">
                 <card class="relative">
-                    <img class="absolute t--0 l--0 img__icon" src="{{ asset('/images/icon/large/icon-phone.svg') }}" alt="">
+                    <img loading="lazy" class="absolute t--0 l--0 img__icon" src="{{ asset('/images/icon/large/icon-phone.svg') }}" alt="">
                     <div class="flex row gap--4">
                         <p class="h2 c--secondary-color-2">1.</p>
                         <p class="text--l">Nous prenons rendez-vous ensemble</p>
@@ -83,7 +91,7 @@
                     </p>
                 </card>
                 <card class="relative">
-                    <img class="absolute t--0 l--0 img__icon" src="{{ asset('/images/icon/large/icon-car.svg') }}" alt="">
+                    <img loading="lazy" class="absolute t--0 l--0 img__icon" src="{{ asset('/images/icon/large/icon-car.svg') }}" alt="">
                     <div class="flex row gap--4">
                         <p class="h2 c--secondary-color-2">2.</p>
                         <p class="text--l">Nous nous déplaçons chez vous</p>
@@ -93,7 +101,7 @@
                     </p>
                 </card>
                 <card class="relative">
-                    <img class="absolute t--0 l--0 img__icon" src="{{ asset('/images/icon/large/icon-exam.svg') }}" alt="">
+                    <img loading="lazy" class="absolute t--0 l--0 img__icon" src="{{ asset('/images/icon/large/icon-exam.svg') }}" alt="">
                     <div class="flex row gap--4">
                         <p class="h2 c--secondary-color-2">3.</p>
                         <p class="text--l">Nous faisons le point sur votre vue</p>
@@ -103,7 +111,7 @@
                     </p>
                 </card>
                 <card class="relative">
-                    <img class="absolute t--0 l--0 img__icon" src="{{ asset('/images/icon/large/icon-glasses.svg') }}" alt="">
+                    <img loading="lazy" class="absolute t--0 l--0 img__icon" src="{{ asset('/images/icon/large/icon-glasses.svg') }}" alt="">
                     <div class="flex row gap--4">
                         <p class="h2 c--secondary-color-2">4.</p>
                         <p class="text--l">Vous choisissez vos lunettes</p>
@@ -113,7 +121,7 @@
                     </p>
                 </card>
                 <card class="relative">
-                    <img class="absolute t--0 l--0 img__icon" src="{{ asset('/images/icon/large/icon-delivery.svg') }}" alt="">
+                    <img loading="lazy" class="absolute t--0 l--0 img__icon" src="{{ asset('/images/icon/large/icon-delivery.svg') }}" alt="">
                     <div class="flex row gap--4">
                         <p class="h2 c--secondary-color-2">5.</p>
                         <p class="text--l">Nous faisons fabriquer vos lunettes</p>
@@ -123,7 +131,7 @@
                     </p>
                 </card>
                 <card class="relative">
-                    <img class="absolute t--0 l--0 img__icon" src="{{ asset('/images/icon/large/icon-repair.svg') }}" alt="">
+                    <img loading="lazy" class="absolute t--0 l--0 img__icon" src="{{ asset('/images/icon/large/icon-repair.svg') }}" alt="">
                     <div class="flex row gap--4">
                         <p class="h2 c--secondary-color-2">6.</p>
                         <p class="text--l">Vous êtes livrés ! Et on reste en contact</p>
