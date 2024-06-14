@@ -114,7 +114,7 @@ textarea {
     display: inline-block;
     transform: rotate(45deg) translate(0.3em, -0.15em);
     height: 0.6em;
-    width: 0.2em;
+    width: 0.3em;
     border-bottom: var(--primary-light) solid 2px;
     border-right: var(--primary-light) solid 2px;
 }
@@ -183,6 +183,33 @@ input:focus, .form-input:focus, .form-textarea:focus, .form-check input:focus + 
         padding: 0 5px;
         width: 350px;
     }
+}
+
+.help {
+    cursor: pointer;
+    position: relative;
+    & > svg {
+        width: 20px;
+        height: 20px;
+        fill: var(--success);
+    }
+    &:hover .help-text {
+        display: flex;
+        position: absolute;
+        right: 1rem;
+        top: 1rem;
+        width: 300px;
+        height: auto;
+        padding: 1rem;
+        background-color: var(--secondary-color-4);
+        border-radius: var(--border-radius);
+        box-shadow: rgba(60, 64, 67, 0.3) 0 1px 2px 0, rgba(60, 64, 67, 0.15) 0 1px 3px 1px;
+    }
+}
+
+.help-text {
+    display: none;
+    z-index: 1;
 }
 
 

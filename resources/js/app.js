@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 htmx.onLoad(function (target) {
-
+    // Hide top header at scrolling and change background nav
     const navMenu = document.getElementById('nav');
     const navPop = document.getElementById('nav-pop');
     const nav = document.querySelector('nav');
@@ -57,9 +57,25 @@ htmx.onLoad(function (target) {
         body.style.overflow = 'auto'
     })
 
+    // Brand infinite scrolling
+    const scroll = document.querySelectorAll('.infinite-scroll')
+
+    scroll.forEach((s) => {
+        gsap.to(s, {
+            xPercent: 50,
+            duration: 5,
+            scrollTrigger: {
+                trigger: s,
+                toggleActions: 'restart reverse play reverse',
+                markers: false,
+                scrub: 1
+            }
+        });
+    })
+
 
     // Show form content with filters
-    /*const message = document.getElementById('message')
+    const message = document.getElementById('message')
     const messageContent = document.getElementById('message-content')
     const shop = document.getElementById('shop')
     const shopContent = document.getElementById('shop-content')
@@ -68,51 +84,33 @@ htmx.onLoad(function (target) {
     const lens = document.getElementById('lens')
     const lensContent = document.getElementById('lens-content')
     const filters = document.querySelectorAll('.filter')
+    const contents = document.querySelectorAll('.content')
 
-    message.addEventListener('click', () => {
-        filters.forEach((filter) => {
-            filter.classList.remove('filter--active')
+    function showContent(element, content) {
+        element.addEventListener('click', () => {
+            filters.forEach((filter) => {
+                filter.classList.remove('filter--active')
+            })
+            contents.forEach((filter) => {
+                filter.classList.add('form-content')
+            })
+            element.classList.toggle('filter--active')
+            content.classList.toggle('form-content')
         })
-        message.classList.toggle('filter--active')
-        messageContent.classList.toggle('form-content')
-    })
+    }
 
-    shop.addEventListener('click', () => {
-        filters.forEach((filter) => {
-            filter.classList.remove('filter--active')
-        })
-        shop.classList.toggle('filter--active')
-        shopContent.classList.toggle('form-content')
-    })*/
-
+    if(filters.length !== 0) {
+        showContent(message, messageContent)
+        showContent(shop, shopContent)
+        showContent(home, homeContent)
+        showContent(lens, lensContent)
+    }
 });
 
 window.Alpine = Alpine;
 
 Alpine.start();
 
-/*gsap.to('.box', {
-    yPercent: -5,
-    duration: 2,
-    scrollTrigger: {
-        trigger: '.box',
-        toggleActions: 'restart reverse play reverse',
-        start: 'top 40%',
-        end: 'bottom 30%',
-        markers: false,
-        scrub: 1
-    }
-});
 
-gsap.to('.box2', {
-    yPercent: -20,
-    duration: 2,
-    scrollTrigger: {
-        trigger: '.box2',
-        toggleActions: 'restart reverse play reverse',
-        start: 'top 40%',
-        end: 'bottom 30%',
-        markers: false,
-        scrub: 1
-    }
-});*/
+
+

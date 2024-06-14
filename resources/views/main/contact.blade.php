@@ -59,8 +59,82 @@
                         </div>
                     </div>
                 </div>
-                <div id="message-content" class="flex col gap--4 align--center form-content">
+                <div id="message-content" class="content flex col gap--4 align--center form-content">
                     <textarea class="form-input" name="message" id="message" rows="5" placeholder="Laissez-nous votre message"></textarea>
+                    <button class="btn btn--main-light">Envoyer le formulaire</button>
+                </div>
+                <div id="shop-content" class="content flex col gap--4 align--center form-content">
+                    <div class="flex col align--self-start gap--2">
+                        <p class="form-label">Vous souhaitez prendre rendez-vous pour ?</p>
+                        <div class="form-check">
+                            <input type="checkbox" name="exam" id="exam">
+                            <label class="form-label" for="exam">Faire vérifier ma vue</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="checkbox" name="glasses" id="glasses">
+                            <label class="form-label" for="glasses">Être conseillé dans le choix de mes lunettes</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="checkbox" name="lenses" id="lenses">
+                            <label class="form-label" for="lenses">Des conseils sur l'adaptation de mes lentilles</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="checkbox" name="buy" id="buy">
+                            <label class="form-label" for="buy">Réceptionner mon achat</label>
+                        </div>
+                    </div>
+                    <button class="btn btn--main-light">Envoyer le formulaire</button>
+                </div>
+                <div id="home-content" class="content flex col gap--4 align--center form-content w--100">
+                    <div class="flex col align--self-start gap--2 w--100">
+                        <label for="address" class="form-label">Adresse ou lieu où vous souhaitez qu'on intervienne*</label>
+                        <input id="address" name="address" type="text" class="form-input" placeholder="Adresse de votre domicile ou celui de votre proche">
+                        <div class="flex row gap--2 align--center">
+                            <p class="form-label">Avez-vous une ordonnance à jour ?*</p>
+                            <div class="help">
+                                <svg class="help" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 50 50">
+                                    <path d="M 25 2 C 12.309295 2 2 12.309295 2 25 C 2 37.690705 12.309295 48 25 48 C 37.690705 48 48 37.690705 48 25 C 48 12.309295 37.690705 2 25 2 z M 25 4 C 36.609824 4 46 13.390176 46 25 C 46 36.609824 36.609824 46 25 46 C 13.390176 46 4 36.609824 4 25 C 4 13.390176 13.390176 4 25 4 z M 25 11 A 3 3 0 0 0 22 14 A 3 3 0 0 0 25 17 A 3 3 0 0 0 28 14 A 3 3 0 0 0 25 11 z M 21 21 L 21 23 L 22 23 L 23 23 L 23 36 L 22 36 L 21 36 L 21 38 L 22 38 L 23 38 L 27 38 L 28 38 L 29 38 L 29 36 L 28 36 L 27 36 L 27 21 L 26 21 L 22 21 L 21 21 z"></path>
+                                </svg>
+                                <div class="help-text">
+                                    <p class="text--s">1 an pour les moins de 16 ans, 3 ans pour les 16 à 42 ans, 5 ans pour les plus de 42 ans</p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="form-check">
+                            <input type="radio" name="prescription" value="yes" id="yes">
+                            <label class="form-label" for="yes">Oui</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="radio" name="prescription" value="no" id="no">
+                            <label class="form-label" for="no">Non</label>
+                        </div>
+                    </div>
+                    <button class="btn btn--main-light">Envoyer le formulaire</button>
+                </div>
+                <div id="lens-content" class="content flex col gap--4 align--center form-content w--100">
+                    <div class="flex col align--self-start gap--2 w--100">
+                        <label for="address" class="form-label">Modèle de lentilles*</label>
+                        <input id="lens" name="lens" type="text" class="form-input" placeholder="Modèle et marque de vos lentilles">
+                    </div>
+                    <div class="grid grid--2 grid--1-mobile grid-gap--16 w--100">
+                        <p class="form-label">Oeil gauche*</p>
+                        <p class="form-label">Oeil droit*</p>
+                    </div>
+                    <div class="grid grid--2 grid--1-mobile grid-gap--16 w--100">
+                        <div class="flex col">
+                            <label for="right-sphere" class="form-label">Sphère*</label>
+                            <select class="form-input" name="right-sphere" id="right-sphere">
+
+                            </select>
+                        </div>
+                        <div class="flex col">
+                            <label for="left-sphere" class="form-label">Sphère*</label>
+                            <select class="form-input" name="left-sphere" id="left-sphere">
+
+                            </select>
+                        </div>
+                    </div>
                     <button class="btn btn--main-light">Envoyer le formulaire</button>
                 </div>
             </form>

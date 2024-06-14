@@ -1,0 +1,25 @@
+.wrapper {
+    width: 100%;
+    overflow: hidden;
+    & > div > * {
+        padding-right: 50px;
+    }
+}
+
+.wrapper-mobile {
+    width: 100%;
+    overflow: scroll;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;
+    &::-webkit-scrollbar {
+        display: none;
+    }
+    & > div > * {
+        padding-right: 30px;
+    }
+}
+
+.infinite-scroll {
+    transform: translate(-80%, 0);
+}
+

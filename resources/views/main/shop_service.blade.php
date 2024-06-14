@@ -65,7 +65,7 @@
                 <div class="flex col gap--3 pb--6 border--bottom-mobile border--secondary-color-3">
                     <div class="flex row gap--3 align--center">
                         <x-icon.dot-small class="icon__dot-small icon--primary-light"></x-icon.dot-small>
-                        <p>5 an</p>
+                        <p>5 ans</p>
                     </div>
                     <p class="text--m uppercase">Pour les plus de 42 ans</p>
                 </div>

@@ -90,16 +90,43 @@
     <section class="container__full-width c--secondary-dark bg--primary-light flex row align--center justify--center">
         <div class="pt--10 pb--10 flex col align--center gap--8 w--100">
             <h3>Nos marques adultes</h3>
-            <div class="container flex row justify--space-between pt--5 pb--5">
-                <a href=""><img src="{{ asset('/images/brand/andybrook.png') }}" alt=""></a>
-                <a href=""><img src="{{ asset('/images/brand/demetz.png') }}" alt=""></a>
-                <a href=""><img src="{{ asset('/images/brand/etnia.png') }}" alt=""></a>
-                <a href=""><img src="{{ asset('/images/brand/frenchretro.png') }}" alt=""></a>
-                <a href=""><img src="{{ asset('/images/brand/marlone.png') }}" alt=""></a>
-                <a href=""><img src="{{ asset('/images/brand/octika.png') }}" alt=""></a>
-                <a href=""><img src="{{ asset('/images/brand/osmose.png') }}" alt=""></a>
-                <a href=""><img src="{{ asset('/images/brand/ralph.png') }}" alt=""></a>
-                <a href=""><img src="{{ asset('/images/brand/vogue.png') }}" alt=""></a>
+            <div class="wrapper hide-mobile">
+                <div class="infinite-scroll flex row align--center justify--start pb--10 pt--10">
+                    <a href=""><img src="{{ asset('/images/brand/rayban.svg') }}" alt=""></a>
+                    <a href=""><img src="{{ asset('/images/brand/ralph.svg') }}" alt=""></a>
+                    <a href=""><img src="{{ asset('/images/brand/osmose.svg') }}" alt=""></a>
+                    <a href=""><img src="{{ asset('/images/brand/vogue.svg') }}" alt=""></a>
+                    <a href=""><img src="{{ asset('/images/brand/octika.svg') }}" alt=""></a>
+                    <a href=""><img src="{{ asset('/images/brand/marlone.svg') }}" alt=""></a>
+                    <a href=""><img src="{{ asset('/images/brand/frenchretro.svg') }}" alt=""></a>
+                    <a href=""><img src="{{ asset('/images/brand/etnia.svg') }}" alt=""></a>
+                    <a href=""><img src="{{ asset('/images/brand/andybrook.svg') }}" alt=""></a>
+                    <a href=""><img src="{{ asset('/images/brand/demetz.svg') }}" alt=""></a>
+                    <a href=""><img src="{{ asset('/images/brand/rayban.svg') }}" alt=""></a>
+                    <a href=""><img src="{{ asset('/images/brand/ralph.svg') }}" alt=""></a>
+                    <a href=""><img src="{{ asset('/images/brand/osmose.svg') }}" alt=""></a>
+                    <a href=""><img src="{{ asset('/images/brand/vogue.svg') }}" alt=""></a>
+                    <a href=""><img src="{{ asset('/images/brand/octika.svg') }}" alt=""></a>
+                    <a href=""><img src="{{ asset('/images/brand/marlone.svg') }}" alt=""></a>
+                    <a href=""><img src="{{ asset('/images/brand/frenchretro.svg') }}" alt=""></a>
+                    <a href=""><img src="{{ asset('/images/brand/etnia.svg') }}" alt=""></a>
+                    <a href=""><img src="{{ asset('/images/brand/andybrook.svg') }}" alt=""></a>
+                    <a href=""><img src="{{ asset('/images/brand/demetz.svg') }}" alt=""></a>
+                </div>
+            </div>
+            <div class="wrapper-mobile display-mobile">
+                <div class="flex row align--center justify--start pb--5 pt--5">
+                    <a href=""><img src="{{ asset('/images/brand/rayban.svg') }}" alt=""></a>
+                    <a href=""><img src="{{ asset('/images/brand/ralph.svg') }}" alt=""></a>
+                    <a href=""><img src="{{ asset('/images/brand/osmose.svg') }}" alt=""></a>
+                    <a href=""><img src="{{ asset('/images/brand/vogue.svg') }}" alt=""></a>
+                    <a href=""><img src="{{ asset('/images/brand/octika.svg') }}" alt=""></a>
+                    <a href=""><img src="{{ asset('/images/brand/marlone.svg') }}" alt=""></a>
+                    <a href=""><img src="{{ asset('/images/brand/frenchretro.svg') }}" alt=""></a>
+                    <a href=""><img src="{{ asset('/images/brand/etnia.svg') }}" alt=""></a>
+                    <a href=""><img src="{{ asset('/images/brand/andybrook.svg') }}" alt=""></a>
+                    <a href=""><img src="{{ asset('/images/brand/demetz.svg') }}" alt=""></a>
+                </div>
             </div>
         </div>
     </section>
@@ -188,10 +215,47 @@
         </div>
     </section>
     <section class="container__full-width c--secondary-dark bg--primary-light flex row align--center justify--center">
-        <div class="pt--10 pb--10 flex col align--center gap--8">
+        <div class="pt--10 pb--10 flex col align--center gap--8 w--100">
             <h3>Nos marques enfants</h3>
-            <div>
-
+            <div class="wrapper hide-mobile">
+                <div class="infinite-scroll flex row align--center justify--start pb--10 pt--10">
+                    <a href=""><img src="{{ asset('/images/brand/disney.svg') }}" alt=""></a>
+                    <a href=""><img src="{{ asset('/images/brand/rayban.svg') }}" alt=""></a>
+                    <a href=""><img src="{{ asset('/images/brand/avengers.svg') }}" alt=""></a>
+                    <a href=""><img src="{{ asset('/images/brand/kietla.svg') }}" alt=""></a>
+                    <a href=""><img src="{{ asset('/images/brand/reine-des-neiges.svg') }}" alt=""></a>
+                    <a href=""><img src="{{ asset('/images/brand/frenchretro.svg') }}" alt=""></a>
+                    <a href=""><img src="{{ asset('/images/brand/spiderman.svg') }}" alt=""></a>
+                    <a href=""><img src="{{ asset('/images/brand/demetz.svg') }}" alt=""></a>
+                    <a href=""><img src="{{ asset('/images/brand/disney.svg') }}" alt=""></a>
+                    <a href=""><img src="{{ asset('/images/brand/rayban.svg') }}" alt=""></a>
+                    <a href=""><img src="{{ asset('/images/brand/avengers.svg') }}" alt=""></a>
+                    <a href=""><img src="{{ asset('/images/brand/kietla.svg') }}" alt=""></a>
+                    <a href=""><img src="{{ asset('/images/brand/reine-des-neiges.svg') }}" alt=""></a>
+                    <a href=""><img src="{{ asset('/images/brand/frenchretro.svg') }}" alt=""></a>
+                    <a href=""><img src="{{ asset('/images/brand/spiderman.svg') }}" alt=""></a>
+                    <a href=""><img src="{{ asset('/images/brand/demetz.svg') }}" alt=""></a>
+                    <a href=""><img src="{{ asset('/images/brand/disney.svg') }}" alt=""></a>
+                    <a href=""><img src="{{ asset('/images/brand/rayban.svg') }}" alt=""></a>
+                    <a href=""><img src="{{ asset('/images/brand/avengers.svg') }}" alt=""></a>
+                    <a href=""><img src="{{ asset('/images/brand/kietla.svg') }}" alt=""></a>
+                    <a href=""><img src="{{ asset('/images/brand/reine-des-neiges.svg') }}" alt=""></a>
+                    <a href=""><img src="{{ asset('/images/brand/frenchretro.svg') }}" alt=""></a>
+                    <a href=""><img src="{{ asset('/images/brand/spiderman.svg') }}" alt=""></a>
+                    <a href=""><img src="{{ asset('/images/brand/demetz.svg') }}" alt=""></a>
+                </div>
+            </div>
+            <div class="wrapper-mobile display-mobile">
+                <div class="flex row align--center justify--start pb--5 pt--5">
+                    <a href=""><img src="{{ asset('/images/brand/disney.svg') }}" alt=""></a>
+                    <a href=""><img src="{{ asset('/images/brand/rayban.svg') }}" alt=""></a>
+                    <a href=""><img src="{{ asset('/images/brand/avengers.svg') }}" alt=""></a>
+                    <a href=""><img src="{{ asset('/images/brand/kietla.svg') }}" alt=""></a>
+                    <a href=""><img src="{{ asset('/images/brand/reine-des-neiges.svg') }}" alt=""></a>
+                    <a href=""><img src="{{ asset('/images/brand/frenchretro.svg') }}" alt=""></a>
+                    <a href=""><img src="{{ asset('/images/brand/spiderman.svg') }}" alt=""></a>
+                    <a href=""><img src="{{ asset('/images/brand/demetz.svg') }}" alt=""></a>
+                </div>
             </div>
         </div>
     </section>
