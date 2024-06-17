@@ -61,4 +61,18 @@ class MainController extends Controller
             'mode' => 'light'
         ]);
     }
+
+    public function legal_notice()
+    {
+        return view('main.legal_notice', [
+            'mode' => 'dark'
+        ]);
+    }
+
+    public function privacy_policy()
+    {
+        return view('main.privacy_policy', [
+            'mode' => 'dark'
+        ]);
+    }
 }

@@ -1,5 +1,8 @@
 @php
-    $route = request()->route()->getName();
+    $route = '';
+    if(request()->route()) {
+        $route = request()->route()->getName();
+    }
     $mode ??= 'dark';
 @endphp
 
