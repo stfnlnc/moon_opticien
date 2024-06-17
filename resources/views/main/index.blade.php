@@ -52,13 +52,17 @@
         </div>
         <div class="flex row align--start justify--end gap--2 w-100-mobile">
             <div class="flex col align--start justify--start gap--3 w-100-mobile">
-                <img loading="lazy" class="img img__service" src="{{ asset('/images/layers/728ebaf8666162f73edf66e0bd3146d5.webp') }}" alt="">
+                <a hx-boost="true" href="{{ route('shop_service') }}">
+                    <img loading="lazy" class="img img__service" src="{{ asset('/images/layers/728ebaf8666162f73edf66e0bd3146d5.webp') }}" alt="">
+                </a>
                 <p class="text--l">Services en Magasin</p>
                 <p class="text--m">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                 <a hx-boost="true" href="{{ route('shop_service') }}" class="btn btn--secondary-light">Découvrir</a>
             </div>
             <div class="flex col align--start justify--start gap--3 w-100-mobile">
-                <img loading="lazy" class="img img__service" src="{{ asset('/images/layers/a7e72401fb434c9febabc88ff04202ae.webp') }}" alt="">
+                <a hx-boost="true" href="{{ route('home_service') }}">
+                    <img loading="lazy" class="img img__service" src="{{ asset('/images/layers/a7e72401fb434c9febabc88ff04202ae.webp') }}" alt="">
+                </a>
                 <p class="text--l">Services à Domicile</p>
                 <p class="text--m">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                 <a hx-boost="true" href="{{ route('home_service') }}" class="btn btn--secondary-light">Découvrir</a>
@@ -257,25 +261,33 @@
         <div class="flex row justify--end w--100">
             <div class="grid grid--4 grid-gap--2 grid--2-mobile">
                 <div class="flex col align--start justify--start gap--3 block__glasses">
-                    <img loading="lazy" class="img img__glasses" src="{{ asset('/images/layers/ac59211ea58ee6b9259ed733452a040d.webp') }}" alt="">
+                    <a hx-boost="true" href="{{ route('glasses') }}#eyeglasses">
+                        <img loading="lazy" class="img img__glasses" src="{{ asset('/images/layers/ac59211ea58ee6b9259ed733452a040d.webp') }}" alt="">
+                    </a>
                     <p class="text--l">Vue</p>
                     <p class="text--m">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                     <a hx-boost="true" href="{{ route('glasses') }}#eyeglasses" class="btn btn--secondary-light">Découvrir</a>
                 </div>
                 <div class="flex col align--start justify--start gap--3 block__glasses">
-                    <img class="img img__glasses" src="{{ asset('/images/layers/0fef3d1f982b33e7b22c1571eecc4453.webp') }}" alt="">
+                    <a hx-boost="true" href="{{ route('glasses') }}#sunglasses">
+                        <img class="img img__glasses" src="{{ asset('/images/layers/0fef3d1f982b33e7b22c1571eecc4453.webp') }}" alt="">
+                    </a>
                     <p class="text--l">Solaires</p>
                     <p class="text--m">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                     <a hx-boost="true" href="{{ route('glasses') }}#sunglasses" class="btn btn--secondary-light">Découvrir</a>
                 </div>
                 <div class="flex col align--start justify--start gap--3 block__glasses">
-                    <img loading="lazy" class="img img__glasses" src="{{ asset('/images/layers/fb49e3f66990789c63e31a0c6cc6af7d.webp') }}" alt="">
+                    <a hx-boost="true" href="{{ route('glasses') }}#sportglasses">
+                        <img loading="lazy" class="img img__glasses" src="{{ asset('/images/layers/fb49e3f66990789c63e31a0c6cc6af7d.webp') }}" alt="">
+                    </a>
                     <p class="text--l">Sport</p>
                     <p class="text--m">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                     <a hx-boost="true" href="{{ route('glasses') }}#sportglasses" class="btn btn--secondary-light">Découvrir</a>
                 </div>
                 <div class="flex col align--start justify--start gap--3 block__glasses">
-                    <img loading="lazy" class="img img__glasses" src="{{ asset('/images/layers/5492d5c3f99aca5a8d72c79736f9317c.webp') }}" alt="">
+                    <a hx-boost="true" href="{{ route('glasses') }}#childglasses">
+                        <img loading="lazy" class="img img__glasses" src="{{ asset('/images/layers/5492d5c3f99aca5a8d72c79736f9317c.webp') }}" alt="">
+                    </a>
                     <p class="text--l">Enfants</p>
                     <p class="text--m">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                     <a hx-boost="true" href="{{ route('glasses') }}#childglasses" class="btn btn--secondary-light">Découvrir</a>

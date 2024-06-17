@@ -2,3 +2,15 @@
     object-position: center;
     object-fit: cover;
 }
+
+a {
+    overflow: hidden;
+    line-height: 0;
+    & > img {
+        transition: transform var(--duration) var(--cubic);
+    }
+    & > img:hover {
+        transform: scale(1.08);
+        transform-origin: center;
+    }
+}
