@@ -22,14 +22,14 @@
   object-fit: cover;
 }
 
-a {
+.link-img {
   overflow: hidden;
   line-height: 0;
 }
-a > img {
+.link-img > img {
   transition: transform var(--duration) var(--cubic);
 }
-a > img:hover {
+.link-img > img:hover {
   transform: scale(1.08);
   transform-origin: center;
 }
