@@ -125,9 +125,9 @@
                     <x-icon.dot-small class="icon__dot-small icon--secondary-color-3"></x-icon.dot-small>
                     <p class="text--s">Ce que disent nos clients</p>
                 </div>
-                <a href="" class="btn btn--main-light">Voir tous les avis</a>
+                <a target="_blank" href="https://maps.app.goo.gl/uD8mjQmQrdmfDVLTA" class="btn btn--main-light">Voir tous les avis</a>
             </div>
-            <a href="" class="btn btn--main-light display-mobile">Voir tous les avis</a>
+            <a target="_blank" href="https://maps.app.goo.gl/uD8mjQmQrdmfDVLTA" class="btn btn--main-light display-mobile">Voir tous les avis</a>
         </div>
     </section>
 

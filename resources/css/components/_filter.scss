@@ -1,4 +1,4 @@
-.filter {
+.filter, .filter-sub {
     color: var(--secondary-dark);
     background-color: var(transparent);
     border-radius: var(--border-radius);
@@ -7,7 +7,7 @@
     font-family: var(--primary-font), sans-serif;
     font-size: 1rem;
     font-style: normal;
-    font-weight: 700;
+    font-weight: 500;
     line-height: 150%;
     letter-spacing: 0;
     text-transform: uppercase;

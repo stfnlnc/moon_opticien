@@ -129,6 +129,10 @@
   display: none !important;
 }
 
+.form-sub-content {
+  display: none !important;
+}
+
 .form-input, .form-textarea, .form-select {
   padding: 0.625rem 0.3125rem;
   border: 1px solid var(--secondary-dark);
@@ -169,7 +173,7 @@ input[type=file]::file-selector-button {
   font-weight: 500;
   line-height: 110%;
   letter-spacing: 0;
-  padding: 0.625rem 0.3125rem;
+  padding: 0.1875rem 0.875rem;
   margin-right: 1rem;
   width: fit-content;
   height: fit-content;
@@ -177,7 +181,7 @@ input[type=file]::file-selector-button {
 }
 input[type=file]::file-selector-button:hover {
   cursor: pointer;
-  background-color: var(--primary-light);
+  background-color: var(--secondary-color-2);
   color: var(--secondary-dark);
   border: 1px solid var(--secondary-dark);
 }
@@ -471,7 +475,7 @@ card {
     border-left: 1px solid var(--stroke-dark);
   }
 }
-.filter {
+.filter, .filter-sub {
   color: var(--secondary-dark);
   background-color: var(transparent);
   border-radius: var(--border-radius);
@@ -479,7 +483,7 @@ card {
   font-family: var(--primary-font), sans-serif;
   font-size: 1rem;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 500;
   line-height: 150%;
   letter-spacing: 0;
   text-transform: uppercase;
@@ -494,11 +498,11 @@ card {
   height: fit-content;
   transition: background-color var(--duration), color var(--duration), border var(--duration);
 }
-.filter:hover {
+.filter:hover, .filter-sub:hover {
   color: var(--secondary-dark);
   background-color: var(--secondary-color-2);
 }
-.filter--active {
+.filter--active, .filter-sub--active {
   color: var(--primary-light);
   background-color: var(--secondary-dark);
 }

@@ -4,6 +4,15 @@ namespace App\Http\Controllers;
 
 class MainController extends Controller
 {
+    public function getReviews ()
+    {
+        $json = file_get_contents('https://maps.googleapis.com/maps/api/place/details/json?placeid=ChIJmyZzjQVJVg0R7UwDRXmV21Y');
+        $data = json_decode($json, true);
+        $reviews = $data['result']['reviews'];
+        return $reviews;
+    }
+
+
     public function index()
     {
         return view('main.index', [

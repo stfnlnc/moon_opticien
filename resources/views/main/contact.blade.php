@@ -36,7 +36,7 @@
                 <div class="grid grid--2 grid--1-mobile grid-gap--2">
                     <div class="flex col">
                         <label for="email" class="form-label">Email*</label>
-                        <input id="email" name="email" type="text" class="form-input" placeholder="john.smith@mail.com">
+                        <input id="email" name="email" type="email" class="form-input" placeholder="john.smith@mail.com">
                     </div>
                     <div class="flex col">
                         <label for="phone" class="form-label">Téléphone*</label>
@@ -44,7 +44,7 @@
                     </div>
                 </div>
                 <div class="flex col gap--2">
-                    <label for="email" class="form-label">Je souhaite*</label>
+                    <label class="form-label">Je souhaite*</label>
                     <div class="flex row col-mobile align--start gap--2">
                         <div id="message" class="filter">
                             Envoyer un message
@@ -117,31 +117,84 @@
                     </div>
                     <button class="btn btn--main-light">Envoyer le formulaire</button>
                 </div>
-                <div id="lens-content" class="content flex col gap--4 align--center form-content w--100">
-                    <div class="flex col align--self-start gap--2 w--100">
-                        <label for="address" class="form-label">Modèle de lentilles*</label>
-                        <input id="lens" name="lens" type="text" class="form-input" placeholder="Modèle et marque de vos lentilles">
-                    </div>
-                    <div class="grid grid--2 grid--1-mobile grid-gap--16 w--100">
-                        <p class="form-label">Oeil gauche*</p>
-                        <p class="form-label">Oeil droit*</p>
-                    </div>
-                    <div class="grid grid--2 grid--1-mobile grid-gap--16 w--100">
-                        <div class="flex col">
-                            <label for="right-sphere" class="form-label">Sphère*</label>
-                            <select class="form-input" name="right-sphere" id="right-sphere">
-                                @for($i = 20; $i >= -20; $i -= 0.25)
-                                    <option @if(strval($i) === '0') selected @endif value="{{ $i }}">{{ $i > 0 ? '+' . $i : $i }}</option>
-                                @endfor
-                            </select>
+                <div id="lens-content" class="content flex col gap--4 align--start form-content w--100 border--top border--secondary-color-3 pt--4">
+                    <div class="flex row col-mobile justify--start align--start gap--2">
+                        <div id="prescription-send" class="filter-sub filter-sub--active">
+                            Je transmets mon ordonnance
                         </div>
-                        <div class="flex col">
-                            <label for="left-sphere" class="form-label">Sphère*</label>
-                            <select autocomplete="off" class="form-input" name="left-sphere" id="left-sphere">
-                                @for($i = 20; $i >= -20; $i -= 0.25)
-                                    <option @if(strval($i) === '0') selected @endif value="{{ $i }}">{{ $i > 0 ? '+' . $i : $i }}</option>
-                                @endfor
-                            </select>
+                        <p class="text--m">ou</p>
+                        <div id="information-send" class="filter-sub">
+                            Je remplis le formulaire
+                        </div>
+                    </div>
+                    <div id="prescription-send-content" class="content-sub flex col gap--2 w--100">
+                        <label for="prescription-file" class="form-label flex row align--center"><span class="text--xs">(Format JPG, PNG, PDF. Maximum 2mo)</span></label>
+                        <input id="prescription-file" name="prescription-file" type="file">
+                    </div>
+                    <div id="information-send-content" class="content-sub flex col gap--2 form-sub-content w--100">
+                        <div class="flex col align--self-start gap--2 w--100">
+                            <label for="address" class="form-label">Modèle de lentilles*</label>
+                            <input id="lens" name="lens" type="text" class="form-input" placeholder="Modèle et marque de vos lentilles">
+                        </div>
+                        <div class="grid grid--2 grid--1-mobile grid-gap--16 w--100">
+                            <div class="flex col gap--2">
+                                <p class="form-label">Oeil gauche*</p>
+                                <label for="left-sphere" class="form-label">Sphère*</label>
+                                <select autocomplete="off" class="form-input" name="left-sphere" id="left-sphere">
+                                    @for($i = 20; $i >= -20; $i -= 0.25)
+                                        <option @if(strval($i) === '0') selected @endif value="{{ $i }}">{{ $i > 0 ? '+' . $i : $i }}</option>
+                                    @endfor
+                                </select>
+                                <label for="left-cylinder" class="form-label">Cylindre*</label>
+                                <select autocomplete="off" class="form-input" name="left-cylinder" id="left-cylinder">
+                                    @for($i = 0; $i >= -5; $i -= 0.25)
+                                        <option @if(strval($i) === '0') selected @endif value="{{ $i }}">{{ $i > 0 ? '+' . $i : $i }}</option>
+                                    @endfor
+                                </select>
+                                <label for="left-axis" class="form-label">Axe*</label>
+                                <select autocomplete="off" class="form-input" name="left-axis" id="left-axis">
+                                    @for($i = 0; $i <= 180; $i += 5)
+                                        <option @if(strval($i) === '0') selected @endif value="{{ $i }}">{{ $i > 0 ? '+' . $i : $i }}°</option>
+                                    @endfor
+                                </select>
+                                <label for="left-add" class="form-label flex row align--center">Addition <span class="text--xs">(optionnel)</span></label>
+                                <select autocomplete="off" class="form-input" name="left-add" id="left-add">
+                                    @for($i = 0; $i <= 3; $i += 0.25)
+                                        <option @if(strval($i) === '0') selected @endif value="{{ $i }}">{{ $i > 0 ? '+' . $i : $i }}</option>
+                                    @endfor
+                                </select>
+                                <label for="left-radius" class="form-label flex row align--center">Rayon et diamètre <span class="text--xs">(optionnel)</span></label>
+                                <input id="left-radius" name="left-radius" type="text" class="form-input">
+                            </div>
+                            <div class="flex col gap--2">
+                                <p class="form-label">Oeil droit*</p>
+                                <label for="right-sphere" class="form-label">Sphère*</label>
+                                <select class="form-input" name="right-sphere" id="right-sphere">
+                                    @for($i = 20; $i >= -20; $i -= 0.25)
+                                        <option @if(strval($i) === '0') selected @endif value="{{ $i }}">{{ $i > 0 ? '+' . $i : $i }}</option>
+                                    @endfor
+                                </select>
+                                <label for="right-cylinder" class="form-label">Cylindre*</label>
+                                <select autocomplete="off" class="form-input" name="right-cylinder" id="right-cylinder">
+                                    @for($i = 0; $i >= -5; $i -= 0.25)
+                                        <option @if(strval($i) === '0') selected @endif value="{{ $i }}">{{ $i > 0 ? '+' . $i : $i }}</option>
+                                    @endfor
+                                </select>
+                                <label for="right-add" class="form-label">Axe*</label>
+                                <select autocomplete="off" class="form-input" name="right-add" id="right-add">
+                                    @for($i = 0; $i <= 180; $i += 5)
+                                        <option @if(strval($i) === '0') selected @endif value="{{ $i }}">{{ $i > 0 ? '+' . $i : $i }}°</option>
+                                    @endfor
+                                </select>
+                                <label for="right-axis" class="form-label flex row align--center">Addition <span class="text--xs">(optionnel)</span></label>
+                                <select autocomplete="off" class="form-input" name="right-axis" id="right-axis">
+                                    @for($i = 0; $i <= 3; $i += 0.25)
+                                        <option @if(strval($i) === '0') selected @endif value="{{ $i }}">{{ $i > 0 ? '+' . $i : $i }}</option>
+                                    @endfor
+                                </select>
+                                <label for="right-radius" class="form-label flex row align--center">Rayon et diamètre <span class="text--xs">(optionnel)</span></label>
+                                <input id="right-radius" name="right-radius" type="text" class="form-input">
+                            </div>
                         </div>
                     </div>
                     <button class="btn btn--main-light">Envoyer le formulaire</button>

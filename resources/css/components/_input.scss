@@ -2,6 +2,10 @@
     display: none !important;
 }
 
+.form-sub-content {
+    display: none !important;
+}
+
 .form-input, .form-textarea, .form-select {
     padding: 0.625rem 0.3125rem;
     border: 1px solid var(--secondary-dark);
@@ -44,14 +48,14 @@ input[type="file"]::file-selector-button {
     line-height: 110%;
     letter-spacing: 0;
 
-    padding: 0.625rem 0.3125rem;
+    padding: 0.1875rem 0.875rem;
     margin-right: 1rem;
     width: fit-content;
     height: fit-content;
     transition: background-color var(--duration), color var(--duration), border var(--duration);
     &:hover {
         cursor: pointer;
-        background-color: var(--primary-light);
+        background-color: var(--secondary-color-2);
         color: var(--secondary-dark);
         border: 1px solid var(--secondary-dark);
     }

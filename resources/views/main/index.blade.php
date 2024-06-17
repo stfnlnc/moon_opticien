@@ -311,9 +311,9 @@
                 <x-icon.dot-small class="icon__dot-small icon--secondary-color-3"></x-icon.dot-small>
                 <p class="text--s">Ce que disent nos clients</p>
             </div>
-            <a hx-boost="true" href="" class="btn btn--main-light">Voir tous les avis</a>
+            <a hx-boost="true" target="_blank" href="https://maps.app.goo.gl/uD8mjQmQrdmfDVLTA" class="btn btn--main-light">Voir tous les avis</a>
         </div>
-        <a hx-boost="true" href="" class="btn btn--main-light display-mobile">Voir tous les avis</a>
+        <a hx-boost="true" target="_blank" href="https://maps.app.goo.gl/uD8mjQmQrdmfDVLTA" class="btn btn--main-light display-mobile">Voir tous les avis</a>
     </div>
 </section>
 @endsection

@@ -83,19 +83,37 @@ htmx.onLoad(function (target) {
     const homeContent = document.getElementById('home-content')
     const lens = document.getElementById('lens')
     const lensContent = document.getElementById('lens-content')
+    const prescription = document.getElementById('prescription-send')
+    const prescriptionContent = document.getElementById('prescription-send-content')
+    const information = document.getElementById('information-send')
+    const informationContent = document.getElementById('information-send-content')
     const filters = document.querySelectorAll('.filter')
+    const filtersSub = document.querySelectorAll('.filter-sub')
     const contents = document.querySelectorAll('.content')
+    const contentsSub = document.querySelectorAll('.content-sub')
 
     function showContent(element, content) {
         element.addEventListener('click', () => {
             filters.forEach((filter) => {
                 filter.classList.remove('filter--active')
             })
-            contents.forEach((filter) => {
-                filter.classList.add('form-content')
+            contents.forEach((content) => {
+                content.classList.add('form-content')
             })
             element.classList.toggle('filter--active')
             content.classList.toggle('form-content')
+        })
+    }
+    function showSubContent(element, content) {
+        element.addEventListener('click', () => {
+            filtersSub.forEach((filterSub) => {
+                filterSub.classList.remove('filter-sub--active')
+            })
+            contentsSub.forEach((contentSub) => {
+                contentSub.classList.add('form-sub-content')
+            })
+            element.classList.toggle('filter-sub--active')
+            content.classList.toggle('form-sub-content')
         })
     }
 
@@ -104,6 +122,8 @@ htmx.onLoad(function (target) {
         showContent(shop, shopContent)
         showContent(home, homeContent)
         showContent(lens, lensContent)
+        showSubContent(prescription, prescriptionContent, true)
+        showSubContent(information, informationContent, true)
     }
 });
 

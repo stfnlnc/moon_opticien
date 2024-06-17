@@ -1,6 +1,6 @@
 <footer class="container__full-width c--primary-light bg--secondary-dark flex col align--center">
     <div class="container flex col align--start justify--start gap--6 gap--8-mobile">
-        <a href="" class="btn btn--main-dark">Je prends rendez-vous</a>
+        <a href="{{ route('contact') }}" class="btn btn--main-dark">Je prends rendez-vous</a>
         <div class="flex row col-mobile gap--12">
             <div class="flex col gap--3">
                 <p class="text--s">Horaires du magasin</p>
@@ -30,12 +30,12 @@
             <div class="flex col gap--3">
                 <p class="text--s">Plan du site</p>
                 <p class="text--xs">
-                    <a href="" class="btn--footer">Home</a> <br>
-                    <a href="" class="btn--footer">En magasin</a> <br>
-                    <a href="" class="btn--footer">À domicile</a> <br>
-                    <a href="" class="btn--footer">Nos lunettes</a> <br>
-                    <a href="" class="btn--footer">Nos lentilles</a> <br>
-                    <a href="" class="btn--footer">À propos</a> <br>
+                    <a href="{{ route('index') }}" class="btn--footer">Home</a> <br>
+                    <a href="{{ route('shop_service') }}" class="btn--footer">En magasin</a> <br>
+                    <a href="{{ route('home_service') }}" class="btn--footer">À domicile</a> <br>
+                    <a href="{{ route('glasses') }}" class="btn--footer">Nos lunettes</a> <br>
+                    <a href="{{ route('lenses') }}" class="btn--footer">Nos lentilles</a> <br>
+                    <a href="{{ route('about') }}" class="btn--footer">À propos</a> <br>
 
                 </p>
             </div>
