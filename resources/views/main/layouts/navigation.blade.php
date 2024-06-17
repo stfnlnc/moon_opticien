@@ -10,8 +10,12 @@
     <div id="nav-pop" class="container__full-width flex col align--center bg--secondary-dark c--primary-light hide-mobile">
         <div class="container pt--2 pb--2 flex row align--center justify--space-between">
             <div class="flex row gap--2 align--center justify--start">
-                <x-icon.instagram class="icon--ver icon--primary-light"></x-icon.instagram>
-                <x-icon.fb class="icon--ver icon--primary-light"></x-icon.fb>
+                <a target="_blank" href="https://www.instagram.com/moon.opticienlunetier/">
+                    <x-icon.instagram class="icon--ver icon--primary-light"></x-icon.instagram>
+                </a>
+                <a target="_blank" href="https://www.facebook.com/profile.php?id=61556269374737">
+                    <x-icon.fb class="icon--ver icon--primary-light"></x-icon.fb>
+                </a>
             </div>
             <div class="flex row gap--6 align--center justify--start">
                 <div class="flex row gap--2 align--center justify--start">
@@ -19,11 +23,11 @@
                     <p class="text--s">3 Pl. Gambetta, 64320 Bizanos</p>
                 </div>
                 <div class="flex row gap--2 align--center justify--start">
-                    <x-icon.phone class="icon--ver icon-stroke--primary-light"></x-icon.phone>
+                    <x-icon.phone class="icon--ver icon--primary-light"></x-icon.phone>
                     <a href="tel:0559531722" class="text--s">05 59 53 17 22</a>
                 </div>
                 <div class="flex row gap--2 align--center justify--start">
-                    <x-icon.mail class="icon--hor icon-stroke--primary-light"></x-icon.mail>
+                    <x-icon.mail class="icon--hor icon--primary-light"></x-icon.mail>
                     <a href="mailto:contact@moonopticienlunetier.com" class="text--s">contact@moonopticienlunetier.com</a>
                 </div>
             </div>

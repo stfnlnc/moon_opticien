@@ -296,7 +296,7 @@
         </div>
     </div>
 </section>
-<section style="background-image: linear-gradient(rgba(94,117,103,0.9), rgba(94,117,103,0.9)), url('{{ asset('/images/layers/a7e72401fb434c9febabc88ff04202aeL.webp') }}'); background-size: cover; background-position: 100% 30%;" class="relative container__full-width c--primary-light bg--secondary-color-3 flex col align--center">
+<section style="background-image: linear-gradient(rgba(94,117,103,0.98), rgba(94,117,103,0.98)), url('{{ asset('/images/layers/a7e72401fb434c9febabc88ff04202aeL.webp') }}'); background-size: cover; background-position: 100% 30%;" class="relative container__full-width c--primary-light bg--secondary-color-3 flex col align--center">
     <div class="container">
         <div class="hide-mobile border--top border--secondary-color-2 c--secondary-color-2 pt--4 pb--4 flex row align--center justify--start gap--2">
             <x-icon.dot-small class="icon__dot-small icon--secondary-color-2"></x-icon.dot-small>

@@ -2,3 +2,9 @@
     width: 315.474px;
     height: 91.11px;
 }
+
+@media screen and (max-width: 1080px) {
+    .img__footer {
+        width: 200px;
+    }
+}

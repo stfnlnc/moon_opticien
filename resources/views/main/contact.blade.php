@@ -13,40 +13,47 @@
     <section class="container__full-width c--secondary-dark bg--secondary-color-2 flex col align--center">
         <span class="container"></span>
         <div class="container flex col align--start gap--5 pb--30">
-            <h1 class="uppercase w--70 w-100-mobile">Un conseil personnalisé, un examen de vue  et un café</h1>
+            <h1 class="uppercase w--80 w-100-mobile">Un conseil personnalisé, un examen de vue <br> et un café</h1>
             <p class="text--m w--50 w-100-mobile align--self-end">
                 Nous vous offrons un conseil personnalisé, l’examen de vue et le café. Prenez rendez-vous avec nous, en magasin ou à domicile, en remplissant le formulaire de contact.
             </p>
         </div>
     </section>
-    <section class="container__full-width c--secondary-dark bg--primary-light flex col align--center">
+    <section id="contact-form" class="container__full-width c--secondary-dark bg--primary-light flex col align--center">
         <div class="container">
-            <form method="post" action="" class="flex col gap--4">
+            @if(session('success'))
+                <p class="alert alert--success">{{ session('success') }}</p>
+            @else
+            <form method="post" action="{{ route('contact_store') }}#contact-form" class="flex col gap--4" enctype="multipart/form-data">
                 @csrf
                 <div class="grid grid--2 grid--1-mobile grid-gap--2">
                     <div class="flex col">
                         <label for="firstname" class="form-label">Prénom*</label>
-                        <input id="firstname" name="firstname" type="text" class="form-input" placeholder="John">
+                        <input id="firstname" name="firstname" type="text" class="form-input" placeholder="John" value="TEST">
+                        <x-input-error :messages="$errors->get('firstname')"/>
                     </div>
                     <div class="flex col">
                         <label for="lastname" class="form-label">Nom*</label>
-                        <input id="lastname" name="lastname" type="text" class="form-input" placeholder="Smith">
+                        <input id="lastname" name="lastname" type="text" class="form-input" placeholder="Smith" value="TEST">
+                        <x-input-error :messages="$errors->get('firstname')"/>
                     </div>
                 </div>
                 <div class="grid grid--2 grid--1-mobile grid-gap--2">
                     <div class="flex col">
                         <label for="email" class="form-label">Email*</label>
-                        <input id="email" name="email" type="email" class="form-input" placeholder="john.smith@mail.com">
+                        <input id="email" name="email" type="email" class="form-input" placeholder="john.smith@mail.com" value="test@dev.com">
+                        <x-input-error :messages="$errors->get('firstname')"/>
                     </div>
                     <div class="flex col">
                         <label for="phone" class="form-label">Téléphone*</label>
-                        <input id="phone" name="phone" type="text" class="form-input" placeholder="0102030405">
+                        <input id="phone" name="phone" type="text" class="form-input" placeholder="0102030405" value="0102030405">
+                        <x-input-error :messages="$errors->get('firstname')"/>
                     </div>
                 </div>
                 <div class="flex col gap--2">
                     <label class="form-label">Je souhaite*</label>
                     <div class="flex row col-mobile align--start gap--2">
-                        <div id="message" class="filter">
+                        <div id="message" class="filter filter--active">
                             Envoyer un message
                         </div>
                         <div id="shop" class="filter">
@@ -60,41 +67,43 @@
                         </div>
                     </div>
                 </div>
-                <div id="message-content" class="content flex col gap--4 align--center form-content">
+                <div id="message-content" class="content flex col gap--4 align--center">
                     <textarea class="form-input" name="message" id="message" rows="5" placeholder="Laissez-nous votre message"></textarea>
-                    <button class="btn btn--main-light">Envoyer le formulaire</button>
                 </div>
                 <div id="shop-content" class="content flex col gap--4 align--center form-content">
                     <div class="flex col align--self-start gap--2">
                         <p class="form-label">Vous souhaitez prendre rendez-vous pour ?*</p>
                         <div class="form-check">
-                            <input type="checkbox" name="exam" id="exam">
+                            <input type="checkbox" name="exam" id="exam" value="Faire vérifier ma vue">
                             <label class="form-label" for="exam">Faire vérifier ma vue</label>
                         </div>
                         <div class="form-check">
-                            <input type="checkbox" name="glasses" id="glasses">
+                            <input type="checkbox" name="glasses" id="glasses" value="Être conseillé dans le choix de mes lunettes">
                             <label class="form-label" for="glasses">Être conseillé dans le choix de mes lunettes</label>
                         </div>
                         <div class="form-check">
-                            <input type="checkbox" name="lenses" id="lenses">
-                            <label class="form-label" for="lenses">Des conseils sur l'adaptation de mes lentilles</label>
+                            <input type="checkbox" name="lenses" id="lenses" value="Être conseillé pour l'adaptation de mes lentilles">
+                            <label class="form-label" for="lenses">Être conseillé pour l'adaptation de mes lentilles</label>
                         </div>
                         <div class="form-check">
-                            <input type="checkbox" name="buy" id="buy">
+                            <input type="checkbox" name="buy" id="buy" value="Réceptionner mon achat">
                             <label class="form-label" for="buy">Réceptionner mon achat</label>
                         </div>
                     </div>
-                    <button class="btn btn--main-light">Envoyer le formulaire</button>
                 </div>
                 <div id="home-content" class="content flex col gap--4 align--center form-content w--100">
                     <div class="flex col align--self-start gap--2 w--100">
-                        <label for="address" class="form-label">Adresse ou lieu où vous souhaitez qu'on intervienne*</label>
-                        <input id="address" name="address" type="text" class="form-input" placeholder="Adresse de votre domicile ou celui de votre proche">
+                        <label for="address" class="form-label">Adresse ou lieu où vous souhaitez qu'on
+                            intervienne*</label>
+                        <input id="address" name="address" type="text" class="form-input"
+                               placeholder="Adresse de votre domicile ou celui de votre proche">
                         <div class="flex row gap--2 align--center">
                             <p class="form-label">Avez-vous une ordonnance à jour ?*</p>
                             <div class="help">
-                                <svg class="help" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 50 50">
-                                    <path d="M 25 2 C 12.309295 2 2 12.309295 2 25 C 2 37.690705 12.309295 48 25 48 C 37.690705 48 48 37.690705 48 25 C 48 12.309295 37.690705 2 25 2 z M 25 4 C 36.609824 4 46 13.390176 46 25 C 46 36.609824 36.609824 46 25 46 C 13.390176 46 4 36.609824 4 25 C 4 13.390176 13.390176 4 25 4 z M 25 11 A 3 3 0 0 0 22 14 A 3 3 0 0 0 25 17 A 3 3 0 0 0 28 14 A 3 3 0 0 0 25 11 z M 21 21 L 21 23 L 22 23 L 23 23 L 23 36 L 22 36 L 21 36 L 21 38 L 22 38 L 23 38 L 27 38 L 28 38 L 29 38 L 29 36 L 28 36 L 27 36 L 27 21 L 26 21 L 22 21 L 21 21 z"></path>
+                                <svg class="help" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                                     viewBox="0 0 50 50">
+                                    <path
+                                        d="M 25 2 C 12.309295 2 2 12.309295 2 25 C 2 37.690705 12.309295 48 25 48 C 37.690705 48 48 37.690705 48 25 C 48 12.309295 37.690705 2 25 2 z M 25 4 C 36.609824 4 46 13.390176 46 25 C 46 36.609824 36.609824 46 25 46 C 13.390176 46 4 36.609824 4 25 C 4 13.390176 13.390176 4 25 4 z M 25 11 A 3 3 0 0 0 22 14 A 3 3 0 0 0 25 17 A 3 3 0 0 0 28 14 A 3 3 0 0 0 25 11 z M 21 21 L 21 23 L 22 23 L 23 23 L 23 36 L 22 36 L 21 36 L 21 38 L 22 38 L 23 38 L 27 38 L 28 38 L 29 38 L 29 36 L 28 36 L 27 36 L 27 21 L 26 21 L 22 21 L 21 21 z"></path>
                                 </svg>
                                 <div class="help-text">
                                     <p class="text--s">
@@ -107,15 +116,14 @@
 
                         </div>
                         <div class="form-check">
-                            <input type="radio" name="prescription" value="yes" id="yes">
+                            <input type="radio" name="prescription" value="Oui" id="yes">
                             <label class="form-label" for="yes">Oui</label>
                         </div>
                         <div class="form-check">
-                            <input type="radio" name="prescription" value="no" id="no">
+                            <input type="radio" name="prescription" value="Non" id="no">
                             <label class="form-label" for="no">Non</label>
                         </div>
                     </div>
-                    <button class="btn btn--main-light">Envoyer le formulaire</button>
                 </div>
                 <div id="lens-content" class="content flex col gap--4 align--start form-content w--100 border--top border--secondary-color-3 pt--4">
                     <div class="flex row col-mobile justify--start align--start gap--2">
@@ -133,8 +141,8 @@
                     </div>
                     <div id="information-send-content" class="content-sub flex col gap--2 form-sub-content w--100">
                         <div class="flex col align--self-start gap--2 w--100">
-                            <label for="address" class="form-label">Modèle de lentilles*</label>
-                            <input id="lens" name="lens" type="text" class="form-input" placeholder="Modèle et marque de vos lentilles">
+                            <label for="lens-model" class="form-label">Modèle de lentilles*</label>
+                            <input id="lens-model" name="lens-model" type="text" class="form-input" placeholder="Modèle et marque de vos lentilles">
                         </div>
                         <div class="grid grid--2 grid--1-mobile grid-gap--16 w--100">
                             <div class="flex col gap--2">
@@ -197,9 +205,10 @@
                             </div>
                         </div>
                     </div>
-                    <button class="btn btn--main-light">Envoyer le formulaire</button>
                 </div>
+                <button type="submit" class="btn btn--main-light">Envoyer le formulaire</button>
             </form>
+            @endif
         </div>
     </section>
     <section class="container__full-width c--secondary-dark bg--secondary-color-2 flex col align--center">

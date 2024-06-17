@@ -25,7 +25,7 @@
         class="container__full-width c--secondary-dark bg--primary-light flex row align--center justify--center gap--20">
         <div class="container pl--0 pt--0 pb--0 pr--0 flex row col-rev-mobile">
             <div class="flex col align--start justify--center gap--8 container ">
-                <h2>Gravure de vos branches</h2>
+                <h2>Faites contrôler votre vue gratuitement</h2>
                 <p class="text--m">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur
                     adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit
@@ -47,28 +47,25 @@
     <section class="container__full-width c--primary-light bg--secondary-dark flex col align--center justify--center">
         <div class="container flex col align--start gap--10">
             <h2>La validité de votre ordonnance</h2>
-            <div class="grid grid--3 grid--1-mobile grid-gap--6-mobile w--100 text--l">
-                <div class="flex col gap--3 pb--6 border--bottom-mobile border--secondary-color-3">
+            <div class="grid grid--3 grid-gap--6 grid--1-mobile grid-gap--6-mobile w--100 text--l c--secondary-dark">
+                <card class="flex col gap--3 pb--6 border--bottom-mobile border--secondary-color-3 pt--5 w--100">
                     <div class="flex row gap--3 align--center">
-                        <x-icon.dot-small class="icon__dot-small icon--primary-light"></x-icon.dot-small>
                         <p>1 an</p>
                     </div>
-                    <p class="text--m uppercase">Pour les moins de 16 ans</p>
-                </div>
-                <div class="flex col gap--3 pb--6 border--bottom-mobile border--secondary-color-3">
+                    <p class="text--m">Pour les moins de 16 ans.</p>
+                </card>
+                <card class="flex col gap--3 pb--6 border--bottom-mobile border--secondary-color-3 pt--5 w--100">
                     <div class="flex row gap--3 align--center">
-                        <x-icon.dot-small class="icon__dot-small icon--primary-light"></x-icon.dot-small>
                         <p>3 ans</p>
                     </div>
-                    <p class="text--m uppercase">Pour les 16 à 42 ans</p>
-                </div>
-                <div class="flex col gap--3 pb--6 border--bottom-mobile border--secondary-color-3">
+                    <p class="text--m">Pour les 16 à 42 ans.</p>
+                </card>
+                <card class="flex col gap--3 pb--6 border--bottom-mobile border--secondary-color-3 pt--5 w--100">
                     <div class="flex row gap--3 align--center">
-                        <x-icon.dot-small class="icon__dot-small icon--primary-light"></x-icon.dot-small>
                         <p>5 ans</p>
                     </div>
-                    <p class="text--m uppercase">Pour les plus de 42 ans</p>
-                </div>
+                    <p class="text--m">Pour les plus de 42 ans.</p>
+                </card>
             </div>
         </div>
     </section>
@@ -87,7 +84,7 @@
                 <img loading="lazy" class="img" src="{{ asset('/images/layers/e574f92d8ea82d005cac8e03303eaa48.webp') }}" alt="">
             </div>
             <div class="flex col align--start justify--center gap--8 container">
-                <h2>Faites contrôler votre vue gratuitement</h2>
+                <h2>Gravure de vos branches</h2>
                 <p class="text--m">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur
                     adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit

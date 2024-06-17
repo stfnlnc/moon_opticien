@@ -18,12 +18,12 @@
                     <a href="tel:0559531722">05 59 53 17 22</a> <br>
                     <a href="mailto:contact@moonopticienlunetier.com">contact@moonopticienlunetier.com</a>
                 </p>
-                <div class="flex row gap--2">
-                    <a href="">
-                        <x-icon.instagram class="icon--small icon--primary-light"></x-icon.instagram>
+                <div class="flex row gap--2 align--center justify--start">
+                    <a target="_blank" href="https://www.instagram.com/moon.opticienlunetier/">
+                        <x-icon.instagram class="icon--ver icon--primary-light"></x-icon.instagram>
                     </a>
-                    <a href="">
-                        <x-icon.fb class="icon--small icon--primary-light"></x-icon.fb>
+                    <a target="_blank" href="https://www.facebook.com/profile.php?id=61556269374737">
+                        <x-icon.fb class="icon--ver icon--primary-light"></x-icon.fb>
                     </a>
                 </div>
             </div>
@@ -36,11 +36,10 @@
                     <a href="{{ route('glasses') }}" class="btn--footer">Nos lunettes</a> <br>
                     <a href="{{ route('lenses') }}" class="btn--footer">Nos lentilles</a> <br>
                     <a href="{{ route('about') }}" class="btn--footer">À propos</a> <br>
-
                 </p>
             </div>
         </div>
-        <div class="flex row align--center justify--end w--100">
+        <div class="flex row align--center justify--end justify-mobile--center justify--end w--100">
             <img class="img__footer" src="{{ asset('/images/logo/logo-full.svg') }}" alt="">
         </div>
         <div class="flex row col-mobile gap--1-mobile align--start justify--space-between w--100 border--top border--secondary-color-3 mt--4 pt--4">
@@ -48,8 +47,8 @@
                 © 2024 - <a href="https://studiokhi.com">Un site réalisé par Studio Khi</a>
             </p>
             <div class="flex row col-mobile gap--1-mobile align--start justify--start gap--5">
-                <a href="" class="btn--footer">Politique de confidentialité</a>
-                <a href="" class="btn--footer">Mentions légales</a>
+                <a href="{{ route('privacy_policy') }}" class="btn--footer">Politique de confidentialité</a>
+                <a href="{{ route('legal_notice') }}" class="btn--footer">Mentions légales</a>
                 <a href="{{ route('login') }}" class="btn--footer">Connexion</a>
             </div>
         </div>

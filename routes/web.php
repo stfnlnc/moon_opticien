@@ -15,6 +15,9 @@ Route::prefix('/')->group(function () {
     Route::get('/nos-lentilles', [MainController::class, 'lenses'])->name('lenses');
     Route::get('/a-propos', [MainController::class, 'about'])->name('about');
     Route::get('/nous-contacter', [MainController::class, 'contact'])->name('contact');
+    Route::post('/nous-contacter', [MainController::class, 'contact_store'])->name('contact_store');
+    Route::get('/mentions-legales', [MainController::class, 'legal_notice'])->name('legal_notice');
+    Route::get('/politique-de-confidentialite', [MainController::class, 'privacy_policy'])->name('privacy_policy');
 });
 
 
@@ -22,9 +25,6 @@ Route::prefix('/')->group(function () {
 Route::middleware(['role:admin'])->prefix('dashboard')->group(function () {
     Route::resource('users', UserController::class)->except([
         'show'
-    ]);
-    Route::resource('options', OptionController::class)->except([
-        'show', 'edit', 'update'
     ]);
     Route::get('/', function () {
         return view('admin.dashboard');

@@ -25,7 +25,7 @@
         class="container__full-width c--secondary-dark bg--primary-light flex row align--center justify--center gap--20 border--bottom border--secondary-dark">
         <div class="container pt--0 pb--0 pr--0 pl--0 flex row col-rev-mobile">
             <div class="flex col align--start justify--center gap--8 container">
-                <h2>Nous vos accompagnons pour bien choisir vos lentilles</h2>
+                <h2>Nous vous accompagnons pour bien choisir vos lentilles</h2>
                 <p class="text--m">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur
                     adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit

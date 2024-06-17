@@ -174,7 +174,7 @@
         </div>
     </section>
     <section class="container__full-width c--secondary-dark bg--secondary-color-2 flex col align--center">
-        <div class="container grid grid--3 grid--1-mobile grid-gap--10 text-center pt--10 pb--10 w--70 w-100-mobile">
+        <div class="container grid grid--3 grid--1-mobile grid-gap--10 text-center pt--10 pb--10 w--80 w-100-mobile">
             <div class="flex col align--center gap--2">
                 <x-icon.dot-medium class="icon__dot-medium icon--secondary-dark"></x-icon.dot-medium>
                 <p class="text--l">Gravure des branches</p>
@@ -187,7 +187,7 @@
             </div>
             <div class="flex col align--center gap--2">
                 <x-icon.dot-medium class="icon__dot-medium icon--secondary-dark"></x-icon.dot-medium>
-                <p class="text--l">2è paire offerte</p>
+                <p class="text--l">2e paire offerte</p>
                 <p class="text--s">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
             </div>
         </div>

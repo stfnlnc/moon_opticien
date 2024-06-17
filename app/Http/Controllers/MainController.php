@@ -2,6 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\ContactRequest;
+use App\Mail\ContactMail;
+use Illuminate\Support\Facades\Mail;
+
 class MainController extends Controller
 {
     public function getReviews ()
@@ -60,6 +64,16 @@ class MainController extends Controller
         return view('main.contact', [
             'mode' => 'light'
         ]);
+    }
+
+    public function contact_store(ContactRequest $request) {
+        Mail::send(new ContactMail($request->validated()), [], function ($message) use ($request) {
+            $message->attach($request->validated()['prescription-file']->getRealPath(), [
+                'as' => $request->validated()['prescription-file']->getClientOriginalName(),
+                'mime' => $request->validated()['prescription-file']->getMimeType(),
+            ]);
+        });
+        return back()->with('success', 'Merci, nous avons bien reçu votre demande, notre équipe vous contactera aussi vite que possible');
     }
 
     public function legal_notice()

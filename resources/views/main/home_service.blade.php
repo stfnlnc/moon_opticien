@@ -46,17 +46,17 @@
     <section class="container__full-width c--secondary-dark bg--secondary-color-4 flex col align--center justify--center">
         <div class="container flex col align--start gap--10">
             <div class="grid grid--3 grid--1-mobile grid-gap--10 w--100 text--l">
-                <div class="flex col gap--3 align-mobile--center text-center-mobile">
+                <div class="flex col gap--3 align--center text-center">
                     <img loading="lazy" class="icon--large" src="{{ asset('/images/icon/large/icon-home.svg') }}" alt="">
                     <p class="text--l">À domicile</p>
                     <p class="text--m">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
                 </div>
-                <div class="flex col gap--3 align-mobile--center text-center-mobile">
+                <div class="flex col gap--3 align--center text-center">
                     <img loading="lazy" class="icon--large" src="{{ asset('/images/icon/large/icon-person.svg') }}" alt="">
                     <p class="text--l">En EHPAD</p>
                     <p class="text--m">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
                 </div>
-                <div class="flex col gap--3 align-mobile--center text-center-mobile">
+                <div class="flex col gap--3 align--center text-center">
                     <img loading="lazy" class="icon--large" src="{{ asset('/images/icon/large/icon-heart.svg') }}" alt="">
                     <p class="text--l">À la demande</p>
                     <p class="text--m">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
@@ -76,7 +76,6 @@
                     <p class="text--m">
                         Highlight the Unique Selling Proposition (USP) with a short summary of the main feature and how it benefits customers. The idea here is to keep it short and direct. If the visitor wishes to learn more they will hit the button.
                     </p>
-                    <a hx-boost="true" href="{{ route('contact') }}#home" class="btn btn--main-dark">je découvre les services à domicile</a>
                 </div>
             </div>
             <div class="grid grid--3 grid-gap--10 grid--1-mobile c--secondary-dark mt--10">
@@ -144,7 +143,7 @@
         </div>
     </section>
     <section class="container__full-width c--secondary-dark bg--secondary-color-2 flex col align--center">
-        <div class="container grid grid--3 grid--1-mobile grid-gap--10 text-center pt--10 pb--10 w--70 w-100-mobile">
+        <div class="container grid grid--3 grid--1-mobile grid-gap--10 text-center pt--10 pb--10 w--80 w-100-mobile">
             <div class="flex col align--center gap--2">
                 <x-icon.dot-medium class="icon__dot-medium icon--secondary-dark"></x-icon.dot-medium>
                 <p class="text--l">Gravure des branches</p>
@@ -157,7 +156,7 @@
             </div>
             <div class="flex col align--center gap--2">
                 <x-icon.dot-medium class="icon__dot-medium icon--secondary-dark"></x-icon.dot-medium>
-                <p class="text--l">2è paire offerte</p>
+                <p class="text--l">2e paire offerte</p>
                 <p class="text--s">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
             </div>
         </div>
