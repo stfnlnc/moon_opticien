@@ -14,3 +14,12 @@
         transform-origin: center;
     }
 }
+
+@media screen and (max-width: 1080px) {
+
+    .img-mobile {
+        object-position: 90%;
+        object-fit: cover;
+    }
+
+}

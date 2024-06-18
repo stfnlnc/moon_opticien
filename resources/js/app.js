@@ -57,6 +57,94 @@ htmx.onLoad(function (target) {
         body.style.overflow = 'auto'
     })
 
+    // Review slider
+
+    const reviews = document.querySelectorAll('.slider__review')
+    const prevReview = document.querySelector('.slider__prev')
+    const nextReview = document.querySelector('.slider__next')
+    let i = 0
+
+    let reviewLength = reviews.length
+
+    nextReview.addEventListener('click', (e) => {
+        e.preventDefault()
+        if(i < 0) {
+
+        } else {
+            i--
+            reviews.forEach((review, key) => {
+                review.style.left = ((key + i) * 100) + 50 + '%'
+            })
+        }
+    })
+
+    prevReview.addEventListener('click', (e) => {
+        e.preventDefault()
+        if(i+2 >= reviewLength) {
+
+        } else {
+            i++
+            reviews.forEach((review, key) => {
+                review.style.left = ((key + i) * 100) + 50 + '%'
+            })
+        }
+    })
+
+    // Smooth scroll element
+
+    const smooth = document.querySelectorAll('.smooth')
+    const smoothSlow = document.querySelectorAll('.smooth-slow')
+    const smoothFast = document.querySelectorAll('.smooth-fast')
+
+    smooth.forEach((s) => {
+        gsap.to(s, {
+            y: -50,
+            duration: 10,
+            ease: 'expo',
+            scrollTrigger: {
+                trigger: s,
+                start: 'top 50%',
+                end: 'bottom',
+                toggleActions: 'restart reverse play reverse',
+                markers: false,
+                scrub: 1
+            }
+        })
+    })
+
+    smoothSlow.forEach((s) => {
+        gsap.to(s, {
+            y: -30,
+            duration: 10,
+            ease: 'expo',
+            scrollTrigger: {
+                trigger: s,
+                start: 'top 50%',
+                end: 'bottom',
+                toggleActions: 'restart reverse play reverse',
+                markers: false,
+                scrub: 1
+            }
+        })
+    })
+
+    smoothFast.forEach((s) => {
+        gsap.to(s, {
+            y: -70,
+            duration: 10,
+            ease: 'expo',
+            scrollTrigger: {
+                trigger: s,
+                start: 'top 50%',
+                end: 'bottom',
+                toggleActions: 'restart reverse play reverse',
+                markers: false,
+                scrub: 1
+            }
+        })
+    })
+
+
     // Brand infinite scrolling
     const scroll = document.querySelectorAll('.infinite-scroll')
 
