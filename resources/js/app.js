@@ -68,10 +68,11 @@ htmx.onLoad(function (target) {
     if(reviewLength > 0) {
         nextReview.addEventListener('click', (e) => {
             e.preventDefault()
-            if(i < 0) {
+            if(i-1 <= -reviewLength) {
 
             } else {
                 i--
+                console.log(i)
                 reviews.forEach((review, key) => {
                     review.style.left = ((key + i) * 100) + 50 + '%'
                 })
@@ -80,10 +81,11 @@ htmx.onLoad(function (target) {
 
         prevReview.addEventListener('click', (e) => {
             e.preventDefault()
-            if(i+2 >= reviewLength) {
+            if(i >= 0) {
 
             } else {
                 i++
+                console.log(i)
                 reviews.forEach((review, key) => {
                     review.style.left = ((key + i) * 100) + 50 + '%'
                 })

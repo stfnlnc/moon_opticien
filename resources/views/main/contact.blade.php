@@ -144,9 +144,9 @@
                             <label for="lens-model" class="form-label">Modèle de lentilles*</label>
                             <input id="lens-model" name="lens-model" type="text" class="form-input" placeholder="Modèle et marque de vos lentilles">
                         </div>
-                        <div class="grid grid--2 grid--1-mobile grid-gap--16 w--100">
+                        <div class="grid grid--2 grid--1-mobile grid-gap--16 w--100 mt--8">
                             <div class="flex col gap--2">
-                                <p class="form-label">Oeil gauche*</p>
+                                <p class="form-label text--m border--rounded bg--secondary-color-2 p--1 w--fit-content">Oeil gauche*</p>
                                 <label for="left-sphere" class="form-label">Sphère*</label>
                                 <select autocomplete="off" class="form-input" name="left-sphere" id="left-sphere">
                                     @for($i = 20; $i >= -20; $i -= 0.25)
@@ -175,7 +175,7 @@
                                 <input id="left-radius" name="left-radius" type="text" class="form-input">
                             </div>
                             <div class="flex col gap--2">
-                                <p class="form-label">Oeil droit*</p>
+                                <p class="form-label text--m border--rounded bg--secondary-color-2 p--1 w--fit-content">Oeil droit*</p>
                                 <label for="right-sphere" class="form-label">Sphère*</label>
                                 <select class="form-input" name="right-sphere" id="right-sphere">
                                     @for($i = 20; $i >= -20; $i -= 0.25)
