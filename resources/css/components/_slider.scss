@@ -7,7 +7,7 @@
     overflow: hidden;
     padding: var(--main-padding-v) 0;
     position: relative;
-    height: 400px;
+    height: 500px;
     &__next, &__prev {
         cursor: pointer;
         z-index: 999;
@@ -18,5 +18,6 @@
         left: 50%;
         transform: translate(-50%, -50%);
         transition: left 0.8s ease;
+        padding: 3rem;
     }
 }

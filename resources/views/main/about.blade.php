@@ -131,7 +131,7 @@
                 <svg class="slider__prev" xmlns="http://www.w3.org/2000/svg" width="25" height="26" viewBox="0 0 25 26" fill="none">
                     <path d="M8.40616 13.5108L17.114 21.8077C17.2593 21.9462 17.4523 22.0234 17.653 22.0234C17.8538 22.0234 18.0468 21.9462 18.1921 21.8077L18.2015 21.7983C18.2722 21.7311 18.3284 21.6503 18.3669 21.5607C18.4054 21.4712 18.4252 21.3747 18.4252 21.2772C18.4252 21.1797 18.4054 21.0832 18.3669 20.9937C18.3284 20.9041 18.2722 20.8232 18.2015 20.7561L10.0015 12.9436L18.2015 5.13423C18.2722 5.06708 18.3284 4.98626 18.3669 4.89668C18.4054 4.80709 18.4252 4.71062 18.4252 4.61313C18.4252 4.51564 18.4054 4.41917 18.3669 4.32959C18.3284 4.24001 18.2722 4.15918 18.2015 4.09204L18.1921 4.08266C18.0468 3.94415 17.8538 3.86689 17.653 3.86689C17.4523 3.86689 17.2593 3.94415 17.114 4.08266L8.40616 12.3795C8.32958 12.4525 8.26861 12.5403 8.22696 12.6375C8.1853 12.7347 8.16382 12.8394 8.16382 12.9452C8.16382 13.0509 8.1853 13.1556 8.22696 13.2528C8.26861 13.3501 8.32958 13.4378 8.40616 13.5108Z" fill="#1E3A3D"/>
                 </svg>
-                <div style="left: 50%" class="slider__review flex col gap--10 align--center justify--center w--70 w-100-mobile text-center p--6">
+                <div style="left: 50%" class="slider__review flex col gap--10 align--center justify--center w--70 w-100-mobile text-center">
                     <p class="text--l">
                         Nous avons trouvé un magasin très agréable, un grand nombre de lunettes fabrication française, à des prix très abordables. Paul est très patient, d'excellents conseils, un examen de la vue proposé, nous reviendrons certainement ! Un grand merci
                     </p>
@@ -146,7 +146,7 @@
                         <p class="text--m">Monique Alexandre</p>
                     </div>
                 </div>
-                <div style="left: 150%" class="slider__review flex col gap--10 align--center justify--center w--70 w-100-mobile text-center p--6">
+                <div style="left: 150%" class="slider__review flex col gap--10 align--center justify--center w--70 w-100-mobile text-center">
                     <p class="text--l">
                         Nous avons trouvé un magasin très agréable, à des prix très abordables. Paul est très patient, d'excellents conseils, un examen de la vue proposé, nous reviendrons certainement ! Un grand merci
                     </p>

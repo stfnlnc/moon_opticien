@@ -11,7 +11,7 @@
   overflow: hidden;
   padding: var(--main-padding-v) 0;
   position: relative;
-  height: 400px;
+  height: 500px;
 }
 .slider__next, .slider__prev {
   cursor: pointer;
@@ -23,6 +23,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
   transition: left 0.8s ease;
+  padding: 3rem;
 }
 
 .pointer {
