@@ -43,8 +43,12 @@ class MainController extends Controller
         } else {
             $data = '';
         }
-
         if(!json_validate($data)) {
+            return null;
+        }
+        $result = json_decode($data, true);
+        if($result['status'] !== 'OK') {
+            unlink('reviews.json');
             return null;
         }
         return json_decode($data, true)['result']['reviews'];
