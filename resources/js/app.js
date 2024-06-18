@@ -63,32 +63,33 @@ htmx.onLoad(function (target) {
     const prevReview = document.querySelector('.slider__prev')
     const nextReview = document.querySelector('.slider__next')
     let i = 0
-
     let reviewLength = reviews.length
 
-    nextReview.addEventListener('click', (e) => {
-        e.preventDefault()
-        if(i < 0) {
+    if(reviewLength > 0) {
+        nextReview.addEventListener('click', (e) => {
+            e.preventDefault()
+            if(i < 0) {
 
-        } else {
-            i--
-            reviews.forEach((review, key) => {
-                review.style.left = ((key + i) * 100) + 50 + '%'
-            })
-        }
-    })
+            } else {
+                i--
+                reviews.forEach((review, key) => {
+                    review.style.left = ((key + i) * 100) + 50 + '%'
+                })
+            }
+        })
 
-    prevReview.addEventListener('click', (e) => {
-        e.preventDefault()
-        if(i+2 >= reviewLength) {
+        prevReview.addEventListener('click', (e) => {
+            e.preventDefault()
+            if(i+2 >= reviewLength) {
 
-        } else {
-            i++
-            reviews.forEach((review, key) => {
-                review.style.left = ((key + i) * 100) + 50 + '%'
-            })
-        }
-    })
+            } else {
+                i++
+                reviews.forEach((review, key) => {
+                    review.style.left = ((key + i) * 100) + 50 + '%'
+                })
+            }
+        })
+    }
 
     // Smooth scroll element
 
