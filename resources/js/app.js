@@ -3,8 +3,10 @@ import 'htmx.org';
 import * as htmx from "htmx.org";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { TextPlugin } from "gsap/TextPlugin";
 
 gsap.registerPlugin(ScrollTrigger);
+gsap.registerPlugin(TextPlugin);
 
 document.addEventListener('DOMContentLoaded', function () {
     document.body.addEventListener('htmx:configRequest', (event) => {
@@ -94,17 +96,34 @@ htmx.onLoad(function (target) {
     // Smooth scroll element
 
     const smooth = document.querySelectorAll('.smooth')
+    const smoothRev = document.querySelectorAll('.smooth-rev')
     const smoothSlow = document.querySelectorAll('.smooth-slow')
     const smoothFast = document.querySelectorAll('.smooth-fast')
 
     smooth.forEach((s) => {
         gsap.to(s, {
-            y: -50,
+            yPercent: -10,
             duration: 10,
-            ease: 'expo',
+            ease: 'power3',
             scrollTrigger: {
                 trigger: s,
-                start: 'top 50%',
+                start: 'top 30%',
+                end: 'bottom',
+                toggleActions: 'restart reverse play reverse',
+                markers: false,
+                scrub: 1
+            }
+        })
+    })
+
+    smoothRev.forEach((s) => {
+        gsap.to(s, {
+            yPercent: 10,
+            duration: 10,
+            ease: 'power3',
+            scrollTrigger: {
+                trigger: s,
+                start: 'top 30%',
                 end: 'bottom',
                 toggleActions: 'restart reverse play reverse',
                 markers: false,
@@ -115,12 +134,12 @@ htmx.onLoad(function (target) {
 
     smoothSlow.forEach((s) => {
         gsap.to(s, {
-            y: -30,
+            yPercent: -5,
             duration: 10,
-            ease: 'expo',
+            ease: 'power3',
             scrollTrigger: {
                 trigger: s,
-                start: 'top 50%',
+                start: 'top 30%',
                 end: 'bottom',
                 toggleActions: 'restart reverse play reverse',
                 markers: false,
@@ -131,12 +150,12 @@ htmx.onLoad(function (target) {
 
     smoothFast.forEach((s) => {
         gsap.to(s, {
-            y: -70,
+            yPercent: -20,
             duration: 10,
-            ease: 'expo',
+            ease: 'power3',
             scrollTrigger: {
                 trigger: s,
-                start: 'top 50%',
+                start: 'top 30%',
                 end: 'bottom',
                 toggleActions: 'restart reverse play reverse',
                 markers: false,
@@ -145,6 +164,69 @@ htmx.onLoad(function (target) {
         })
     })
 
+    // Btn on hover
+
+    const buttons = document.querySelectorAll('.btn')
+    buttons.forEach(btn => {
+        btn.addEventListener('mouseover', () => {
+            gsap.to(btn, {
+                duration: 1.5,
+                ease: "elastic.out(1.75,0.3)",
+                scale: 1.05,
+                repeat: 0
+            });
+        })
+        btn.addEventListener('mouseleave', () => {
+            gsap.to(btn, {
+                duration: 1.5,
+                ease: "elastic.out(1.75,0.3)",
+                scale: 1,
+                repeat: 0
+            });
+        })
+    })
+
+    // Pop animation
+
+    const pops = document.querySelectorAll('.pop')
+
+    pops.forEach(pop => {
+            gsap.to(pop, {
+                scale: 1.05,
+                duration: 0.8,
+                repeat: 1,
+                yoyo: true,
+                ease: "elastic.out(1.75,1)",
+                scrollTrigger: {
+                    trigger: pop,
+                    start: 'top 50%',
+                    end: 'bottom 50%',
+                    toggleActions: 'play reverse play reverse',
+                    markers: true,
+                }
+            })
+    })
+
+    // Reveal animation
+
+    const revealsTop = document.querySelectorAll('.reveal-top')
+    const revealsLeft = document.querySelectorAll('.reveal-left')
+    const revealsRight = document.querySelectorAll('.reveal-right')
+    const revealsBottom = document.querySelectorAll('.reveal-bottom')
+
+    revealsLeft.forEach((reveal) => {
+        gsap.from(reveal, {
+            scrollTrigger: {
+                trigger: reveal,
+                start: "top center",
+                markers: false
+            },
+            x: 50,
+            opacity: 0,
+            duration: 2,
+            ease: "power4.inOut"
+        });
+    })
 
     // Brand infinite scrolling
     const scroll = document.querySelectorAll('.infinite-scroll')

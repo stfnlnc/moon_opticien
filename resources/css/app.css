@@ -1570,19 +1570,26 @@ nav {
   transform: translate(-50%, -50%);
 }
 
+.z-0 {
+  z-index: 0;
+}
+
 .container {
   width: 100%;
   max-width: var(--max-width);
   padding: var(--main-padding-v) var(--main-padding-h);
 }
 .container__full-width {
+  position: relative;
   width: 100%;
 }
 .container__full-height {
+  position: relative;
   height: 100vh;
   min-height: 600px;
 }
 .container__scroll {
+  position: relative;
   overflow: scroll;
   white-space: nowrap;
   -ms-overflow-style: none;

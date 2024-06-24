@@ -188,14 +188,14 @@
                                         <option @if(strval($i) === '0') selected @endif value="{{ $i }}">{{ $i > 0 ? '+' . $i : $i }}</option>
                                     @endfor
                                 </select>
-                                <label for="right-add" class="form-label">Axe*</label>
-                                <select autocomplete="off" class="form-input" name="right-add" id="right-add">
+                                <label for="right-axis" class="form-label">Axe*</label>
+                                <select autocomplete="off" class="form-input" name="right-axis" id="right-axis">
                                     @for($i = 0; $i <= 180; $i += 5)
                                         <option @if(strval($i) === '0') selected @endif value="{{ $i }}">{{ $i > 0 ? '+' . $i : $i }}°</option>
                                     @endfor
                                 </select>
-                                <label for="right-axis" class="form-label flex row align--center">Addition <span class="text--xs">(optionnel)</span></label>
-                                <select autocomplete="off" class="form-input" name="right-axis" id="right-axis">
+                                <label for="right-add" class="form-label flex row align--center">Addition <span class="text--xs">(optionnel)</span></label>
+                                <select autocomplete="off" class="form-input" name="right-add" id="right-add">
                                     @for($i = 0; $i <= 3; $i += 0.25)
                                         <option @if(strval($i) === '0') selected @endif value="{{ $i }}">{{ $i > 0 ? '+' . $i : $i }}</option>
                                     @endfor

@@ -39,7 +39,7 @@
                 </p>
             </div>
             <div class="img__hero w--60 w-100-mobile">
-                <img loading="lazy" class="img" src="{{ asset('/images/layers/be8d0bb7d96fcf948680d017abe96fd7.webp') }}" alt="">
+                <img loading="lazy" class="img reveal-left" src="{{ asset('/images/layers/be8d0bb7d96fcf948680d017abe96fd7.webp') }}" alt="">
             </div>
         </div>
     </section>

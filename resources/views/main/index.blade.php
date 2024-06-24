@@ -8,7 +8,7 @@
 
 @section('content')
 <section class="relative w--100 h--100">
-    <img loading="lazy" class="img img-mobile w--100 h--100 absolute t--0 l--0" src="{{ asset('/images/layers/2e68def2b88b.webp') }}" alt="">
+    <img loading="lazy" class="img img-mobile w--100 h--100 fixed z-0 t--0 l--0" src="{{ asset('/images/layers/2e68def2b88b.webp') }}" alt="">
     <div class="absolute pos-hor-center b--0 container flex col align--start justify--end gap--10">
         <h1 class="c--primary-light">
             MOON, <br>

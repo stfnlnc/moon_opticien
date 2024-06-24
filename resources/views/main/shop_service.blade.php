@@ -24,7 +24,7 @@
     <section
         class="container__full-width c--secondary-dark bg--primary-light flex row align--center justify--center gap--20">
         <div class="container pl--0 pt--0 pb--0 pr--0 flex row col-rev-mobile">
-            <div class="flex col align--start justify--center gap--8 container ">
+            <div class="flex col align--start justify--center gap--8 container">
                 <h2>Faites contrôler votre vue gratuitement</h2>
                 <p class="text--m">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur

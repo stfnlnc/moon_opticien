@@ -31,7 +31,6 @@ class MainController extends Controller
             curl_close($ch);
 
             // Get reviews with Google Places API and register JSON in review.json
-            // $json = file_get_contents('https://map.googleapis.com/maps/api/place/details/json?key='. env('GOOGLE_API_KEY') . '&placeid=ChIJmyZzjQVJVg0R7UwDRXmV21Y&fields=reviews&reviews_no_translations=true');
             file_put_contents('reviews.json', $json);
             // Put time when upload in time.txt
             $date = time();
@@ -43,14 +42,18 @@ class MainController extends Controller
         } else {
             $data = '';
         }
+
         if(!json_validate($data)) {
             return null;
         }
+
         $result = json_decode($data, true);
+
         if($result['status'] !== 'OK') {
             unlink('reviews.json');
             return null;
         }
+
         return json_decode($data, true)['result']['reviews'];
     }
 
