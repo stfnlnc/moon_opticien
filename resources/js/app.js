@@ -170,62 +170,20 @@ htmx.onLoad(function (target) {
     buttons.forEach(btn => {
         btn.addEventListener('mouseover', () => {
             gsap.to(btn, {
-                duration: 1.5,
+                duration: 2,
                 ease: "elastic.out(1.75,0.3)",
-                scale: 1.05,
+                scale: 1.03,
                 repeat: 0
             });
         })
         btn.addEventListener('mouseleave', () => {
             gsap.to(btn, {
-                duration: 1.5,
+                duration: 2,
                 ease: "elastic.out(1.75,0.3)",
                 scale: 1,
                 repeat: 0
             });
         })
-    })
-
-    // Pop animation
-
-    const pops = document.querySelectorAll('.pop')
-
-    pops.forEach(pop => {
-            gsap.to(pop, {
-                scale: 1.05,
-                duration: 0.8,
-                repeat: 1,
-                yoyo: true,
-                ease: "elastic.out(1.75,1)",
-                scrollTrigger: {
-                    trigger: pop,
-                    start: 'top 50%',
-                    end: 'bottom 50%',
-                    toggleActions: 'play reverse play reverse',
-                    markers: true,
-                }
-            })
-    })
-
-    // Reveal animation
-
-    const revealsTop = document.querySelectorAll('.reveal-top')
-    const revealsLeft = document.querySelectorAll('.reveal-left')
-    const revealsRight = document.querySelectorAll('.reveal-right')
-    const revealsBottom = document.querySelectorAll('.reveal-bottom')
-
-    revealsLeft.forEach((reveal) => {
-        gsap.from(reveal, {
-            scrollTrigger: {
-                trigger: reveal,
-                start: "top center",
-                markers: false
-            },
-            x: 50,
-            opacity: 0,
-            duration: 2,
-            ease: "power4.inOut"
-        });
     })
 
     // Brand infinite scrolling
