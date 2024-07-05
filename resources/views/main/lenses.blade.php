@@ -51,6 +51,9 @@
             </div>
         </div>
     </section>
+    <section class="container__full-width">
+        <img class="w--100 img img-banner" src="{{ asset('/images/layers/6687e96b4cd98.webp') }}" alt="">
+    </section>
     <section class="container__full-width c--primary-dark bg--secondary-color-4 flex col align--center">
         <div class="container flex col gap--10">
             <h2>Notre accompagnement</h2>

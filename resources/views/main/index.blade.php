@@ -8,7 +8,7 @@
 
 @section('content')
 <section class="relative w--100 h--100">
-    <img loading="lazy" class="img img-mobile w--100 h--100 fixed z-0 t--0 l--0" src="{{ asset('/images/layers/2e68def2b88b.webp') }}" alt="">
+    <img loading="lazy" class="img img-header img-mobile w--100 h--100 fixed z-0 t--0 l--0" src="{{ asset('/images/layers/2e68def2b88b.webp') }}" alt="">
     <div class="absolute pos-hor-center b--0 container flex col align--start justify--end gap--10">
         <h1 class="c--primary-light">
             MOON, <br>
@@ -86,9 +86,9 @@
             </div>
         </div>
         <div class="flex row align--start gap--4 w--100">
-                <img loading="lazy" class="img w-100-mobile w--80" src="{{ asset('/images/layers/d6f527b6d5f28d685792184f72ccd2ae.webp') }}" alt="">
-                <img loading="lazy" class="img hide-mobile w--100" src="{{ asset('/images/layers/1624725b99dc68b3e6c2bc9dd5722146.webp') }}" alt="">
-                <img loading="lazy" class="img hide-mobile w--100" src="{{ asset('/images/layers/5c3d15465775ba42a138b0208f4474f2.webp') }}" alt="">
+                <img loading="lazy" class="img img-left w-100-mobile w--80" src="{{ asset('/images/layers/d6f527b6d5f28d685792184f72ccd2ae.webp') }}" alt="">
+                <img loading="lazy" class="img img-center hide-mobile w--100" src="{{ asset('/images/layers/1624725b99dc68b3e6c2bc9dd5722146.webp') }}" alt="">
+                <img loading="lazy" class="img img-right hide-mobile w--100" src="{{ asset('/images/layers/5c3d15465775ba42a138b0208f4474f2.webp') }}" alt="">
         </div>
     </div>
 </section>

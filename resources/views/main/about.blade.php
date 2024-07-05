@@ -38,17 +38,26 @@
             <div class="flex row justify--end w--100">
                 <div class="grid grid--3 grid--1-mobile  grid-gap--8-mobile grid-gap--2">
                     <div class="flex col align--start justify--start gap--3 block__about">
-                        <img loading="lazy" class="img img__about" src="{{ asset('/images/layers/c9dc6aa53b4e6659a4484a3cbc012d58.webp') }}" alt="">
+                        <div class="img__about img__hover relative">
+                            <img loading="lazy" class="img img__about img__display absolute" src="{{ asset('/images/layers/6687ec06ea590.webp') }}" alt="">
+                            <img loading="lazy" class="img img__about img__hidden absolute" src="{{ asset('/images/layers/6687ec06ea590_hover.webp') }}" alt="">
+                        </div>
                         <p class="text--l">Laure</p>
                         <p class="text--m">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                     </div>
                     <div class="flex col align--start justify--start gap--3 block__about">
-                        <img loading="lazy" class="img img__about" src="{{ asset('/images/layers/c9dc6aa53b4e6659a4484a3cbc012d58.webp') }}" alt="">
+                        <div class="img__about img__hover relative">
+                            <img loading="lazy" class="img img__about img__display absolute" src="{{ asset('/images/layers/6687ec2751070.webp') }}" alt="">
+                            <img loading="lazy" class="img img__about img__hidden absolute" src="{{ asset('/images/layers/6687ec2751070_hover.webp') }}" alt="">
+                        </div>
                         <p class="text--l">Quentin</p>
                         <p class="text--m">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                     </div>
                     <div class="flex col align--start justify--start gap--3 block__about">
-                        <img loading="lazy" class="img img__about" src="{{ asset('/images/layers/c9dc6aa53b4e6659a4484a3cbc012d58.webp') }}" alt="">
+                        <div class="img__about img__hover relative">
+                            <img loading="lazy" class="img img__about img__display absolute" src="{{ asset('/images/layers/6687ec39adea6.webp') }}" alt="">
+                            <img loading="lazy" class="img img__about img__hidden absolute" src="{{ asset('/images/layers/6687ec39adea6_hover.webp') }}" alt="">
+                        </div>
                         <p class="text--l">Paul</p>
                         <p class="text--m">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                     </div>
@@ -98,6 +107,9 @@
                 </div>
             </div>
         </div>
+    </section>
+    <section class="container__full-width">
+        <img class="w--100 img img-banner" src="{{ asset('/images/layers/6687ea96244d9.webp') }}" alt="">
     </section>
     <section class="container__full-width c--secondary-dark bg--secondary-color-2 flex col align--center">
         <div class="container grid grid--3 grid--1-mobile grid-gap--10 text-center pt--10 pb--10 w--70 w-100-mobile">

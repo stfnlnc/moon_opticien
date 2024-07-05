@@ -142,6 +142,9 @@
             </div>
         </div>
     </section>
+    <section class="container__full-width">
+        <img class="w--100 img img-banner" src="{{ asset('/images/layers/6687eaa5d6cb2.webp') }}" alt="">
+    </section>
     <section class="container__full-width c--secondary-dark bg--secondary-color-2 flex col align--center">
         <div class="container grid grid--3 grid--1-mobile grid-gap--10 text-center pt--10 pb--10 w--80 w-100-mobile">
             <div class="flex col align--center gap--2">

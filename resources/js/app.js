@@ -164,28 +164,6 @@ htmx.onLoad(function (target) {
         })
     })
 
-    // Btn on hover
-
-    const buttons = document.querySelectorAll('.btn')
-    buttons.forEach(btn => {
-        btn.addEventListener('mouseover', () => {
-            gsap.to(btn, {
-                duration: 2,
-                ease: "elastic.out(1.75,0.3)",
-                scale: 1.03,
-                repeat: 0
-            });
-        })
-        btn.addEventListener('mouseleave', () => {
-            gsap.to(btn, {
-                duration: 2,
-                ease: "elastic.out(1.75,0.3)",
-                scale: 1,
-                repeat: 0
-            });
-        })
-    })
-
     // Brand infinite scrolling
     const scroll = document.querySelectorAll('.infinite-scroll')
 

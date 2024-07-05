@@ -46,6 +46,19 @@
   object-fit: cover;
 }
 
+.img-header {
+  object-position: center 30%;
+  object-fit: cover;
+}
+
+.img-left {
+  aspect-ratio: 9/14;
+}
+
+.img-banner {
+  height: 800px;
+}
+
 .link-img {
   overflow: hidden;
   line-height: 0;
@@ -60,8 +73,11 @@
 
 @media screen and (max-width: 1080px) {
   .img-mobile {
-    object-position: 90%;
+    object-position: center;
     object-fit: cover;
+  }
+  .img-banner {
+    height: 400px;
   }
 }
 .icon--ver {
@@ -1223,6 +1239,13 @@ nav {
 .img__about {
   width: 20rem;
   height: 33.875rem;
+}
+.img__hidden {
+  opacity: 0;
+  transition: opacity var(--duration) var(--cubic);
+}
+.img__hover:hover .img__hidden {
+  opacity: 1;
 }
 
 .block__about {
@@ -3592,6 +3615,7 @@ nav {
 
 * {
   box-sizing: border-box;
+  line-height: 0;
 }
 
 html {

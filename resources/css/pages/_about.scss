@@ -3,6 +3,13 @@
         width: 20rem;
         height: 33.875rem;
     }
+    &__hidden {
+        opacity: 0;
+        transition: opacity var(--duration) var(--cubic);
+    }
+    &__hover:hover .img__hidden {
+        opacity: 1;
+    }
 }
 
 .block {

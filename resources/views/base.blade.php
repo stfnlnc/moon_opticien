@@ -40,7 +40,6 @@
                     }
                 });
             }
-
             function callbackCatch(error) {
                 console.error('Error:', error)
             }
