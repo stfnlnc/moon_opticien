@@ -21,7 +21,7 @@ class MainController extends Controller
         }
 
         // If upload a week before, new review upload in reviews.json
-        if(time() > $time || !file_exists('reviews.json')) {
+        if(time() > $time + 604800 || !file_exists('reviews.json')) {
             $ch = curl_init('https://maps.googleapis.com/maps/api/place/details/json?key=' . env('GOOGLE_API_KEY') . '&placeid=' . env('GOOGLE_PLACE_ID') . '&fields=reviews&reviews_no_translations=true%27');
             curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
             curl_setopt($ch, CURLOPT_FOLLOWLOCATION, 1);
