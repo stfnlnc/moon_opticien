@@ -334,7 +334,11 @@
                 @if($review['rating'] >= 4)
             <div style="{{ 'left:' . ($k * 100)+50 . '%' }}" class="slider__review flex col gap--10 align--center justify--center w--70 w-100-mobile text-center">
                 <p class="text--l">
-                    {{ $review['text'] }}
+                    @if(strlen($review['text']) < 300)
+                        {{ $review['text'] }}
+                    @else
+                        {{ substr($review['text'], 0, strpos($review['text'], ' ', 280)) }} [...]
+                    @endif
                 </p>
                 <div class="flex col gap--2 align--center c--secondary-color-3">
                     <div class="flex row gap--1">
