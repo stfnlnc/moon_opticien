@@ -1,5 +1,7 @@
 @extends('base')
 
+@section('subtitle', 'à Bizanos, aux portes de Pau')
+
 @section('meta')
     <meta property="og:description" content="" />
     <meta name="description" content="">
@@ -47,7 +49,9 @@
         <div class="grid grid--2 grid-gap--14 grid--1-mobile grid-gap--8-mobile pt--10 pb--20">
             <h2>Des opticiens passionnés à votre service</h2>
             <p class="text--m">
-                Highlight the Unique Selling Proposition (USP) with a short summary of the main feature and how it benefits customers. The idea here is to keep it short and direct. If the visitor wishes to learn more they will hit the button.
+                Moon Opticien Lunetier est un magasin d’optique indépendant situé dans le centre ville de
+                Bizanos. Nous sommes trois opticiens diplômés, passionnés par notre métier et déterminés
+                à vous offrir le meilleur service possible. <br>
             </p>
         </div>
         <div class="flex row align--start justify--end gap--2 w-100-mobile">
@@ -55,17 +59,21 @@
                 <a class="link-img" hx-boost="true" href="{{ route('shop_service') }}">
                     <img loading="lazy" class="img img__service" src="{{ asset('/images/layers/728ebaf8666162f73edf66e0bd3146d5.webp') }}" alt="">
                 </a>
-                <p class="text--l">Services en Magasin</p>
-                <p class="text--m">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                <a hx-boost="true" href="{{ route('shop_service') }}" class="btn btn--secondary-light">Découvrir</a>
+                <div class="flex col gap--3 img__service h--fit-content">
+                    <p class="text--l">Services en Magasin</p>
+                    <p class="text--m">Venez découvrir une expertise unique dans notre magasin à Bizanos.</p>
+                    <a hx-boost="true" href="{{ route('shop_service') }}" class="btn btn--secondary-light">Découvrir</a>
+                </div>
             </div>
             <div class="flex col align--start justify--start gap--3 w-100-mobile">
                 <a class="link-img" hx-boost="true" href="{{ route('home_service') }}">
                     <img loading="lazy" class="img img__service" src="{{ asset('/images/layers/a7e72401fb434c9febabc88ff04202ae.webp') }}" alt="">
                 </a>
-                <p class="text--l">Services à Domicile</p>
-                <p class="text--m">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                <a hx-boost="true" href="{{ route('home_service') }}" class="btn btn--secondary-light">Découvrir</a>
+                <div class="flex col gap--3 img__service h--fit-content">
+                    <p class="text--l">Services à Domicile</p>
+                    <p class="text--m">Pour votre confort et votre tranquillité, nous nous déplaçons au plus près de vous.</p>
+                    <a hx-boost="true" href="{{ route('home_service') }}" class="btn btn--secondary-light">Découvrir</a>
+                </div>
             </div>
         </div>
     </div>
@@ -80,7 +88,9 @@
             <h2>Un opticien indépendant, c’est un opticien au plus proche de vous.</h2>
             <div class="flex col align--start gap--10">
                 <p class="text--m">
-                    Highlight the Unique Selling Proposition (USP) with a short summary of the main feature and how it benefits customers. The idea here is to keep it short and direct. If the visitor wishes to learn more they will hit the button.
+                    Forts de nos expériences variées et complémentaires, nous mettons à votre disposition
+                    notre expertise pour vous guider dans le choix de vos lunettes, lentilles de contact et autres
+                    solutions optiques. <br>
                 </p>
                 <a hx-boost="true" href="{{ route('about') }}" class="btn btn--main-light">Qui sommes-nous ?</a>
             </div>
@@ -102,7 +112,7 @@
             <h2>Des conseils personnalisés dans notre magasin, à Bizanos.</h2>
             <div class="flex col align--start gap--10">
                 <p class="text--m">
-                    Highlight the Unique Selling Proposition (USP) with a short summary of the main feature and how it benefits customers. The idea here is to keep it short and direct. If the visitor wishes to learn more they will hit the button.
+                    Notre objectif est de vous offrir un service de qualité, personnalisé et à la hauteur de vos attentes. Chaque client est unique et mérite une attention particulière. Nous prenons le temps de comprendre vos besoins et préférences pour vous proposer des solutions sur mesure.
                 </p>
                 <a hx-boost="true" href="{{ route('shop_service') }}" class="btn btn--main-light">je découvre les services en magasin</a>
             </div>
@@ -115,7 +125,7 @@
                     <div class="flex col gap--1">
                         <p class="text--l">Être conseillé</p>
                         <p class="text--s">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Nous offrons des conseils personnalisés pour répondre à vos besoins visuels spécifiques.
                         </p>
                     </div>
                 </div>
@@ -124,7 +134,7 @@
                     <div class="flex col gap--1">
                         <p class="text--l">Ajuster</p>
                         <p class="text--s">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Nous ajustons vos lunettes, lentilles de contact et autres solutions optiques pour un confort optimal.
                         </p>
                     </div>
                 </div>
@@ -133,7 +143,7 @@
                     <div class="flex col gap--1">
                         <p class="text--l">Recycler</p>
                         <p class="text--s">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Nous offrons un service de collecte de lunettes afin de donner une seconde vie à vos anciennes montures.
                         </p>
                     </div>
                 </div>
@@ -142,7 +152,7 @@
                     <div class="flex col gap--1">
                         <p class="text--l">Personnaliser</p>
                         <p class="text--s">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Des lunettes personnalisées qui s'adaptent parfaitement à votre style et à vos besoins visuels.
                         </p>
                     </div>
                 </div>
@@ -151,17 +161,20 @@
     </div>
 </section>
 <section class="container__full-width c--secondary-dark bg--secondary-color-2 flex col align--center">
-    <div class="container grid grid--2 grid-gap--10 text-center pt--10 pb--10 w--70 w-100-mobile">
-        <div class="flex col align--center gap--2">
-            <x-icon.dot-medium class="icon__dot-medium icon--secondary-dark"></x-icon.dot-medium>
-            <p class="text--l">Tiers payant</p>
-            <p class="text--s">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+    <div class="container pt--10 pb--10 flex col align--center gap--8">
+        <div class="grid grid--2 grid-gap--10 text-center w--70 w-100-mobile">
+            <div class="flex col align--center gap--2">
+                <x-icon.dot-medium class="icon__dot-medium icon--secondary-dark"></x-icon.dot-medium>
+                <p class="text--l">Tiers payant</p>
+                <p class="text--s">N'avancez plus les frais de vos lunettes, on s'occupe de tout. *</p>
+            </div>
+            <div class="flex col align--center gap--2">
+                <x-icon.dot-medium class="icon__dot-medium icon--secondary-dark"></x-icon.dot-medium>
+                <p class="text--l">100% santé</p>
+                <p class="text--s">Bénéficiez de lunettes de qualité sans aucun reste à charge. *</p>
+            </div>
         </div>
-        <div class="flex col align--center gap--2">
-            <x-icon.dot-medium class="icon__dot-medium icon--secondary-dark"></x-icon.dot-medium>
-            <p class="text--l">100% santé</p>
-            <p class="text--s">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-        </div>
+        <p class="align--self-end">* Voir détails en magasin</p>
     </div>
 </section>
 <section class="container__full-width c--primary-light bg--secondary-dark flex col align--center">
@@ -174,7 +187,7 @@
             <h2>Un opticien à domicile, pour vous ou vos proches.</h2>
             <div class="flex col align--start gap--10">
                 <p class="text--m">
-                    Highlight the Unique Selling Proposition (USP) with a short summary of the main feature and how it benefits customers. The idea here is to keep it short and direct. If the visitor wishes to learn more they will hit the button.
+                    Que ce soit pour des ajustements de lunettes, des conseils personnalisés pour choisir la monture idéale, ou des examens de vue complets, notre équipe se déplace à votre convenance.
                 </p>
                 <a hx-boost="true" href="{{ route('home_service') }}" class="btn btn--main-dark">je découvre les services à domicile</a>
             </div>
@@ -187,7 +200,7 @@
                     <p class="text--l">Nous prenons rendez-vous ensemble</p>
                 </div>
                 <p class="text--m">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla.
+                    Planifions ensemble votre rendez-vous pour une expérience optique personnalisée. Nous nous assurons de choisir un moment qui vous convient, pour vous offrir un service dédié et attentif.
                 </p>
             </card>
             <card class="relative">
@@ -197,7 +210,7 @@
                     <p class="text--l">Nous nous déplaçons chez vous</p>
                 </div>
                 <p class="text--m">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla.
+                    Profitez de la commodité d'un service optique à domicile. Nous nous rendons chez vous pour vous fournir des soins optiques professionnels sans que vous ayez à vous déplacer.
                 </p>
             </card>
             <card class="relative">
@@ -207,7 +220,7 @@
                     <p class="text--l">Nous faisons le point sur votre vue</p>
                 </div>
                 <p class="text--m">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla.
+                    Lors de notre visite, nous effectuons un examen complet de votre vue. Nous évaluons avec précision votre correction et discutons de vos besoins spécifiques en matière de correction optique.
                 </p>
             </card>
             <card class="relative">
@@ -217,7 +230,7 @@
                     <p class="text--l">Vous choisissez vos lunettes</p>
                 </div>
                 <p class="text--m">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla.
+                    Explorez notre large sélection de montures et de lentilles. Nous vous guidons dans le choix des lunettes qui correspondent à votre style, votre confort et vos préférences esthétiques.
                 </p>
             </card>
             <card class="relative">
@@ -227,7 +240,7 @@
                     <p class="text--l">Nous faisons fabriquer vos lunettes</p>
                 </div>
                 <p class="text--m">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla.
+                    Une fois votre choix fait, nous nous occupons de faire fabriquer vos lunettes sur mesure. Nous veillons à ce que chaque détail soit pris en compte pour garantir une qualité optimale.
                 </p>
             </card>
             <card class="relative">
@@ -237,7 +250,7 @@
                     <p class="text--l">Vous êtes livrés ! Et on reste en contact</p>
                 </div>
                 <p class="text--m">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla.
+                    Dès que vos lunettes sont prêtes, nous vous les livrons personnellement. Nous nous assurons que vous êtes entièrement satisfait de votre équipement optique et nous restons disponibles pour répondre à vos questions.
                 </p>
             </card>
         </div>
@@ -253,7 +266,7 @@
             <h2>Découvrez notre sélection de plus grandes marques</h2>
             <div class="flex col align--start gap--10">
                 <p class="text--m">
-                    Highlight the Unique Selling Proposition (USP) with a short summary of the main feature and how it benefits customers. The idea here is to keep it short and direct. If the visitor wishes to learn more they will hit the button.
+                    Nous mettons un point d'honneur à vous offrir un choix diversifié et de qualité supérieure, allant des classiques intemporels aux dernières tendances. Que vous recherchiez des lunettes de vue élégantes, des lunettes de soleil haut de gamme ou des montures innovantes, notre collection saura combler vos attentes.
                 </p>
                 <a hx-boost="true" href="{{ route('glasses') }}" class="btn btn--main-light">Toutes les lunettes</a>
             </div>
@@ -265,7 +278,7 @@
                         <img loading="lazy" class="img img__glasses" src="{{ asset('/images/layers/ac59211ea58ee6b9259ed733452a040d.webp') }}" alt="">
                     </a>
                     <p class="text--l">Vue</p>
-                    <p class="text--m">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <p class="text--m">Associez confort et style pour le quotidien.</p>
                     <a hx-boost="true" href="{{ route('glasses') }}#eyeglasses" class="btn btn--secondary-light">Découvrir</a>
                 </div>
                 <div class="flex col align--start justify--start gap--3 block__glasses">
@@ -273,7 +286,7 @@
                         <img class="img img__glasses" src="{{ asset('/images/layers/0fef3d1f982b33e7b22c1571eecc4453.webp') }}" alt="">
                     </a>
                     <p class="text--l">Solaires</p>
-                    <p class="text--m">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <p class="text--m">Protégez vos yeux du soleil avec style.</p>
                     <a hx-boost="true" href="{{ route('glasses') }}#sunglasses" class="btn btn--secondary-light">Découvrir</a>
                 </div>
                 <div class="flex col align--start justify--start gap--3 block__glasses">
@@ -281,7 +294,7 @@
                         <img loading="lazy" class="img img__glasses" src="{{ asset('/images/layers/fb49e3f66990789c63e31a0c6cc6af7d.webp') }}" alt="">
                     </a>
                     <p class="text--l">Sport</p>
-                    <p class="text--m">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <p class="text--m">Performez dans toutes vos activités.</p>
                     <a hx-boost="true" href="{{ route('glasses') }}#sportglasses" class="btn btn--secondary-light">Découvrir</a>
                 </div>
                 <div class="flex col align--start justify--start gap--3 block__glasses">
@@ -289,7 +302,7 @@
                         <img loading="lazy" class="img img__glasses" src="{{ asset('/images/layers/5492d5c3f99aca5a8d72c79736f9317c.webp') }}" alt="">
                     </a>
                     <p class="text--l">Enfants</p>
-                    <p class="text--m">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <p class="text--m">Des montures accompagner leurs aventures.</p>
                     <a hx-boost="true" href="{{ route('glasses') }}#childglasses" class="btn btn--secondary-light">Découvrir</a>
                 </div>
             </div>
@@ -306,7 +319,7 @@
             <h2>Commander et récupérer vos lentilles en magasin</h2>
             <div class="flex col align--start gap--10">
                 <p class="text--m">
-                    Highlight the Unique Selling Proposition (USP) with a short summary of the main feature and how it benefits customers. The idea here is to keep it short and direct. If the visitor wishes to learn more they will hit the button.
+                    Pour une commande rapide et pratique, remplissez notre formulaire et récupérez vos lentilles directement en magasin.
                 </p>
                 <div class="flex col gap--2">
                     <a hx-boost="true" href="{{ route('contact') }}#orderlenses" class="btn btn--main-dark">Je commande mes lentilles</a>

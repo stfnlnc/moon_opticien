@@ -15,9 +15,11 @@
         <div class="container flex col align--start gap--5 pb--30">
             <h1 class="uppercase">Une équipe <br> à taille humaine</h1>
             <p class="text--m w--50 w-100-mobile align--self-end">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur
-                adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet,
-                consectetur adipiscing elit.
+                Forts de nos expériences variées et complémentaires, nous mettons à votre disposition
+                notre expertise pour vous guider dans le choix de vos lunettes, lentilles de contact et autres
+                solutions optiques.
+                Notre objectif est de vous offrir un service de qualité, personnalisé et à la
+                hauteur de vos attentes.
             </p>
         </div>
     </section>
@@ -31,7 +33,9 @@
                 <h2>Des opticiens passionnés à votre service</h2>
                 <div class="flex col align--start gap--10">
                     <p class="text--m">
-                        Highlight the Unique Selling Proposition (USP) with a short summary of the main feature and how it benefits customers. The idea here is to keep it short and direct. If the visitor wishes to learn more they will hit the button.
+                        Moon Opticien Lunetier, est un magasin d’optique indépendant situé dans le centre ville de
+                        Bizanos fondé par trois opticiens diplômés, passionnés par leur métier et déterminés
+                        à vous offrir le meilleur service possible.
                     </p>
                 </div>
             </div>
@@ -43,7 +47,10 @@
                             <img loading="lazy" class="img img__about img__hidden absolute" src="{{ asset('/images/layers/6687ec06ea590_hover.webp') }}" alt="">
                         </div>
                         <p class="text--l">Laure</p>
-                        <p class="text--m">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <p class="text--m">
+                            Passionnée par l’optique et la vision, mon expérience m'a permis de développer une expertise approfondie et un savoir-faire reconnu dans ce domaine pour vous offrir des
+                            solutions visuelles adaptées à vos besoins.
+                        </p>
                     </div>
                     <div class="flex col align--start justify--start gap--3 block__about">
                         <div class="img__about img__hover relative">
@@ -51,7 +58,9 @@
                             <img loading="lazy" class="img img__about img__hidden absolute" src="{{ asset('/images/layers/6687ec2751070_hover.webp') }}" alt="">
                         </div>
                         <p class="text--l">Quentin</p>
-                        <p class="text--m">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <p class="text--m">
+                            Grâce à mes études et à ma passion pour l'optique, j'ai acquis des compétences approfondies en correction visuelle et choix de montures pour vous garantir un service de qualité, tout en alliant esthétique et confort
+                        </p>
                     </div>
                     <div class="flex col align--start justify--start gap--3 block__about">
                         <div class="img__about img__hover relative">
@@ -59,7 +68,9 @@
                             <img loading="lazy" class="img img__about img__hidden absolute" src="{{ asset('/images/layers/6687ec39adea6_hover.webp') }}" alt="">
                         </div>
                         <p class="text--l">Paul</p>
-                        <p class="text--m">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <p class="text--m">
+                            Passionné par la santé visuelle, je m'engage à fournir des conseils personnalisés et des solutions adaptées à chaque besoin, des examens de la vue aux dernières innovations en matière de lentilles de contact.
+                        </p>
                     </div>
                 </div>
             </div>
@@ -75,7 +86,7 @@
                         <p class="text--l">Des prix justes</p>
                     </div>
                     <p class="text--m">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla.
+                        Nous vous proposons des prix justes pour des lunettes de qualité adaptées à votre budget.
                     </p>
                 </div>
                 <div class="flex row col-mobile grid-gap--4-mobile gap--25 pt--4 pb--4 border--bottom border--primary-light">
@@ -84,7 +95,7 @@
                         <p class="text--l">Service France Garanti</p>
                     </div>
                     <p class="text--m">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla.
+                        Profitez de notre engagement pour vous garantir des solutions optiques fiables.
                     </p>
                 </div>
                 <div class="flex row col-mobile grid-gap--4-mobile gap--25 pt--4 pb--4 border--bottom border--primary-light">
@@ -93,7 +104,7 @@
                         <p class="text--l">Tiers payant & 100% santé</p>
                     </div>
                     <p class="text--m">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla.
+                        Bénéficiez du tiers payant et du 100% santé pour des lunettes sans frais à votre charge.
                     </p>
                 </div>
                 <div class="flex row col-mobile grid-gap--4-mobile gap--25 pt--4 pb--4 border--bottom border--primary-light">
@@ -102,7 +113,7 @@
                         <p class="text--l">Facilités de paiement</p>
                     </div>
                     <p class="text--m">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla.
+                        Découvrez nos facilités de paiement pour rendre l'achat de vos lunettes plus accessible.
                     </p>
                 </div>
             </div>
@@ -112,21 +123,29 @@
         <img class="w--100 img img-banner" src="{{ asset('/images/layers/6687ea96244d9.webp') }}" alt="">
     </section>
     <section class="container__full-width c--secondary-dark bg--secondary-color-2 flex col align--center">
-        <div class="container grid grid--3 grid--1-mobile grid-gap--10 text-center pt--10 pb--10 w--70 w-100-mobile">
+        <div class="container grid grid--3 grid--1-mobile grid-gap--10 text-center pt--10 pb--10 w--80 w-100-mobile">
             <div class="flex col align--center gap--2">
                 <x-icon.dot-medium class="icon__dot-medium icon--secondary-dark"></x-icon.dot-medium>
                 <p class="text--l">Gravure des branches</p>
-                <p class="text--s">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                <p class="text--s">
+                    Un service unique et personnalisé : la gravure des
+                    branches avec votre nom ou tout autre texte de votre choix.
+                </p>
             </div>
             <div class="flex col align--center gap--2">
                 <x-icon.dot-medium class="icon__dot-medium icon--secondary-dark"></x-icon.dot-medium>
                 <p class="text--l">Verrier français</p>
-                <p class="text--s">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                <p class="text--s">
+                    Optez pour la qualité avec des verres fabriqués par des verriers français renommés.
+                </p>
             </div>
             <div class="flex col align--center gap--2">
                 <x-icon.dot-medium class="icon__dot-medium icon--secondary-dark"></x-icon.dot-medium>
-                <p class="text--l">2è paire offerte</p>
-                <p class="text--s">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                <p class="text--l">2e paire offerte</p>
+                <p class="text--s">
+                    Bénéficiez d'une deuxième paire offerte pour une vision toujours impeccable. <br>
+                    (Voir détails en magasin)
+                </p>
             </div>
         </div>
     </section>

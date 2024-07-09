@@ -24,7 +24,11 @@
     @yield('meta')
     <title>@hasSection('title')
             @yield('title') -
-        @endif {{ config('app.name') }}</title>
+        @endif {{ config('app.name') }}
+        @hasSection('subtitle')
+            - @yield('subtitle')
+        @endif
+    </title>
     @vite(['resources/css/app.css', 'resources/js/app.js'])
     <script type="text/javascript">
             function callbackThen(response) {

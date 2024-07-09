@@ -29,24 +29,24 @@
                 <div class="grid grid--2 grid--1-mobile grid-gap--2">
                     <div class="flex col">
                         <label for="firstname" class="form-label">Prénom*</label>
-                        <input id="firstname" name="firstname" type="text" class="form-input" placeholder="John">
+                        <input id="firstname" name="firstname" type="text" class="form-input" placeholder="John" value="John">
                         <x-input-error :messages="$errors->get('firstname')"/>
                     </div>
                     <div class="flex col">
                         <label for="lastname" class="form-label">Nom*</label>
-                        <input id="lastname" name="lastname" type="text" class="form-input" placeholder="Smith">
+                        <input id="lastname" name="lastname" type="text" class="form-input" placeholder="Smith" value="Smith">
                         <x-input-error :messages="$errors->get('firstname')"/>
                     </div>
                 </div>
                 <div class="grid grid--2 grid--1-mobile grid-gap--2">
                     <div class="flex col">
                         <label for="email" class="form-label">Email*</label>
-                        <input id="email" name="email" type="email" class="form-input" placeholder="john.smith@mail.com">
+                        <input id="email" name="email" type="email" class="form-input" placeholder="john.smith@mail.com" value="john.smith@mail.com">
                         <x-input-error :messages="$errors->get('firstname')"/>
                     </div>
                     <div class="flex col">
                         <label for="phone" class="form-label">Téléphone*</label>
-                        <input id="phone" name="phone" type="text" class="form-input" placeholder="0102030405">
+                        <input id="phone" name="phone" type="text" class="form-input" placeholder="0102030405" value="0102030405">
                         <x-input-error :messages="$errors->get('firstname')"/>
                     </div>
                 </div>

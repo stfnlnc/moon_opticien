@@ -6,7 +6,7 @@
     height: fit-content;
 }
 
-@for $i from 1 through 10 {
+@for $i from 0 through 10 {
     $h: $i * 10;
     .h {
         &--#{$h} {

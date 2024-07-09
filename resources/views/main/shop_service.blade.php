@@ -15,9 +15,7 @@
         <div class="container flex col align--start gap--5 pb--30">
             <h1 class="uppercase">Nos services <br> en magasin</h1>
             <p class="text--m w--50 w-100-mobile align--self-end">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur
-                adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet,
-                consectetur adipiscing elit.
+                Notre équipe d'opticiens diplômés, passionnés et déterminés sont là pour vous offrir le meilleur service possible : examens de vue, conseils personnalisés et large sélection de montures et lentilles. Qualité et expertise au service de votre vision !
             </p>
         </div>
     </section>
@@ -27,15 +25,9 @@
             <div class="flex col align--start justify--center gap--8 container">
                 <h2>Faites contrôler votre vue gratuitement</h2>
                 <p class="text--m">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur
-                    adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit
-                    amet, consectetur adipiscing elit.Highlight the Unique Selling Proposition (USP) with a short
-                    summary of the main feature and how it benefits customers. The idea here is to keep it short and
-                    direct. If the visitor wishes to learn more they will hit the button.
+                    Nous croyons que la santé visuelle est essentielle et devrait être accessible à tous. C'est pourquoi nous vous offrons une évaluation gratuite de votre vue, pour que vous puissiez bénéficier de soins optiques de qualité sans compromis.
                     <br><br>
-                    Highlight the Unique Selling Proposition (USP) with a short summary of the main feature and how it
-                    benefits customers. The idea here is to keep it short and direct. If the visitor wishes to learn
-                    more they will hit the button.
+                    Nos opticiens qualifiés utilisent des équipements de pointe afin de réaliser une évaluation précise et personnalisée, assurant ainsi que vos besoins visuels spécifiques soient pleinement pris en compte.
                 </p>
                 <a hx-boost="true" href="{{ route('contact') }}#booking" class="btn btn--main-light">Je prends rendez-vous</a>
             </div>
@@ -86,15 +78,11 @@
             <div class="flex col align--start justify--center gap--8 container">
                 <h2>Gravure de vos branches</h2>
                 <p class="text--m">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur
-                    adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit
-                    amet, consectetur adipiscing elit.Highlight the Unique Selling Proposition (USP) with a short
-                    summary of the main feature and how it benefits customers. The idea here is to keep it short and
-                    direct. If the visitor wishes to learn more they will hit the button.
+                    Nous sommes fiers de vous offrir un service unique et personnalisé : la gravure des branches de vos lunettes avec votre nom ou un texte de votre choix.
                     <br><br>
-                    Highlight the Unique Selling Proposition (USP) with a short summary of the main feature and how it
-                    benefits customers. The idea here is to keep it short and direct. If the visitor wishes to learn
-                    more they will hit the button.
+                    Cette option vous permet de rendre vos lunettes encore plus uniques et spéciales à vos yeux.
+                    <br><br>
+                    Nos opticiens qualifiés se chargent de réaliser cette gravure avec précision et soin. Exprimez votre style avec cette touche personnalisée qui fait toute la différence.
                 </p>
             </div>
         </div>
@@ -105,15 +93,9 @@
             <div class="flex col align--start justify--center gap--8 container">
                 <h2>Collecte & recyclage</h2>
                 <p class="text--m">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur
-                    adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit
-                    amet, consectetur adipiscing elit.Highlight the Unique Selling Proposition (USP) with a short
-                    summary of the main feature and how it benefits customers. The idea here is to keep it short and
-                    direct. If the visitor wishes to learn more they will hit the button.
+                    Chez Moon Opticien Lunetier, nous offrons un service de collecte de lunettes permettant ainsi de donner une seconde vie à vos anciennes montures et de les redistribuer à ceux qui en ont le plus besoin
                     <br><br>
-                    Highlight the Unique Selling Proposition (USP) with a short summary of the main feature and how it
-                    benefits customers. The idea here is to keep it short and direct. If the visitor wishes to learn
-                    more they will hit the button.
+                    Cette initiative reflète notre engagement envers la responsabilité sociale et environnementale. Rejoignez-nous dans notre démarche pour un avenir plus solidaire et durable, où chaque geste compte.
                 </p>
             </div>
             <div class="img__hero w--60 w-100-mobile">

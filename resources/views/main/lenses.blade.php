@@ -15,9 +15,8 @@
         <div class="container flex col align--start gap--5 pb--30">
             <h1 class="uppercase">Découvrez toutes <br> nos lentilles</h1>
             <p class="text--m w--50 w-100-mobile align--self-end">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur
-                adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet,
-                consectetur adipiscing elit.
+                Que vous optiez pour des lentilles journalières, mensuelles ou toriques, nous avons une solution adaptée à votre prescription et à votre mode de vie.
+                Nos opticiens expérimentés sont disponibles pour vous guider dans le choix et l'adaptation de vos lentilles.
             </p>
         </div>
     </section>
@@ -27,15 +26,11 @@
             <div class="flex col align--start justify--center gap--8 container">
                 <h2>Nous vous accompagnons pour bien choisir vos lentilles</h2>
                 <p class="text--m">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur
-                    adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit
-                    amet, consectetur adipiscing elit.Highlight the Unique Selling Proposition (USP) with a short
-                    summary of the main feature and how it benefits customers. The idea here is to keep it short and
-                    direct. If the visitor wishes to learn more they will hit the button.
+                    Nous offrons une gamme complète de lentilles de contact ainsi que des conseils
+                    personnalisés pour vous aider à choisir et à adapter les lentilles qui correspondent le mieux
+                    à vos besoins.
                     <br><br>
-                    Highlight the Unique Selling Proposition (USP) with a short summary of the main feature and how it
-                    benefits customers. The idea here is to keep it short and direct. If the visitor wishes to learn
-                    more they will hit the button.
+                    Nous nous engageons à vous fournir des conseils experts pour assurer votre confort et vous permettre de profiter pleinement de chaque journée avec vos lentilles.
                 </p>
             </div>
             <div class="img__hero w--60 w-100-mobile">
@@ -64,7 +59,7 @@
                         <p class="text--l">Conseil</p>
                     </div>
                     <p class="text--m">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla.
+                        Recevez des conseils personnalisés pour choisir les lentilles parfaites.
                     </p>
                 </div>
                 <div class="flex row col-mobile grid-gap--4-mobile gap--25 pt--4 pb--4 border--bottom border--secondary-dark">
@@ -73,7 +68,7 @@
                         <p class="text--l">Manipulation</p>
                     </div>
                     <p class="text--m">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla.
+                        Assurez-vous d'une manipulation précise et professionnelle de vos lentilles.
                     </p>
                 </div>
                 <div class="flex row col-mobile grid-gap--4-mobile gap--25 pt--4 pb--4 border--bottom border--secondary-dark">
@@ -82,7 +77,7 @@
                         <p class="text--l">Adaptation</p>
                     </div>
                     <p class="text--m">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla.
+                        Profitez d'une adaptation minutieuse pour un confort optimal avec vos lentilles.
                     </p>
                 </div>
                 <div class="flex row col-mobile grid-gap--4-mobile gap--25 pt--4 pb--4 border--bottom border--secondary-dark">
@@ -91,7 +86,7 @@
                         <p class="text--l">Examen de vue</p>
                     </div>
                     <p class="text--m">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla.
+                        Planifiez un examen de vue complet pour ajuster vos lentilles selon votre correction.
                     </p>
                 </div>
             </div>

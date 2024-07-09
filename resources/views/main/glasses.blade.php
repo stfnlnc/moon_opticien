@@ -15,9 +15,7 @@
         <div class="container flex col align--start gap--5 pb--30">
             <h1 class="uppercase">Découvrez toutes <br> nos lunettes</h1>
             <p class="text--m w--50 w-100-mobile align--self-end">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur
-                adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet,
-                consectetur adipiscing elit.
+                Que vous recherchiez des lunettes de vue élégantes, des lunettes de soleil tendance ou des montures sportives, nous avons ce qu'il vous faut. Notre équipe d'opticiens qualifiés est là pour vous guider dans le choix des montures qui correspondent à votre style de vie et à votre personnalité.
             </p>
         </div>
     </section>
@@ -27,15 +25,11 @@
             <div class="flex col align--start justify--center gap--8 container">
                 <h2>Nos lunettes de vue</h2>
                 <p class="text--m">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur
-                    adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit
-                    amet, consectetur adipiscing elit.Highlight the Unique Selling Proposition (USP) with a short
-                    summary of the main feature and how it benefits customers. The idea here is to keep it short and
-                    direct. If the visitor wishes to learn more they will hit the button.
+                    Découvrez notre large gamme de lunettes de vue, conçues pour allier style et confort visuel.
+                    <br>
+                    Que vous recherchiez des montures classiques et intemporelles ou des designs plus contemporains, nous avons ce qu'il vous faut.
                     <br><br>
-                    Highlight the Unique Selling Proposition (USP) with a short summary of the main feature and how it
-                    benefits customers. The idea here is to keep it short and direct. If the visitor wishes to learn
-                    more they will hit the button.
+                    Nos opticiens expérimentés sont là pour vous offrir des conseils personnalisés et vous aider à choisir la paire de lunettes qui correspond parfaitement à votre style.
                 </p>
             </div>
             <div class="img__hero w--60 w-100-mobile">
@@ -52,15 +46,10 @@
             <div class="flex col align--start justify--center gap--8 container">
                 <h2>Nos lunettes de soleil</h2>
                 <p class="text--m">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur
-                    adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit
-                    amet, consectetur adipiscing elit.Highlight the Unique Selling Proposition (USP) with a short
-                    summary of the main feature and how it benefits customers. The idea here is to keep it short and
-                    direct. If the visitor wishes to learn more they will hit the button.
+                    Découvrez notre collection de lunettes de soleil, où le style rencontre la protection.
+                    Que vous recherchiez des lunettes de soleil tendance pour affirmer votre style ou des modèles fonctionnels pour une protection efficace contre les rayons UV, nous avons ce qu'il vous faut.
                     <br><br>
-                    Highlight the Unique Selling Proposition (USP) with a short summary of the main feature and how it
-                    benefits customers. The idea here is to keep it short and direct. If the visitor wishes to learn
-                    more they will hit the button.
+                    Nos lunettes de soleil sont soigneusement sélectionnées par nos experts pour leur qualité, leur confort et leur design élégant. Que ce soit pour une escapade estivale ou pour une utilisation quotidienne, nos opticiens sont là pour vous aider à trouver la paire parfaite
                 </p>
             </div>
         </div>
@@ -71,15 +60,9 @@
             <div class="flex col align--start justify--center gap--8 container">
                 <h2>Sport & Sécurité</h2>
                 <p class="text--m">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur
-                    adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit
-                    amet, consectetur adipiscing elit.Highlight the Unique Selling Proposition (USP) with a short
-                    summary of the main feature and how it benefits customers. The idea here is to keep it short and
-                    direct. If the visitor wishes to learn more they will hit the button.
+                    Découvrez notre gamme spécialisée de lunettes sportives conçues pour allier performance et sécurité.
                     <br><br>
-                    Highlight the Unique Selling Proposition (USP) with a short summary of the main feature and how it
-                    benefits customers. The idea here is to keep it short and direct. If the visitor wishes to learn
-                    more they will hit the button.
+                    Nos lunettes sport offrent une protection optimale contre les impacts tout en garantissant un confort maximal et une vision claire. Que vous pratiquiez le cyclisme, la course à pied, le ski ou d'autres activités sportives, nous avons des modèles adaptés à vos besoins spécifiques.
                 </p>
             </div>
             <div class="img__hero w--60 w-100-mobile">
@@ -140,7 +123,7 @@
                         <p class="text--l">Des prix justes</p>
                     </div>
                     <p class="text--m">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla.
+                        Nous vous proposons des prix justes pour des lunettes de qualité adaptées à votre budget.
                     </p>
                 </div>
                 <div class="flex row col-mobile grid-gap--4-mobile gap--25 pt--4 pb--4 border--bottom border--primary-light">
@@ -149,7 +132,7 @@
                         <p class="text--l">Service France Garanti</p>
                     </div>
                     <p class="text--m">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla.
+                        Profitez de notre engagement pour vous garantir des solutions optiques fiables.
                     </p>
                 </div>
                 <div class="flex row col-mobile grid-gap--4-mobile gap--25 pt--4 pb--4 border--bottom border--primary-light">
@@ -158,7 +141,7 @@
                         <p class="text--l">Tiers payant & 100% santé</p>
                     </div>
                     <p class="text--m">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla.
+                        Bénéficiez du tiers payant et du 100% santé pour des lunettes sans frais à votre charge.
                     </p>
                 </div>
                 <div class="flex row col-mobile grid-gap--4-mobile gap--25 pt--4 pb--4 border--bottom border--primary-light">
@@ -167,7 +150,7 @@
                         <p class="text--l">Facilités de paiement</p>
                     </div>
                     <p class="text--m">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla.
+                        Découvrez nos facilités de paiement pour rendre l'achat de vos lunettes plus accessible.
                     </p>
                 </div>
             </div>
@@ -178,17 +161,25 @@
             <div class="flex col align--center gap--2">
                 <x-icon.dot-medium class="icon__dot-medium icon--secondary-dark"></x-icon.dot-medium>
                 <p class="text--l">Gravure des branches</p>
-                <p class="text--s">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                <p class="text--s">
+                    Un service unique et personnalisé : la gravure des
+                    branches avec votre nom ou tout autre texte de votre choix.
+                </p>
             </div>
             <div class="flex col align--center gap--2">
                 <x-icon.dot-medium class="icon__dot-medium icon--secondary-dark"></x-icon.dot-medium>
                 <p class="text--l">Verrier français</p>
-                <p class="text--s">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                <p class="text--s">
+                    Optez pour la qualité avec des verres fabriqués par des verriers français renommés.
+                </p>
             </div>
             <div class="flex col align--center gap--2">
                 <x-icon.dot-medium class="icon__dot-medium icon--secondary-dark"></x-icon.dot-medium>
                 <p class="text--l">2e paire offerte</p>
-                <p class="text--s">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                <p class="text--s">
+                    Bénéficiez d'une deuxième paire offerte pour une vision toujours impeccable. <br>
+                    (Voir détails en magasin)
+                </p>
             </div>
         </div>
     </section>
@@ -201,15 +192,9 @@
             <div class="flex col align--start justify--center gap--8 container">
                 <h2>Enfants</h2>
                 <p class="text--m">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur
-                    adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit
-                    amet, consectetur adipiscing elit.Highlight the Unique Selling Proposition (USP) with a short
-                    summary of the main feature and how it benefits customers. The idea here is to keep it short and
-                    direct. If the visitor wishes to learn more they will hit the button.
+                    Découvrez notre sélection de lunettes pour enfants, conçues pour allier style, confort et durabilité.
                     <br><br>
-                    Highlight the Unique Selling Proposition (USP) with a short summary of the main feature and how it
-                    benefits customers. The idea here is to keep it short and direct. If the visitor wishes to learn
-                    more they will hit the button.
+                    Nos montures pour enfants sont spécialement conçues pour résister à leur quotidien dynamique tout en assurant une vision claire. Nous proposons une variété de designs colorés et amusants, adaptés à tous les âges et toutes les aventures.
                 </p>
             </div>
         </div>
@@ -276,15 +261,9 @@
             <div class="flex col align--start justify--center gap--8 container">
                 <h2>Accessoires</h2>
                 <p class="text--m">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur
-                    adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit
-                    amet, consectetur adipiscing elit.Highlight the Unique Selling Proposition (USP) with a short
-                    summary of the main feature and how it benefits customers. The idea here is to keep it short and
-                    direct. If the visitor wishes to learn more they will hit the button.
+                    Nous proposons une sélection variée d'accessoires tels que des étuis à lunettes, des cordons et chaînes pour lunettes, ainsi que des produits d'entretien pour garder vos lunettes en parfait état.
                     <br><br>
-                    Highlight the Unique Selling Proposition (USP) with a short summary of the main feature and how it
-                    benefits customers. The idea here is to keep it short and direct. If the visitor wishes to learn
-                    more they will hit the button.
+                    Venez nous rendre visite pour découvrir nos accessoires et ajouter une touche pratique et stylée à votre quotidien.
                 </p>
             </div>
         </div>

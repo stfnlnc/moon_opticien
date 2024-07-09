@@ -80,6 +80,10 @@
     height: 400px;
   }
 }
+.icon {
+  width: 1.5rem;
+  height: 1.5rem;
+}
 .icon--ver {
   width: auto;
   height: 1.2rem;
@@ -1707,6 +1711,10 @@ nav {
 
 .h--fit-content {
   height: fit-content;
+}
+
+.h--0 {
+  height: 0vh;
 }
 
 .h--10 {
