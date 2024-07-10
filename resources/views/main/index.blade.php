@@ -10,12 +10,12 @@
 
 @section('content')
 <section class="relative w--100 h--100">
-    <img loading="lazy" class="img img-header img-mobile w--100 h--100" src="{{ asset('/images/layers/2e68def2b88b.webp') }}" alt="">
+    <img loading="lazy" class="img img-header img-mobile w--100 h--100" src="{{ asset('/images/layers/2e68def2b88b.webp') }}" alt="Magasin de lunettes à Bizanos, proche de Pau">
     <div class="absolute pos-hor-center b--0 container flex col align--start justify--end gap--10">
         <h1 class="c--primary-light">
             MOON, <br>
             votre opticien lunetier indépendant <br>
-            aux portes de Pau
+            à Bizanos, aux portes de Pau
         </h1>
         <a hx-boost="true" href="{{ route('contact') }}" class="btn btn--main-dark">Je prends rendez-vous</a>
     </div>
@@ -55,9 +55,9 @@
             </p>
         </div>
         <div class="flex row align--start justify--end gap--2 w-100-mobile">
-            <div class="flex col align--start justify--start gap--3 w-100-mobile">
+            <div class="flex col align--start justify--start gap--3 w-100-mobile reveal-right">
                 <a class="link-img" hx-boost="true" href="{{ route('shop_service') }}">
-                    <img loading="lazy" class="img img__service" src="{{ asset('/images/layers/728ebaf8666162f73edf66e0bd3146d5.webp') }}" alt="">
+                    <img loading="lazy" class="img img__service" src="{{ asset('/images/layers/728ebaf8666162f73edf66e0bd3146d5.webp') }}" alt="Choisir vos lunettes ou vos lentilles de contact">
                 </a>
                 <div class="flex col gap--3 img__service h--fit-content">
                     <p class="text--l">Services en Magasin</p>
@@ -65,9 +65,9 @@
                     <a hx-boost="true" href="{{ route('shop_service') }}" class="btn btn--secondary-light">Découvrir</a>
                 </div>
             </div>
-            <div class="flex col align--start justify--start gap--3 w-100-mobile">
+            <div class="flex col align--start justify--start gap--3 w-100-mobile reveal-right">
                 <a class="link-img" hx-boost="true" href="{{ route('home_service') }}">
-                    <img loading="lazy" class="img img__service" src="{{ asset('/images/layers/a7e72401fb434c9febabc88ff04202ae.webp') }}" alt="">
+                    <img loading="lazy" class="img img__service" src="{{ asset('/images/layers/a7e72401fb434c9febabc88ff04202ae.webp') }}" alt="Consultation et prescription à domicile">
                 </a>
                 <div class="flex col gap--3 img__service h--fit-content">
                     <p class="text--l">Services à Domicile</p>
@@ -96,9 +96,9 @@
             </div>
         </div>
         <div class="flex row align--start justify--space-between gap--4 w--100">
-                <img loading="lazy" class="img img-left w-100-mobile w--30" src="{{ asset('/images/layers/d6f527b6d5f28d685792184f72ccd2ae.webp') }}" alt="">
-                <img loading="lazy" class="img img-center hide-mobile w--30" src="{{ asset('/images/layers/1624725b99dc68b3e6c2bc9dd5722146.webp') }}" alt="">
-                <img loading="lazy" class="img img-right hide-mobile w--30" src="{{ asset('/images/layers/5c3d15465775ba42a138b0208f4474f2.webp') }}" alt="">
+                <img loading="lazy" class="img img-left w-100-mobile w--30 reveal-0" src="{{ asset('/images/layers/d6f527b6d5f28d685792184f72ccd2ae.webp') }}" alt="Magasin d'optique centre ville de Bizanos">
+                <img loading="lazy" class="img img-center hide-mobile w--30 reveal-1" src="{{ asset('/images/layers/1624725b99dc68b3e6c2bc9dd5722146.webp') }}" alt="Conseil, ajustement et réparation de lunettes aux portes de Pau">
+                <img loading="lazy" class="img img-right hide-mobile w--30 reveal-2" src="{{ asset('/images/layers/5c3d15465775ba42a138b0208f4474f2.webp') }}" alt="Lunettes de vue, solaire ou de sport">
         </div>
     </div>
 </section>
@@ -118,19 +118,19 @@
             </div>
         </div>
         <div class="flex row align--end justify--start gap--16">
-            <img loading="lazy" class="img img__shop hide-mobile" src="{{ asset('/images/layers/6a98c021ca22c8980f02f19c289b96de.webp') }}" alt="">
+            <img loading="lazy" class="img img__shop hide-mobile" src="{{ asset('/images/layers/6a98c021ca22c8980f02f19c289b96de.webp') }}" alt="Examen de la vue et prescription de lunettes">
             <div class="grid grid--2 grid-gap--10 grid-gap--6-mobile">
-                <div class="flex col gap--3">
-                    <img loading="lazy" class="icon--large" src="{{ asset('/images/icon/large/icon-discuss.svg') }}" alt="">
+                <div class="flex col gap--3 reveal-0">
+                    <img loading="lazy" class="icon--large" src="{{ asset('/images/icon/large/icon-discuss.svg') }}" alt="Conseil">
                     <div class="flex col gap--1">
                         <p class="text--l">Être conseillé</p>
                         <p class="text--s">
-                            Nous offrons des conseils personnalisés pour répondre à vos besoins visuels spécifiques.
+                            Nous offrons des conseils personnalisés pour vous aider à trouver la monture idéale.
                         </p>
                     </div>
                 </div>
-                <div class="flex col gap--3">
-                    <img loading="lazy" class="icon--large" src="{{ asset('/images/icon/large/icon-rule.svg') }}" alt="">
+                <div class="flex col gap--3 reveal-1">
+                    <img loading="lazy" class="icon--large" src="{{ asset('/images/icon/large/icon-rule.svg') }}" alt="Ajustement">
                     <div class="flex col gap--1">
                         <p class="text--l">Ajuster</p>
                         <p class="text--s">
@@ -138,8 +138,8 @@
                         </p>
                     </div>
                 </div>
-                <div class="flex col gap--3">
-                    <img loading="lazy" class="icon--large" src="{{ asset('/images/icon/large/icon-recycle.svg') }}" alt="">
+                <div class="flex col gap--3 reveal-2">
+                    <img loading="lazy" class="icon--large" src="{{ asset('/images/icon/large/icon-recycle.svg') }}" alt="Recyclage">
                     <div class="flex col gap--1">
                         <p class="text--l">Recycler</p>
                         <p class="text--s">
@@ -147,12 +147,12 @@
                         </p>
                     </div>
                 </div>
-                <div class="flex col gap--3">
-                    <img loading="lazy" class="icon--large" src="{{ asset('/images/icon/large/icon-favorite.svg') }}" alt="">
+                <div class="flex col gap--3 reveal-3">
+                    <img loading="lazy" class="icon--large" src="{{ asset('/images/icon/large/icon-favorite.svg') }}" alt="Personnalisation">
                     <div class="flex col gap--1">
                         <p class="text--l">Personnaliser</p>
                         <p class="text--s">
-                            Des lunettes personnalisées qui s'adaptent parfaitement à votre style et à vos besoins visuels.
+                            Nous proposons la gravure et des accessoires qui s'adaptent parfaitement à votre style.
                         </p>
                     </div>
                 </div>
@@ -193,8 +193,8 @@
             </div>
         </div>
         <div class="grid grid--3 grid-gap--10 grid--1-mobile c--secondary-dark mt--10">
-            <card class="relative">
-                <img loading="lazy" class="absolute t--0 l--0 img__icon" src="{{ asset('/images/icon/large/icon-phone.svg') }}" alt="">
+            <card class="relative reveal-0">
+                <img loading="lazy" class="absolute t--0 l--0 img__icon" src="{{ asset('/images/icon/large/icon-phone.svg') }}" alt="Rendez-vous">
                 <div class="flex row gap--4">
                     <p class="h2 c--secondary-color-2">1.</p>
                     <p class="text--l">Nous prenons rendez-vous ensemble</p>
@@ -203,18 +203,18 @@
                     Planifions ensemble votre rendez-vous pour une expérience optique personnalisée. Nous nous assurons de choisir un moment qui vous convient, pour vous offrir un service dédié et attentif.
                 </p>
             </card>
-            <card class="relative">
-                <img loading="lazy" class="absolute t--0 l--0 img__icon" src="{{ asset('/images/icon/large/icon-car.svg') }}" alt="">
+            <card class="relative reveal-1">
+                <img loading="lazy" class="absolute t--0 l--0 img__icon" src="{{ asset('/images/icon/large/icon-car.svg') }}" alt="À domicile">
                 <div class="flex row gap--4">
                     <p class="h2 c--secondary-color-2">2.</p>
                     <p class="text--l">Nous nous déplaçons chez vous</p>
                 </div>
                 <p class="text--m">
-                    Profitez de la commodité d'un service optique à domicile. Nous nous rendons chez vous pour vous fournir des soins optiques professionnels sans que vous ayez à vous déplacer.
+                    Profitez de la commodité d'un service optique à domicile. Nous nous rendons chez vous pour vous fournir une consultation optique sans que vous ayez à vous déplacer.
                 </p>
             </card>
-            <card class="relative">
-                <img loading="lazy" class="absolute t--0 l--0 img__icon" src="{{ asset('/images/icon/large/icon-exam.svg') }}" alt="">
+            <card class="relative reveal-2">
+                <img loading="lazy" class="absolute t--0 l--0 img__icon" src="{{ asset('/images/icon/large/icon-exam.svg') }}" alt="Examen de vue">
                 <div class="flex row gap--4">
                     <p class="h2 c--secondary-color-2">3.</p>
                     <p class="text--l">Nous faisons le point sur votre vue</p>
@@ -223,8 +223,8 @@
                     Lors de notre visite, nous effectuons un examen complet de votre vue. Nous évaluons avec précision votre correction et discutons de vos besoins spécifiques en matière de correction optique.
                 </p>
             </card>
-            <card class="relative">
-                <img loading="lazy" class="absolute t--0 l--0 img__icon" src="{{ asset('/images/icon/large/icon-glasses.svg') }}" alt="">
+            <card class="relative reveal-3">
+                <img loading="lazy" class="absolute t--0 l--0 img__icon" src="{{ asset('/images/icon/large/icon-glasses.svg') }}" alt="Choisir vos lunettes">
                 <div class="flex row gap--4">
                     <p class="h2 c--secondary-color-2">4.</p>
                     <p class="text--l">Vous choisissez vos lunettes</p>
@@ -233,8 +233,8 @@
                     Explorez notre large sélection de montures et de lentilles. Nous vous guidons dans le choix des lunettes qui correspondent à votre style, votre confort et vos préférences esthétiques.
                 </p>
             </card>
-            <card class="relative">
-                <img loading="lazy" class="absolute t--0 l--0 img__icon" src="{{ asset('/images/icon/large/icon-delivery.svg') }}" alt="">
+            <card class="relative reveal-4">
+                <img loading="lazy" class="absolute t--0 l--0 img__icon" src="{{ asset('/images/icon/large/icon-delivery.svg') }}" alt="Fabrication des lunettes">
                 <div class="flex row gap--4">
                     <p class="h2 c--secondary-color-2">5.</p>
                     <p class="text--l">Nous faisons fabriquer vos lunettes</p>
@@ -243,14 +243,14 @@
                     Une fois votre choix fait, nous nous occupons de faire fabriquer vos lunettes sur mesure. Nous veillons à ce que chaque détail soit pris en compte pour garantir une qualité optimale.
                 </p>
             </card>
-            <card class="relative">
-                <img loading="lazy" class="absolute t--0 l--0 img__icon" src="{{ asset('/images/icon/large/icon-repair.svg') }}" alt="">
+            <card class="relative reveal-5">
+                <img loading="lazy" class="absolute t--0 l--0 img__icon" src="{{ asset('/images/icon/large/icon-repair.svg') }}" alt="Livraison à domicile">
                 <div class="flex row gap--4">
                     <p class="h2 c--secondary-color-2">6.</p>
                     <p class="text--l">Vous êtes livrés ! Et on reste en contact</p>
                 </div>
                 <p class="text--m">
-                    Dès que vos lunettes sont prêtes, nous vous les livrons personnellement. Nous nous assurons que vous êtes entièrement satisfait de votre équipement optique et nous restons disponibles pour répondre à vos questions.
+                    Dès que vos lunettes sont prêtes, nous vous les livrons personnellement. Nous nous assurons que vous êtes entièrement satisfait de votre équipement optique et nous restons disponibles pour les ajustements nécessaires.
                 </p>
             </card>
         </div>
@@ -273,33 +273,33 @@
         </div>
         <div class="flex row justify--end w--100">
             <div class="grid grid--4 grid-gap--2 grid--2-mobile">
-                <div class="flex col align--start justify--start gap--3 block__glasses">
+                <div class="flex col align--start justify--start gap--3 block__glasses reveal-0">
                     <a class="link-img" hx-boost="true" href="{{ route('glasses') }}#eyeglasses">
-                        <img loading="lazy" class="img img__glasses" src="{{ asset('/images/layers/ac59211ea58ee6b9259ed733452a040d.webp') }}" alt="">
+                        <img loading="lazy" class="img img__glasses" src="{{ asset('/images/layers/ac59211ea58ee6b9259ed733452a040d.webp') }}" alt="Lunettes de vue">
                     </a>
                     <p class="text--l">Vue</p>
                     <p class="text--m">Associez confort et style pour le quotidien.</p>
                     <a hx-boost="true" href="{{ route('glasses') }}#eyeglasses" class="btn btn--secondary-light">Découvrir</a>
                 </div>
-                <div class="flex col align--start justify--start gap--3 block__glasses">
+                <div class="flex col align--start justify--start gap--3 block__glasses reveal-1">
                     <a class="link-img" hx-boost="true" href="{{ route('glasses') }}#sunglasses">
-                        <img class="img img__glasses" src="{{ asset('/images/layers/0fef3d1f982b33e7b22c1571eecc4453.webp') }}" alt="">
+                        <img class="img img__glasses" src="{{ asset('/images/layers/0fef3d1f982b33e7b22c1571eecc4453.webp') }}" alt="Lunettes de soleil">
                     </a>
                     <p class="text--l">Solaires</p>
                     <p class="text--m">Protégez vos yeux du soleil avec style.</p>
                     <a hx-boost="true" href="{{ route('glasses') }}#sunglasses" class="btn btn--secondary-light">Découvrir</a>
                 </div>
-                <div class="flex col align--start justify--start gap--3 block__glasses">
+                <div class="flex col align--start justify--start gap--3 block__glasses reveal-2">
                     <a class="link-img" hx-boost="true" href="{{ route('glasses') }}#sportglasses">
-                        <img loading="lazy" class="img img__glasses" src="{{ asset('/images/layers/fb49e3f66990789c63e31a0c6cc6af7d.webp') }}" alt="">
+                        <img loading="lazy" class="img img__glasses" src="{{ asset('/images/layers/fb49e3f66990789c63e31a0c6cc6af7d.webp') }}" alt="Lunettes de sport et sécurité">
                     </a>
                     <p class="text--l">Sport</p>
                     <p class="text--m">Performez dans toutes vos activités.</p>
                     <a hx-boost="true" href="{{ route('glasses') }}#sportglasses" class="btn btn--secondary-light">Découvrir</a>
                 </div>
-                <div class="flex col align--start justify--start gap--3 block__glasses">
+                <div class="flex col align--start justify--start gap--3 block__glasses reveal-3">
                     <a class="link-img" hx-boost="true" href="{{ route('glasses') }}#childglasses">
-                        <img loading="lazy" class="img img__glasses" src="{{ asset('/images/layers/5492d5c3f99aca5a8d72c79736f9317c.webp') }}" alt="">
+                        <img loading="lazy" class="img img__glasses" src="{{ asset('/images/layers/5492d5c3f99aca5a8d72c79736f9317c.webp') }}" alt="Lunettes pour enfant">
                     </a>
                     <p class="text--l">Enfants</p>
                     <p class="text--m">Des montures accompagner leurs aventures.</p>

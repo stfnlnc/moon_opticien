@@ -34,7 +34,7 @@
                 </p>
             </div>
             <div class="img__hero w--60 w-100-mobile">
-                <img loading="lazy" class="img" src="{{ asset('/images/layers/b68c4d79b0cc54636969cdf1621e00ae.webp') }}" alt="">
+                <img loading="lazy" class="img reveal-right" src="{{ asset('/images/layers/b68c4d79b0cc54636969cdf1621e00ae.webp') }}" alt="Adaptation lentilles de contact">
             </div>
         </div>
     </section>
@@ -47,7 +47,7 @@
         </div>
     </section>
     <section class="container__full-width">
-        <img class="w--100 img img-banner" src="{{ asset('/images/layers/6687e96b4cd98.webp') }}" alt="">
+        <img class="w--100 img img-banner reveal-0" src="{{ asset('/images/layers/6687e96b4cd98.webp') }}" alt="Test de la vue">
     </section>
     <section class="container__full-width c--primary-dark bg--secondary-color-4 flex col align--center">
         <div class="container flex col gap--10">

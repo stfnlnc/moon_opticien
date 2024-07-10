@@ -33,7 +33,7 @@
                 </p>
             </div>
             <div class="img__hero w--60 w-100-mobile">
-                <img loading="lazy" class="img reveal-left" src="{{ asset('/images/layers/be8d0bb7d96fcf948680d017abe96fd7.webp') }}" alt="">
+                <img loading="lazy" class="img reveal-right" src="{{ asset('/images/layers/be8d0bb7d96fcf948680d017abe96fd7.webp') }}" alt="Service à domicile">
             </div>
         </div>
     </section>
@@ -41,21 +41,21 @@
         <div class="container flex col align--start gap--10">
             <div class="grid grid--3 grid--1-mobile grid-gap--10 w--100 text--l">
                 <div class="flex col gap--3 align--center text-center">
-                    <img loading="lazy" class="icon--large" src="{{ asset('/images/icon/large/icon-home.svg') }}" alt="">
+                    <img loading="lazy" class="icon--large" src="{{ asset('/images/icon/large/icon-home.svg') }}" alt="À domicile">
                     <p class="text--l">À domicile</p>
                     <p class="text--m">
                         Des services optiques à domicile, sans que vous ayez à vous déplacer.
                     </p>
                 </div>
                 <div class="flex col gap--3 align--center text-center">
-                    <img loading="lazy" class="icon--large" src="{{ asset('/images/icon/large/icon-person.svg') }}" alt="">
+                    <img loading="lazy" class="icon--large" src="{{ asset('/images/icon/large/icon-person.svg') }}" alt="EHPAD">
                     <p class="text--l">En EHPAD</p>
                     <p class="text--m">
                         Des services optiques personnalisés pour le bien-être de vos résidents.
                     </p>
                 </div>
                 <div class="flex col gap--3 align--center text-center">
-                    <img loading="lazy" class="icon--large" src="{{ asset('/images/icon/large/icon-heart.svg') }}" alt="">
+                    <img loading="lazy" class="icon--large" src="{{ asset('/images/icon/large/icon-heart.svg') }}" alt="Sur demande">
                     <p class="text--l">À la demande</p>
                     <p class="text--m">
                         Des services optiques sur demande, quand vous en avez besoin, où que vous soyez.
@@ -79,8 +79,8 @@
                 </div>
             </div>
             <div class="grid grid--3 grid-gap--10 grid--1-mobile c--secondary-dark mt--10">
-                <card class="relative">
-                    <img loading="lazy" class="absolute t--0 l--0 img__icon" src="{{ asset('/images/icon/large/icon-phone.svg') }}" alt="">
+                <card class="relative reveal-0">
+                    <img loading="lazy" class="absolute t--0 l--0 img__icon" src="{{ asset('/images/icon/large/icon-phone.svg') }}" alt="Rendez-vous">
                     <div class="flex row gap--4">
                         <p class="h2 c--secondary-color-2">1.</p>
                         <p class="text--l">Nous prenons rendez-vous ensemble</p>
@@ -89,28 +89,28 @@
                         Planifions ensemble votre rendez-vous pour une expérience optique personnalisée. Nous nous assurons de choisir un moment qui vous convient, pour vous offrir un service dédié et attentif.
                     </p>
                 </card>
-                <card class="relative">
-                    <img loading="lazy" class="absolute t--0 l--0 img__icon" src="{{ asset('/images/icon/large/icon-car.svg') }}" alt="">
+                <card class="relative reveal-1">
+                    <img loading="lazy" class="absolute t--0 l--0 img__icon" src="{{ asset('/images/icon/large/icon-car.svg') }}" alt="À domicile">
                     <div class="flex row gap--4">
                         <p class="h2 c--secondary-color-2">2.</p>
                         <p class="text--l">Nous nous déplaçons chez vous</p>
                     </div>
                     <p class="text--m">
-                        Profitez de la commodité d'un service optique à domicile. Nous nous rendons chez vous pour vous fournir des soins optiques professionnels sans que vous ayez à vous déplacer.
+                        Profitez de la commodité d'un service optique à domicile. Nous nous rendons chez vous pour vous fournir une consultation optique sans que vous ayez à vous déplacer.
                     </p>
                 </card>
-                <card class="relative">
-                    <img loading="lazy" class="absolute t--0 l--0 img__icon" src="{{ asset('/images/icon/large/icon-exam.svg') }}" alt="">
+                <card class="relative reveal-2">
+                    <img loading="lazy" class="absolute t--0 l--0 img__icon" src="{{ asset('/images/icon/large/icon-exam.svg') }}" alt="Examen de vue">
                     <div class="flex row gap--4">
                         <p class="h2 c--secondary-color-2">3.</p>
                         <p class="text--l">Nous faisons le point sur votre vue</p>
                     </div>
                     <p class="text--m">
-                        Lors de notre visite, nous effectuons un examen complet de votre vue. Nous évaluons avec précision votre correction nécessaire et discutons de vos besoins spécifiques en matière de correction optique.
+                        Lors de notre visite, nous effectuons un examen complet de votre vue. Nous évaluons avec précision votre correction et discutons de vos besoins spécifiques en matière de correction optique.
                     </p>
                 </card>
-                <card class="relative">
-                    <img loading="lazy" class="absolute t--0 l--0 img__icon" src="{{ asset('/images/icon/large/icon-glasses.svg') }}" alt="">
+                <card class="relative reveal-3">
+                    <img loading="lazy" class="absolute t--0 l--0 img__icon" src="{{ asset('/images/icon/large/icon-glasses.svg') }}" alt="Choisir vos lunettes">
                     <div class="flex row gap--4">
                         <p class="h2 c--secondary-color-2">4.</p>
                         <p class="text--l">Vous choisissez vos lunettes</p>
@@ -119,8 +119,8 @@
                         Explorez notre large sélection de montures et de lentilles. Nous vous guidons dans le choix des lunettes qui correspondent à votre style, votre confort et vos préférences esthétiques.
                     </p>
                 </card>
-                <card class="relative">
-                    <img loading="lazy" class="absolute t--0 l--0 img__icon" src="{{ asset('/images/icon/large/icon-delivery.svg') }}" alt="">
+                <card class="relative reveal-4">
+                    <img loading="lazy" class="absolute t--0 l--0 img__icon" src="{{ asset('/images/icon/large/icon-delivery.svg') }}" alt="Fabrication des lunettes">
                     <div class="flex row gap--4">
                         <p class="h2 c--secondary-color-2">5.</p>
                         <p class="text--l">Nous faisons fabriquer vos lunettes</p>
@@ -129,21 +129,21 @@
                         Une fois votre choix fait, nous nous occupons de faire fabriquer vos lunettes sur mesure. Nous veillons à ce que chaque détail soit pris en compte pour garantir une qualité optimale.
                     </p>
                 </card>
-                <card class="relative">
-                    <img loading="lazy" class="absolute t--0 l--0 img__icon" src="{{ asset('/images/icon/large/icon-repair.svg') }}" alt="">
+                <card class="relative reveal-5">
+                    <img loading="lazy" class="absolute t--0 l--0 img__icon" src="{{ asset('/images/icon/large/icon-repair.svg') }}" alt="Livraison à domicile">
                     <div class="flex row gap--4">
                         <p class="h2 c--secondary-color-2">6.</p>
                         <p class="text--l">Vous êtes livrés ! Et on reste en contact</p>
                     </div>
                     <p class="text--m">
-                        Dès que vos lunettes sont prêtes, nous vous les livrons personnellement. Nous nous assurons que vous êtes entièrement satisfait de votre équipement optique et nous restons disponibles pour répondre à vos questions.
+                        Dès que vos lunettes sont prêtes, nous vous les livrons personnellement. Nous nous assurons que vous êtes entièrement satisfait de votre équipement optique et nous restons disponibles pour les ajustements nécessaires.
                     </p>
                 </card>
             </div>
         </div>
     </section>
     <section class="container__full-width">
-        <img class="w--100 img img-banner" src="{{ asset('/images/layers/6687eaa5d6cb2.webp') }}" alt="">
+        <img class="w--100 img img-banner reveal-0" src="{{ asset('/images/layers/6687eaa5d6cb2.webp') }}" alt="Livraison à domicile">
     </section>
     <section class="container__full-width c--secondary-dark bg--secondary-color-2 flex col align--center">
         <div class="container grid grid--3 grid--1-mobile grid-gap--10 text-center pt--10 pb--10 w--80 w-100-mobile">

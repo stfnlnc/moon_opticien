@@ -95,74 +95,54 @@ htmx.onLoad(function (target) {
 
     // Smooth scroll element
 
-    const smooth = document.querySelectorAll('.smooth')
-    const smoothRev = document.querySelectorAll('.smooth-rev')
-    const smoothSlow = document.querySelectorAll('.smooth-slow')
-    const smoothFast = document.querySelectorAll('.smooth-fast')
+    let reveals = []
 
-    smooth.forEach((s) => {
-        gsap.to(s, {
-            yPercent: -10,
-            duration: 10,
-            ease: 'power3',
-            scrollTrigger: {
-                trigger: s,
-                start: 'top 30%',
-                end: 'bottom',
-                toggleActions: 'restart reverse play reverse',
-                markers: false,
-                scrub: 1
-            }
-        })
-    })
+    function reveal(value, delay, direction = null) {
+        let yFrom = 100
+        let yTo = 0
+        let xFrom = 0
+        let xTo = 0
+        if(direction === 'left') {
+            yFrom = 0
+            yTo = 0
+            xFrom = -100
+            xTo = 0
+        } else if(direction === 'right') {
+            yFrom = 0
+            yTo = 0
+            xFrom = 100
+            xTo = 0
+        }
 
-    smoothRev.forEach((s) => {
-        gsap.to(s, {
-            yPercent: 10,
-            duration: 10,
-            ease: 'power3',
-            scrollTrigger: {
-                trigger: s,
-                start: 'top 30%',
-                end: 'bottom',
-                toggleActions: 'restart reverse play reverse',
-                markers: false,
-                scrub: 1
-            }
+        value.forEach((v) => {
+            gsap.set(v, {opacity: 0, x: xFrom, y: yFrom})
+            gsap.to(v, {
+                x: xTo,
+                y: yTo,
+                opacity: 1,
+                delay: delay,
+                duration: 1.5,
+                ease: 'power4',
+                immediateRender: false,
+                scrollTrigger: {
+                    trigger: v,
+                    start: 'top 100%',
+                    markers: false,
+                }
+            })
         })
-    })
 
-    smoothSlow.forEach((s) => {
-        gsap.to(s, {
-            yPercent: -5,
-            duration: 10,
-            ease: 'power3',
-            scrollTrigger: {
-                trigger: s,
-                start: 'top 30%',
-                end: 'bottom',
-                toggleActions: 'restart reverse play reverse',
-                markers: false,
-                scrub: 1
-            }
-        })
-    })
+    }
 
-    smoothFast.forEach((s) => {
-        gsap.to(s, {
-            yPercent: -20,
-            duration: 10,
-            ease: 'power3',
-            scrollTrigger: {
-                trigger: s,
-                start: 'top 30%',
-                end: 'bottom',
-                toggleActions: 'restart reverse play reverse',
-                markers: false,
-                scrub: 1
-            }
-        })
-    })
+    for(let i = 0; i <= 6; i++) {
+        reveals[i] = document.querySelectorAll('.reveal-' + i)
+        reveal(reveals[i], 0.1 * i)
+    }
+
+    const revealLeft = document.querySelectorAll('.reveal-left')
+    reveal(revealLeft, 0, 'left')
+    const revealRight = document.querySelectorAll('.reveal-right')
+    reveal(revealRight, 0, 'right')
 
     // Brand infinite scrolling
     const scroll = document.querySelectorAll('.infinite-scroll')

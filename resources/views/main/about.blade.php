@@ -41,10 +41,10 @@
             </div>
             <div class="flex row justify--end w--100">
                 <div class="grid grid--3 grid--1-mobile  grid-gap--8-mobile grid-gap--2">
-                    <div class="flex col align--start justify--start gap--3 block__about">
+                    <div class="flex col align--start justify--start gap--3 block__about reveal-0">
                         <div class="img__about img__hover relative">
-                            <img loading="lazy" class="img img__about img__display absolute" src="{{ asset('/images/layers/6687ec06ea590.webp') }}" alt="">
-                            <img loading="lazy" class="img img__about img__hidden absolute" src="{{ asset('/images/layers/6687ec06ea590_hover.webp') }}" alt="">
+                            <img loading="lazy" class="img img__about img__display absolute" src="{{ asset('/images/layers/6687ec06ea590.webp') }}" alt="Laure, opticienne passionnée">
+                            <img loading="lazy" class="img img__about img__hidden absolute" src="{{ asset('/images/layers/6687ec06ea590_hover.webp') }}" alt="Laure, opticienne passionnée">
                         </div>
                         <p class="text--l">Laure</p>
                         <p class="text--m">
@@ -52,20 +52,20 @@
                             solutions visuelles adaptées à vos besoins.
                         </p>
                     </div>
-                    <div class="flex col align--start justify--start gap--3 block__about">
+                    <div class="flex col align--start justify--start gap--3 block__about reveal-2">
                         <div class="img__about img__hover relative">
-                            <img loading="lazy" class="img img__about img__display absolute" src="{{ asset('/images/layers/6687ec2751070.webp') }}" alt="">
-                            <img loading="lazy" class="img img__about img__hidden absolute" src="{{ asset('/images/layers/6687ec2751070_hover.webp') }}" alt="">
+                            <img loading="lazy" class="img img__about img__display absolute" src="{{ asset('/images/layers/6687ec2751070.webp') }}" alt="Quentin, opticien passionné">
+                            <img loading="lazy" class="img img__about img__hidden absolute" src="{{ asset('/images/layers/6687ec2751070_hover.webp') }}" alt="Quentin, opticienne passionné">
                         </div>
                         <p class="text--l">Quentin</p>
                         <p class="text--m">
                             Grâce à mes études et à ma passion pour l'optique, j'ai acquis des compétences approfondies en correction visuelle et choix de montures pour vous garantir un service de qualité, tout en alliant esthétique et confort
                         </p>
                     </div>
-                    <div class="flex col align--start justify--start gap--3 block__about">
+                    <div class="flex col align--start justify--start gap--3 block__about reveal-4">
                         <div class="img__about img__hover relative">
-                            <img loading="lazy" class="img img__about img__display absolute" src="{{ asset('/images/layers/6687ec39adea6.webp') }}" alt="">
-                            <img loading="lazy" class="img img__about img__hidden absolute" src="{{ asset('/images/layers/6687ec39adea6_hover.webp') }}" alt="">
+                            <img loading="lazy" class="img img__about img__display absolute" src="{{ asset('/images/layers/6687ec39adea6.webp') }}" alt="Paul, opticienne passionné">
+                            <img loading="lazy" class="img img__about img__hidden absolute" src="{{ asset('/images/layers/6687ec39adea6_hover.webp') }}" alt="Paul, opticienne passionné">
                         </div>
                         <p class="text--l">Paul</p>
                         <p class="text--m">
@@ -120,7 +120,7 @@
         </div>
     </section>
     <section class="container__full-width">
-        <img class="w--100 img img-banner" src="{{ asset('/images/layers/6687ea96244d9.webp') }}" alt="">
+        <img class="w--100 img img-banner reveal-0" src="{{ asset('/images/layers/6687ea96244d9.webp') }}" alt="Une équipe d'opticien à votre service">
     </section>
     <section class="container__full-width c--secondary-dark bg--secondary-color-2 flex col align--center">
         <div class="container grid grid--3 grid--1-mobile grid-gap--10 text-center pt--10 pb--10 w--80 w-100-mobile">

@@ -35,7 +35,7 @@
     </div>
     <div id="nav" data-mode="{{ $mode }}" class="container__full-width flex col align--center">
         <div class="container pt--4 pb--4 flex row align--center justify--space-between">
-            <a href="{{ route('index') }}">
+            <a hx-boost="true" href="{{ route('index') }}">
                 <img class="nav__logo" src="{{ asset('/images/logo/logo-full-' . $mode . '.svg') }}" alt="">
             </a>
             <div class="hide-mobile">
