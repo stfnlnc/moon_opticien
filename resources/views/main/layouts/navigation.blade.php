@@ -62,20 +62,20 @@
                 <div class="container pt--0 pb--0">
                     <a hx-boost="true" href="{{ route('contact') }}" class="btn btn--main-dark">Contact</a>
                 </div>
-                <div class="container mt--10 c--primary-light text--xs">
+                <div class="container c--primary-light text--xs">
                     <div class="flex col gap--2">
-                        <p class="border--top border--bottom border--secondary-color-3 pt--3 pb--3">
-                            lundi : 14:00-19:00 <br>
-                            du mardi au vendredi : 09:30-12:30, 14:00-19:00 <br>
-                            samedi : 09:30-18:00 <br>
-                            dimanche : Fermé
-                        </p>
-                        <p class="pt--3">
-                            3 Pl. Gambetta, 64320 Bizanos <br>
-                            <a href="tel:0559531722">05 59 53 17 22</a> <br>
+                        <div class="flex col gap--4 border--top border--bottom border--secondary-color-3 pt--3 pb--3">
+                            <p>lundi : 14:00-19:00</p>
+                            <p>du mardi au vendredi : 09:30-12:30, 14:00-19:00</p>
+                            <p>samedi : 09:30-18:00</p>
+                            <p>dimanche : Fermé</p>
+                        </div>
+                        <div class="flex col gap--4 pt--3">
+                            <p>3 Pl. Gambetta, 64320 Bizanos</p>
+                            <a href="tel:0559531722">05 59 53 17 22</a>
                             <a href="mailto:contact@moonopticienlunetier.com">contact@moonopticienlunetier.com</a>
-                        </p>
-                        <div class="flex row gap--2 align--center justify--start">
+                        </div>
+                        <div class="flex row gap--2 align--center justify--start pt--4">
                             <a aria-label="instagram" target="_blank" href="https://www.instagram.com/moon.opticienlunetier/">
                                 <x-icon.instagram class="icon--ver icon--primary-light"></x-icon.instagram>
                             </a>
