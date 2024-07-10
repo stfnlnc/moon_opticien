@@ -70,7 +70,7 @@
                             <p>samedi : 09:30-18:00</p>
                             <p>dimanche : Fermé</p>
                         </div>
-                        <div class="flex col gap--4 pt--3">
+                        <div class="flex col gap--6 pt--3">
                             <p>3 Pl. Gambetta, 64320 Bizanos</p>
                             <a href="tel:0559531722">05 59 53 17 22</a>
                             <a href="mailto:contact@moonopticienlunetier.com">contact@moonopticienlunetier.com</a>

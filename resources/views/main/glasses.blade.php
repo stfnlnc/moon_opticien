@@ -86,76 +86,8 @@
             </div>
         </div>
     </section>
-    <section class="container__full-width c--primary-light bg--secondary-dark flex col align--center">
-        <div class="container flex col gap--10">
-            <h2>Nos engagements</h2>
-            <div class="flex col w--100">
-                <div class="flex row col-mobile grid-gap--4-mobile gap--25 pt--4 pb--4 border--bottom border--primary-light">
-                    <div class="flex row gap--3 align--center w--30 w-100-mobile">
-                        <x-icon.dot-small class="icon__dot-small icon--primary-light"></x-icon.dot-small>
-                        <p class="text--l">Des prix justes</p>
-                    </div>
-                    <p class="text--m">
-                        Nous vous proposons des prix justes pour des lunettes de qualité adaptées à votre budget.
-                    </p>
-                </div>
-                <div class="flex row col-mobile grid-gap--4-mobile gap--25 pt--4 pb--4 border--bottom border--primary-light">
-                    <div class="flex row gap--3 align--center w--30 w-100-mobile">
-                        <x-icon.dot-small class="icon__dot-small icon--primary-light"></x-icon.dot-small>
-                        <p class="text--l">Service France Garanti</p>
-                    </div>
-                    <p class="text--m">
-                        Profitez de notre engagement pour vous garantir des solutions optiques fiables.
-                    </p>
-                </div>
-                <div class="flex row col-mobile grid-gap--4-mobile gap--25 pt--4 pb--4 border--bottom border--primary-light">
-                    <div class="flex row gap--3 align--center w--30 w-100-mobile">
-                        <x-icon.dot-small class="icon__dot-small icon--primary-light"></x-icon.dot-small>
-                        <p class="text--l">Tiers payant & 100% santé</p>
-                    </div>
-                    <p class="text--m">
-                        Bénéficiez du tiers payant et du 100% santé pour des lunettes sans frais à votre charge.
-                    </p>
-                </div>
-                <div class="flex row col-mobile grid-gap--4-mobile gap--25 pt--4 pb--4 border--bottom border--primary-light">
-                    <div class="flex row gap--3 align--center w--30 w-100-mobile">
-                        <x-icon.dot-small class="icon__dot-small icon--primary-light"></x-icon.dot-small>
-                        <p class="text--l">Facilités de paiement</p>
-                    </div>
-                    <p class="text--m">
-                        Découvrez nos facilités de paiement pour rendre l'achat de vos lunettes plus accessible.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="container__full-width c--secondary-dark bg--secondary-color-2 flex col align--center">
-        <div class="container grid grid--3 grid--1-mobile grid-gap--10 text-center pt--10 pb--10 w--80 w-100-mobile">
-            <div class="flex col align--center gap--2">
-                <x-icon.dot-medium class="icon__dot-medium icon--secondary-dark"></x-icon.dot-medium>
-                <p class="text--l">Gravure des branches</p>
-                <p class="text--s">
-                    Un service unique et personnalisé : la gravure des
-                    branches avec votre nom ou tout autre texte de votre choix.
-                </p>
-            </div>
-            <div class="flex col align--center gap--2">
-                <x-icon.dot-medium class="icon__dot-medium icon--secondary-dark"></x-icon.dot-medium>
-                <p class="text--l">Verrier français</p>
-                <p class="text--s">
-                    Optez pour la qualité avec des verres fabriqués par des verriers français renommés.
-                </p>
-            </div>
-            <div class="flex col align--center gap--2">
-                <x-icon.dot-medium class="icon__dot-medium icon--secondary-dark"></x-icon.dot-medium>
-                <p class="text--l">2e paire offerte</p>
-                <p class="text--s">
-                    Bénéficiez d'une deuxième paire offerte pour une vision toujours impeccable. <br>
-                    (Voir détails en magasin)
-                </p>
-            </div>
-        </div>
-    </section>
+    @include('main.layouts.template-parts.engagement', ['mode' => 'dark'])
+    @include('main.layouts.template-parts.service')
     <section id="childglasses"
         class="container__full-width c--secondary-dark bg--primary-light flex row align--center justify--center gap--20 border--bottom border--secondary-dark">
         <div class="container pt--0 pb--0 pl--0 pr--0 flex row col-mobile justify--end">
@@ -168,6 +100,8 @@
                     Découvrez notre sélection de lunettes pour enfants, conçues pour allier style, confort et durabilité.
                     <br><br>
                     Nos montures pour enfants sont spécialement conçues pour résister à leur quotidien dynamique tout en assurant une vision claire. Nous proposons une variété de designs colorés et amusants, adaptés à tous les âges et toutes les aventures.
+                    <br><br>
+                    <strong>La gravure est offerte</strong> pour ajouter leur nom sur les branches afin que les lunettes de vos enfants ne soient plus perdues dans la cour de récré.
                 </p>
             </div>
         </div>
@@ -193,7 +127,7 @@
         class="container__full-width c--secondary-dark bg--secondary-color-2 flex row align--center justify--center">
         <div class="container flex col gap--3 text-center align--center">
             <h3>Besoin de refaire contrôler votre vue ?</h3>
-            <p class="text--s">passer l’examen de vue directement en magasin</p>
+            <p class="text--s">Passer l’examen de vue directement en magasin</p>
             <a hx-boost="true" href="{{ route('contact') }}#booking" class="btn btn--main-light mt--2">Je prends rendez-vous gratuitement</a>
         </div>
     </section>

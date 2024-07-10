@@ -68,7 +68,7 @@
                         <p class="text--l">Manipulation</p>
                     </div>
                     <p class="text--m">
-                        Assurez-vous d'une manipulation précise et professionnelle de vos lentilles.
+                        Nous vous accompagnons pour une manipulation précise de vos lentilles.
                     </p>
                 </div>
                 <div class="flex row col-mobile grid-gap--4-mobile gap--25 pt--4 pb--4 border--bottom border--secondary-dark">
@@ -77,7 +77,7 @@
                         <p class="text--l">Adaptation</p>
                     </div>
                     <p class="text--m">
-                        Profitez d'une adaptation minutieuse pour un confort optimal avec vos lentilles.
+                        Nous nous assurons que vos lentilles soient adaptées à vos besoins.
                     </p>
                 </div>
                 <div class="flex row col-mobile grid-gap--4-mobile gap--25 pt--4 pb--4 border--bottom border--secondary-dark">
