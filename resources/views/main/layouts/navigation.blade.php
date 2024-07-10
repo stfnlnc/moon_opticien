@@ -10,10 +10,10 @@
     <div id="nav-pop" class="container__full-width flex col align--center bg--secondary-dark c--primary-light hide-mobile">
         <div class="container pt--2 pb--2 flex row align--center justify--space-between">
             <div class="flex row gap--2 align--center justify--start">
-                <a target="_blank" href="https://www.instagram.com/moon.opticienlunetier/">
+                <a aria-label="instagram" target="_blank" href="https://www.instagram.com/moon.opticienlunetier/">
                     <x-icon.instagram class="icon--ver icon--primary-light"></x-icon.instagram>
                 </a>
-                <a target="_blank" href="https://www.facebook.com/profile.php?id=61556269374737">
+                <a aria-label="facebook" target="_blank" href="https://www.facebook.com/profile.php?id=61556269374737">
                     <x-icon.fb class="icon--ver icon--primary-light"></x-icon.fb>
                 </a>
             </div>
@@ -35,8 +35,8 @@
     </div>
     <div id="nav" data-mode="{{ $mode }}" class="container__full-width flex col align--center">
         <div class="container pt--4 pb--4 flex row align--center justify--space-between">
-            <a hx-boost="true" href="{{ route('index') }}">
-                <img class="nav__logo" src="{{ asset('/images/logo/logo-full-' . $mode . '.svg') }}" alt="">
+            <a aria-label="Moon Opticien Lunetier" hx-boost="true" href="{{ route('index') }}">
+                <img class="nav__logo" src="{{ asset('/images/logo/logo-full-' . $mode . '.svg') }}" alt="Moon Opticien Lunetier">
             </a>
             <div class="hide-mobile">
                 @include('main.layouts.template-parts.menu')
@@ -76,10 +76,10 @@
                             <a href="mailto:contact@moonopticienlunetier.com">contact@moonopticienlunetier.com</a>
                         </p>
                         <div class="flex row gap--2 align--center justify--start">
-                            <a target="_blank" href="https://www.instagram.com/moon.opticienlunetier/">
+                            <a aria-label="instagram" target="_blank" href="https://www.instagram.com/moon.opticienlunetier/">
                                 <x-icon.instagram class="icon--ver icon--primary-light"></x-icon.instagram>
                             </a>
-                            <a target="_blank" href="https://www.facebook.com/profile.php?id=61556269374737">
+                            <a aria-label="facebook" target="_blank" href="https://www.facebook.com/profile.php?id=61556269374737">
                                 <x-icon.fb class="icon--ver icon--primary-light"></x-icon.fb>
                             </a>
                         </div>

@@ -19,10 +19,10 @@
                     <a href="mailto:contact@moonopticienlunetier.com">contact@moonopticienlunetier.com</a>
                 </p>
                 <div class="flex row gap--2 align--center justify--start">
-                    <a target="_blank" href="https://www.instagram.com/moon.opticienlunetier/">
+                    <a aria-label="instagram" target="_blank" href="https://www.instagram.com/moon.opticienlunetier/">
                         <x-icon.instagram class="icon--ver icon--primary-light"></x-icon.instagram>
                     </a>
-                    <a target="_blank" href="https://www.facebook.com/profile.php?id=61556269374737">
+                    <a aria-label="facebook" target="_blank" href="https://www.facebook.com/profile.php?id=61556269374737">
                         <x-icon.fb class="icon--ver icon--primary-light"></x-icon.fb>
                     </a>
                 </div>
