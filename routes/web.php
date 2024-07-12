@@ -26,6 +26,9 @@ Route::middleware(['role:admin'])->prefix('dashboard')->group(function () {
     Route::resource('users', UserController::class)->except([
         'show'
     ]);
+    Route::resource('options', OptionController::class)->except([
+        'edit', 'create', 'store', 'destroy', 'show'
+    ]);
     Route::get('/', function () {
         return view('admin.dashboard');
     })->name('dashboard');

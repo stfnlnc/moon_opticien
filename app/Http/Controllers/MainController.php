@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Http\Requests\ContactRequest;
 use App\Mail\ContactMail;
+use App\Models\Option;
 use Illuminate\Contracts\View\Factory;
 use Illuminate\Contracts\View\View;
 use Illuminate\Foundation\Application;
@@ -57,10 +58,17 @@ class MainController extends Controller
         return json_decode($data, true)['result']['reviews'];
     }
 
+    public function getSchedule()
+    {
+        $options = Option::where(['options_category' => 'schedule'])->get()->toArray();
+
+    }
+
 
     public function index(): Factory|Application|View|\Illuminate\Contracts\Foundation\Application
     {
         $reviews = $this->getReviews();
+        $this->getSchedule();
 
         return view('main.index', [
             'mode' => 'dark',

@@ -13,13 +13,10 @@ return new class extends Migration
     {
         Schema::create('options', function (Blueprint $table) {
             $table->id();
-            $table->string('site_url');
-            $table->string('site_name');
-            $table->string('site_description');
-            $table->string('site_keywords')->nullable();
-            $table->string('site_logo')->nullable();
-            $table->string('site_favicon')->nullable();
-            $table->string('site_copyright')->nullable();
+            $table->string('options_key')->nullable();
+            $table->string('options_name')->nullable();
+            $table->string('options_category')->nullable();
+            $table->string('options_value')->nullable();
             $table->timestamps();
         });
     }
