@@ -120,22 +120,23 @@
                                             $closePm = '';
                                             $Am = '';
                                             $Pm = '';
-
-                                            if(isset($hours) && count($hours) === 2) {
-                                                $Am = explode('–', $hours[0]);
-                                                $Pm = explode('–', $hours[1]);
-                                                $openAm = $Am[0];
-                                                $closeAm = $Am[1];
-                                                $openPm = $Pm[0];
-                                                $closePm = $Pm[1];
-                                            } else if ($hours[0] !== 'Fermé' && count($hours) === 1) {
-                                                $hours = explode('–', $hours[0]);
-                                                if($hours[0] < 12) {
-                                                    $openAm = $hours[0];
-                                                    $closeAm = $hours[1];
-                                                } else {
-                                                    $openPm = $hours[0];
-                                                    $closePm = $hours[1];
+                                            if($hours[0] !== '') {
+                                                if(isset($hours) && count($hours) === 2) {
+                                                    $Am = explode('–', $hours[0]);
+                                                    $Pm = explode('–', $hours[1]);
+                                                    $openAm = $Am[0];
+                                                    $closeAm = $Am[1];
+                                                    $openPm = $Pm[0];
+                                                    $closePm = $Pm[1];
+                                                } else if ($hours[0] !== 'Fermé' && count($hours) === 1) {
+                                                    $hours = explode('–', $hours[0]);
+                                                    if($hours[0] < 12) {
+                                                        $openAm = $hours[0];
+                                                        $closeAm = $hours[1];
+                                                    } else {
+                                                        $openPm = $hours[0];
+                                                        $closePm = $hours[1];
+                                                    }
                                                 }
                                             }
                                         @endphp
