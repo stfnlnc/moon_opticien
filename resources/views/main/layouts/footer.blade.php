@@ -4,25 +4,24 @@
         <div class="flex row col-mobile gap--12">
             <div class="flex col gap--3">
                 <p class="text--m">Horaires du magasin</p>
-                <p class="text--s">
-                    lundi : 14:00–19:00 <br>
-                    du mardi au vendredi : 09:30–12:30, 14:00–19:00 <br>
-                    samedi : 09:30–18:00 <br>
-                    dimanche : Fermé
+                <p class="text--s lowercase">
+                    @foreach($schedule as $value)
+                        {{ array_keys($value)[0] }} : {{ array_values($value)[0] }} <br>
+                    @endforeach
                 </p>
             </div>
             <div class="flex col gap--3">
                 <p class="text--m">Nous contacter</p>
                 <p class="text--s">
-                    3 Pl. Gambetta, 64320 Bizanos <br>
-                    <a href="tel:0559531722">05 59 53 17 22</a> <br>
-                    <a href="mailto:contact@moonopticienlunetier.com">contact@moonopticienlunetier.com</a>
+                    {{ $options[0]['options_value'] }}, {{ $options[1]['options_value'] }} {{ $options[2]['options_value'] }} <br>
+                    <a href="tel:{{ str_replace(' ', '', $options[4]['options_value']) }}">{{ $options[4]['options_value'] }}</a> <br>
+                    <a href="mailto:{{ $options[3]['options_value'] }}">{{ $options[3]['options_value'] }}</a>
                 </p>
                 <div class="flex row gap--2 align--center justify--start">
-                    <a aria-label="instagram" target="_blank" href="https://www.instagram.com/moon.opticienlunetier/">
+                    <a aria-label="instagram" target="_blank" href="{{ $options[14]['options_value'] }}">
                         <x-icon.instagram class="icon--ver icon--primary-light"></x-icon.instagram>
                     </a>
-                    <a aria-label="facebook" target="_blank" href="https://www.facebook.com/profile.php?id=61556269374737">
+                    <a aria-label="facebook" target="_blank" href="{{ $options[15]['options_value'] }}">
                         <x-icon.fb class="icon--ver icon--primary-light"></x-icon.fb>
                     </a>
                 </div>

@@ -58,17 +58,10 @@ class MainController extends Controller
         return json_decode($data, true)['result']['reviews'];
     }
 
-    public function getSchedule()
-    {
-        $options = Option::where(['options_category' => 'schedule'])->get()->toArray();
-
-    }
-
 
     public function index(): Factory|Application|View|\Illuminate\Contracts\Foundation\Application
     {
         $reviews = $this->getReviews();
-        $this->getSchedule();
 
         return view('main.index', [
             'mode' => 'dark',
@@ -123,12 +116,7 @@ class MainController extends Controller
 
     public function contact_store(ContactRequest $request): RedirectResponse
     {
-        Mail::send(new ContactMail($request->validated()), [], function ($message) use ($request) {
-            $message->attach($request->validated()['prescription-file']->getRealPath(), [
-                'as' => $request->validated()['prescription-file']->getClientOriginalName(),
-                'mime' => $request->validated()['prescription-file']->getMimeType(),
-            ]);
-        });
+        Mail::send(new ContactMail($request->validated()));
         return back()->with('success', 'Merci, nous avons bien reçu votre demande, notre équipe vous contactera aussi vite que possible');
     }
 
