@@ -23,7 +23,7 @@ class OptionController extends Controller
     {
         $option->update($request->validated());
 
-        return Redirect::route('options.index');
+        return Redirect::route('options.index')->with('success', 'Enregistré');
     }
 
 }
