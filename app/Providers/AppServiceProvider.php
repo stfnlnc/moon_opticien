@@ -14,32 +14,36 @@ class AppServiceProvider extends ServiceProvider
 {
     public function getSchedule(): array
     {
-        $options = Option::where(['options_category' => 'schedule'])->get()->toArray();
         $schedule = [];
-        $days = '';
-        $n = 0;
-        $i = 0;
 
-        foreach($options as $key => $option) {
-            if($key === 0) {
-                $schedule[$i] = [$option['options_name'] => $option['options_value']];
-                $i++;
-            } else if ($options[$key - 1]['options_value'] !== $option['options_value']) {
-                if((count($options) - 1) === $key) {
+        if(Schema::hasTable('options')) {
+            $options = Option::where(['options_category' => 'schedule'])->get()->toArray();
+
+            $days = '';
+            $n = 0;
+            $i = 0;
+
+            foreach ($options as $key => $option) {
+                if ($key === 0) {
                     $schedule[$i] = [$option['options_name'] => $option['options_value']];
-                } else if($options[$key + 1]['options_value'] === $option['options_value']) {
-                    $schedule[$i] = [$option['options_name'] => $option['options_value']];
-                    $days = 'Du '  . $option['options_name'];
-                } else {
-                    $schedule[$i] = [$option['options_name'] => $option['options_value']];
-                }
-                $n = $i;
-                $i++;
-            } else if ($options[$key - 1]['options_value'] === $option['options_value']) {
-                if((count($options) - 1) === $key || $options[$key + 1]['options_value'] !== $option['options_value']) {
-                    $schedule[$n] = [$days .= ' au ' . $option['options_name'] => $option['options_value']];
-                } else if($key || $options[$key + 1]['options_value'] === $option['options_value']) {
-                    $schedule[$n] = [$days => $option['options_value']];
+                    $i++;
+                } else if ($options[$key - 1]['options_value'] !== $option['options_value']) {
+                    if ((count($options) - 1) === $key) {
+                        $schedule[$i] = [$option['options_name'] => $option['options_value']];
+                    } else if ($options[$key + 1]['options_value'] === $option['options_value']) {
+                        $schedule[$i] = [$option['options_name'] => $option['options_value']];
+                        $days = 'Du ' . $option['options_name'];
+                    } else {
+                        $schedule[$i] = [$option['options_name'] => $option['options_value']];
+                    }
+                    $n = $i;
+                    $i++;
+                } else if ($options[$key - 1]['options_value'] === $option['options_value']) {
+                    if ((count($options) - 1) === $key || $options[$key + 1]['options_value'] !== $option['options_value']) {
+                        $schedule[$n] = [$days .= ' au ' . $option['options_name'] => $option['options_value']];
+                    } else if ($key || $options[$key + 1]['options_value'] === $option['options_value']) {
+                        $schedule[$n] = [$days => $option['options_value']];
+                    }
                 }
             }
         }
@@ -65,10 +69,11 @@ class AppServiceProvider extends ServiceProvider
         if(env('REDIRECT_HTTPS')) {
             $url->formatScheme('https');
         }
+        if(Schema::hasTable('options')) {
+            $options = Option::get()->toArray();
 
-        $options = Option::get()->toArray();
-
-        View::share('schedule', $this->getSchedule());
-        View::share('options', $options);
+            View::share('schedule', $this->getSchedule());
+            View::share('options', $options);
+        }
     }
 }
