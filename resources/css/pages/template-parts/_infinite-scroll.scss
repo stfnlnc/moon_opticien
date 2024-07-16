@@ -1,5 +1,5 @@
 .wrapper {
-    width: 100%;
+    width: 100vw;
     overflow: hidden;
     & > div > * {
         padding-right: 50px;
@@ -7,7 +7,7 @@
 }
 
 .wrapper-mobile {
-    width: 100%;
+    width: 100vw;
     overflow: scroll;
     -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none;
@@ -20,6 +20,6 @@
 }
 
 .infinite-scroll {
-    transform: translate(-80%, 0);
+    transform: translate(-30%, 0);
 }
 

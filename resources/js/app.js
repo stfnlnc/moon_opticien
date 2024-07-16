@@ -60,7 +60,6 @@ htmx.onLoad(function (target) {
     })
 
     // Review slider
-
     const reviews = document.querySelectorAll('.slider__review')
     const prevReview = document.querySelector('.slider__prev')
     const nextReview = document.querySelector('.slider__next')
@@ -149,7 +148,7 @@ htmx.onLoad(function (target) {
 
     scroll.forEach((s) => {
         gsap.to(s, {
-            xPercent: 50,
+            xPercent: 30,
             duration: 5,
             scrollTrigger: {
                 trigger: s,

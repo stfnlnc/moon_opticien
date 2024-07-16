@@ -240,6 +240,20 @@ card {
   width: fit-content;
 }
 
+.avatar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-size: var(--h4);
+  font-family: var(--font-heading), serif;
+  background-color: var(--stroke-light);
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  font-weight: 600;
+}
+
 .alert {
   color: var(--primary-dark);
   background-color: var(--primary-light);
@@ -549,6 +563,11 @@ p {
 
 .text {
   line-height: 140%;
+  letter-spacing: 0;
+}
+.text--xs {
+  font-size: 0.625rem;
+  line-height: 150%;
   letter-spacing: 0;
 }
 .text--s {

@@ -1117,7 +1117,7 @@ h6, .h6 {
 }
 
 .wrapper {
-  width: 100%;
+  width: 100vw;
   overflow: hidden;
 }
 .wrapper > div > * {
@@ -1125,7 +1125,7 @@ h6, .h6 {
 }
 
 .wrapper-mobile {
-  width: 100%;
+  width: 100vw;
   overflow: scroll;
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none;
@@ -1138,7 +1138,7 @@ h6, .h6 {
 }
 
 .infinite-scroll {
-  transform: translate(-80%, 0);
+  transform: translate(-30%, 0);
 }
 
 .img__footer {

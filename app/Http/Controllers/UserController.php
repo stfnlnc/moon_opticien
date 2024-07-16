@@ -29,7 +29,7 @@ class UserController extends Controller
                 ->orderBy('role_id', 'asc')
                 ->paginate(10);
         } else {
-            $users = User::where('users.name', 'like', '%' . $search . '%')
+            $users = User::where('users.lastname', 'like', '%' . $search . '%')
                 ->orWhere('users.email', 'like', '%' . $search . '%')
                 ->orWhere('users.firstname', 'like', '%' . $search . '%')
                 ->orWhere('users.phone', 'like', '%' . $search . '%')
@@ -42,14 +42,6 @@ class UserController extends Controller
             'roles' => $roles,
             'search' => $search,
             'filter' => $filter,
-        ]);
-    }
-
-    public function create()
-    {
-        $roles = Role::orderBy('name', 'asc')->get();
-        return view('admin.users.create', [
-            'roles' => $roles,
         ]);
     }
 
@@ -68,21 +60,12 @@ class UserController extends Controller
         return Redirect::route('users.index');
     }
 
-    public function edit(User $user)
-    {
-        $roles = Role::orderBy('name', 'asc')->get();
-        return view('admin.users.edit', [
-            'user' => $user,
-            'roles' => $roles,
-        ]);
-    }
-
     public function update(UserRequest $request, User $user)
     {
         Validator::make($request->all(), ['email' => Rule::unique(User::class)->ignore($user)], ['unique' => 'L\'email existe déjà'])->validate();
         $user->update($request->validated());
         $user->role()->associate($request->validated('role'))->save();
-        return to_route('users.edit', $user)->with('success', 'L\'utilisateur a été modifié');
+        return to_route('users.index')->with('success', 'L\'utilisateur a été modifié');
     }
 
     public function destroy(User $user)

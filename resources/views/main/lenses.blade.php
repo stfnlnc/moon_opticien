@@ -41,8 +41,17 @@
     <section class="container__full-width c--secondary-dark bg--primary-light flex row align--center justify--center">
         <div class="pt--10 pb--10 flex col align--center gap--8">
             <h3>Nos marques de lentilles</h3>
-            <div>
-
+            <div class="wrapper hide-mobile">
+                <div class="infinite-scroll flex row align--center justify--start pb--10 pt--10">
+                    @include('main.layouts.template-parts.lenses-brand')
+                    @include('main.layouts.template-parts.lenses-brand')
+                    @include('main.layouts.template-parts.lenses-brand')
+                </div>
+            </div>
+            <div class="wrapper-mobile display-mobile">
+                <div class="flex row align--center justify--start pb--5 pt--5">
+                    @include('main.layouts.template-parts.lenses-brand')
+                </div>
             </div>
         </div>
     </section>
@@ -89,6 +98,23 @@
                         Planifiez un examen de vue complet pour ajuster vos lentilles selon votre correction.
                     </p>
                 </div>
+            </div>
+        </div>
+    </section>
+    <section
+        class="container__full-width c--secondary-dark bg--primary-light flex row align--center justify--center gap--20">
+        <div class="container pt--0 pb--0 pl--0 pr--0 flex row col-mobile justify--end">
+            <div class="img__hero w--60 w-100-mobile">
+                <img loading="lazy" class="img reveal-left" src="{{ asset('/images/layers/6696d216229aa.webp') }}" alt="Large choix d'accessoires de lunettes">
+            </div>
+            <div class="flex col align--start justify--center gap--8 container">
+                <h2>Nos produits d'entretien</h2>
+                <p class="text--m">
+                    Découvrez notre gamme complète de produits d'entretien pour lentilles de contact, disponibles dès maintenant dans nos magasins.
+                    <br>(AO SEPT PLUS , MENICARE PURE et PROGENT, BINOVA NATURAL PLUS)
+                    <br><br>
+                    Que vous recherchiez des solutions de nettoyage, des étuis, ou des produits spécifiques pour lentilles souples ou rigides, vous trouverez tout ce dont vous avez besoin pour en prendre soin.
+                </p>
             </div>
         </div>
     </section>
