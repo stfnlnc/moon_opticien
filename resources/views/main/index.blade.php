@@ -175,7 +175,7 @@
                 <p class="text--s">Bénéficiez de lunettes de qualité sans aucun reste à charge. *</p>
             </div>
         </div>
-        <p class="align--self-end">* Voir détails en magasin</p>
+        <p class="align--self-end">* Voir conditions en magasin</p>
     </div>
 </section>
 <section class="container__full-width c--primary-light bg--secondary-dark flex col align--center">

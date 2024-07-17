@@ -3,6 +3,9 @@
         width: 20rem;
         height: 33.875rem;
     }
+    &-banner__about {
+        object-position: center;
+    }
     &__hidden {
         opacity: 0;
         transition: opacity var(--duration) var(--cubic);
@@ -21,15 +24,18 @@
 @media screen and (max-width: 1080px) {
     .img {
         &__about {
-            width: 100%;
+            width: 20rem;
             height: unset;
             aspect-ratio: 1/1;
+        }
+        &-banner__about {
+            object-position: right;
         }
     }
 
     .block {
         &__about {
-            width: 100%;
+            width: 20rem;
         }
     }
 

@@ -53,10 +53,14 @@ class ContactMail extends Mailable
      */
     public function attachments(): array
     {
-        return [
-            Attachment::fromPath($this->data['prescription-file']->getRealPath())
-                ->as($this->data['prescription-file']->getClientOriginalName())
-                ->withMime($this->data['prescription-file']->getClientMimeType()),
-        ];
+        if(isset($this->data['prescription-file'])) {
+            return [
+                Attachment::fromPath($this->data['prescription-file']->getRealPath())
+                    ->as($this->data['prescription-file']->getClientOriginalName())
+                    ->withMime($this->data['prescription-file']->getClientMimeType()),
+            ];
+        }
+
+        return [];
     }
 }

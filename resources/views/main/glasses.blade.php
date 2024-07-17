@@ -126,7 +126,7 @@
     <section
         class="container__full-width c--secondary-dark bg--secondary-color-2 flex row align--center justify--center">
         <div class="container flex col gap--3 text-center align--center">
-            <h3>Besoin de refaire contrôler votre vue ?</h3>
+            <h3>Besoin de faire contrôler votre vue ?</h3>
             <p class="text--s">Passer l’examen de vue directement en magasin</p>
             <a hx-boost="true" href="{{ route('contact') }}#booking" class="btn btn--main-light mt--2">Je prends rendez-vous gratuitement</a>
         </div>

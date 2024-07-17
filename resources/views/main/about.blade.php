@@ -78,7 +78,7 @@
     </section>
     @include('main.layouts.template-parts.engagement', ['mode' => 'dark'])
     <section class="container__full-width">
-        <img class="w--100 img img-banner reveal-0" src="{{ asset('/images/layers/6687ea96244d9.webp') }}" alt="Une équipe d'opticien à votre service">
+        <img class="w--100 img img-banner img-banner__about reveal-0" src="{{ asset('/images/layers/6687ea96244d9.webp') }}" alt="Une équipe d'opticien à votre service">
     </section>
     @include('main.layouts.template-parts.service')
     @include('main.layouts.template-parts.review')

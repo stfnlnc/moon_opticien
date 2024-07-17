@@ -12,7 +12,7 @@
                 <x-icon.dot-medium class="icon__dot-medium icon--secondary-dark"></x-icon.dot-medium>
                 <p class="text--l">Verrier français</p>
                 <p class="text--s">
-                    Optez pour la qualité avec des verres fabriqués par des verriers français renommés.
+                    Optez pour la qualité avec des verres de chez Novacel fabriqués en France.
                 </p>
             </div>
             <div class="flex col align--center gap--2">
@@ -23,6 +23,6 @@
                 </p>
             </div>
         </div>
-        <p class="align--self-end">* Voir détails en magasin</p>
+        <p class="align--self-end">* Voir conditions en magasin</p>
     </div>
 </section>

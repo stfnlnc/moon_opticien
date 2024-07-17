@@ -1244,6 +1244,9 @@ nav {
   width: 20rem;
   height: 33.875rem;
 }
+.img-banner__about {
+  object-position: center;
+}
 .img__hidden {
   opacity: 0;
   transition: opacity var(--duration) var(--cubic);
@@ -1258,12 +1261,15 @@ nav {
 
 @media screen and (max-width: 1080px) {
   .img__about {
-    width: 100%;
+    width: 20rem;
     height: unset;
     aspect-ratio: 1/1;
   }
+  .img-banner__about {
+    object-position: right;
+  }
   .block__about {
-    width: 100%;
+    width: 20rem;
   }
 }
 .img__service {

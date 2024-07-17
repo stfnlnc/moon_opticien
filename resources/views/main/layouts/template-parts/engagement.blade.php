@@ -12,7 +12,7 @@
                     <x-icon.dot-small class="icon__dot-small icon--primary-{{ $modeInv }}"></x-icon.dot-small>
                     <p class="text--l">Des prix justes</p>
                 </div>
-                <p class="text--m">
+                <p class="text--m w--70">
                     Nous vous proposons des prix justes pour des lunettes de qualité adaptées à votre budget.
                 </p>
             </div>
@@ -21,7 +21,7 @@
                     <x-icon.dot-small class="icon__dot-small icon--primary-{{ $modeInv }}"></x-icon.dot-small>
                     <p class="text--l">Service France Garanti</p>
                 </div>
-                <p class="text--m">
+                <p class="text--m w--70">
                     Profitez de notre engagement pour vous garantir des solutions optiques fiables.
                 </p>
             </div>
@@ -30,8 +30,8 @@
                     <x-icon.dot-small class="icon__dot-small icon--primary-{{ $modeInv }}"></x-icon.dot-small>
                     <p class="text--l">Tiers payant & 100% santé</p>
                 </div>
-                <p class="text--m">
-                    Bénéficiez du tiers payant et du 100% santé pour des lunettes sans frais à votre charge.
+                <p class="text--m w--70">
+                    Bénéficiez du tiers payant et du 100% santé pour des lunettes sans reste à charge.
                 </p>
             </div>
             <div class="flex row col-mobile grid-gap--4-mobile gap--25 pt--4 pb--4 border--bottom border--primary-{{ $modeInv }}">
@@ -39,7 +39,7 @@
                     <x-icon.dot-small class="icon__dot-small icon--primary-{{ $modeInv }}"></x-icon.dot-small>
                     <p class="text--l">Facilités de paiement</p>
                 </div>
-                <p class="text--m">
+                <p class="text--m w--70">
                     Découvrez nos facilités de paiement pour rendre l'achat de vos lunettes plus accessible.
                 </p>
             </div>

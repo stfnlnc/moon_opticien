@@ -15,7 +15,7 @@
         <div class="container flex col align--start gap--5 pb--30">
             <h1 class="uppercase">Découvrez toutes <br> nos lentilles</h1>
             <p class="text--m w--50 w-100-mobile align--self-end">
-                Que vous optiez pour des lentilles journalières, mensuelles ou toriques, nous avons une solution adaptée à votre prescription et à votre mode de vie.
+                Que vous optiez pour des lentilles journalières ou mensuelles, nous avons une solution adaptée à votre prescription et à votre mode de vie.
                 Nos opticiens expérimentés sont disponibles pour vous guider dans le choix et l'adaptation de vos lentilles.
             </p>
         </div>
@@ -26,7 +26,7 @@
             <div class="flex col align--start justify--center gap--8 container">
                 <h2>Nous vous accompagnons pour bien choisir vos lentilles</h2>
                 <p class="text--m">
-                    Nous offrons une gamme complète de lentilles de contact ainsi que des conseils
+                    Nous offrons une gamme complète de lentilles de contact (toriques, multi-focales ou sphériques) ainsi que des conseils
                     personnalisés pour vous aider à choisir et à adapter les lentilles qui correspondent le mieux
                     à vos besoins.
                     <br><br>
@@ -77,7 +77,7 @@
                         <p class="text--l">Manipulation</p>
                     </div>
                     <p class="text--m">
-                        Nous vous accompagnons pour une manipulation précise de vos lentilles.
+                        Nous vous accompagnons pour la pose et le retrait de vos lentilles.
                     </p>
                 </div>
                 <div class="flex row col-mobile grid-gap--4-mobile gap--25 pt--4 pb--4 border--bottom border--secondary-dark">

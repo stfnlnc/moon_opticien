@@ -15,7 +15,7 @@
         <div class="container flex col align--start gap--5 pb--30">
             <h1 class="uppercase">Nos services <br> à domicile</h1>
             <p class="text--m w--50 w-100-mobile align--self-end">
-                Que ce soit pour des ajustements de lunettes, des conseils personnalisés pour choisir la monture idéale, ou des examens de vue complets, notre équipe se déplace à votre convenance.
+                Que ce soit pour des ajustements de lunettes, des conseils personnalisés pour choisir la monture idéale, ou des examens de vue complets, notre équipe se déplace au plus proche de vous.
                 <br>
                 Contactez-nous aujourd'hui pour une expérience optique pratique et personnalisée qui prend soin de votre vue où que vous soyez.
             </p>
