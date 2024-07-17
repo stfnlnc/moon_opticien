@@ -6,6 +6,7 @@
     <meta property="og:description" content="" />
     <meta name="description" content="">
     <meta property="og:url" content="" />
+    <meta name="robots" content="noindex">
 @endsection
 
 @section('content')

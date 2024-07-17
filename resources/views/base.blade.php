@@ -4,9 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport"
           content="width=device-width, initial-scale=1.0, maximum-scale=5.0, minimum-scale=1.0">
-    <!-- REMOVE WHEN PROD -->
-    <meta name="robots" content="noindex">
-    <!-- REMOVE WHEN PROD -->
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="icon" href="{{ asset('/images/logo/favicon.ico') }}">
     <link rel="apple-touch-icon" sizes="152x152" href="{{ asset('/images/logo/logo-152.png') }}">

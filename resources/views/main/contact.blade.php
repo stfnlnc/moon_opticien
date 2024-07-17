@@ -3,9 +3,9 @@
 @section('title', 'Nous contacter')
 
 @section('meta')
-    <meta property="og:description" content="" />
-    <meta name="description" content="">
-    <meta property="og:url" content="" />
+    <meta property="og:description" content="Nous vous offrons un conseil personnalisé, l’examen de vue et le café. Prenez rendez-vous avec nous, en magasin ou à domicile, en remplissant le formulaire de contact." />
+    <meta name="description" content="Nous vous offrons un conseil personnalisé, l’examen de vue et le café. Prenez rendez-vous avec nous, en magasin ou à domicile, en remplissant le formulaire de contact.">
+    <meta property="og:url" content="{{ route('contact') }}" />
 @endsection
 
 @section('content')

@@ -3,9 +3,13 @@
 @section('subtitle', 'à Bizanos, aux portes de Pau')
 
 @section('meta')
-    <meta property="og:description" content="" />
-    <meta name="description" content="">
-    <meta property="og:url" content="" />
+    <meta property="og:description" content="Moon Opticien Lunetier est un magasin d’optique indépendant situé dans le centre ville de
+                Bizanos. Nous sommes trois opticiens diplômés, passionnés par notre métier et déterminés
+                à vous offrir le meilleur service possible." />
+    <meta name="description" content="Moon Opticien Lunetier est un magasin d’optique indépendant situé dans le centre ville de
+                Bizanos. Nous sommes trois opticiens diplômés, passionnés par notre métier et déterminés
+                à vous offrir le meilleur service possible.">
+    <meta property="og:url" content="{{ route('index') }}" />
 @endsection
 
 @section('content')

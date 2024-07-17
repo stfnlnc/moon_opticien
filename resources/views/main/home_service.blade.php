@@ -3,9 +3,9 @@
 @section('title', 'À domicile')
 
 @section('meta')
-    <meta property="og:description" content="" />
-    <meta name="description" content="">
-    <meta property="og:url" content="" />
+    <meta property="og:description" content="Que ce soit pour des ajustements de lunettes, des conseils personnalisés pour choisir la monture idéale, ou des examens de vue complets, notre équipe se déplace au plus proche de vous." />
+    <meta name="description" content="Que ce soit pour des ajustements de lunettes, des conseils personnalisés pour choisir la monture idéale, ou des examens de vue complets, notre équipe se déplace au plus proche de vous.">
+    <meta property="og:url" content="{{ route('home_service') }}" />
 @endsection
 
 @section('content')

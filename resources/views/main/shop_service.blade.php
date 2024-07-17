@@ -3,9 +3,9 @@
 @section('title', 'En magasin')
 
 @section('meta')
-    <meta property="og:description" content="" />
-    <meta name="description" content="">
-    <meta property="og:url" content="" />
+    <meta property="og:description" content="Notre équipe d'opticiens diplômés, passionnés et déterminés sont là pour vous offrir le meilleur service possible : examens de vue, conseils personnalisés et large sélection de montures et lentilles. Qualité et expertise au service de votre vision !" />
+    <meta name="description" content="Notre équipe d'opticiens diplômés, passionnés et déterminés sont là pour vous offrir le meilleur service possible : examens de vue, conseils personnalisés et large sélection de montures et lentilles. Qualité et expertise au service de votre vision !">
+    <meta property="og:url" content="{{ route('shop_service') }}" />
 @endsection
 
 @section('content')

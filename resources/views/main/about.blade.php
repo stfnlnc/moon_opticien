@@ -3,9 +3,13 @@
 @section('title', 'À propos')
 
 @section('meta')
-    <meta property="og:description" content="" />
-    <meta name="description" content="">
-    <meta property="og:url" content="" />
+    <meta property="og:description" content="Forts de nos expériences variées et complémentaires, nous mettons à votre disposition
+                notre expertise pour vous guider dans le choix de vos lunettes, lentilles de contact et autres
+                solutions optiques." />
+    <meta name="description" content="Forts de nos expériences variées et complémentaires, nous mettons à votre disposition
+                notre expertise pour vous guider dans le choix de vos lunettes, lentilles de contact et autres
+                solutions optiques.">
+    <meta property="og:url" content="{{ route('about') }}" />
 @endsection
 
 @section('content')

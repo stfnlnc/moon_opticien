@@ -3,9 +3,9 @@
 @section('title', 'Nos lentilles')
 
 @section('meta')
-    <meta property="og:description" content="" />
-    <meta name="description" content="">
-    <meta property="og:url" content="" />
+    <meta property="og:description" content="Que vous optiez pour des lentilles journalières ou mensuelles, nous avons une solution adaptée à votre prescription et à votre mode de vie." />
+    <meta name="description" content="Que vous optiez pour des lentilles journalières ou mensuelles, nous avons une solution adaptée à votre prescription et à votre mode de vie.">
+    <meta property="og:url" content="{{ route('lenses') }}" />
 @endsection
 
 @section('content')

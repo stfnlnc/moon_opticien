@@ -5,7 +5,7 @@
 @section('meta')
     <meta property="og:description" content="Que vous recherchiez des lunettes de vue élégantes, des lunettes de soleil tendance ou des montures sportives, nous avons ce qu'il vous faut. Notre équipe d'opticiens qualifiés est là pour vous guider dans le choix des montures qui correspondent à votre style de vie et à votre personnalité." />
     <meta name="description" content="Que vous recherchiez des lunettes de vue élégantes, des lunettes de soleil tendance ou des montures sportives, nous avons ce qu'il vous faut. Notre équipe d'opticiens qualifiés est là pour vous guider dans le choix des montures qui correspondent à votre style de vie et à votre personnalité.">
-    <meta property="og:url" content="" />
+    <meta property="og:url" content="{{ route('glasses') }}" />
 @endsection
 
 @section('content')
