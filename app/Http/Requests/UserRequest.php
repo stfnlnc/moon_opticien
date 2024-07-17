@@ -27,7 +27,7 @@ class UserRequest extends FormRequest
             'lastname' => ['required', 'string', 'max:255'],
             'firstname' => ['required', 'string', 'max:255'],
             'phone' => ['nullable', 'string', 'max:20'],
-            'role' => ['exists:roles,id', 'required'],
+            'role' => ['exists:roles,id', 'nullable'],
             'email' => ['required', 'string', 'lowercase', 'email', 'max:255'],
         ];
     }
