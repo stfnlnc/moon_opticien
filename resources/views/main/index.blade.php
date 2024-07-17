@@ -11,6 +11,7 @@
 @section('content')
 <section class="relative w--100 h--100">
     <img loading="lazy" class="img img-header img-mobile w--100 h--100" src="{{ asset('/images/layers/2e68def2b88b.webp') }}" alt="Magasin de lunettes à Bizanos, proche de Pau">
+    <div class="absolute t--0 l--0 w--100 h--100" style="background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.6))"></div>
     <div class="absolute pos-hor-center b--0 container flex col align--start justify--end gap--10">
         <h1 class="c--primary-light">
             MOON, <br>
