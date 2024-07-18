@@ -18,13 +18,16 @@ class MainController extends Controller
 {
     public function getReviews ()
     {
+        // On vérifie si le fichier existe pour récupérer la dernière màj
         if(file_exists('time.txt')) {
             $time = file_get_contents('time.txt');
         } else {
             $time = '0';
         }
 
-        // If upload a week before, new review upload in reviews.json
+        /* Si la dernière màj date de plus d'une semaine ou que le fichier reviews.json n'existe pas,
+        * on récupère les informations de l'API et on les enregistre
+        */
         if(time() > $time + 604800 || !file_exists('reviews.json')) {
             $ch = curl_init('https://maps.googleapis.com/maps/api/place/details/json?key=' . env('GOOGLE_API_KEY') . '&placeid=' . env('GOOGLE_PLACE_ID') . '&fields=reviews&reviews_no_translations=true%27');
             curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
@@ -34,13 +37,12 @@ class MainController extends Controller
             $json = curl_exec($ch);
             curl_close($ch);
 
-            // Get reviews with Google Places API and register JSON in review.json
             file_put_contents('reviews.json', $json);
-            // Put time when upload in time.txt
             $date = time();
             file_put_contents('time.txt', $date);
         }
 
+        // Si le fichier reviews.json existe, on récupère les données
         if(file_exists('reviews.json')) {
             $data = file_get_contents('reviews.json');
         } else {
@@ -61,6 +63,7 @@ class MainController extends Controller
         return json_decode($data, true)['result']['reviews'];
     }
 
+    // 'mode' → définit l'apparence du header sur light ou dark
 
     public function index(): Factory|Application|View|\Illuminate\Contracts\Foundation\Application
     {

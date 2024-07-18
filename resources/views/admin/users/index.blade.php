@@ -52,10 +52,10 @@
                         {{ $user->role->title }}
                     </p>
                     <div class="flex row align--center gap--2 justify--end">
-                        <x-edit x-data="{{ $user }}" x-on:click.prevent="$dispatch('open-modal', 'edit-user-{{ $user->id }}')"></x-edit>
+                        <x-edit href="{{ route('users.edit', [$user]) }}"></x-edit>
                         @if(Auth::user()->role->name === 'admin')
-                        <x-delete action="{{ route('users.destroy', [$user]) }}"></x-delete>
-                            @endif
+                            <x-delete action="{{ route('users.destroy', [$user]) }}"></x-delete>
+                        @endif
                     </div>
                 </div>
                 @include('admin.users.modals.edit-modal', ['user' => $user])
