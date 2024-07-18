@@ -762,10 +762,10 @@ h6, .h6 {
   --secondary-color-4: #DAD6EA;
   --stroke-light: #E0E0E0;
   --stroke-dark: #3F3E3E;
-  --info: #cce3ef;
-  --warning: #efe7cc;
-  --success: #d5efcc;
-  --danger: #efcccc;
+  --info: #70a8f1;
+  --warning: #f3c56e;
+  --success: #6aee9f;
+  --danger: #f16565;
 }
 
 .bg--primary-dark {
