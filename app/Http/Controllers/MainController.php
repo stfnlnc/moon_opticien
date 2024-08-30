@@ -122,7 +122,25 @@ class MainController extends Controller
 
     public function contact_store(ContactRequest $request): RedirectResponse
     {
-        Mail::send(new ContactMail($request->validated()));
+        $recaptcha = $request->input('g-recaptcha-response');
+        if (is_null($recaptcha)) {
+            return redirect()->back()->with('danger', 'Merci de remplir le captcha');
+        }
+
+        $url = 'https://www.google.com/recaptcha/api/siteverify';
+        $privatekey = config('services.recaptcha.secret');
+        $response = file_get_contents($url."?secret=".$privatekey."&response=".$_POST['g-recaptcha-response']."&remoteip=".$_SERVER['REMOTE_ADDR']);
+        $data = json_decode($response);
+
+        if (isset($data->success) AND $data->success)
+        {
+            Mail::send(new ContactMail($request->validated()));
+        }
+        else
+        {
+            return redirect()->back()->with('danger', 'Le captcha n\'est pas valide');
+        }
+
         return back()->with('success', 'Merci, nous avons bien reçu votre demande, notre équipe vous contactera aussi vite que possible');
     }
 

@@ -6,6 +6,7 @@
     <meta property="og:description" content="Nous vous offrons un conseil personnalisé, l’examen de vue et le café. Prenez rendez-vous avec nous, en magasin ou à domicile, en remplissant le formulaire de contact." />
     <meta name="description" content="Nous vous offrons un conseil personnalisé, l’examen de vue et le café. Prenez rendez-vous avec nous, en magasin ou à domicile, en remplissant le formulaire de contact.">
     <meta property="og:url" content="{{ route('contact') }}" />
+    <script async src="https://www.google.com/recaptcha/api.js"></script>
 @endsection
 
 @section('content')
@@ -21,6 +22,7 @@
     </section>
     <section id="contact-form" class="container__full-width c--secondary-dark bg--primary-light flex col align--center">
         <div class="container">
+
             @if(session('success'))
                 <p class="alert alert--success">{{ session('success') }}</p>
             @else
@@ -206,6 +208,10 @@
                         </div>
                     </div>
                 </div>
+                <div class="g-recaptcha mt-4" data-sitekey={{config('services.recaptcha.key')}}></div>
+                @if(session('danger'))
+                    <p class="alert alert--danger">{{ session('danger') }}</p>
+                @endif
                 <button type="submit" class="btn btn--main-light">Envoyer le formulaire</button>
             </form>
             @endif

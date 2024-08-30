@@ -1,2 +1,2 @@
-User-agent: *
-Disallow:
+# robots.txt file of https://moonopticienlunetier.com/
+sitemap: https://moonopticienlunetier.com/sitemap.xml

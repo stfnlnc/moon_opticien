@@ -27,29 +27,6 @@
         @endif
     </title>
     @vite(['resources/css/app.css', 'resources/js/app.js'])
-    <script type="text/javascript">
-            function callbackThen(response) {
-                response.json().then(function (data) {
-                    console.log(data);
-                    if (data.success && data.score > 0.5) {
-                        console.log('valid recaptcha');
-                    } else {
-                        document.querySelector('form').addEventListener('submit', function (event) {
-                            event.preventDefault();
-                            alert('recaptcha error');
-                        });
-                    }
-                });
-            }
-            function callbackCatch(error) {
-                console.error('Error:', error)
-            }
-    </script>
-
-    {!! htmlScriptTagJsApi([
-        'callback_then' => 'callbackThen',
-        'callback_catch' => 'callbackCatch',
-    ]) !!}
 </head>
 
 <body>

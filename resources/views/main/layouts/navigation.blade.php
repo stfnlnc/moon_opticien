@@ -41,7 +41,7 @@
             <div class="hide-mobile">
                 @include('main.layouts.template-parts.menu')
             </div>
-            <a hx-boost="true" href="{{ route('contact') }}" class="btn btn--main-{{ $mode }} hide-mobile">Contact</a>
+            <a href="{{ route('contact') }}" class="btn btn--main-{{ $mode }} hide-mobile">Contact</a>
             <span class="mobile-menu mobile-menu-{{ $mode }} display-mobile">
                     <span class="line-1"></span>
                     <span class="line-2"></span>
@@ -60,7 +60,7 @@
                     @include('main.layouts.template-parts.menu', ['mode' => 'dark'])
                 </div>
                 <div class="container pt--0 pb--0">
-                    <a hx-boost="true" href="{{ route('contact') }}" class="btn btn--main-dark">Contact</a>
+                    <a href="{{ route('contact') }}" class="btn btn--main-dark">Contact</a>
                 </div>
                 <div class="container c--primary-light text--xs">
                     <div class="flex col gap--2">

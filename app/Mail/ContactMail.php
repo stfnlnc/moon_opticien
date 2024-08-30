@@ -30,7 +30,7 @@ class ContactMail extends Mailable
     {
         return new Envelope(
             from: new Address('no-reply@moonopticienlunetier.com', 'Moon Opticien Lunetier'),
-            to: 'contact@moonopticienlunetier.com',
+            to: 'stefan@studiokhi.com',
             replyTo: $this->data['email'],
             subject: 'Nouveau message : ' . $this->data['lastname'] . ' ' . $this->data['firstname'],
         );
