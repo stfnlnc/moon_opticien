@@ -3,9 +3,10 @@ import 'htmx.org';
 import * as htmx from "htmx.org";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { ScrollSmoother } from "gsap/ScrollSmoother";
 import { TextPlugin } from "gsap/TextPlugin";
 
-gsap.registerPlugin(ScrollTrigger);
+gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
 gsap.registerPlugin(TextPlugin);
 
 document.addEventListener('DOMContentLoaded', function () {
@@ -15,6 +16,12 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 htmx.onLoad(function (target) {
+    let smoother = ScrollSmoother.create({
+        wrapper: '#smooth-wrapper',
+        content: '#smooth-content',
+        smooth: 2,
+    });
+
     // Hide top header at scrolling and change background nav
     const navMenu = document.getElementById('nav');
     const navPop = document.getElementById('nav-pop');

@@ -31,9 +31,13 @@
 
 <body>
 @include('main.layouts.navigation', ['mode' => $mode ?? null])
+<div id="smooth-wrapper">
+    <div id="smooth-content">
 <main>
     @yield('content')
 </main>
 @include('main.layouts.footer')
+</div>
+</div>
 </body>
 </html>
