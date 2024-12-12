@@ -3620,7 +3620,7 @@ nav {
   --main-padding-h: 20rem;
   --main-padding-v: 6.25rem;
   --max-width: unset;
-  --duration: .3s;
+  --duration: 0.3s;
   --cubic: cubic-bezier(0.49, 0.17, 0, 0.87);
   --border-radius: 0.25rem;
   --primary-font: "Darker Grotesk";
@@ -3629,14 +3629,14 @@ nav {
 
 * {
   box-sizing: border-box;
-  line-height: 0;
 }
 
 html {
   scroll-behavior: smooth;
 }
 
-html, body {
+html,
+body {
   margin: 0;
   padding: 0;
   font-size: 16px;

@@ -57,9 +57,10 @@
                 <div class="container c--primary-light text--xs">
                     <div class="flex col gap--2">
                         <div
-                            class="flex col gap--4 text--m border--top border--bottom border--secondary-color-3 pt--3 pb--3 lowercase">
+                            class="flex col text--s border--top border--bottom border--secondary-color-3 pt--3 pb--3 lowercase">
                             @foreach ($schedule as $value)
-                                <p>{{ array_keys($value)[0] }} : {{ array_values($value)[0] }}</p>
+                                <p>{{ array_keys($value)[0] }} :
+                                    {{ array_values($value)[0] }}</p>
                             @endforeach
                         </div>
                         <div class="flex row gap--2 align--center justify--start pt--4">
