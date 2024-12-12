@@ -18,13 +18,6 @@
                     <x-icon.fb class="icon--ver icon--primary-light"></x-icon.fb>
                 </a>
             </div>
-            <div class="flex row gap--6 align--center justify--start">
-                <div class="flex row gap--2 align--center justify--start">
-                    <x-icon.pin class="icon--ver icon-stroke--primary-light"></x-icon.pin>
-                    <p class="text--s">{{ $options[0]['options_value'] }}, {{ $options[1]['options_value'] }}
-                        {{ $options[2]['options_value'] }}</p>
-                </div>
-            </div>
         </div>
     </div>
     <div id="nav" data-mode="{{ $mode }}" class="container__full-width flex col align--center">
