@@ -26,9 +26,9 @@ class ContactMail extends Mailable
     public function envelope(): Envelope
     {
         if ($this->data['store'] === "Bizanos") {
-            $to = 'stefan@studiokhi.com';
+            $to = 'contact@moonopticienlunetier.com';
         } else {
-            $to = 'hello@studiokhi.com';
+            $to = 'denguin@moonopticienlunetier.com';
         }
 
         return new Envelope(
