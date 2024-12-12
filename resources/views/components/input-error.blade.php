@@ -1,7 +1,7 @@
 @props(['messages'])
 
 @if ($messages)
-    <div {{ $attributes->merge(['class' => 'errors']) }}>
+    <div {{ $attributes->merge(['class' => 'errors mt--2']) }}>
         @foreach ((array) $messages as $message)
             <p>{{ $message }}</p>
         @endforeach

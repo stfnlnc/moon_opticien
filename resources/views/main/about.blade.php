@@ -3,10 +3,12 @@
 @section('title', 'À propos')
 
 @section('meta')
-    <meta property="og:description" content="Forts de nos expériences variées et complémentaires, nous mettons à votre disposition
+    <meta property="og:description"
+        content="Forts de nos expériences variées et complémentaires, nous mettons à votre disposition
                 notre expertise pour vous guider dans le choix de vos lunettes, lentilles de contact et autres
                 solutions optiques." />
-    <meta name="description" content="Forts de nos expériences variées et complémentaires, nous mettons à votre disposition
+    <meta name="description"
+        content="Forts de nos expériences variées et complémentaires, nous mettons à votre disposition
                 notre expertise pour vous guider dans le choix de vos lunettes, lentilles de contact et autres
                 solutions optiques.">
     <meta property="og:url" content="{{ route('about') }}" />
@@ -29,7 +31,8 @@
     </section>
     <section class="container__full-width c--secondary-dark bg--primary-light flex col align--center">
         <div class="container">
-            <div class="hide-mobile border--top border--secondary-color-3 c--secondary-color-3 pt--4 pb--4 flex row align--center justify--start gap--2">
+            <div
+                class="hide-mobile border--top border--secondary-color-3 c--secondary-color-3 pt--4 pb--4 flex row align--center justify--start gap--2">
                 <x-icon.dot-small class="icon__dot-small icon--secondary-color-3"></x-icon.dot-small>
                 <p class="text--s">L'équipe</p>
             </div>
@@ -37,9 +40,9 @@
                 <h2>Des opticiens passionnés à votre service</h2>
                 <div class="flex col align--start gap--10">
                     <p class="text--m">
-                        Moon Opticien Lunetier, est un magasin d’optique indépendant situé dans le centre ville de
-                        Bizanos fondé par trois opticiens diplômés, passionnés par leur métier et déterminés
-                        à vous offrir le meilleur service possible.
+                        Moon Opticien Lunetier, est un magasin d’optique indépendant installé à Bizanos et à Denguin, fondé
+                        par trois opticiens diplômés, passionnés par leur métier et déterminés à vous offrir le meilleur
+                        service possible.
                     </p>
                 </div>
             </div>
@@ -47,33 +50,47 @@
                 <div class="grid grid--3 grid--1-mobile  grid-gap--8-mobile grid-gap--2">
                     <div class="flex col align--start justify--start gap--3 block__about reveal-0">
                         <div class="img__about img__hover relative">
-                            <img loading="lazy" class="img img__about img__display absolute" src="{{ asset('/images/layers/6687ec06ea590.webp') }}" alt="Laure, opticienne passionnée">
-                            <img loading="lazy" class="img img__about img__hidden absolute" src="{{ asset('/images/layers/6687ec06ea590_hover.webp') }}" alt="Laure, opticienne passionnée">
+                            <img loading="lazy" class="img img__about img__display absolute"
+                                src="{{ asset('/images/layers/6687ec06ea590.webp') }}" alt="Laure, opticienne passionnée">
+                            <img loading="lazy" class="img img__about img__hidden absolute"
+                                src="{{ asset('/images/layers/6687ec06ea590_hover.webp') }}"
+                                alt="Laure, opticienne passionnée">
                         </div>
                         <p class="text--l">Laure</p>
                         <p class="text--m">
-                            Passionnée par l’optique et la vision, mon expérience m'a permis de développer une expertise approfondie et un savoir-faire reconnu dans ce domaine pour vous offrir des
+                            Passionnée par l’optique et la vision, mon expérience m'a permis de développer une expertise
+                            approfondie et un savoir-faire reconnu dans ce domaine pour vous offrir des
                             solutions visuelles adaptées à vos besoins.
                         </p>
                     </div>
                     <div class="flex col align--start justify--start gap--3 block__about reveal-2">
                         <div class="img__about img__hover relative">
-                            <img loading="lazy" class="img img__about img__display absolute" src="{{ asset('/images/layers/6687ec2751070.webp') }}" alt="Quentin, opticien passionné">
-                            <img loading="lazy" class="img img__about img__hidden absolute" src="{{ asset('/images/layers/6687ec2751070_hover.webp') }}" alt="Quentin, opticienne passionné">
+                            <img loading="lazy" class="img img__about img__display absolute"
+                                src="{{ asset('/images/layers/6687ec2751070.webp') }}" alt="Quentin, opticien passionné">
+                            <img loading="lazy" class="img img__about img__hidden absolute"
+                                src="{{ asset('/images/layers/6687ec2751070_hover.webp') }}"
+                                alt="Quentin, opticienne passionné">
                         </div>
                         <p class="text--l">Quentin</p>
                         <p class="text--m">
-                            Grâce à mes études et à ma passion pour l'optique, j'ai acquis des compétences approfondies en correction visuelle et choix de montures pour vous garantir un service de qualité, tout en alliant esthétique et confort
+                            Grâce à mes études et à ma passion pour l'optique, j'ai acquis des compétences approfondies en
+                            correction visuelle et choix de montures pour vous garantir un service de qualité, tout en
+                            alliant esthétique et confort
                         </p>
                     </div>
                     <div class="flex col align--start justify--start gap--3 block__about reveal-4">
                         <div class="img__about img__hover relative">
-                            <img loading="lazy" class="img img__about img__display absolute" src="{{ asset('/images/layers/6687ec39adea6.webp') }}" alt="Paul, opticienne passionné">
-                            <img loading="lazy" class="img img__about img__hidden absolute" src="{{ asset('/images/layers/6687ec39adea6_hover.webp') }}" alt="Paul, opticienne passionné">
+                            <img loading="lazy" class="img img__about img__display absolute"
+                                src="{{ asset('/images/layers/6687ec39adea6.webp') }}" alt="Paul, opticienne passionné">
+                            <img loading="lazy" class="img img__about img__hidden absolute"
+                                src="{{ asset('/images/layers/6687ec39adea6_hover.webp') }}"
+                                alt="Paul, opticienne passionné">
                         </div>
                         <p class="text--l">Paul</p>
                         <p class="text--m">
-                            Passionné par la santé visuelle, je m'engage à fournir des conseils personnalisés et des solutions adaptées à chaque besoin, des examens de la vue aux dernières innovations en matière de lentilles de contact.
+                            Passionné par la santé visuelle, je m'engage à fournir des conseils personnalisés et des
+                            solutions adaptées à chaque besoin, des examens de la vue aux dernières innovations en matière
+                            de lentilles de contact.
                         </p>
                     </div>
                 </div>
@@ -82,7 +99,8 @@
     </section>
     @include('main.layouts.template-parts.engagement', ['mode' => 'dark'])
     <section class="container__full-width">
-        <img class="w--100 img img-banner img-banner__about reveal-0" src="{{ asset('/images/layers/6687ea96244d9.webp') }}" alt="Une équipe d'opticien à votre service">
+        <img class="w--100 img img-banner img-banner__about reveal-0" src="{{ asset('/images/layers/6687ea96244d9.webp') }}"
+            alt="Une équipe d'opticien à votre service">
     </section>
     @include('main.layouts.template-parts.service')
     @include('main.layouts.template-parts.review')

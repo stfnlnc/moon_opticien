@@ -18,19 +18,22 @@ class ContactMail extends Mailable
     /**
      * Create a new message instance.
      */
-    public function __construct(public array $data)
-    {
-
-    }
+    public function __construct(public array $data) {}
 
     /**
      * Get the message envelope.
      */
     public function envelope(): Envelope
     {
+        if ($this->data['store'] === "Bizanos") {
+            $to = 'stefan@studiokhi.com';
+        } else {
+            $to = 'hello@studiokhi.com';
+        }
+
         return new Envelope(
             from: new Address('no-reply@moonopticienlunetier.com', 'Moon Opticien Lunetier'),
-            to: 'contact@moonopticienlunetier.com',
+            to: $to,
             replyTo: $this->data['email'],
             subject: 'Nouveau message : ' . $this->data['lastname'] . ' ' . $this->data['firstname'],
         );
@@ -53,7 +56,7 @@ class ContactMail extends Mailable
      */
     public function attachments(): array
     {
-        if(isset($this->data['prescription-file'])) {
+        if (isset($this->data['prescription-file'])) {
             return [
                 Attachment::fromPath($this->data['prescription-file']->getRealPath())
                     ->as($this->data['prescription-file']->getClientOriginalName())
