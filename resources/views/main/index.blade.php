@@ -1,6 +1,6 @@
 @extends('base')
 
-@section('subtitle', 'à Bizanos, aux portes de Pau')
+@section('subtitle', 'à Bizanos et à Denguin')
 
 @section('meta')
     <meta property="og:description"
