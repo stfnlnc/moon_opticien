@@ -48,13 +48,13 @@
                 </card>
                 <card class="flex col gap--3 pb--6 border--bottom-mobile border--secondary-color-3 pt--5 w--100 reveal-2">
                     <div class="flex row gap--3 align--center">
-                        <p>3 ans</p>
+                        <p>5 ans</p>
                     </div>
                     <p class="text--m">Pour les 16 à 42 ans.</p>
                 </card>
                 <card class="flex col gap--3 pb--6 border--bottom-mobile border--secondary-color-3 pt--5 w--100 reveal-4">
                     <div class="flex row gap--3 align--center">
-                        <p>5 ans</p>
+                        <p>3 ans</p>
                     </div>
                     <p class="text--m">Pour les plus de 42 ans.</p>
                 </card>
