@@ -87,29 +87,29 @@
                         </div>
                     </div>
                     <div id="message-content" class="content flex col gap--4 align--center">
-                        <textarea class="form-input" name="message" id="message" rows="5" placeholder="Laissez-nous votre message"></textarea>
+                        <textarea class="form-input" name="message" id="message" rows="5" placeholder="Laissez-nous votre message">{{ old('message') }}</textarea>
                     </div>
                     <div id="shop-content" class="content flex col gap--4 align--center form-content">
                         <div class="flex col align--self-start gap--2">
                             <p class="form-label">Vous souhaitez prendre rendez-vous pour ?*</p>
                             <div class="form-check">
-                                <input type="checkbox" name="exam" id="exam" value="Faire vérifier ma vue">
+                                <input type="checkbox" name="exam" id="exam" value="Faire vérifier ma vue" @if(old('exam')) checked @endif>
                                 <label class="form-label" for="exam">Faire vérifier ma vue</label>
                             </div>
                             <div class="form-check">
                                 <input type="checkbox" name="glasses" id="glasses"
-                                    value="Être conseillé dans le choix de mes lunettes">
+                                    value="Être conseillé dans le choix de mes lunettes" @if(old('glasses')) checked @endif>
                                 <label class="form-label" for="glasses">Être conseillé dans le choix de mes
                                     lunettes</label>
                             </div>
                             <div class="form-check">
                                 <input type="checkbox" name="lenses" id="lenses"
-                                    value="Être conseillé pour l'adaptation de mes lentilles">
+                                    value="Être conseillé pour l'adaptation de mes lentilles" @if(old('lenses')) checked @endif>
                                 <label class="form-label" for="lenses">Être conseillé pour l'adaptation de mes
                                     lentilles</label>
                             </div>
                             <div class="form-check">
-                                <input type="checkbox" name="buy" id="buy" value="Réceptionner mon achat">
+                                <input type="checkbox" name="buy" id="buy" value="Réceptionner mon achat" @if(old('buy')) checked @endif>
                                 <label class="form-label" for="buy">Réceptionner mon achat</label>
                             </div>
                         </div>
@@ -119,7 +119,7 @@
                             <label for="address" class="form-label">Adresse ou lieu où vous souhaitez qu'on
                                 intervienne*</label>
                             <input id="address" name="address" type="text" class="form-input"
-                                placeholder="Adresse de votre domicile ou celui de votre proche">
+                                placeholder="Adresse de votre domicile ou celui de votre proche" value="{{ old('address') }}">
                             <div class="flex row gap--2 align--center">
                                 <p class="form-label">Avez-vous une ordonnance à jour ?*</p>
                                 <div class="help">
@@ -132,19 +132,19 @@
                                     <div class="help-text">
                                         <p class="text--s">
                                             - 1 an pour les moins de 16 ans <br>
-                                            - 3 ans pour les 16 à 42 ans <br>
-                                            - 5 ans pour les plus de 42 ans
+                                            - 5 ans pour les 16 à 42 ans <br>
+                                            - 3 ans pour les plus de 42 ans
                                         </p>
                                     </div>
                                 </div>
 
                             </div>
                             <div class="form-check">
-                                <input type="radio" name="prescription" value="Oui" id="yes">
+                                <input type="radio" name="prescription" value="Oui" id="yes" @if(old('prescription') === 'Oui') checked @endif>
                                 <label class="form-label" for="yes">Oui</label>
                             </div>
                             <div class="form-check">
-                                <input type="radio" name="prescription" value="Non" id="no">
+                                <input type="radio" name="prescription" value="Non" id="no" @if(old('prescription') === 'Non') checked @endif>
                                 <label class="form-label" for="no">Non</label>
                             </div>
                         </div>
@@ -169,7 +169,7 @@
                             <div class="flex col align--self-start gap--2 w--100">
                                 <label for="lens-model" class="form-label">Modèle de lentilles*</label>
                                 <input id="lens-model" name="lens-model" type="text" class="form-input"
-                                    placeholder="Modèle et marque de vos lentilles">
+                                    placeholder="Modèle et marque de vos lentilles" value="{{  old('lens-model') }}">
                             </div>
                             <div class="grid grid--2 grid--1-mobile grid-gap--16 w--100 mt--8">
                                 <div class="flex col gap--2">
