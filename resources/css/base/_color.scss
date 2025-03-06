@@ -8,6 +8,7 @@
     --secondary-color-3: #5E7567;
     --secondary-color-4: #F6F5F1;
     --stroke-light: #E0E0E0;
+    --light: #E0E0E0;
     --stroke-dark: #3F3E3E;
     --info: #B8D3F0;
     --warning: #F3DA80;
@@ -22,9 +23,11 @@ $styles: ('bg': background-color, 'c': color);
         &--primary-dark {
             #{$style}: var(--primary-dark);
         }
+
         &--primary-light {
             #{$style}: var(--primary-light);
         }
+
         &--secondary-light {
             #{$style}: var(--secondary-light);
         }

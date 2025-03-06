@@ -1,4 +1,4 @@
-<form hx-boost="true" method="post" {{ $attributes }}>
+<form  method="post" {{ $attributes }}>
     @csrf
     @method('delete')
     <button class="btn--unset" onclick="return confirm('Confirmer la suppression')">

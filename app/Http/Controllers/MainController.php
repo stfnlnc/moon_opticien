@@ -64,7 +64,6 @@ class MainController extends Controller
     }
 
     // 'mode' → définit l'apparence du header sur light ou dark
-
     public function index(): Factory|Application|View|\Illuminate\Contracts\Foundation\Application
     {
         $reviews = $this->getReviews();
@@ -79,6 +78,13 @@ class MainController extends Controller
     {
         return view('main.shop_service', [
             'mode' => 'light'
+        ]);
+    }
+
+    public function shops(): Factory|Application|View|\Illuminate\Contracts\Foundation\Application
+    {
+        return view('main.shops', [
+            'mode' => 'dark'
         ]);
     }
 

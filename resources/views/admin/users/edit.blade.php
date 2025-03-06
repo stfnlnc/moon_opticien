@@ -2,7 +2,7 @@
     @section('title', 'Les utilisateurs')
     <x-slot name="header">
         @yield('title')
-        <x-nav-link hx-boost="true" href="{{ route('users.index') }}"
+        <x-nav-link  href="{{ route('users.index') }}"
                             class="btn btn--small btn--primary-dark mt--1">< Retour
         </x-nav-link>
     </x-slot>

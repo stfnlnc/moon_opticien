@@ -24,7 +24,7 @@
                 votre opticien lunetier indépendant <br>
                 à Bizanos et à Denguin
             </h1>
-            <a hx-boost="true" href="{{ route('contact') }}" class="btn btn--main-dark">Je prends rendez-vous</a>
+            <a  href="{{ route('contact') }}" class="btn btn--main-dark">Je prends rendez-vous</a>
         </div>
     </section>
     <section class="container__full-width c--primary-light bg--secondary-dark flex col align--center">
@@ -64,7 +64,7 @@
             </div>
             <div class="flex row align--start justify--end gap--2 w-100-mobile">
                 <div class="flex col align--start justify--start gap--3 w-100-mobile reveal-0">
-                    <a class="link-img" hx-boost="true" href="{{ route('shop_service') }}">
+                    <a class="link-img"  href="{{ route('shop_service') }}">
                         <img loading="lazy" class="img img__service"
                             src="{{ asset('/images/layers/728ebaf8666162f73edf66e0bd3146d5.webp') }}"
                             alt="Choisir vos lunettes ou vos lentilles de contact">
@@ -72,11 +72,11 @@
                     <div class="flex col gap--3 img__service h--fit-content">
                         <p class="text--l">Services en Magasin</p>
                         <p class="text--m">Venez découvrir une expertise unique dans nos magasins.</p>
-                        <a hx-boost="true" href="{{ route('shop_service') }}" class="btn btn--secondary-light">Découvrir</a>
+                        <a  href="{{ route('shop_service') }}" class="btn btn--secondary-light">Découvrir</a>
                     </div>
                 </div>
                 <div class="flex col align--start justify--start gap--3 w-100-mobile reveal-1">
-                    <a class="link-img" hx-boost="true" href="{{ route('home_service') }}">
+                    <a class="link-img"  href="{{ route('home_service') }}">
                         <img loading="lazy" class="img img__service"
                             src="{{ asset('/images/layers/a7e72401fb434c9febabc88ff04202ae.webp') }}"
                             alt="Consultation et prescription à domicile">
@@ -85,7 +85,7 @@
                         <p class="text--l">Services à Domicile</p>
                         <p class="text--m">Pour votre confort et votre tranquillité, nous nous déplaçons au plus près de
                             vous.</p>
-                        <a hx-boost="true" href="{{ route('home_service') }}" class="btn btn--secondary-light">Découvrir</a>
+                        <a  href="{{ route('home_service') }}" class="btn btn--secondary-light">Découvrir</a>
                     </div>
                 </div>
             </div>
@@ -106,7 +106,7 @@
                         notre expertise pour vous guider dans le choix de vos lunettes, lentilles de contact et autres
                         solutions optiques. <br>
                     </p>
-                    <a hx-boost="true" href="{{ route('about') }}" class="btn btn--main-light">Qui sommes-nous ?</a>
+                    <a  href="{{ route('about') }}" class="btn btn--main-light">Qui sommes-nous ?</a>
                 </div>
             </div>
             <div class="flex row align--start justify--space-between gap--4 w--100">
@@ -137,7 +137,7 @@
                         attentes. Chaque client est unique et mérite une attention particulière. Nous prenons le temps de
                         comprendre vos besoins et préférences pour vous proposer des solutions sur mesure.
                     </p>
-                    <a hx-boost="true" href="{{ route('shop_service') }}" class="btn btn--main-light">je découvre les
+                    <a  href="{{ route('shop_service') }}" class="btn btn--main-light">je découvre les
                         services en magasin</a>
                 </div>
             </div>
@@ -223,7 +223,7 @@
                         Que ce soit pour des ajustements de lunettes, des conseils personnalisés pour choisir la monture
                         idéale, ou des examens de vue complets, notre équipe se déplace à votre convenance.
                     </p>
-                    <a hx-boost="true" href="{{ route('home_service') }}" class="btn btn--main-dark">je découvre les
+                    <a  href="{{ route('home_service') }}" class="btn btn--main-dark">je découvre les
                         services à domicile</a>
                 </div>
             </div>
@@ -246,53 +246,53 @@
                         élégantes, des lunettes de soleil haut de gamme ou des montures innovantes, notre collection saura
                         combler vos attentes.
                     </p>
-                    <a hx-boost="true" href="{{ route('glasses') }}" class="btn btn--main-light">Toutes les lunettes</a>
+                    <a  href="{{ route('glasses') }}" class="btn btn--main-light">Toutes les lunettes</a>
                 </div>
             </div>
             <div class="flex row justify--end w--100">
                 <div class="grid grid--4 grid-gap--2 grid--2-mobile">
                     <div class="flex col align--start justify--start gap--3 block__glasses reveal-0">
-                        <a class="link-img" hx-boost="true" href="{{ route('glasses') }}#eyeglasses">
+                        <a class="link-img"  href="{{ route('glasses') }}#eyeglasses">
                             <img loading="lazy" class="img img__glasses"
                                 src="{{ asset('/images/layers/ac59211ea58ee6b9259ed733452a040d.webp') }}"
                                 alt="Lunettes de vue">
                         </a>
                         <p class="text--l">Vue</p>
                         <p class="text--m">Associez confort et style pour le quotidien.</p>
-                        <a hx-boost="true" href="{{ route('glasses') }}#eyeglasses"
+                        <a  href="{{ route('glasses') }}#eyeglasses"
                             class="btn btn--secondary-light">Découvrir</a>
                     </div>
                     <div class="flex col align--start justify--start gap--3 block__glasses reveal-1">
-                        <a class="link-img" hx-boost="true" href="{{ route('glasses') }}#sunglasses">
+                        <a class="link-img"  href="{{ route('glasses') }}#sunglasses">
                             <img class="img img__glasses"
                                 src="{{ asset('/images/layers/0fef3d1f982b33e7b22c1571eecc4453.webp') }}"
                                 alt="Lunettes de soleil">
                         </a>
                         <p class="text--l">Solaires</p>
                         <p class="text--m">Protégez vos yeux du soleil avec style.</p>
-                        <a hx-boost="true" href="{{ route('glasses') }}#sunglasses"
+                        <a  href="{{ route('glasses') }}#sunglasses"
                             class="btn btn--secondary-light">Découvrir</a>
                     </div>
                     <div class="flex col align--start justify--start gap--3 block__glasses reveal-2">
-                        <a class="link-img" hx-boost="true" href="{{ route('glasses') }}#sportglasses">
+                        <a class="link-img"  href="{{ route('glasses') }}#sportglasses">
                             <img loading="lazy" class="img img__glasses"
                                 src="{{ asset('/images/layers/fb49e3f66990789c63e31a0c6cc6af7d.webp') }}"
                                 alt="Lunettes de sport et sécurité">
                         </a>
                         <p class="text--l">Sport</p>
                         <p class="text--m">Performez dans toutes vos activités.</p>
-                        <a hx-boost="true" href="{{ route('glasses') }}#sportglasses"
+                        <a  href="{{ route('glasses') }}#sportglasses"
                             class="btn btn--secondary-light">Découvrir</a>
                     </div>
                     <div class="flex col align--start justify--start gap--3 block__glasses reveal-3">
-                        <a class="link-img" hx-boost="true" href="{{ route('glasses') }}#childglasses">
+                        <a class="link-img"  href="{{ route('glasses') }}#childglasses">
                             <img loading="lazy" class="img img__glasses"
                                 src="{{ asset('/images/layers/5492d5c3f99aca5a8d72c79736f9317c.webp') }}"
                                 alt="Lunettes pour enfant">
                         </a>
                         <p class="text--l">Enfants</p>
                         <p class="text--m">Des montures pour accompagner leurs aventures.</p>
-                        <a hx-boost="true" href="{{ route('glasses') }}#childglasses"
+                        <a  href="{{ route('glasses') }}#childglasses"
                             class="btn btn--secondary-light">Découvrir</a>
                     </div>
                 </div>
@@ -316,9 +316,9 @@
                         directement en magasin.
                     </p>
                     <div class="flex col gap--2">
-                        <a hx-boost="true" href="{{ route('contact') }}#orderlenses" class="btn btn--main-dark">Je
+                        <a  href="{{ route('contact') }}#orderlenses" class="btn btn--main-dark">Je
                             commande mes lentilles</a>
-                        <a hx-boost="true" href="{{ route('lenses') }}" class="btn btn--secondary-dark">En savoir
+                        <a  href="{{ route('lenses') }}" class="btn btn--secondary-dark">En savoir
                             plus</a>
                     </div>
                 </div>

@@ -90,7 +90,7 @@
         class="container__full-width c--secondary-dark bg--secondary-color-2 flex row align--center justify--center">
         <div class="container flex col gap--10 align--center">
             <h2 class="w--60 text-center w-100-mobile">Prenez rendez-vous dès maintenant pour vous ou pour votre proche</h2>
-            <a hx-boost="true" href="{{ route('contact') }}" class="btn btn--main-light mt--2">Je prends rendez-vous</a>
+            <a  href="{{ route('contact') }}" class="btn btn--main-light mt--2">Je prends rendez-vous</a>
         </div>
     </section>
 @endsection

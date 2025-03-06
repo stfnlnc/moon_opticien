@@ -28,6 +28,18 @@
         color: var(--primary-dark);
         border: 1px solid var(--primary-dark);
     }
+    &--filter {
+        &:hover {
+            color: var(--primary-light);
+            background-color: var(--secondary-dark);
+            border: 1px solid var(--secondary-dark);
+        }
+        &-active {
+            color: var(--primary-light);
+            background-color: var(--secondary-dark);
+            border: 1px solid var(--secondary-dark);
+        }
+    }
     &--main-light {
         color: var(--primary-light);
         background-color: var(--secondary-dark);

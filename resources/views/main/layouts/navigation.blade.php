@@ -18,11 +18,18 @@
                     <x-icon.fb class="icon--ver icon--primary-light"></x-icon.fb>
                 </a>
             </div>
+            <a href="{{ route('shops') }}" class="flex row gap--2 align--center text--m">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon--ver" viewBox="0 0 13 15" fill="none">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M5.99604 8.50008C6.52664 8.50008 7.03552 8.28937 7.41081 7.91427C7.78609 7.53917 7.99706 7.03039 7.99732 6.49979C7.99732 5.96902 7.78647 5.45998 7.41116 5.08467C7.03585 4.70935 6.52681 4.4985 5.99604 4.4985C5.46526 4.4985 4.95623 4.70935 4.58091 5.08467C4.2056 5.45998 3.99475 5.96902 3.99475 6.49979C3.99502 7.03039 4.20598 7.53917 4.58127 7.91427C4.95655 8.28937 5.46544 8.50008 5.99604 8.50008Z" stroke="white" stroke-linecap="square"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M11.9999 6.49986C11.9999 11.5001 6.99669 14.5 5.99605 14.5C4.9954 14.5 -0.0078125 11.5001 -0.0078125 6.49986C-0.00701653 4.90815 0.625914 3.38192 1.7518 2.25678C2.87768 1.13165 4.40434 0.499735 5.99605 0.5C9.31118 0.5 11.9999 3.18673 11.9999 6.49986Z" stroke="white" stroke-linecap="square"/>
+                </svg>
+                Nos boutiques
+            </a>
         </div>
     </div>
     <div id="nav" data-mode="{{ $mode }}" class="container__full-width flex col align--center">
         <div class="container pt--4 pb--4 flex row align--center justify--space-between">
-            <a aria-label="Moon Opticien Lunetier" hx-boost="true" href="{{ route('index') }}">
+            <a aria-label="Moon Opticien Lunetier"  href="{{ route('index') }}">
                 <img class="nav__logo" src="{{ asset('/images/logo/logo-full-' . $mode . '.svg') }}"
                     alt="Moon Opticien Lunetier">
             </a>

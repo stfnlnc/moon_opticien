@@ -1,6 +1,6 @@
 @if($data->hasPages())
     <div class="flex col gap--2 align--center p--5">
-        <div hx-boost="true" class="flex row gap--4 align--center justify--center gap--1">
+        <div  class="flex row gap--4 align--center justify--center gap--1">
             <a @class(['btn btn--small p--1', $data->onFirstPage() ? 'btn--disabled' : '']) {{ $data->onFirstPage() ? '' : 'href=' . $data->previousPageUrl() }} > << </a>
             <p class="text--s">
                 {{ $data->currentPage() }} sur {{ $data->lastPage() }}

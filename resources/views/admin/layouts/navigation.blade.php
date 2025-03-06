@@ -5,7 +5,7 @@
 @section('menu')
     <div class="flex row col-mobile align--center gap--8">
         <!-- Navigation Links -->
-        <div class="flex row align--center col-mobile align-mobile--start gap--4" hx-boost="true" hx-trigger="delay:1000ms">
+        <div class="flex row align--center col-mobile align-mobile--start gap--4"  hx-trigger="delay:1000ms">
             <x-nav-link :href="route('dashboard')" :active="str_contains($route, 'dashboard')">
                 {{ __('Tableau de bord') }}
             </x-nav-link>
@@ -52,7 +52,7 @@
                     @yield('menu')
                 </div>
             </div>
-            <div class="flex row align--center gap--4" hx-boost="true">
+            <div class="flex row align--center gap--4" >
                 <x-profile href="{{ route('profile') }}"></x-profile>
                 @if(Auth::user()->role->name === 'admin')
                 <x-parameters href="{{ route('options.index') }}"></x-parameters>

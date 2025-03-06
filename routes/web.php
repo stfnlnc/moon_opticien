@@ -9,6 +9,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::prefix('/')->group(function () {
     Route::get('/', [MainController::class, 'index'])->name('index');
+    Route::get('/nos-boutiques', [MainController::class, 'shops'])->name('shops');
     Route::get('/en-magasin', [MainController::class, 'shop_service'])->name('shop_service');
     Route::get('/a-domicile', [MainController::class, 'home_service'])->name('home_service');
     Route::get('/nos-lunettes', [MainController::class, 'glasses'])->name('glasses');

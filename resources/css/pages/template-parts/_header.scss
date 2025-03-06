@@ -20,6 +20,7 @@ nav {
 .mobile {
     &-menu {
         cursor: pointer;
+        transition: opacity 0.7s ease;
         &-dark {
             .line-1 {
                 border-top: 2px solid var(--primary-light);
@@ -68,7 +69,6 @@ nav {
 
             }
         }
-        transition: opacity 0.7s ease;
     }
     &-dropdown {
         position: fixed;

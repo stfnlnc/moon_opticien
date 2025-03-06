@@ -3,9 +3,9 @@
 @section('title', 'Nos lentilles')
 
 @section('meta')
-    <meta property="og:description" content="Que vous optiez pour des lentilles journalières ou mensuelles, nous avons une solution adaptée à votre prescription et à votre mode de vie." />
+    <meta property="og:description" content="Que vous optiez pour des lentilles journalières ou mensuelles, nous avons une solution adaptée à votre prescription et à votre mode de vie."/>
     <meta name="description" content="Que vous optiez pour des lentilles journalières ou mensuelles, nous avons une solution adaptée à votre prescription et à votre mode de vie.">
-    <meta property="og:url" content="{{ route('lenses') }}" />
+    <meta property="og:url" content="{{ route('lenses') }}"/>
 @endsection
 
 @section('content')
@@ -40,19 +40,7 @@
     </section>
     <section class="container__full-width c--secondary-dark bg--primary-light flex row align--center justify--center">
         <div class="pt--10 pb--10 flex col align--center gap--8">
-            <h3>Nos marques de lentilles</h3>
-            <div class="wrapper hide-mobile">
-                <div class="infinite-scroll flex row align--center justify--start pb--10 pt--10">
-                    @include('main.layouts.template-parts.lenses-brand')
-                    @include('main.layouts.template-parts.lenses-brand')
-                    @include('main.layouts.template-parts.lenses-brand')
-                </div>
-            </div>
-            <div class="wrapper-mobile display-mobile">
-                <div class="flex row align--center justify--start pb--5 pt--5">
-                    @include('main.layouts.template-parts.lenses-brand')
-                </div>
-            </div>
+            @include('main.layouts.template-parts.brands', ['title' => 'Nos marques de lentilles', 'locations' => 'lenses'])
         </div>
     </section>
     <section class="container__full-width">
@@ -122,7 +110,7 @@
         class="container__full-width c--secondary-dark bg--secondary-color-2 flex row align--center justify--center">
         <div class="container flex col gap--10 align--center">
             <h2 class="w--60 w-100-mobile text-center">Commander et récupérer vos lentilles en magasin</h2>
-            <a hx-boost="true" href="{{ route('contact') }}" class="btn btn--main-light mt--2">Je commande mes lentilles</a>
+            <a href="{{ route('contact') }}" class="btn btn--main-light mt--2">Je commande mes lentilles</a>
         </div>
     </section>
 

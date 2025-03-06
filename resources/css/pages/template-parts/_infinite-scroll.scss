@@ -1,25 +1,14 @@
 .wrapper {
     width: 100vw;
     overflow: hidden;
-    & > div > * {
-        padding-right: 50px;
-    }
+    position: relative;
 }
 
-.wrapper-mobile {
-    width: 100vw;
-    overflow: scroll;
-    -ms-overflow-style: none;  /* IE and Edge */
-    scrollbar-width: none;
-    &::-webkit-scrollbar {
-        display: none;
-    }
-    & > div > * {
-        padding-right: 30px;
-    }
+.opacity-0 {
+    opacity: 0;
 }
 
-.infinite-scroll {
-    transform: translate(-30%, 0);
+.pointer-events-none {
+    pointer-events: none;
 }
 

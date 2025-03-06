@@ -29,7 +29,7 @@
                     <br><br>
                     Nos opticiens qualifiés utilisent des équipements de pointe afin de réaliser une évaluation précise et personnalisée, assurant ainsi que vos besoins visuels spécifiques soient pleinement pris en compte.
                 </p>
-                <a hx-boost="true" href="{{ route('contact') }}#booking" class="btn btn--main-light">Je prends rendez-vous</a>
+                <a  href="{{ route('contact') }}#booking" class="btn btn--main-light">Je prends rendez-vous</a>
             </div>
             <div class="img__hero w--60 w-100-mobile">
                 <img loading="lazy" class="img reveal-right" src="{{ asset('/images/layers/a815b7f0bd7fe915483f07067f5d0129.webp') }}" alt="Examen de la vue gratuit">
@@ -66,7 +66,7 @@
         <div class="container flex col gap--3 align--center text-center">
             <h3>Besoin d'aide pour vos lentilles de contact ?</h3>
             <p class="text--s">Accompagnement à la pose de lentilles, à la correction de la vue et à l’adaptation.</p>
-            <a hx-boost="true" href="{{ route('contact') }}#service" class="btn btn--main-light mt--2">En savoir plus</a>
+            <a  href="{{ route('contact') }}#service" class="btn btn--main-light mt--2">En savoir plus</a>
         </div>
     </section>
     <section
@@ -107,7 +107,7 @@
         class="container__full-width c--secondary-dark bg--secondary-color-2 flex row align--center justify--center">
         <div class="container flex col gap--10 align--center">
             <h2 class="w--60 w-100-mobile text-center">Venez nous voir en magasin, nos opticiens sont là pour vous conseiller.</h2>
-            <a hx-boost="true" href="{{ route('contact') }}" class="btn btn--main-light mt--2">Je prends rendez-vous</a>
+            <a  href="{{ route('contact') }}" class="btn btn--main-light mt--2">Je prends rendez-vous</a>
         </div>
     </section>
 @endsection

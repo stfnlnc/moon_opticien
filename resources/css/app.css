@@ -543,7 +543,7 @@ card {
 }
 .filter, .filter-sub {
   color: var(--secondary-dark);
-  background-color: var(transparent);
+  background-color: rgba(255, 255, 255, 0);
   border-radius: var(--border-radius);
   border: 1px solid var(--secondary-dark);
   font-family: var(--primary-font), sans-serif;
@@ -678,6 +678,16 @@ card {
   background-color: var(--primary-light);
   color: var(--primary-dark);
   border: 1px solid var(--primary-dark);
+}
+.btn--filter:hover {
+  color: var(--primary-light);
+  background-color: var(--secondary-dark);
+  border: 1px solid var(--secondary-dark);
+}
+.btn--filter-active {
+  color: var(--primary-light);
+  background-color: var(--secondary-dark);
+  border: 1px solid var(--secondary-dark);
 }
 .btn--main-light {
   color: var(--primary-light);
@@ -1023,6 +1033,7 @@ h6, .h6 {
   --secondary-color-3: #5E7567;
   --secondary-color-4: #F6F5F1;
   --stroke-light: #E0E0E0;
+  --light: #E0E0E0;
   --stroke-dark: #3F3E3E;
   --info: #B8D3F0;
   --warning: #F3DA80;
@@ -1119,26 +1130,15 @@ h6, .h6 {
 .wrapper {
   width: 100vw;
   overflow: hidden;
-}
-.wrapper > div > * {
-  padding-right: 50px;
+  position: relative;
 }
 
-.wrapper-mobile {
-  width: 100vw;
-  overflow: scroll;
-  -ms-overflow-style: none; /* IE and Edge */
-  scrollbar-width: none;
-}
-.wrapper-mobile::-webkit-scrollbar {
-  display: none;
-}
-.wrapper-mobile > div > * {
-  padding-right: 30px;
+.opacity-0 {
+  opacity: 0;
 }
 
-.infinite-scroll {
-  transform: translate(-30%, 0);
+.pointer-events-none {
+  pointer-events: none;
 }
 
 .img__footer {
@@ -3678,6 +3678,10 @@ section {
 a {
   color: unset;
   text-decoration: none;
+}
+
+.hidden {
+  display: none;
 }
 
 .display-mobile {
