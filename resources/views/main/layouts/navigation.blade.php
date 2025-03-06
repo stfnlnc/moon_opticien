@@ -8,7 +8,7 @@
 
 <nav class="fixed t--0 l--0 w--100">
     <div id="nav-pop"
-        class="container__full-width flex col align--center bg--secondary-dark c--primary-light hide-mobile">
+         class="container__full-width flex col align--center bg--secondary-dark c--primary-light">
         <div class="container pt--2 pb--2 flex row align--center justify--space-between">
             <div class="flex row gap--2 align--center justify--start">
                 <a aria-label="instagram" target="_blank" href="{{ $options[14]['options_value'] }}">
@@ -29,9 +29,9 @@
     </div>
     <div id="nav" data-mode="{{ $mode }}" class="container__full-width flex col align--center">
         <div class="container pt--4 pb--4 flex row align--center justify--space-between">
-            <a aria-label="Moon Opticien Lunetier"  href="{{ route('index') }}">
+            <a aria-label="Moon Opticien Lunetier" href="{{ route('index') }}">
                 <img class="nav__logo" src="{{ asset('/images/logo/logo-full-' . $mode . '.svg') }}"
-                    alt="Moon Opticien Lunetier">
+                     alt="Moon Opticien Lunetier">
             </a>
             <div class="hide-mobile">
                 @include('main.layouts.template-parts.menu')

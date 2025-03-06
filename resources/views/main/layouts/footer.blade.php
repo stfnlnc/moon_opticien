@@ -51,13 +51,13 @@
             <div class="flex col gap--3">
                 <p class="text--m">Plan du site</p>
                 <p class="text--s">
-                    <a  href="{{ route('index') }}" class="btn--footer">Home</a> <br>
-                    <a  href="{{ route('shops') }}" class="btn--footer">Nos boutiques</a> <br>
-                    <a  href="{{ route('shop_service') }}" class="btn--footer">En magasin</a> <br>
-                    <a  href="{{ route('home_service') }}" class="btn--footer">À domicile</a> <br>
-                    <a  href="{{ route('glasses') }}" class="btn--footer">Nos lunettes</a> <br>
-                    <a  href="{{ route('lenses') }}" class="btn--footer">Nos lentilles</a> <br>
-                    <a  href="{{ route('about') }}" class="btn--footer">À propos</a> <br>
+                    <a href="{{ route('index') }}" class="btn--footer">Home</a> <br>
+                    <a href="{{ route('shops') }}" class="btn--footer">Nos boutiques</a> <br>
+                    <a href="{{ route('shop_service') }}" class="btn--footer">En magasin</a> <br>
+                    <a href="{{ route('home_service') }}" class="btn--footer">À domicile</a> <br>
+                    <a href="{{ route('glasses') }}" class="btn--footer">Nos lunettes</a> <br>
+                    <a href="{{ route('lenses') }}" class="btn--footer">Nos lentilles</a> <br>
+                    <a href="{{ route('about') }}" class="btn--footer">À propos</a> <br>
                 </p>
             </div>
         </div>
@@ -67,12 +67,12 @@
         <div
             class="flex row col-mobile gap--1-mobile align--start justify--space-between w--100 border--top border--secondary-color-3 mt--4 pt--4">
             <p class="text--s">
-                © 2024 - <a target="_blank" href="https://studiokhi.com">Un site réalisé par Studio Khi</a>
+                © 2025 - <a target="_blank" href="https://studiokhi.com">Un site réalisé par Studio Khi</a>
             </p>
             <div class="flex row col-mobile gap--1-mobile align--start justify--start gap--5">
-                <a  href="{{ route('privacy_policy') }}" class="btn--footer">Politique de
+                <a href="{{ route('privacy_policy') }}" class="btn--footer">Politique de
                     confidentialité</a>
-                <a  href="{{ route('legal_notice') }}" class="btn--footer">Mentions légales</a>
+                <a href="{{ route('legal_notice') }}" class="btn--footer">Mentions légales</a>
                 <a href="{{ route('login') }}" class="btn--footer">Connexion</a>
             </div>
         </div>
