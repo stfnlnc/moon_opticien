@@ -128,12 +128,12 @@
             <div class="flex col gap--2 align--center justify--start">
                 <img loading="lazy" class="" src="{{ asset('/images/icon/large/icon-parking.svg') }}" alt="Examen de vue">
                 <p class="text--l">Parking</p>
-                <p class="text--s">Un parking de 25 places est situé à proximité de la boutique.</p>
+                <p class="text--s">Un parking réservé à la clientèle est situé à proximité de la boutique.</p>
             </div>
             <div class="flex col gap--2 align--center justify--start">
                 <img loading="lazy" class="" src="{{ asset('/images/icon/large/icon-home.svg') }}" alt="Examen de vue">
                 <p class="text--l">À Domicile</p>
-                <p class="text--s">Nos équipes se déplacent depuis Bizanos au plus près de chez vous.</p>
+                <p class="text--s">Nos équipes se déplacent depuis Denguin au plus près de chez vous.</p>
             </div>
             <div class="flex col gap--2 align--center justify--start">
                 <img loading="lazy" class="" src="{{ asset('/images/icon/large/icon-exam.svg') }}" alt="Examen de vue">
