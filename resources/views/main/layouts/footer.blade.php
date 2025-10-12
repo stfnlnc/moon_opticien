@@ -16,7 +16,7 @@
                     {{ $options[0]['options_value'] }}, {{ $options[1]['options_value'] }}
                     {{ $options[2]['options_value'] }} <br>
                     <a
-                        href="tel:{{ str_replace(' ', '', $options[4]['options_value']) }}">{{ $options[4]['options_value'] }}</a>
+                            href="tel:{{ str_replace(' ', '', $options[4]['options_value']) }}">{{ $options[4]['options_value'] }}</a>
                     <br>
                     <a href="mailto:{{ $options[3]['options_value'] }}">{{ $options[3]['options_value'] }}</a>
                 </p>
@@ -35,7 +35,7 @@
                     {{ $options[16]['options_value'] }}, {{ $options[17]['options_value'] }}
                     {{ $options[18]['options_value'] }} <br>
                     <a
-                        href="tel:{{ str_replace(' ', '', $options[20]['options_value']) }}">{{ $options[20]['options_value'] }}</a>
+                            href="tel:{{ str_replace(' ', '', $options[20]['options_value']) }}">{{ $options[20]['options_value'] }}</a>
                     <br>
                     <a href="mailto:{{ $options[19]['options_value'] }}">{{ $options[19]['options_value'] }}</a>
                 </p>
@@ -57,6 +57,7 @@
                     <a href="{{ route('home_service') }}" class="btn--footer">À domicile</a> <br>
                     <a href="{{ route('glasses') }}" class="btn--footer">Nos lunettes</a> <br>
                     <a href="{{ route('lenses') }}" class="btn--footer">Nos lentilles</a> <br>
+                    <a href="{{ route('audition') }}" class="btn--footer">Audition</a> <br>
                     <a href="{{ route('about') }}" class="btn--footer">À propos</a> <br>
                 </p>
             </div>
@@ -65,7 +66,7 @@
             <img class="img__footer" src="{{ asset('/images/logo/logo-full.svg') }}" alt="">
         </div>
         <div
-            class="flex row col-mobile gap--1-mobile align--start justify--space-between w--100 border--top border--secondary-color-3 mt--4 pt--4">
+                class="flex row col-mobile gap--1-mobile align--start justify--space-between w--100 border--top border--secondary-color-3 mt--4 pt--4">
             <p class="text--s">
                 © 2025 - <a target="_blank" href="https://studiokhi.com">Un site réalisé par Studio Khi</a>
             </p>

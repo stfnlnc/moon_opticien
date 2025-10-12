@@ -56,7 +56,7 @@
                     </div>
                 </div>
                 <div class="pl--1">
-                    @include('main.layouts.template-parts.menu', ['mode' => 'dark'])
+                    @include('main.layouts.template-parts.menu-mobile', ['mode' => 'dark'])
                 </div>
                 <div class="container pt--0 pb--0">
                     <a href="{{ route('contact') }}" class="btn btn--main-dark">Contact</a>
@@ -64,7 +64,7 @@
                 <div class="container c--primary-light text--xs">
                     <div class="flex col gap--2">
                         <div
-                            class="flex col text--s border--top border--bottom border--secondary-color-3 pt--3 pb--3 lowercase">
+                                class="flex col text--s border--top border--bottom border--secondary-color-3 pt--3 pb--3 lowercase">
                             @foreach ($schedule as $value)
                                 <p>{{ array_keys($value)[0] }} :
                                     {{ array_values($value)[0] }}</p>

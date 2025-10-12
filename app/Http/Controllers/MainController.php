@@ -16,10 +16,10 @@ use Illuminate\Support\Facades\Storage;
 
 class MainController extends Controller
 {
-    public function getReviews ()
+    public function getReviews()
     {
         // On vérifie si le fichier existe pour récupérer la dernière màj
-        if(file_exists('time.txt')) {
+        if (file_exists('time.txt')) {
             $time = file_get_contents('time.txt');
         } else {
             $time = '0';
@@ -28,7 +28,7 @@ class MainController extends Controller
         /* Si la dernière màj date de plus d'une semaine ou que le fichier reviews.json n'existe pas,
         * on récupère les informations de l'API et on les enregistre
         */
-        if(time() > $time + 604800 || !file_exists('reviews.json')) {
+        if (time() > $time + 604800 || !file_exists('reviews.json')) {
             $ch = curl_init('https://maps.googleapis.com/maps/api/place/details/json?key=' . env('GOOGLE_API_KEY') . '&placeid=' . env('GOOGLE_PLACE_ID') . '&fields=reviews&reviews_no_translations=true%27');
             curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
             curl_setopt($ch, CURLOPT_FOLLOWLOCATION, 1);
@@ -43,19 +43,19 @@ class MainController extends Controller
         }
 
         // Si le fichier reviews.json existe, on récupère les données
-        if(file_exists('reviews.json')) {
+        if (file_exists('reviews.json')) {
             $data = file_get_contents('reviews.json');
         } else {
             $data = '';
         }
 
-        if(!json_validate($data)) {
+        if (!json_validate($data)) {
             return null;
         }
 
         $result = json_decode($data, true);
 
-        if($result['status'] !== 'OK') {
+        if ($result['status'] !== 'OK') {
             unlink('reviews.json');
             return null;
         }
@@ -109,6 +109,13 @@ class MainController extends Controller
         ]);
     }
 
+    public function audition(): Factory|Application|View|\Illuminate\Contracts\Foundation\Application
+    {
+        return view('main.audition', [
+            'mode' => 'dark'
+        ]);
+    }
+
     public function about(): Factory|Application|View|\Illuminate\Contracts\Foundation\Application
     {
         $reviews = $this->getReviews();
@@ -135,15 +142,12 @@ class MainController extends Controller
 
         $url = 'https://www.google.com/recaptcha/api/siteverify';
         $privatekey = config('services.recaptcha.secret');
-        $response = file_get_contents($url."?secret=".$privatekey."&response=".$_POST['g-recaptcha-response']."&remoteip=".$_SERVER['REMOTE_ADDR']);
+        $response = file_get_contents($url . "?secret=" . $privatekey . "&response=" . $_POST['g-recaptcha-response'] . "&remoteip=" . $_SERVER['REMOTE_ADDR']);
         $data = json_decode($response);
 
-        if (isset($data->success) AND $data->success)
-        {
+        if (isset($data->success) and $data->success) {
             Mail::send(new ContactMail($request->validated()));
-        }
-        else
-        {
+        } else {
             return redirect()->back()->with('danger', 'Le captcha n\'est pas valide');
         }
 

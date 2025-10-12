@@ -30,6 +30,7 @@ class ContactRequest extends FormRequest
             'phone' => ['required', 'string', 'min:10'],
             'message' => ['string', 'nullable'],
             'exam' => ['string', 'nullable'],
+            'audition' => ['string', 'nullable'],
             'glasses' => ['string', 'nullable'],
             'lenses' => ['string', 'nullable'],
             'buy' => ['string', 'nullable'],

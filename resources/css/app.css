@@ -46,6 +46,10 @@
   object-fit: cover;
 }
 
+img {
+  display: block;
+}
+
 .img-header {
   object-position: center 30%;
   object-fit: cover;
@@ -103,6 +107,7 @@
 .icon__dot-medium {
   width: 0.75rem;
   height: 0.75rem;
+  overflow: visible;
 }
 .icon__dot-small {
   width: 0.5rem;
@@ -742,11 +747,13 @@ card {
   border-bottom: 1px solid var(--secondary-color-2);
 }
 .btn--navbar-light {
+  z-index: 10;
   font-size: 1.125rem;
   color: var(--secondary-color-3);
   background-color: transparent;
   border: none;
   line-height: unset;
+  display: flex;
 }
 .btn--navbar-light::before {
   margin-right: 0.625rem;
@@ -775,6 +782,7 @@ card {
   content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='9' viewBox='0 0 8 9' fill='none'%3E%3Ccircle cx='4' cy='4.5' r='4' fill='%231E3A3D'/%3E%3C/svg%3E");
 }
 .btn--navbar-dark {
+  z-index: 10;
   font-size: 1.125rem;
   color: var(--secondary-light);
   background-color: transparent;
@@ -818,6 +826,18 @@ card {
 }
 .btn--footer:hover {
   text-decoration: underline;
+}
+.btn--item {
+  display: none;
+}
+.btn--item > div {
+  width: 200px;
+}
+.btn--item:hover {
+  display: block;
+}
+.btn--dropdown:hover .btn--item {
+  display: block;
 }
 
 p {

@@ -4,10 +4,10 @@
 
 @section('meta')
     <meta property="og:description"
-        content="Nous vous offrons un conseil personnalisé, l’examen de vue et le café. Prenez rendez-vous avec nous, en magasin ou à domicile, en remplissant le formulaire de contact." />
+          content="Nous vous offrons un conseil personnalisé, l’examen de vue et le café. Prenez rendez-vous avec nous, en magasin ou à domicile, en remplissant le formulaire de contact."/>
     <meta name="description"
-        content="Nous vous offrons un conseil personnalisé, l’examen de vue et le café. Prenez rendez-vous avec nous, en magasin ou à domicile, en remplissant le formulaire de contact.">
-    <meta property="og:url" content="{{ route('contact') }}" />
+          content="Nous vous offrons un conseil personnalisé, l’examen de vue et le café. Prenez rendez-vous avec nous, en magasin ou à domicile, en remplissant le formulaire de contact.">
+    <meta property="og:url" content="{{ route('contact') }}"/>
     <script async src="https://www.google.com/recaptcha/api.js"></script>
 @endsection
 
@@ -30,44 +30,49 @@
                 <p class="alert alert--success">{{ session('success') }}</p>
             @else
                 <form method="post" action="{{ route('contact_store') }}#contact-form" class="flex col gap--4"
-                    enctype="multipart/form-data">
+                      enctype="multipart/form-data">
                     @csrf
                     <div class="grid grid--2 grid--1-mobile grid-gap--2">
                         <div class="flex col">
                             <label for="firstname" class="form-label">Prénom*</label>
                             <input id="firstname" name="firstname" type="text" class="form-input" placeholder="John"
-                                value="{{ old('firstname') }}">
-                            <x-input-error :messages="$errors->get('firstname')" />
+                                   value="{{ old('firstname') }}">
+                            <x-input-error :messages="$errors->get('firstname')"/>
                         </div>
                         <div class="flex col">
                             <label for="lastname" class="form-label">Nom*</label>
                             <input id="lastname" name="lastname" type="text" class="form-input" placeholder="Smith"
-                                value="{{ old('lastname') }}">
-                            <x-input-error :messages="$errors->get('firstname')" />
+                                   value="{{ old('lastname') }}">
+                            <x-input-error :messages="$errors->get('firstname')"/>
                         </div>
                     </div>
                     <div class="grid grid--2 grid--1-mobile grid-gap--2">
                         <div class="flex col">
                             <label for="email" class="form-label">Email*</label>
                             <input id="email" name="email" type="email" class="form-input"
-                                placeholder="john.smith@mail.com" value="{{ old('email') }}">
-                            <x-input-error :messages="$errors->get('firstname')" />
+                                   placeholder="john.smith@mail.com" value="{{ old('email') }}">
+                            <x-input-error :messages="$errors->get('firstname')"/>
                         </div>
                         <div class="flex col">
                             <label for="phone" class="form-label">Téléphone*</label>
                             <input id="phone" name="phone" type="text" class="form-input" placeholder="0102030405"
-                                value="{{ old('phone') }}">
-                            <x-input-error :messages="$errors->get('firstname')" />
+                                   value="{{ old('phone') }}">
+                            <x-input-error :messages="$errors->get('firstname')"/>
                         </div>
                     </div>
                     <div class="flex col">
                         <label class="form-label">Je choisis mon magasin*</label>
-                        <select id="store" name="store" class="form-input w--fit-content">
-                            <option value="" disabled selected hidden>Sélectionner un magasin</option>
-                            <option value="Bizanos">Bizanos</option>
-                            <option value="Denguin">Denguin</option>
-                        </select>
-                        <x-input-error :messages="$errors->get('store')" />
+                        <div class="flex row align--center gap--2">
+                            <select id="store" name="store" class="form-input w--fit-content">
+                                <option value="" disabled selected hidden>Sélectionner un magasin</option>
+                                <option value="Bizanos">Bizanos</option>
+                                <option value="Denguin">Denguin</option>
+                            </select>
+                        </div>
+
+
+                        <input type="hidden" id="store-hidden" name="store" value="">
+                        <x-input-error :messages="$errors->get('store')"/>
                     </div>
                     <div class="flex col gap--2">
                         <label class="form-label">Je souhaite*</label>
@@ -97,14 +102,18 @@
                                 <label class="form-label" for="exam">Faire vérifier ma vue</label>
                             </div>
                             <div class="form-check">
+                                <input type="checkbox" name="audition" id="audition" value="Faire contrôler mon audition" @if(old('audition')) checked @endif>
+                                <label class="form-label" for="audition">Faire contrôler mon audition (uniquement les mercredis à Denguin)</label>
+                            </div>
+                            <div class="form-check">
                                 <input type="checkbox" name="glasses" id="glasses"
-                                    value="Être conseillé dans le choix de mes lunettes" @if(old('glasses')) checked @endif>
+                                       value="Être conseillé dans le choix de mes lunettes" @if(old('glasses')) checked @endif>
                                 <label class="form-label" for="glasses">Être conseillé dans le choix de mes
                                     lunettes</label>
                             </div>
                             <div class="form-check">
                                 <input type="checkbox" name="lenses" id="lenses"
-                                    value="Être conseillé pour l'adaptation de mes lentilles" @if(old('lenses')) checked @endif>
+                                       value="Être conseillé pour l'adaptation de mes lentilles" @if(old('lenses')) checked @endif>
                                 <label class="form-label" for="lenses">Être conseillé pour l'adaptation de mes
                                     lentilles</label>
                             </div>
@@ -119,14 +128,14 @@
                             <label for="address" class="form-label">Adresse ou lieu où vous souhaitez qu'on
                                 intervienne*</label>
                             <input id="address" name="address" type="text" class="form-input"
-                                placeholder="Adresse de votre domicile ou celui de votre proche" value="{{ old('address') }}">
+                                   placeholder="Adresse de votre domicile ou celui de votre proche" value="{{ old('address') }}">
                             <div class="flex row gap--2 align--center">
                                 <p class="form-label">Avez-vous une ordonnance à jour ?*</p>
                                 <div class="help">
                                     <svg class="help" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
-                                        viewBox="0 0 50 50">
+                                         viewBox="0 0 50 50">
                                         <path
-                                            d="M 25 2 C 12.309295 2 2 12.309295 2 25 C 2 37.690705 12.309295 48 25 48 C 37.690705 48 48 37.690705 48 25 C 48 12.309295 37.690705 2 25 2 z M 25 4 C 36.609824 4 46 13.390176 46 25 C 46 36.609824 36.609824 46 25 46 C 13.390176 46 4 36.609824 4 25 C 4 13.390176 13.390176 4 25 4 z M 25 11 A 3 3 0 0 0 22 14 A 3 3 0 0 0 25 17 A 3 3 0 0 0 28 14 A 3 3 0 0 0 25 11 z M 21 21 L 21 23 L 22 23 L 23 23 L 23 36 L 22 36 L 21 36 L 21 38 L 22 38 L 23 38 L 27 38 L 28 38 L 29 38 L 29 36 L 28 36 L 27 36 L 27 21 L 26 21 L 22 21 L 21 21 z">
+                                                d="M 25 2 C 12.309295 2 2 12.309295 2 25 C 2 37.690705 12.309295 48 25 48 C 37.690705 48 48 37.690705 48 25 C 48 12.309295 37.690705 2 25 2 z M 25 4 C 36.609824 4 46 13.390176 46 25 C 46 36.609824 36.609824 46 25 46 C 13.390176 46 4 36.609824 4 25 C 4 13.390176 13.390176 4 25 4 z M 25 11 A 3 3 0 0 0 22 14 A 3 3 0 0 0 25 17 A 3 3 0 0 0 28 14 A 3 3 0 0 0 25 11 z M 21 21 L 21 23 L 22 23 L 23 23 L 23 36 L 22 36 L 21 36 L 21 38 L 22 38 L 23 38 L 27 38 L 28 38 L 29 38 L 29 36 L 28 36 L 27 36 L 27 21 L 26 21 L 22 21 L 21 21 z">
                                         </path>
                                     </svg>
                                     <div class="help-text">
@@ -150,7 +159,7 @@
                         </div>
                     </div>
                     <div id="lens-content"
-                        class="content flex col gap--4 align--start form-content w--100 border--top border--secondary-color-3 pt--4">
+                         class="content flex col gap--4 align--start form-content w--100 border--top border--secondary-color-3 pt--4">
                         <div class="flex row col-mobile justify--start align--start gap--2">
                             <div id="prescription-send" class="filter-sub filter-sub--active">
                                 Je transmets mon ordonnance
@@ -162,90 +171,99 @@
                         </div>
                         <div id="prescription-send-content" class="content-sub flex col gap--2 w--100">
                             <label for="prescription-file" class="form-label flex row align--center"><span
-                                    class="text--xs">(Format JPG, PNG, PDF. Maximum 2mo)</span></label>
+                                        class="text--xs">(Format JPG, PNG, PDF. Maximum 2mo)</span>
+                            </label>
                             <input id="prescription-file" name="prescription-file" type="file">
                         </div>
                         <div id="information-send-content" class="content-sub flex col gap--2 form-sub-content w--100">
                             <div class="flex col align--self-start gap--2 w--100">
                                 <label for="lens-model" class="form-label">Modèle de lentilles*</label>
                                 <input id="lens-model" name="lens-model" type="text" class="form-input"
-                                    placeholder="Modèle et marque de vos lentilles" value="{{  old('lens-model') }}">
+                                       placeholder="Modèle et marque de vos lentilles" value="{{  old('lens-model') }}">
                             </div>
                             <div class="grid grid--2 grid--1-mobile grid-gap--16 w--100 mt--8">
                                 <div class="flex col gap--2">
                                     <p
-                                        class="form-label text--m border--rounded bg--secondary-color-2 p--1 w--fit-content">
+                                            class="form-label text--m border--rounded bg--secondary-color-2 p--1 w--fit-content">
                                         Oeil gauche*</p>
                                     <label for="left-sphere" class="form-label">Sphère*</label>
                                     <select autocomplete="off" class="form-input" name="left-sphere" id="left-sphere">
                                         @for ($i = 20; $i >= -20; $i -= 0.25)
                                             <option @if (strval($i) === '0') selected @endif
-                                                value="{{ $i }}">{{ $i > 0 ? '+' . $i : $i }}</option>
+                                            value="{{ $i }}">{{ $i > 0 ? '+' . $i : $i }}</option>
                                         @endfor
                                     </select>
                                     <label for="left-cylinder" class="form-label">Cylindre*</label>
                                     <select autocomplete="off" class="form-input" name="left-cylinder"
-                                        id="left-cylinder">
+                                            id="left-cylinder">
                                         @for ($i = 0; $i >= -5; $i -= 0.25)
                                             <option @if (strval($i) === '0') selected @endif
-                                                value="{{ $i }}">{{ $i > 0 ? '+' . $i : $i }}</option>
+                                            value="{{ $i }}">{{ $i > 0 ? '+' . $i : $i }}</option>
                                         @endfor
                                     </select>
                                     <label for="left-axis" class="form-label">Axe*</label>
                                     <select autocomplete="off" class="form-input" name="left-axis" id="left-axis">
                                         @for ($i = 0; $i <= 180; $i += 5)
                                             <option @if (strval($i) === '0') selected @endif
-                                                value="{{ $i }}">{{ $i > 0 ? '+' . $i : $i }}°</option>
+                                            value="{{ $i }}">{{ $i > 0 ? '+' . $i : $i }}°
+                                            </option>
                                         @endfor
                                     </select>
-                                    <label for="left-add" class="form-label flex row align--center">Addition <span
-                                            class="text--xs">(optionnel)</span></label>
+                                    <label for="left-add" class="form-label flex row align--center">Addition
+                                        <span
+                                                class="text--xs">(optionnel)</span>
+                                    </label>
                                     <select autocomplete="off" class="form-input" name="left-add" id="left-add">
                                         @for ($i = 0; $i <= 3; $i += 0.25)
                                             <option @if (strval($i) === '0') selected @endif
-                                                value="{{ $i }}">{{ $i > 0 ? '+' . $i : $i }}</option>
+                                            value="{{ $i }}">{{ $i > 0 ? '+' . $i : $i }}</option>
                                         @endfor
                                     </select>
                                     <label for="left-radius" class="form-label flex row align--center">Rayon et diamètre
-                                        <span class="text--xs">(optionnel)</span></label>
+                                        <span class="text--xs">(optionnel)</span>
+                                    </label>
                                     <input id="left-radius" name="left-radius" type="text" class="form-input">
                                 </div>
                                 <div class="flex col gap--2">
                                     <p
-                                        class="form-label text--m border--rounded bg--secondary-color-2 p--1 w--fit-content">
+                                            class="form-label text--m border--rounded bg--secondary-color-2 p--1 w--fit-content">
                                         Oeil droit*</p>
                                     <label for="right-sphere" class="form-label">Sphère*</label>
                                     <select class="form-input" name="right-sphere" id="right-sphere">
                                         @for ($i = 20; $i >= -20; $i -= 0.25)
                                             <option @if (strval($i) === '0') selected @endif
-                                                value="{{ $i }}">{{ $i > 0 ? '+' . $i : $i }}</option>
+                                            value="{{ $i }}">{{ $i > 0 ? '+' . $i : $i }}</option>
                                         @endfor
                                     </select>
                                     <label for="right-cylinder" class="form-label">Cylindre*</label>
                                     <select autocomplete="off" class="form-input" name="right-cylinder"
-                                        id="right-cylinder">
+                                            id="right-cylinder">
                                         @for ($i = 0; $i >= -5; $i -= 0.25)
                                             <option @if (strval($i) === '0') selected @endif
-                                                value="{{ $i }}">{{ $i > 0 ? '+' . $i : $i }}</option>
+                                            value="{{ $i }}">{{ $i > 0 ? '+' . $i : $i }}</option>
                                         @endfor
                                     </select>
                                     <label for="right-axis" class="form-label">Axe*</label>
                                     <select autocomplete="off" class="form-input" name="right-axis" id="right-axis">
                                         @for ($i = 0; $i <= 180; $i += 5)
                                             <option @if (strval($i) === '0') selected @endif
-                                                value="{{ $i }}">{{ $i > 0 ? '+' . $i : $i }}°</option>
+                                            value="{{ $i }}">{{ $i > 0 ? '+' . $i : $i }}°
+                                            </option>
                                         @endfor
                                     </select>
-                                    <label for="right-add" class="form-label flex row align--center">Addition <span
-                                            class="text--xs">(optionnel)</span></label>
+                                    <label for="right-add" class="form-label flex row align--center">Addition
+                                        <span
+                                                class="text--xs">(optionnel)</span>
+                                    </label>
                                     <select autocomplete="off" class="form-input" name="right-add" id="right-add">
                                         @for ($i = 0; $i <= 3; $i += 0.25)
                                             <option @if (strval($i) === '0') selected @endif
-                                                value="{{ $i }}">{{ $i > 0 ? '+' . $i : $i }}</option>
+                                            value="{{ $i }}">{{ $i > 0 ? '+' . $i : $i }}</option>
                                         @endfor
                                     </select>
                                     <label for="right-radius" class="form-label flex row align--center">Rayon et diamètre
-                                        <span class="text--xs">(optionnel)</span></label>
+                                        <span class="text--xs">(optionnel)</span>
+                                    </label>
                                     <input id="right-radius" name="right-radius" type="text" class="form-input">
                                 </div>
                             </div>
@@ -274,7 +292,7 @@
                     <div class="flex col gap--2 align--start justify--start">
                         <p class="text--m">
                             <a
-                                href="tel:{{ str_replace(' ', '', $options[4]['options_value']) }}">{{ $options[4]['options_value'] }}</a>
+                                    href="tel:{{ str_replace(' ', '', $options[4]['options_value']) }}">{{ $options[4]['options_value'] }}</a>
                             <br>
                             <a href="mailto:{{ $options[3]['options_value'] }}">{{ $options[3]['options_value'] }}</a>
                         </p>
@@ -291,7 +309,7 @@
                     <div class="flex col gap--2 align--start justify--start">
                         <p class="text--m">
                             <a
-                                href="tel:{{ str_replace(' ', '', $options[20]['options_value']) }}">{{ $options[20]['options_value'] }}</a>
+                                    href="tel:{{ str_replace(' ', '', $options[20]['options_value']) }}">{{ $options[20]['options_value'] }}</a>
                             <br>
                             <a href="mailto:{{ $options[19]['options_value'] }}">{{ $options[19]['options_value'] }}</a>
                         </p>
@@ -308,5 +326,29 @@
             </div>
         </div>
     </section>
+
+    <script>
+        document.getElementById('audition').addEventListener('change', function () {
+            const storeSelect = document.getElementById('store');
+            const storeHidden = document.getElementById('store-hidden');
+
+            if (this.checked) {
+                storeSelect.value = 'Denguin';
+                storeHidden.value = 'Denguin';
+                storeSelect.disabled = true; // Empêche la modification côté utilisateur
+                storeSelect.insertAdjacentHTML('afterend', '<span class="text--m pt-1" style="opacity: 0.5">Audition uniquement disponible à Denguin</span>');
+            } else {
+                storeSelect.disabled = false;
+                storeHidden.value = storeSelect.value; // récupère la valeur actuelle du select
+                const span = storeSelect.nextElementSibling;
+                if (span && span.style.opacity === '0.5') {
+                    span.remove();
+                }
+            }
+
+            // Déclenche un événement change pour compatibilité avec frameworks JS
+            storeSelect.dispatchEvent(new Event('change'));
+        });
+    </script>
 
 @endsection

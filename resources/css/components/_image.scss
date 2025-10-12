@@ -3,6 +3,10 @@
     object-fit: cover;
 }
 
+img {
+    display: block;
+}
+
 .img-header {
     object-position: center 30%;
     object-fit: cover;
@@ -19,9 +23,11 @@
 .link-img {
     overflow: hidden;
     line-height: 0;
+
     & > img {
         transition: transform var(--duration) var(--cubic);
     }
+
     & > img:hover {
         transform: scale(1.08);
         transform-origin: center;
