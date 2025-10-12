@@ -347,13 +347,13 @@
             </div>
             <div class="flex row align--start justify--space-between gap--4 w--100">
                 <img loading="lazy" class="img img-left w-100-mobile w--30 reveal-0"
-                     src="{{ asset('/images/layers/d6f527b6d5f28d685792184f72ccd2ae.webp') }}"
+                     src="{{ asset('/images/layers/audition-3.png') }}"
                      alt="Magasin d'optique centre ville de Bizanos">
                 <img loading="lazy" class="img img-center hide-mobile w--30 reveal-1"
-                     src="{{ asset('/images/layers/1624725b99dc68b3e6c2bc9dd5722146.webp') }}"
+                     src="{{ asset('/images/layers/audition-6.png') }}"
                      alt="Conseil, ajustement et réparation de lunettes aux portes de Pau">
                 <img loading="lazy" class="img img-right hide-mobile w--30 reveal-2"
-                     src="{{ asset('/images/layers/5c3d15465775ba42a138b0208f4474f2.webp') }}"
+                     src="{{ asset('/images/layers/audition-2.png') }}"
                      alt="Lunettes de vue, solaire ou de sport">
             </div>
         </div>

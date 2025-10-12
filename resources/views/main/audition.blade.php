@@ -33,7 +33,7 @@
                 </p>
             </div>
             <div class="img__hero w--60 w-100-mobile">
-                <img loading="lazy" class="img reveal-right" src="{{ asset('/images/layers/audition-1.jpg') }}" alt="Service à domicile">
+                <img loading="lazy" class="img reveal-right" src="{{ asset('/images/layers/audition-5.png') }}" alt="Service à domicile">
             </div>
         </div>
     </section>
@@ -70,7 +70,7 @@
         </div>
     </section>
     <section class="container__full-width m--0 p--0">
-        <img class="w--100 img img-banner reveal-0" src="{{ asset('/images/layers/6687eaa5d6cb2.webp') }}" alt="Livraison à domicile">
+        <img class="w--100 img img-banner reveal-0" src="{{ asset('/images/layers/audition-1.png') }}" alt="Livraison à domicile">
     </section>
     <section class="container__full-width c--secondary-dark bg--secondary-color-2 flex col align--center">
         <div class="container pt--10 pb--10 flex col align--center gap--8">
