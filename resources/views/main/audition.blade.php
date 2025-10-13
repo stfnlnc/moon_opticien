@@ -3,9 +3,11 @@
 @section('title', 'Audition')
 
 @section('meta')
-    <meta property="og:description" content="Que ce soit pour des ajustements de lunettes, des conseils personnalisés pour choisir la monture idéale, ou des examens de vue complets, notre équipe se déplace au plus proche de vous."/>
-    <meta name="description" content="Que ce soit pour des ajustements de lunettes, des conseils personnalisés pour choisir la monture idéale, ou des examens de vue complets, notre équipe se déplace au plus proche de vous.">
-    <meta property="og:url" content="{{ route('home_service') }}"/>
+    <meta property="og:description" content="Que vous ayez besoin d’un simple contrôle ou d’un appareil auditif, nous avons la solution adaptée à votre profil et à vos besoins quotidiens. Notre audioprothésiste vous accompagne dans le choix, l’essai et l’adaptation de votre équipement, en veillant à votre confort et à la
+                qualité de votre écoute."/>
+    <meta name="description" content="Que vous ayez besoin d’un simple contrôle ou d’un appareil auditif, nous avons la solution adaptée à votre profil et à vos besoins quotidiens. Notre audioprothésiste vous accompagne dans le choix, l’essai et l’adaptation de votre équipement, en veillant à votre confort et à la
+                qualité de votre écoute.">
+    <meta property="og:url" content="{{ route('audition') }}"/>
 @endsection
 
 @section('content')
