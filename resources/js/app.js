@@ -41,11 +41,6 @@ htmx.onLoad(function (target) {
     const body = document.querySelector("body");
     body.style.overflow = "auto";
 
-    window.addEventListener("resize", () => {
-        dropdown.style.right = "-100%";
-        body.style.overflow = "auto";
-    });
-
     menu.addEventListener("click", () => {
         dropdown.style.right = "0";
         body.style.overflow = "hidden";

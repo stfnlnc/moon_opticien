@@ -1,22 +1,23 @@
-<footer class="container__full-width c--primary-light bg--secondary-dark flex col align--center">
+<footer class="flex container__full-width c--primary-light bg--secondary-dark col align--center">
     <div class="container flex col align--start justify--start gap--6 gap--8-mobile">
         <a href="{{ route('contact') }}" class="btn btn--main-dark">Je prends rendez-vous</a>
         <div class="flex row col-mobile gap--12">
             <div class="flex col gap--3">
                 <p class="text--m">Horaires du magasin</p>
-                <p class="text--s lowercase">
+                <p class="lowercase text--s">
                     @foreach ($schedule as $value)
                         {{ array_keys($value)[0] }} : {{ array_values($value)[0] }} <br>
                     @endforeach
                 </p>
             </div>
             <div class="flex col gap--3">
-                <p class="text--m">Votre magasin à Bizanos</p>
+                <p class="text--m">Votre magasin à Bizanos, <br><span class="c--secondary-color-3">proche de Pau</span>
+                </p>
                 <p class="text--s">
                     {{ $options[0]['options_value'] }}, {{ $options[1]['options_value'] }}
                     {{ $options[2]['options_value'] }} <br>
                     <a
-                            href="tel:{{ str_replace(' ', '', $options[4]['options_value']) }}">{{ $options[4]['options_value'] }}</a>
+                        href="tel:{{ str_replace(' ', '', $options[4]['options_value']) }}">{{ $options[4]['options_value'] }}</a>
                     <br>
                     <a href="mailto:{{ $options[3]['options_value'] }}">{{ $options[3]['options_value'] }}</a>
                 </p>
@@ -30,12 +31,13 @@
                 </div>
             </div>
             <div class="flex col gap--3">
-                <p class="text--m">Votre magasin à Denguin</p>
+                <p class="text--m">Votre magasin à Denguin, <br> <span class="c--secondary-color-3">proche
+                        d'Artix</span></p>
                 <p class="text--s">
                     {{ $options[16]['options_value'] }}, {{ $options[17]['options_value'] }}
                     {{ $options[18]['options_value'] }} <br>
                     <a
-                            href="tel:{{ str_replace(' ', '', $options[20]['options_value']) }}">{{ $options[20]['options_value'] }}</a>
+                        href="tel:{{ str_replace(' ', '', $options[20]['options_value']) }}">{{ $options[20]['options_value'] }}</a>
                     <br>
                     <a href="mailto:{{ $options[19]['options_value'] }}">{{ $options[19]['options_value'] }}</a>
                 </p>
@@ -62,11 +64,11 @@
                 </p>
             </div>
         </div>
-        <div class="flex row align--center justify--end justify-mobile--center justify--end w--100">
+        <div class="flex row align--center justify--end justify-mobile--center w--100">
             <img class="img__footer" src="{{ asset('/images/logo/logo-full.svg') }}" alt="">
         </div>
         <div
-                class="flex row col-mobile gap--1-mobile align--start justify--space-between w--100 border--top border--secondary-color-3 mt--4 pt--4">
+            class="flex row col-mobile gap--1-mobile align--start justify--space-between w--100 border--top border--secondary-color-3 mt--4 pt--4">
             <p class="text--s">
                 © 2025 - <a target="_blank" href="https://studiokhi.com">Un site réalisé par Studio Khi</a>
             </p>
